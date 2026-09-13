@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pic-harness"
+version = "0.0.0"
+description = "Research harness for AI agents in photonic chip design"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [{ name = "PIC_Harness_Research contributors" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
