@@ -1,36 +1,86 @@
 # 当前唯一执行任务
 
-## TASK-003：同步对齐 GPT、Codex 与 Qwen 的“AI协同”通道
+## TASK-004：L01 光子芯片设计 Agent / Harness 架构第一轮调研
 
-- 状态：`COMPLETED`
+- 状态：`ACTIVE`
 - 日期：2026-09-15
-- 授权来源：用户要求以当前 Codex“AI协同”窗口串联 GPT、Codex 与 Qwen，并立即同步对齐。
-- 执行方：Codex。
-- 对齐对象：PIC_Harness_Research 项目中的 GPT/ChatGPT“AI协同”对话，以及项目限定的 Qwen Code 协作通道。
-- 目标：让三方读取同一 Git 基线、当前状态、任务边界和协作规则，并取得可读回的确认。
-- 允许范围：更新本任务和当前状态；向已获用户授权的 GPT 与 Qwen 协作对话发送项目状态和对齐请求；读取并记录回复；创建 Git 提交。
-- 禁止范围：修改旧 Demo；实现自动消息桥、模型接入、RAG、MCP、仿真集成、RESULT.json Schema 或运行时 Multi-Agent 系统；向无关对话发送消息。
+- 授权来源：用户在当前对话中给出完整任务、角色分工、验收标准和禁止范围。
+- 上游目标：L01——芯片设计 Agent 项目架构调研，形成调研报告；重点要求“框架完整、路径开源”。
+- 执行协调器：Codex。
+- 目标：先建立可信候选池和架构对比基线，不直接写 L01 最终综述。
+
+## 研究范围
+
+第一优先级：
+
+- Photonic Integrated Circuit / silicon photonics + LLM / Agent；
+- PIC design automation agent；
+- EDA agent / engineering design agent；
+- LLM 调用真实 simulation / CAD / EDA tool；
+- Agentic scientific workflow / tool-use framework。
+
+已知对象至少纳入 Sharma et al. 2025、PICopilot、gdsfactory / gplugins 生态。
+
+第二优先级仅作为 Harness 架构参考：MCP 类 Tool 接口、LangGraph、AutoGen 等 Agent orchestration。通用 Agent 框架不得与真正 PIC 自动设计系统混为一类。
+
+## 方法与角色
+
+- 显式使用 `nature-academic-search` 建立论文和项目候选池，覆盖 2021–2026，记录检索词、来源、日期、DOI / GitHub，并区分同行评审论文、预印本、GitHub 项目和商业产品。
+- 仅对筛出的高价值代表对象使用 `nature-reader` 精读。
+- 对 Top 3 使用 `scientific-critical-thinking` 做对抗性证据审查。
+- 本轮不启动 `literature-review` 或 `nature-literature-pipeline`。
+- Codex 负责拆解、检索复核、GitHub / 代码结构 / README / 许可证核验、真实 Tool 调用检查和最终判断。
+- Qwen 只承担候选扩展、论文初筛、内容与架构字段初抽取；其输出是中间材料，未经 Codex 一手证据复核不得进入最终结论。
+
+## 统一抽取字段
+
+- 对象类型与时间；
+- 论文 DOI / 预印本链接 / GitHub；
+- 代码可见性与许可证；
+- Agent 输入与输出；
+- 结构化中间表示；
+- Tool 注册与真实调用方式；
+- 状态管理与自动迭代；
+- 人类干预与失败恢复；
+- 是否生成版图、是否完成验证；
+- 实验指标、baseline 与证据缺口；
+- 闭环级别：代码生成、单次 Tool 调用、部分闭环或端到端闭环。
+
+## 交付结果
+
+A. 约 10–20 个经核验的有效论文 / 项目候选池，宁缺毋滥。
+
+B. Top 5 架构对比表，说明入选理由并为每个对象提供论文或代码一手证据。
+
+C. 第一轮路线判断：
+
+1. 是否已经存在可直接满足最高目标的开源 Photonic Design Agent Harness；
+2. 现有工作分别解决了 Harness 的哪些局部能力；
+3. 最可能需要自行补齐哪些核心模块。
 
 ## 验收标准
 
-- 形成包含 commit、事实源、当前任务、角色和禁止范围的统一同步消息。
-- GPT/ChatGPT“AI协同”对话读回并确认，或如实记录明确阻塞。
-- Qwen 协作通道读回并确认，或如实记录明确阻塞。
-- 发现的分歧必须回到仓库事实源，不得由 Codex 静默裁决。
-- 文档路径、格式和 `git diff --check` 通过，改动进入 Git commit，工作区干净。
+- 至少发现并核验 10 个有效候选；
+- Top 5 每个都有论文或代码的一手证据；
+- “开源”必须实际核验仓库、许可证和代码可见性；
+- 区分“LLM 生成脚本”和“Agent 调用真实 Tool”；
+- 区分“单次工具调用”和“闭环自动设计”；
+- 至少对 Top 3 做一次对抗性证据审查；
+- 明确指出证据缺口，不自行脑补；
+- 不开始写 L01 最终报告；
+- 不扩展到新的工程实现任务。
 
-## 完成记录
+## 禁止范围与停止条件
 
-同步已完成：
+- 不修改或复制 `D:\AI_PIC_Demo`；
+- 不实现 Agent、MCP、RAG、仿真集成、DesignSpec、benchmark 或其他工程功能；
+- 不把通用 Agent 框架表述为 PIC 自动设计系统；
+- 不把 LLM、Qwen 或论文作者的陈述当作物理真值或开源证明；
+- 完成后只回传 `TASK-004_REVIEW_READY` 与规定材料；GPT 审查完成前不自动启动 TASK-005。
 
-- GPT/ChatGPT 项目“AI协同”对话返回 `SYNC_ACK`，接受基线、角色、当前任务和禁止范围；它明确说明不能独立读取本地仓库。
-- 项目限定 Qwen Code 通道返回 `SYNC_ACK`，核对文件与 HEAD；它明确说明当前会话没有 shell，不能独立执行 `git status`。
-- Codex 使用本地 Git 核验 `main`、基线 commit 和工作区洁净状态，并将双方首轮确认互相转述。
-- GPT 返回 `FINAL_ALIGN_ACK | GPT | baseline=1b0745128d0b4486f514b06d8053763e3ab451d9 | task=TASK-003 | disputes=none`。
-- Qwen 返回 `FINAL_ALIGN_ACK | QWEN | baseline=1b0745128d0b4486f514b06d8053763e3ab451d9 | task=TASK-003 | disputes=none`。
+## 验证方法
 
-已执行验证：对话消息读回、事实源路径检查、`git diff --check` 和提交后 Git 状态检查。
-
-未执行验证：浏览器/应用界面自动化清单在重置后仍连接失败，因此没有直接操作 Qwen 图形项目对话框；使用的是已验证的项目限定 Qwen Code 通道。本任务没有运行模型能力、RAG、MCP、仿真或科研实验，也不产生科研结果。完成 commit 以 Git 历史为准。
-
-新的执行任务开始前，必须用经确认的任务替换本文件中的当前任务，并保持同时只有一个执行任务。
+- 对论文核对出版社、DOI、arXiv 或作者项目页等一手来源；
+- 对开源项目核对实际仓库、许可证文件、关键源码与提交可见性；
+- 对闭环能力核对方法、代码路径、工具调用、输出读取和迭代控制证据；
+- 文档完成后执行路径检查、字段完整性检查、`git diff --check` 和 Git 状态检查。
