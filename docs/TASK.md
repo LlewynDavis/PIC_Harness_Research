@@ -2,7 +2,7 @@
 
 ## TASK-004：L01 光子芯片设计 Agent / Harness 架构第一轮调研
 
-- 状态：`ACTIVE`
+- 状态：`COMPLETED`
 - 日期：2026-09-15
 - 授权来源：用户在当前对话中给出完整任务、角色分工、验收标准和禁止范围。
 - 上游目标：L01——芯片设计 Agent 项目架构调研，形成调研报告；重点要求“框架完整、路径开源”。
@@ -31,6 +31,7 @@
 - 本轮不启动 `literature-review` 或 `nature-literature-pipeline`。
 - Codex 负责拆解、检索复核、GitHub / 代码结构 / README / 许可证核验、真实 Tool 调用检查和最终判断。
 - Qwen 只承担候选扩展、论文初筛、内容与架构字段初抽取；其输出是中间材料，未经 Codex 一手证据复核不得进入最终结论。
+- Qwen 科研子任务通过项目主对话或必要的新对话下达，并尽量复用主对话、减少对话数；Codex“AI协同”任务只用于对齐，不用于科研任务下达。
 
 ## 统一抽取字段
 
@@ -84,3 +85,15 @@ C. 第一轮路线判断：
 - 对开源项目核对实际仓库、许可证文件、关键源码与提交可见性；
 - 对闭环能力核对方法、代码路径、工具调用、输出读取和迭代控制证据；
 - 文档完成后执行路径检查、字段完整性检查、`git diff --check` 和 Git 状态检查。
+
+## 完成记录
+
+- 完成日期：2026-09-15。
+- 交付位置：`references/task-004/`。
+- 候选池：20 个；已区分直接 PIC、相邻光子器件、EDA/科学 Harness 和通用控制面。
+- Top 5：PhIDO/PhIDO-Agentic、AutoPhotonicDesign、gdsfactory/gplugins、MetaChat、OpenROAD-MCP；每项均有论文或官方代码一手证据。
+- Top 3 对抗性审查：PhIDO/PhIDO-Agentic、AutoPhotonicDesign、gdsfactory/gplugins。
+- 关键判断：没有足够证据证明现有项目可直接满足全开源、可复现、物理可信的完整 PIC Design Agent Harness。
+- 开源核验：区分 MIT/BSD/Apache/AGPL 等可识别许可证、公开但未识别根许可证、以及未发现公开仓库三种状态。
+- 闭环核验：区分脚本生成、真实 Tool 接口、局部结果反馈和接近端到端的自动迭代。
+- 未执行：未安装或运行外部候选，未做候选软件/论文实验复现，未启动 L01 最终综述或 `TASK-005`，未实施任何 Agent/MCP/仿真功能。
