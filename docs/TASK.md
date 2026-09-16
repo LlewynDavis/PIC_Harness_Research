@@ -2,7 +2,7 @@
 
 ## TASK-005：L01 核心架构深挖与 PIC Harness 技术路线收敛
 
-- 状态：`TASK-005_REVIEW_READY`
+- 状态：`ACCEPTED / CLOSED`
 - 启动日期：2026-09-16
 - 前置任务：`TASK-004 = ACCEPTED / CLOSED`
 - 授权来源：用户在当前对话中正式批准启动，并给出完整范围、方法、交付物和验收标准。
@@ -120,11 +120,13 @@ G. 3–5 个 Candidate Route Seeds，暂不最终确定路线。
 - 路线级判断给出多来源证据、strongest counterexample、evidence gap、hidden assumptions、failure modes、opportunity cost 和 simpler alternative；
 - 文档完成后执行路径检查、字段完整性检查、`git diff --check` 和 Git 状态检查。
 
-## 完成记录（待 GPT 验收）
+## 完成与验收记录
 
 - 完成日期：2026-09-16。
 - 交付目录：`references/task-005/`。
 - 已完成：技术层级地图、六对象五问拆解、Harness Capability Matrix、Verification Ladder、Reference Architecture V0、RESULT schema V0、最小状态机、Build vs Reuse、Research Gap Matrix、5 个 Candidate Route Seeds、路线级对抗性审查和五大未决问题。
 - Qwen：通过既有项目主对话完成一次六对象合并的只读字段/缺口抽取；Codex 已对核心字段逐项回到论文、官方文档和固定 commit 源码复核，并纠正 PICBench simulation 层级、MetaChat stub/backend 差异等问题。
 - 未执行：候选代码、solver、DRC、benchmark 或物理实验；外部论文指标均未复算。
-- 状态含义：材料已提交审查，不代表 GPT 已接受。GPT 验收前不得启动 TASK-006。
+- GPT 验收：2026-09-16 返回 `ACCEPT`，无需打回修改。
+- 后续约束：TASK-006 必须先区分 device-level 与 circuit-level；verification 使用 `Research-grade deterministic verification` 的诚实上限；正式报告区分 implementation reuse 与 architecture-pattern reuse；DesignSpec 仍是待实验验证的工程假设，不得预设为科研创新。
+- 当前边界：`TASK-006 = NOT_STARTED`。本次验收不自动授权启动 TASK-006。

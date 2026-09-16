@@ -19,7 +19,9 @@
 - GPT 已在项目主对话对 `TASK-004_REVIEW_READY` 返回 `ACCEPT`；用户已正式确认 `TASK-004 = ACCEPTED / CLOSED`。
 - 用户已正式启动 `TASK-005`。当前工作仅限核心架构的一手证据深挖、技术缺口分析、Reference Architecture V0 和候选路线种子，不包含工程实现或最终 L01 报告。
 - 已完成 `TASK-005` 的审查包：六对象技术地图/架构拆解、Harness Capability Matrix、Verification Ladder、Reference Architecture V0、RESULT schema V0、最小状态机、Build vs Reuse、Research Gap Matrix、5 个路线种子和路线级对抗性审查，材料位于 `references/task-005/`。
-- `TASK-005` 当前状态为 `TASK-005_REVIEW_READY`，等待 GPT 验收；这不等于任务已关闭，也不授权启动 TASK-006。
+- GPT 已在项目主对话对 `TASK-005_REVIEW_READY` 返回 `ACCEPT`；`TASK-005 = ACCEPTED / CLOSED`，无需返工。
+- GPT 要求后续保留四项约束：先区分 device-level 与 circuit-level；verification 的诚实上限为 research-grade deterministic verification；区分实现复用与架构模式复用；DesignSpec 必须通过对照实验验证价值，不能预设为核心创新。
+- `TASK-006 = NOT_STARTED`，尚未获得用户启动指令。
 - 本轮 Qwen 科研子任务通过既有项目主对话下达，未使用“AI协同”通道，也未新建多余科研对话。其只读输出未被直接采用，Codex 已用固定 commit 源码和论文正文复核并纠正关键字段。
 - 已纠正 Qwen 渠道记录：初次科研召回实际因 `qwen -c` 误入 `AI协同` 会话，随后已在既有 Qwen 项目主对话完成只读复核；该误用不再被表述为独立科研会话。
 
@@ -39,7 +41,7 @@
 
 ## 当前证据边界
 
-本仓库当前证明项目骨架、双模型治理规则、一次人工三方对齐以及 `TASK-004` 的公开资料调研已经完成并获用户关闭；`TASK-005` 的一手证据深挖材料已于 2026-09-16 进入 `TASK-005_REVIEW_READY`。核心源码核验固定在交付物记录的 commit；没有候选在本仓库中被执行，因此不构成模型接入、软件复现、物理验证或科研实验。论文作者报告的指标不得当作本项目实验结果。GPT 验收前不得把 TASK-005 记为关闭，也不得启动 TASK-006。
+本仓库当前证明项目骨架、双模型治理规则、一次人工三方对齐以及 `TASK-004`、`TASK-005` 的公开证据调研已经完成并获 GPT 验收。核心源码核验固定在交付物记录的 commit；没有候选在本仓库中被执行，因此不构成模型接入、软件复现、物理验证或科研实验。论文作者报告的指标不得当作本项目实验结果。当前没有 ACTIVE 执行任务，`TASK-006 = NOT_STARTED`。
 
 ## 更新规则
 

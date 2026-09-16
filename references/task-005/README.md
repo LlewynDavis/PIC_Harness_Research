@@ -1,6 +1,6 @@
 # TASK-005 Review Package
 
-状态：`TASK-005_REVIEW_READY`
+状态：`ACCEPTED / CLOSED`（GPT 于 2026-09-16 验收）
 
 本目录是 L01 第二阶段的核心架构深挖材料，不是最终 L01 报告，也不包含工程实现。
 
@@ -29,4 +29,4 @@
 
 ## 下一步边界
 
-等待 GPT 审查。审查通过前不得启动 TASK-006、不得实现架构、不得开始最终 L01 报告。
+GPT 已接受本审查包且无需返工。`TASK-006 = NOT_STARTED`；本次接受不自动授权启动下一任务，也不授权实现 Reference Architecture V0 或开始最终 L01 报告。
