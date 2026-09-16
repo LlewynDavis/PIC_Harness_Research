@@ -50,6 +50,7 @@
 
 - 完成日期：2026-09-16。
 - 起始提交：`f4e88819535633cacf2d2d5f6d1c2fcfa7757129`。
+- 门户实现与验收证据提交：`b1f9c74650451734fd11d381387684fecb4ab82d`。
 - 已新增 MkDocs Material 配置、中文总览首页、七组中文左侧导航、Source of Truth 包装页、宽表格滚动样式、Mermaid 渲染脚本、PowerShell 安装/启动脚本和本地截图；必要英文技术术语均附中文表达。
 - `references/task-005/` 未修改；门户通过构建时嵌入和链接读取原 Markdown，不复制改写研究结论。
 - Qwen 项目主对话只提供信息架构、文件结构和验证清单草案；由于该会话无 shell/写入能力，实际文件修改、MkDocs 配置纠错、浏览器验证和截图均由 Codex 完成。Codex 已纠正其不适用的 snippet 语法和 Mermaid formatter 名称。
