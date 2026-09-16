@@ -1,101 +1,121 @@
 # 当前唯一执行任务
 
-## TASK-004：L01 光子芯片设计 Agent / Harness 架构第一轮调研
+## TASK-005：L01 核心架构深挖与 PIC Harness 技术路线收敛
 
-- 状态：`COMPLETED`
-- 日期：2026-09-15
-- 授权来源：用户在当前对话中给出完整任务、角色分工、验收标准和禁止范围。
-- 上游目标：L01——芯片设计 Agent 项目架构调研，形成调研报告；重点要求“框架完整、路径开源”。
+- 状态：`ACTIVE`
+- 启动日期：2026-09-16
+- 前置任务：`TASK-004 = ACCEPTED / CLOSED`
+- 授权来源：用户在当前对话中正式批准启动，并给出完整范围、方法、交付物和验收标准。
 - 执行协调器：Codex。
-- 目标：先建立可信候选池和架构对比基线，不直接写 L01 最终综述。
+- 目标：对 TASK-004 核心对象进行一手证据级深挖，连接“现有工作 → 技术缺口 → 本项目可能切入点”。本任务不是最终 L01 报告，也不进行代码实现。
 
-## 研究范围
+## 核心对象
 
-第一优先级：
+必须深挖：PhIDO / PhIDO-Agentic、AutoPhotonicDesign、gdsfactory + gplugins、PICBench。
 
-- Photonic Integrated Circuit / silicon photonics + LLM / Agent；
-- PIC design automation agent；
-- EDA agent / engineering design agent；
-- LLM 调用真实 simulation / CAD / EDA tool；
-- Agentic scientific workflow / tool-use framework。
+架构机制参照：OpenROAD-MCP、MetaChat。
 
-已知对象至少纳入 Sharma et al. 2025、PICopilot、gdsfactory / gplugins 生态。
+条件对象：PICopilot 仅使用可验证论文证据；PICasso 无公开实现时不得作源码级结论。除非出现会实质改变当前判断的一手证据，不继续无边界扩充候选池。
 
-第二优先级仅作为 Harness 架构参考：MCP 类 Tool 接口、LangGraph、AutoGen 等 Agent orchestration。通用 Agent 框架不得与真正 PIC 自动设计系统混为一类。
+## 方法与证据规则
 
-## 方法与角色
-
-- 显式使用 `nature-academic-search` 建立论文和项目候选池，覆盖 2021–2026，记录检索词、来源、日期、DOI / GitHub，并区分同行评审论文、预印本、GitHub 项目和商业产品。
-- 仅对筛出的高价值代表对象使用 `nature-reader` 精读。
-- 对 Top 3 使用 `scientific-critical-thinking` 做对抗性证据审查。
+- 显式使用 `nature-reader` 定向精读；使用 `scientific-critical-thinking` 审查会影响路线选择的结论；`nature-academic-search` 仅用于补证据，不做大规模方向扫描。
 - 本轮不启动 `literature-review` 或 `nature-literature-pipeline`。
-- Codex 负责拆解、检索复核、GitHub / 代码结构 / README / 许可证核验、真实 Tool 调用检查和最终判断。
-- Qwen 只承担候选扩展、论文初筛、内容与架构字段初抽取；其输出是中间材料，未经 Codex 一手证据复核不得进入最终结论。
-- Qwen 科研子任务通过项目主对话或必要的新对话下达，并尽量复用主对话、减少对话数；Codex“AI协同”任务只用于对齐，不用于科研任务下达。
+- Qwen 科研子任务由 Codex 统一通过项目主对话或必要的新对话下达，并尽量减少对话数。Qwen 输出只是中间材料，未经 Codex 一手证据复核不得进入结论。
+- 每项证据和判断明确区分 `FACT`、`AUTHOR CLAIM`、`CODE VERIFIED`、`INFERENCE`、`UNKNOWN`。
+- 论文目标、README 宣传、LLM 输出和合理猜测均不能替代源码、论文正文、官方文档或可复核结果。
 
-## 统一抽取字段
+## 强制技术层级地图
 
-- 对象类型与时间；
-- 论文 DOI / 预印本链接 / GitHub；
-- 代码可见性与许可证；
-- Agent 输入与输出；
-- 结构化中间表示；
-- Tool 注册与真实调用方式；
-- 状态管理与自动迭代；
-- 人类干预与失败恢复；
-- 是否生成版图、是否完成验证；
-- 实验指标、baseline 与证据缺口；
-- 闭环级别：代码生成、单次 Tool 调用、部分闭环或端到端闭环。
+每个核心对象映射到：
 
-## 交付结果
+```text
+Requirement / Natural Language
+↓
+DesignSpec / typed IR / DSL
+↓
+Agent / Harness / Planning
+↓
+Knowledge / RAG / PDK
+↓
+Tool Calling
+↓
+Device / Circuit Design
+↓
+Physical Simulation
+↓
+Optimization / Inverse Design
+↓
+Layout / GDS / Routing
+↓
+Verification / DRC / Physical Checks
+↓
+Feedback / Failure Recovery
+```
 
-A. 约 10–20 个经核验的有效论文 / 项目候选池，宁缺毋滥。
+每层只能标记 `IMPLEMENTED`、`PARTIAL`、`ABSENT` 或 `UNCLEAR`，并给一手证据。
 
-B. Top 5 架构对比表，说明入选理由并为每个对象提供论文或代码一手证据。
+## 每个对象统一问题
 
-C. 第一轮路线判断：
+1. 解决了什么具体问题；
+2. 采用了什么技术路线；
+3. 实际做到什么程度；
+4. 还存在什么关键缺口；
+5. 哪些缺口是本项目现有条件可能切入的。
 
-1. 是否已经存在可直接满足最高目标的开源 Photonic Design Agent Harness；
-2. 现有工作分别解决了 Harness 的哪些局部能力；
-3. 最可能需要自行补齐哪些核心模块。
+第五项形成 `Research Gap → Our Entry Point`；证据不足时标记 `UNRESOLVED`。
+
+## 六个重点专题
+
+1. **DesignSpec / IR**：NL 入口、JSON/schema/DSL/netlist/Python、typed validation、约束表达和 PDK/device knowledge 绑定。
+2. **Agent / Harness / Tool Adapter**：tool schema、参数验证、registry、执行边界、session、错误处理、structured output；区分脚本生成与稳定 Tool Contract。
+3. **Physical Simulation → RESULT**：核验 solver 实际执行、输入追溯、材料/网格/边界/波长、结构化输出、指标计算和失败处理；形成 RESULT schema V0 草案。
+4. **Evaluation / Benchmark**：深挖 PICBench 的 golden reference、simulator-based evaluation、functional metric、syntax validation、pass@k 和自动判定边界；形成分层 benchmark。
+5. **State / Retry / Failure Recovery**：比较 experiment history、checkpoint、retry budget、failure class、keep/discard、rollback、human intervention 和 termination；形成最小状态机草案。
+6. **Verification Ladder**：严格区分 Syntax、Geometry Validity、DRC、Circuit-level Simulation、Full-wave Simulation、LVS/Connectivity、PDK Compliance、Process Corner/Robustness、Foundry Signoff。
+
+不得把 GDS generated、DRC clean 或 solver called 表述为“设计已验证”。
+
+## 核心交付物
+
+A. 核心工作技术层级地图。
+
+B. 六个核心对象架构拆解，逐层标记 `IMPLEMENTED / PARTIAL / ABSENT / UNCLEAR`。
+
+C. Harness Capability Matrix，至少包含 Spec/IR、Knowledge、Planner、Tool、Simulation、RESULT、Evaluator、Retry、Layout、DRC、LVS、Signoff、Benchmark。
+
+D. PIC_Harness_Research Reference Architecture V0：Requirement → DesignSpec/IR → Planner/Harness → Knowledge/PDK → Tool Registry/Adapter → Execution/Solver → RESULT → Evaluator → State/Evidence Ledger → Retry/Recovery → Layout → Verification Gate。
+
+E. Build vs Reuse，每项只允许 `REUSE`、`WRAP`、`BUILD` 或 `UNDECIDED`。
+
+F. Research Gap → Our Entry Point Matrix。每项记录 Current State、Research Gap、Existing Evidence、Our Available Conditions、Our Entry Point、Main Risk 和 Simpler Alternative。
+
+G. 3–5 个 Candidate Route Seeds，暂不最终确定路线。
+
+另需形成 RESULT schema V0、PIC Harness 最小状态机、分层 benchmark、路线关键证据链、strongest counterexamples 和当前五个最大未决问题。
 
 ## 验收标准
 
-- 至少发现并核验 10 个有效候选；
-- Top 5 每个都有论文或代码的一手证据；
-- “开源”必须实际核验仓库、许可证和代码可见性；
-- 区分“LLM 生成脚本”和“Agent 调用真实 Tool”；
-- 区分“单次工具调用”和“闭环自动设计”；
-- 至少对 Top 3 做一次对抗性证据审查；
-- 明确指出证据缺口，不自行脑补；
-- 不开始写 L01 最终报告；
-- 不扩展到新的工程实现任务。
+- 至少 4 个核心对象完成一手材料或源码级拆解；
+- 所有重要判断可追溯到论文、代码或官方文档；
+- 明确区分五类证据标签；
+- gdsfactory/gplugins 按 Tool Layer 分析；PICBench 按 Evaluator/Benchmark Layer 分析；
+- 明确 AutoPhotonicDesign 的科研证据限制；
+- 不把 DRC 等同 LVS/signoff，不把 solver invocation 等同 physical correctness；
+- 形成有证据支撑的 Reference Architecture V0、主要 Research Gaps 和至少 3 个 Route Seeds；
+- 不写工程代码，不启动 TASK-006，不开始撰写最终 L01 报告。
 
 ## 禁止范围与停止条件
 
 - 不修改或复制 `D:\AI_PIC_Demo`；
-- 不实现 Agent、MCP、RAG、仿真集成、DesignSpec、benchmark 或其他工程功能；
-- 不把通用 Agent 框架表述为 PIC 自动设计系统；
-- 不把 LLM、Qwen 或论文作者的陈述当作物理真值或开源证明；
-- 完成后只回传 `TASK-004_REVIEW_READY` 与规定材料；GPT 审查完成前不自动启动 TASK-005。
+- 不实现 Agent、MCP、RAG、DesignSpec、RESULT、benchmark、仿真或验证功能；
+- 不安装或迁移候选框架作为工程依赖；
+- 不将外部论文结果表述为本项目实验结果；
+- 完成后只进入 `TASK-005_REVIEW_READY` 并提交规定材料；GPT 验收前不得启动 TASK-006。
 
 ## 验证方法
 
-- 对论文核对出版社、DOI、arXiv 或作者项目页等一手来源；
-- 对开源项目核对实际仓库、许可证文件、关键源码与提交可见性；
-- 对闭环能力核对方法、代码路径、工具调用、输出读取和迭代控制证据；
+- 论文结论核对正文、图表、方法、实验与限制，而不只读摘要；
+- 开源项目记录仓库 URL、许可证、核验 commit、关键源码路径和实际调用边界；
+- 路线级判断给出多来源证据、strongest counterexample、evidence gap、hidden assumptions、failure modes、opportunity cost 和 simpler alternative；
 - 文档完成后执行路径检查、字段完整性检查、`git diff --check` 和 Git 状态检查。
-
-## 完成记录
-
-- 完成日期：2026-09-15。
-- 交付位置：`references/task-004/`。
-- 候选池：20 个；已区分直接 PIC、相邻光子器件、EDA/科学 Harness 和通用控制面。
-- Top 5：PhIDO/PhIDO-Agentic、AutoPhotonicDesign、gdsfactory/gplugins、MetaChat、OpenROAD-MCP；每项均有论文或官方代码一手证据。
-- Top 3 对抗性审查：PhIDO/PhIDO-Agentic、AutoPhotonicDesign、gdsfactory/gplugins。
-- 关键判断：没有足够证据证明现有项目可直接满足全开源、可复现、物理可信的完整 PIC Design Agent Harness。
-- 开源核验：区分 MIT/BSD/Apache/AGPL 等可识别许可证、公开但未识别根许可证、以及未发现公开仓库三种状态。
-- 闭环核验：区分脚本生成、真实 Tool 接口、局部结果反馈和接近端到端的自动迭代。
-- 未执行：未安装或运行外部候选，未做候选软件/论文实验复现，未启动 L01 最终综述或 `TASK-005`，未实施任何 Agent/MCP/仿真功能。
-- GPT 主对话审查：`ACCEPT`，并给出 `TASK-005` 草案；是否实际启动仍由用户决定。
-- Qwen 渠道纠正：初次 `qwen -c` 错误恢复了 `AI协同` 会话；随后已在项目主对话完成只读复核。该错误及修正均记录在 `references/task-004/search-log.md`。
