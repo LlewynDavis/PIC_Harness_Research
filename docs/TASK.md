@@ -1,5 +1,55 @@
 # 当前唯一执行任务
 
+## TASK-005A：Research Portal MVP
+
+- 状态：`ACTIVE`
+- 启动日期：2026-09-16
+- 前置任务：`TASK-005 = ACCEPTED / CLOSED`
+- 授权来源：用户在当前对话中正式批准。
+- 执行协调器：Codex；主要搭建工作优先委托既有 Qwen 项目主对话，Codex 负责最终复核、运行和截图验收。
+
+### 目标
+
+基于 `references/task-005/` 现有 Markdown，使用 MkDocs Material 建立最小可用的本地 Research Portal。原 Markdown 保持 Source of Truth；Portal 只增加人工阅读层，不修改研究结论或证据。
+
+### 允许范围
+
+- 新增 MkDocs 配置、Portal 首页、必要的轻量 CSS/JavaScript 和依赖/启动说明；
+- 通过链接、导航或构建时映射访问现有 `references/task-005/` Markdown；
+- 为长表格增加横向滚动，为 Mermaid 增加本地渲染支持；
+- 本地安装仅用于验证的 Python 文档依赖；
+- 更新本任务状态和当前事实源。
+
+### 禁止范围
+
+- 不重写、删除或复制改写 `references/task-005/` 的研究内容；
+- 不新增研究结论；
+- 不引入 React、Vue、数据库或后端服务；
+- 不实现 Agent、Tool、MCP、DesignSpec、RESULT、benchmark 或仿真功能；
+- 不访问或修改 `D:\AI_PIC_Demo`；
+- 不启动 TASK-006。
+
+### 首页与导航验收
+
+首页须在 5–10 分钟内覆盖：一句话结论、技术地图、Capability Matrix、Reference Architecture V0、Research Gap → Entry Point、5 个 Route Seeds 和 Evidence/Source Log 入口。左侧导航按 Overview、Technical Map、Capability Matrix、Reference Architecture、Research Gaps、Candidate Routes、Evidence & Sources 组织。详细证据链接到原 Markdown。
+
+### 验证方法
+
+- `mkdocs build --strict` 成功；
+- 本地 `mkdocs serve` 可启动并访问；
+- 浏览器检查首页、导航、原始 Markdown 链接、横向表格和 Mermaid；
+- 保存页面截图；
+- 核对 `references/task-005/` 原文件未被修改；
+- 执行 `git diff --check` 并形成干净 commit。
+
+### 完成回传
+
+完成后进入 `TASK-005A_REVIEW_READY`，附启动方式、页面结构和截图。用户验收前不启动 TASK-006。
+
+---
+
+# 前置已关闭任务记录
+
 ## TASK-005：L01 核心架构深挖与 PIC Harness 技术路线收敛
 
 - 状态：`ACCEPTED / CLOSED`
