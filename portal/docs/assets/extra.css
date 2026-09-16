@@ -1,0 +1,26 @@
+.sot-note {
+  margin: 0 0 1.25rem;
+  padding: 0.55rem 0.85rem;
+  border-left: 3px solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.md-typeset__table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: max-content;
+  min-width: 100%;
+}
+
+.mermaid {
+  overflow-x: auto;
+  text-align: center;
+}

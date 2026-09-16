@@ -1,0 +1,71 @@
+site_name: PIC 执行框架研究门户（PIC Harness Research Portal）
+site_description: TASK-005 核心架构深挖的本地人工阅读层
+
+docs_dir: portal/docs
+site_dir: portal/site
+use_directory_urls: false
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path:
+        - .
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+plugins:
+  - search
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/mermaid-init.js
+
+nav:
+  - 总览:
+      - 首页: index.md
+      - 审查材料总览: review-package.md
+  - 技术层级地图: technical-map-and-objects.md
+  - 能力矩阵: capability-and-verification-matrix.md
+  - 参考架构: reference-architecture-v0.md
+  - 研究缺口: research-gaps-and-route-seeds.md
+  - 候选路线: candidate-routes.md
+  - 证据与来源: source-log.md

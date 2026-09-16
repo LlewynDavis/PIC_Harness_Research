@@ -59,3 +59,15 @@ python -c "import pic_harness"
 ```
 
 开始任何工作前，请阅读 `AGENTS.md`、`docs/CURRENT_STATE.md`、`docs/TASK.md` 和 `docs/DECISIONS.md`。
+
+## 研究门户（Research Portal）
+
+TASK-005 研究材料可通过本地 MkDocs Material 门户阅读。PowerShell 启动方式：
+
+```powershell
+cd G:\PIC_Harness_Research
+.\portal\setup.ps1
+.\portal\serve.ps1
+```
+
+浏览器打开 `http://127.0.0.1:8000/`。原始研究内容仍以 `references/task-005/` 为唯一事实源（Source of Truth）。

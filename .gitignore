@@ -30,3 +30,7 @@ experiments/**/raw/
 experiments/**/outputs/
 *.log
 secrets.*
+
+# TASK-005A Research Portal local outputs
+.playwright-cli/
+portal/site/

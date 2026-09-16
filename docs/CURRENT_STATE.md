@@ -23,6 +23,9 @@
 - GPT 要求后续保留四项约束：先区分 device-level 与 circuit-level；verification 的诚实上限为 research-grade deterministic verification；区分实现复用与架构模式复用；DesignSpec 必须通过对照实验验证价值，不能预设为核心创新。
 - `TASK-006 = NOT_STARTED`，尚未获得用户启动指令。
 - 用户已正式启动 `TASK-005A｜Research Portal MVP`：仅用 MkDocs Material 为 `references/task-005/` 增加本地人工阅读层，原研究 Markdown 保持 Source of Truth，不增加研究结论。
+- 已完成 `TASK-005A` 的最小门户实现：MkDocs Material 首页覆盖核心结论、技术地图、Capability Matrix、Reference Architecture V0、Research Gap → Entry Point、5 个路线种子和证据入口；左侧导航可进入原始研究材料的构建时嵌入页。
+- 已通过 `mkdocs build --strict`、本地服务访问和真实浏览器检查；Mermaid 已渲染为 SVG，宽表格容器为横向滚动，验收截图位于 `output/playwright/`。`references/task-005/` 未被修改。
+- `TASK-005A = TASK-005A_REVIEW_READY`，等待用户验收；`TASK-006 = NOT_STARTED`。
 - 本轮 Qwen 科研子任务通过既有项目主对话下达，未使用“AI协同”通道，也未新建多余科研对话。其只读输出未被直接采用，Codex 已用固定 commit 源码和论文正文复核并纠正关键字段。
 - 已纠正 Qwen 渠道记录：初次科研召回实际因 `qwen -c` 误入 `AI协同` 会话，随后已在既有 Qwen 项目主对话完成只读复核；该误用不再被表述为独立科研会话。
 
@@ -42,7 +45,7 @@
 
 ## 当前证据边界
 
-本仓库当前证明项目骨架、双模型治理规则、一次人工三方对齐以及 `TASK-004`、`TASK-005` 的公开证据调研已经完成并获 GPT 验收。核心源码核验固定在交付物记录的 commit；没有候选在本仓库中被执行，因此不构成模型接入、软件复现、物理验证或科研实验。论文作者报告的指标不得当作本项目实验结果。当前没有 ACTIVE 执行任务，`TASK-006 = NOT_STARTED`。
+本仓库当前证明项目骨架、双模型治理规则、一次人工三方对齐以及 `TASK-004`、`TASK-005` 的公开证据调研已经完成并获 GPT 验收；`TASK-005A` 已形成仅供人工阅读的 MkDocs Material 门户并进入用户验收。核心源码核验固定在交付物记录的 commit；没有候选在本仓库中被执行，因此不构成模型接入、软件复现、物理验证或科研实验。论文作者报告的指标不得当作本项目实验结果。当前唯一待验收任务为 `TASK-005A_REVIEW_READY`，`TASK-006 = NOT_STARTED`。
 
 ## 更新规则
 

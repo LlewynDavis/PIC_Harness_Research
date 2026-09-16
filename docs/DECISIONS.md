@@ -45,3 +45,11 @@
 - 边界：该入口只用于 GPT、Codex 与 Qwen 之间的基线、任务边界和争议对齐，以及相关证据转述；不用于向 Qwen 下达科研执行任务，不自动授权任务、不替代仓库事实源，也不代表已经实现自动消息桥或运行时 Multi-Agent。Qwen 科研任务优先复用项目主对话，只有上下文隔离确有必要时才新建对话，并尽量减少对话数量。
 - 核验：GPT 与 Qwen 均在第二轮互相读回后返回 `FINAL_ALIGN_ACK`，基线为 `1b0745128d0b4486f514b06d8053763e3ab451d9`，任务为 `TASK-003`，分歧为 `none`。
 - 局限：GPT 对话不能独立读取本地 Git；本次 Qwen 通道没有 shell 工具，不能独立核验工作区洁净状态；Codex 负责提供本地 Git 证据。
+
+## DEC-007：TASK-005 Research Portal 采用只读展示层
+
+- 状态：`ACCEPTED`
+- 日期：2026-09-16
+- 决策：使用 MkDocs Material 为 `references/task-005/` 增加本地人工阅读门户；原 Markdown 继续作为唯一研究内容事实源，门户只提供首页摘要、导航、构建时嵌入和可视化样式。
+- 边界：不引入 React、Vue、数据库或后端，不新增研究结论，不实现任何 Agent、Tool、MCP、仿真或 benchmark 功能；Mermaid 图仅可视化已有 Reference Architecture V0。
+- 理由：用最小复杂度改善 TASK-005 审查材料的可读性，同时避免展示层与研究事实形成两套内容。
