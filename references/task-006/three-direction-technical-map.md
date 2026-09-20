@@ -1,77 +1,80 @@
 # 三方向技术地图
 
-## A｜DAS 光电混合集成
+## A｜DAS 光电混合集成 × 面向智能体的 PIC 设计
+
+这里的 DAS 指分布式声学传感（Distributed Acoustic Sensing），PIC 指光子集成电路（Photonic Integrated Circuit）。本方向研究的不是单纯集成 DAS 器件，而是：**人工智能智能体能否把 DAS 系统需求转化为可仿真、可验证、可追溯的光电混合集成芯片设计。**
 
 ```text
-窄线宽光源 / 稳频
-→ 高消光比脉冲或扫频调制
-→ 传感光纤中的 Rayleigh 回波
-→ 双偏振 I/Q 相干接收
-→ ADC / DSP / 相位解调
-→ 位置、应变与声学事件
+DAS 系统需求
+→ 人工智能澄清距离、分辨率、灵敏度、带宽和成本
+→ 结构化设计约束与光电混合架构
+→ 芯片、电子、封装和信号处理参数分配
+→ 确定性工具建模、仿真、版图与规则检查
+→ DAS 系统指标评价
+→ 失败归因、修正或人工介入
 ```
 
-| 路线 | 代表证据 | 实际达到 | 主要缺口 |
+| 物理基线项目 | 已证明的部分 | 对人工智能设计提出的任务 | 仍需验证 |
 |---|---|---|---|
-| SOI 专用收发 interrogator | Jin et al. 2024, `10.1364/PRJ.512298` | `AUTHOR CLAIM`：12.1 km/59 pε/√Hz/1.14 m；49 km/81 pε/√Hz/3.78 m | 激光、放大、环行器、采集/DSP、封装与长期稳定性仍片外或未完整报告 |
-| 专用高消光 EOM | Cheng et al. 2023, `10.1038/s41467-023-43244-9` | `AUTHOR CLAIM`：68 dB，接入 2 km DAS 达 4 pε/√Hz | 只替换调制子模块；无频移，不能代表完整 interrogator |
-| 通信 coherent PIC 复用 | Sandmann et al. 2023, arXiv:2306.04199 | `AUTHOR CLAIM`：20 km C-OTDR，最高展示 1.75 kHz 声学信号 | 通信器件的高带宽不自动满足 DAS 的低相噪、高 ER 与低漂移 |
-| 微梳并行 DAS | Li et al. 2024, `10.1126/sciadv.adf8666` | `AUTHOR CLAIM`：10 路相干累加，560 fε/√Hz@1 kHz、5 m | 双 soliton、泵浦、WDM、探测与 DSP 复杂，系统成本边界不完整 |
-| 混合集成激光 + SiN/SOI | Idjadi 2025；Jin 2026 | 已进入 37 km φ-OFDR 与 10 km 混合 interrogator 演示 | 会议级证据较多；异质集成、锁定、热控和封装门槛高 |
+| SOI（绝缘体上硅）集成解调器 | 片上调制、偏振处理、双偏振同相/正交相干接收进入真实 DAS 实验 | 从系统指标反推芯片结构、接收通道、分光比、探测和电子接口 | 人工智能能否正确完成约束传播；外部激光、放大、采集和长期稳定性 |
+| 超高消光比硅基电光调制器 | 68 dB 消光比器件进入 2 km DAS 对照实验 | 在消光比、插损、热漂移、带宽、功耗和尺寸之间做多目标设计 | 是否优于人工/固定规则；谐振热稳定性和无频移限制 |
+| 通信相干收发芯片复用 | 集成通信收发器完成 20 km 声学传感概念验证 | 判断通信器件哪些参数可复用、哪些必须为传感重设计 | 高通信带宽不自动满足低相位噪声、高动态范围和低漂移 |
+| 微梳并行 DAS | 多波长相干累加提高灵敏度 | 搜索通道数、梳齿、波分、探测和数字处理之间的系统折中 | 光源、泵浦、控制、封装和完整功耗复杂 |
+| 混合集成激光 + 氮化硅/硅光 | 窄线宽/双波长混合集成激光进入 37 km 与 10 km 演示 | 联合设计增益芯片、稳频、收发、热控和封装 | 会议证据、制造良率、锁定和长期稳定性不足 |
 
-`FACT`：已有 PIC 真正进入 DAS 端到端实验。`INFERENCE`：最成熟的公开基线仍是“片上收发核心 + 大量片外光电与 DSP”，不能称全芯片 DAS。
+`FACT（事实）`：已有 PIC 真正进入 DAS 端到端实验。`UNKNOWN（未知）`：尚未找到公开证据证明人工智能智能体已经端到端设计并物理验证一款 DAS 光电混合集成芯片。详细项目、人工智能设计任务和验证要求见[交叉场景详解](/task-006-das-agentic.html)。
 
 ### 系统需求 → 芯片指标
 
-| DAS 需求 | PIC / 电子指标 | 不可省略的系统因素 |
+| DAS 需求 | PIC / 电子指标 | 人工智能必须处理的系统因素 |
 |---|---|---|
-| 距离 | 激光频噪/相干长度、耦合和波导损耗、PD/TIA 噪声、LO 功率 | EDFA、环行器、光纤损耗、非线性 |
+| 距离 | 激光频率噪声/相干长度、耦合和波导损耗、光电探测器/跨阻放大器噪声、本振功率 | 掺铒光纤放大器、环行器、光纤损耗、非线性 |
 | 空间分辨率 | 脉冲边沿/宽度或扫频带宽、调制带宽 | 采样、窗函数与解调算法 |
-| 应变灵敏度 | ER、RIN、相位噪声、BPD CMRR、ADC ENOB | gauge length、频率、距离和单位口径 |
-| 偏振 fading | PBS/PBRS、双偏振 90° hybrid、通道匹配 | 输入 SOP、MIMO/融合算法 |
-| 可靠性 | 微环/干涉仪热漂移、bias、laser lock、耦合漂移 | TEC、控制器、重锁与长期现场数据 |
-| SWaP / 成本 | 裸片面积与光电功耗 | driver、TEC、封装、FPGA/ADC、外部光学 BOM |
+| 应变灵敏度 | 消光比、相对强度噪声、相位噪声、平衡光电探测器共模抑制比、模数转换器有效位数 | 标距、频率、距离和单位口径 |
+| 偏振衰落 | 偏振分束/旋转分束、双偏振 90° 光学混合器、通道匹配 | 输入偏振态、多输入多输出/融合算法 |
+| 可靠性 | 微环/干涉仪热漂移、偏置、激光锁定、耦合漂移 | 热电制冷器、控制器、重锁与长期现场数据 |
+| 尺寸、重量、功耗与成本 | 裸片面积与光电功耗 | 驱动器、热电制冷器、封装、现场可编程门阵列、模数转换器和外部光学物料清单 |
 
-## B｜Photonic AI Computing
+## B｜光子人工智能计算（Photonic AI Computing）
 
 ```text
-MZI / coherent mesh ─┐
-MRR / WDM / microcomb├→ 光子线性核 → O/E → 电子非线性、存储、控制
-衍射 / slab / free-space┘
+马赫-曾德尔干涉仪 / 相干网格 ─┐
+微环谐振器 / 波分复用 / 微梳  ├→ 光子线性核 → 光电转换 → 电子非线性、存储和控制
+衍射 / 平板波导 / 自由空间   ┘
 ```
 
 | 路线 | 代表证据 | 实际达到 | 主要缺口 |
 |---|---|---|---|
-| MZI / 相干 mesh | Ashtiani 2022；PACE 2025；Ahmed 2025 | 从小规模端到端分类到 64×64 MVM 和真实模型运行 | 相位漂移、O(N²) 调谐、插损、EIC/封装、校准功耗 |
-| MRR / WDM / microcomb | Xu 2021；Bai 2023；Netcast 2022 | 高并行卷积、权重库与分布式 MVM | 谐振热漂移、工艺偏差、comb/laser、DAC/ADC 和系统总功耗 |
-| 衍射 / 自由空间 / slab | ACCEL 2023；TDONN 2024；Taichi 2024 | 任务级系统、片上可训练衍射和多 chiplet 演示 | 可重构代价、对准、任务专用性、非线性和控制 |
+| 马赫-曾德尔干涉仪 / 相干网格 | Ashtiani 2022；PACE 2025；Ahmed 2025 | 从小规模端到端分类到 64×64 矩阵—向量乘法和真实模型运行 | 相位漂移、平方级调谐增长、插损、电子集成电路/封装和校准功耗 |
+| 微环谐振器 / 波分复用 / 微梳 | Xu 2021；Bai 2023；Netcast 2022 | 高并行卷积、权重库与分布式矩阵—向量乘法 | 谐振热漂移、工艺偏差、微梳/激光、数模/模数转换和系统总功耗 |
+| 衍射 / 自由空间 / 平板波导 | ACCEL 2023；TDONN 2024；Taichi 2024 | 任务级系统、片上可训练衍射和多芯粒演示 | 可重构代价、对准、任务专用性、非线性和控制 |
 | 光电混合完整系统 | Netcast、ACCEL、PACE、Lightmatter | `FACT`：真实模型/真实任务已经运行 | 没有统一的系统边界、同任务/同精度/同工艺公平基线 |
 
-`FACT`：该方向已越过“只有概念或 MNIST”的阶段。`INFERENCE`：竞争焦点已经从单个光学核扩展到封装、校准、编译、数据移动和真实模型精度，但跨平台系统优势仍未得到统一证明。
+`FACT（事实）`：该方向已经运行真实模型和真实任务。`INFERENCE（推论）`：竞争焦点已从单个光学核扩展到封装、校准、编译、数据移动和任务精度，但跨平台系统优势仍未得到统一证明。十二个代表项目的逐项说明见[光子人工智能计算代表项目详解](/task-006-photonic-ai-projects.html)。
 
-## C｜Agentic PIC Design
+## C｜面向智能体的 PIC 设计（Agentic PIC Design）
 
 ```text
-Requirement
-→ minimal DesignSpec / constraints
-→ Planner / Harness
-→ typed Tool Adapter
-→ deterministic PIC tools
-→ RESULT + raw artifacts
-→ layered Evaluator
-→ State / retry / human escalation
+设计需求
+→ 最小设计规格与约束
+→ 规划器与执行框架
+→ 类型化工具适配器
+→ 确定性 PIC 工具
+→ 结构化结果与原始产物
+→ 分层评价器
+→ 状态、重试与人工升级
 ```
 
-| 子方向 | 当前基础 | 尚未解决 |
-|---|---|---|
-| DesignSpec / typed IR | PhIDO DSL、gdsfactory typed netlist、PICBench JSON | 是否优于直接 Python/YAML 尚无因果性实验 |
-| Tool / Solver Adapter | gdsfactory/gplugins API、OpenROAD-MCP 模式 | PIC 特定单位、权限、预算、错误分类和证据承诺不统一 |
-| RESULT / Evidence Ledger | 多项目各有局部日志/结果 | 统一 envelope 是否改善重放、诊断与复核尚未验证 |
-| Adaptive Tool Calling | 有候选假设和对照框架 | uncertainty proxy、决策阈值和正确率—成本关系未知 |
-| Verification / Benchmark | PICBench circuit-level；TASK-005 ladder | 缺 geometry/DRC/物理分层、等预算与失败归因 |
-| Failure Recovery | 多系统有局部 retry/session | 缺跨工具 failure taxonomy、rollback、termination 与收益实验 |
-| 科学方法 → Tool 构建 | Paper2Agent 论文与固定提交源码展示了从可执行研究资产到 typed MCP Tool、参考运行、独立验证和追溯记录的流程 | 未见 PIC/EDA/PDK 公开验证；参考行为一致不等于物理或制造正确；相对手写成熟 API wrapper 的收益未知 |
+| 代表项目 | 主要能力 | 实际验证上限 | 对 DAS 交叉场景的作用 |
+|---|---|---|---|
+| PhIDO / PhIDO-Agentic | 自然语言、结构化电路、版图、电路仿真、工具编排 | 电路级仿真与通用规则检查 | 需求结构化和设计流程基线 |
+| AutoPhotonicDesign | 编程智能体调用真实求解器优化器件 | 全波仿真；初始化仍可能需专家 | DAS 器件优化与回退机制 |
+| gdsfactory + gplugins | 版图、工艺设计套件、紧凑模型和求解器适配 | 工具能力，不是智能体设计证明 | 最小确定性工具层 |
+| PICBench | 自然语言电路生成和自动评价 | SAX 电路紧凑模型 | DAS 分层基准组织参照 |
+| OpenROAD-MCP | 权限、会话、超时和结构化错误 | 电子设计自动化机制参照 | 专业工具安全调用机制 |
+| MetaChat | 材料智能体、代理模型和梯度优化 | 相邻超表面领域的代理/抽查验证 | 快速候选筛选与适用域参照 |
+| Paper2Agent | 从研究代码生成带测试与追溯的工具 | 未见 PIC/EDA 公开验证 | DAS 算法和脚本接入候选 |
 
-`FACT`：现有项目各自覆盖局部能力。`INFERENCE`：当前最可证伪的切口是先建立可信评价基座，再检验 typed IR 或 adaptive tool calling，而不是先造完整 Harness。
+`FACT（事实）`：现有项目各自覆盖局部能力，没有单一项目已经实现人工智能设计 DAS 光电混合集成芯片。逐项目的输入输出、技术流程、真实完成度、依赖、可借鉴机制和局限见[面向智能体的 PIC 设计代表项目详解](/task-006-agentic-projects.html)。
 
-Paper2Agent 的正式候选记录见[科学计算工具自动构建与验证](/task-006-paper2agent.html)。它位于 Tool Registry/Adapter 的**构建与验证入口**，不改变当前路线排序，也不代表已选择自动工具生成。
+Paper2Agent 的专项记录见[科学计算工具自动构建与验证](/task-006-paper2agent.html)。它位于工具注册与适配层的**构建和验证入口**，不代表已经选择自动工具生成。

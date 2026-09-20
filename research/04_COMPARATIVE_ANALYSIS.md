@@ -7,6 +7,9 @@
 ## TASK-006 输出入口
 
 - `references/task-006/three-direction-technical-map.md`
+- `references/task-006/das-agentic-intersection.md`
+- `references/task-006/photonic-ai-projects.md`
+- `references/task-006/agentic-pic-projects.md`
 - `references/task-006/comparative-analysis-matrix.md`
 - `references/task-006/candidate-research-routes.md`
 - `references/task-006/critical-review-and-conditions.md`

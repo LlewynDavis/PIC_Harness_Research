@@ -1,6 +1,8 @@
 # 一手证据与来源
 
-## DAS 光电混合集成
+## DAS 光电混合集成 × 面向智能体的 PIC 设计
+
+下列论文证明 DAS 光子芯片和子模块的物理基线，不证明人工智能已经完成相关设计。人工智能任务映射属于本项目 `INFERENCE（推论）`，必须由后续受控实验验证。
 
 | 对象 | 来源 | 本轮用途 | 证据边界 |
 |---|---|---|---|
@@ -13,7 +15,7 @@
 | Ip et al., 2022 | [JLT](https://doi.org/10.1109/JLT.2022.3219369) | 1007 km 非 PIC 反例 | 证明距离不由 PIC 集成自然带来 |
 | Lin & Shi, 2022 | [Optics Letters](https://doi.org/10.1364/OL.460314) | FBG interrogator negative control | 不是 Rayleigh DAS |
 
-## Photonic AI Computing
+## 光子人工智能计算（Photonic AI Computing）
 
 | 对象 | 来源 | 本轮用途 | 证据边界 |
 |---|---|---|---|
@@ -30,12 +32,14 @@
 | Ahmed et al., 2025 | [Nature](https://doi.org/10.1038/s41586-025-08854-x) / [官方代码与数据](https://github.com/lightmatter-ai/upaia-paper-2025) | 真实模型与完整软件/硬件系统 | 不同任务精度损失差异大 |
 | Zhou et al., 2025 | [Nature Communications](https://doi.org/10.1038/s41467-025-65356-0) | 深层模型映射 | 单层芯片复用，不是数百物理层单片集成 |
 
-## Agentic PIC Design
+## 面向智能体的 PIC 设计（Agentic PIC Design）
 
 - [TASK-005 技术地图与对象拆解](/technical-map-and-objects.html)
 - [TASK-005 能力与验证矩阵](/capability-and-verification-matrix.html)
 - [TASK-005 参考架构 V0](/reference-architecture-v0.html)
 - [TASK-005 研究缺口与路线种子](/research-gaps-and-route-seeds.html)
+
+2026-09-20 远程主分支只读核对：PhIDO `6a8b8d6`、PhIDO-Agentic `4f4e671`、AutoPhotonicDesign `3b26505`、PICBench `ae1fb90`、Paper2Agent `8c2d059` 与既有记录一致；gdsfactory/gplugins 已分别更新为 `19e65ad` / `b454f1e`，最新差异未逐行重审，不能沿用旧提交的 `CODE VERIFIED（源码核验）` 标签覆盖新增内容。
 
 | 对象 | 来源 | 本轮用途 | 证据边界 |
 |---|---|---|---|

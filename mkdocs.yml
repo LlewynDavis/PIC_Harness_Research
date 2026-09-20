@@ -64,6 +64,9 @@ nav:
       - 首页: index.md
       - 审查包: task-006-overview.md
       - 三方向技术地图: task-006-technical-map.md
+      - DAS × 智能体设计: task-006-das-agentic.md
+      - 光子人工智能计算项目: task-006-photonic-ai-projects.md
+      - 智能体 PIC 项目: task-006-agentic-projects.md
       - 跨方向与内部比较: task-006-comparison.md
       - Paper2Agent 候选技术: task-006-paper2agent.md
       - 候选研究路线: task-006-routes.md

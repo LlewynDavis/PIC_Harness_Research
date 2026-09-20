@@ -16,8 +16,8 @@
 6. 光子芯片设计、仿真、优化和验证工具接入；
 7. Single-Agent 与 Multi-Agent；
 8. Agent benchmark 与科研实验；
-9. DAS 光电混合集成设计作为潜在验证场景；
-10. Photonic AI Computing 作为潜在扩展方向。
+9. DAS 光电混合集成 × 面向智能体的 PIC 设计，作为“人工智能设计 DAS 光电混合集成芯片”的潜在交叉验证场景；
+10. 光子人工智能计算（Photonic AI Computing）作为潜在扩展方向。
 
 这些是研究候选方向，不代表当前已经实现，也不构成提前建设复杂系统的依据。
 

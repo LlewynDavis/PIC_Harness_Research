@@ -7,10 +7,10 @@
 | Python、MATLAB、COMSOL、Lumerical、gdsfactory、PIC 自动化经验 | `USER-PROVIDED / 版本与许可证待核` | 支持三路线的早期建模；不能据此断言商业 solver/模块当前可用 |
 | LLM API / 本地模型、稳定调用预算 | `UNKNOWN` | Route 1 的正式对照实验前必须确认 |
 | gdsfactory/gplugins、SAX、KLayout 的安装版本 | `UNKNOWN` | Route 1 evaluator 与 Tool baseline 前必须固定 |
-| SOI / SiN / LNOI PDK、规则 deck、LVS/signoff | `UNKNOWN` | 决定 Route 2/3 能否越过抽象模型与公开 PDK |
+| 绝缘体上硅 / 氮化硅 / 薄膜铌酸锂工艺设计套件、规则文件、版图网表一致性检查/签核 | `UNKNOWN` | 决定路线 2/3 能否越过抽象模型与公开工艺设计套件 |
 | foundry / MPW / tapeout 经费和时间 | `UNKNOWN` | 未确认前不得把流片写入最小实验承诺 |
 | 封装、fiber array、wire bonding、TEC | `UNKNOWN` | DAS 和 Photonic AI 实验的关键瓶颈 |
-| DAS：窄线宽激光、EDFA、环行器、AWG/ADC、长光纤、PZT | `UNKNOWN` | 未确认时 Route 2 只做模型与公开数据校准 |
+| DAS：窄线宽激光、掺铒光纤放大器、环行器、数模/模数转换器、长光纤、压电陶瓷 | `UNKNOWN` | 未确认时路线 2 只做人工智能约束传播、模型和公开数据校准 |
 | PAC：高速 DAC/ADC、FPGA、微梳、探测/TIA、光电封装 | `UNKNOWN` | 未确认时 Route 3 只做小型器件—任务联合仿真 |
 | GPU/工作站/集群规格 | `UNKNOWN` | 影响 Monte Carlo、全波仿真与 LLM benchmark 规模 |
 
@@ -68,5 +68,5 @@
 ## 机会成本
 
 - 选择 Route 1：可能牺牲器件/硬件新颖性，但最快获得可复现实验和方法论基线。
-- 选择 Route 2：应用叙事清晰，但硬件和系统参数缺口可能使研究停留在模型校准。
+- 选择路线 2：直接对应人工智能设计 DAS 芯片目标，但专家标准答案、硬件和系统参数缺口可能使研究停留在子系统约束传播与模型校准。
 - 选择 Route 3：文献与工具基础丰富，但竞争激烈，必须用可追溯误差链和公平边界避免增量工作。
