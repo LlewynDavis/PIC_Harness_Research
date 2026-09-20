@@ -1,8 +1,90 @@
 # 当前唯一执行任务
 
+## TASK-006：三方向比较与候选研究路线收敛
+
+- 状态：`TASK-006_REVIEW_READY`
+- 首次启动日期：2026-09-17；综合路线任务确认日期：2026-09-20
+- 起始提交：`0da0996543cff09f17751472f8e53efd2a8b8be9`
+- 前置任务：`TASK-004 / TASK-005 / TASK-005A = ACCEPTED / CLOSED`
+- 授权来源：用户提供完整 TASK-006 规格并要求在已有工作基础上继续执行。
+- 执行协调器：Codex；Qwen 项目主对话承担有收益的独立只读子任务，结果须由 Codex 复核。
+
+### 目标
+
+在 Phase 1 范围内比较 DAS 光电混合集成、Photonic AI Computing 与 Agentic PIC Design 三条研究线，并完成跨方向与 Agentic PIC 内部切入点比较，最终提出 2–3 条可开展最小验证实验的候选研究路线。
+
+### 现有基础
+
+- `research/03_AGENTIC_PIC_DESIGN.md` 已形成模型内化/Harness 外化、RQ-01 至 RQ-06、Benchmark 与失败归因候选框架；
+- `research/04_COMPARATIVE_ANALYSIS.md` 已形成横向比较维度草案；
+- TASK-004/005 已验收证据继续有效，不重新开展无边界扫描；
+- 上述内容是本轮输入，不是已经完成综合路线收敛的证明。
+
+### 允许范围
+
+- 补充 2021–2026 DAS 与 Photonic AI Computing 的一手文献和官方证据；
+- 继续整理 Agentic PIC Design 的研究缺口、内部子方向和最小实验；
+- 新增 `references/task-006/` 调研、比较、路线、证据与对抗性审查 Markdown；
+- 更新 `research/`、`docs/` 与现有 MkDocs Research Portal 的阅读入口；
+- 使用 `nature-academic-search`、`nature-reader`、`scientific-critical-thinking` 和范围稳定后的 `literature-review`；
+- 更新事实源并形成可追溯 Git 提交。
+
+### 禁止范围
+
+- 不实现 Agent、MCP、Tool Adapter、simulator、benchmark 或新的 PIC Harness 功能；
+- 不运行正式仿真、工程实验或物理验证；
+- 不把外部论文指标表述为本项目实验结果；
+- 不把未确认的软件许可证、算力、PDK、流片、封装或测试条件视为已具备；
+- 不修改或访问 `D:\AI_PIC_Demo`；
+- 不启动 TASK-007，不撰写最终 L01 报告。
+
+### 核心交付物
+
+1. 三方向领域全景与技术地图；
+2. 跨方向 Comparative Analysis Matrix 与 Agentic PIC 内部比较；
+3. 研究条件确认矩阵；
+4. 2–3 条 Candidate Research Routes；
+5. 每条路线的最小验证实验、成功/失败判据、风险与简化替代方案；
+6. 路线级对抗性审查、关键证据链与 strongest counterexamples；
+7. Research Portal 阅读入口。
+
+### 证据与验收规则
+
+- 核心判断标记 `FACT / AUTHOR CLAIM / CODE VERIFIED / INFERENCE / UNKNOWN`；
+- 三方向均须给出技术路线、代表工作、实际能力、限制和 Research Gap；
+- Agentic PIC 内部须比较 DesignSpec/IR、Tool/Solver Adapter、RESULT/Evidence Ledger、Adaptive Tool Calling、Verification/Benchmark 与 Failure Recovery；
+- 必须区分理论、数值仿真、芯片实验、完整系统，以及 device-level 与 circuit/system-level；
+- 候选路线必须从证据推导，不能只是开源项目拼装；
+- 完成后进入 `TASK-006_REVIEW_READY`，附 Git、门户、关键证据、反例和待导师/李师兄确认条件；用户验收前不启动 TASK-007。
+
+### 完成记录
+
+- 完成日期：2026-09-20。
+- 交付目录：`references/task-006/`；门户入口位于 `portal/docs/task-006-*.md`。
+- 已形成三方向技术地图、跨方向矩阵、Agentic PIC 内部比较、条件确认矩阵、三条候选路线、最小实验及成败判据、路线级反例和一手来源日志。
+- Qwen 通过既有项目主对话完成 DAS/PAC 只读候选整理；Codex 已纠正其 arXiv DAS 覆盖不足，并回到 Optica、Nature、Science、IEEE 等一手来源复核。
+- 未执行 Agent/benchmark/simulator 实现、正式仿真、流片、封装或物理实验；外部作者指标均未复算。
+- 当前只进入审查，不启动 TASK-007。
+
+### 延后研究事项（不属于当前执行范围）
+
+#### Jev 类有限决策模型在 PIC Agent Harness 中的适用性
+
+- 状态：`DEFERRED`。
+- 候选用途：未来可评估其作为 Harness 决策组件，用于工具路由、失败分类和自适应 Tool Calling 等场景。
+- 比较要求：与确定性规则以及现有通用 LLM/Qwen 方案进行受控比较，判断是否确实带来准确性、可靠性、成本或效率收益。
+- 证据边界：目前没有 PIC 场景下的充分验证证据，不将其确定为技术路线或核心创新点。
+- 触发时机：完成主要领域调研并开始收敛技术路线，或准备设计工具路由、失败分类、自适应 Tool Calling 对照实验时。
+- 触发动作：Codex 应主动询问用户：“此前记录了 Jev 类有限决策模型这一候选方案。当前是否需要将其纳入技术比较或实验设计？”
+- 授权边界：用户确认前，不启动 Jev 专项调研，不安装、接入或实现 Jev，也不为此创建新的执行任务。
+
+---
+
+# 前置已关闭任务记录
+
 ## TASK-005A：Research Portal MVP
 
-- 状态：`TASK-005A_REVIEW_READY`
+- 状态：`ACCEPTED / CLOSED`
 - 启动日期：2026-09-16
 - 前置任务：`TASK-005 = ACCEPTED / CLOSED`
 - 授权来源：用户在当前对话中正式批准。
@@ -55,11 +137,13 @@
 - `references/task-005/` 未修改；门户通过构建时嵌入和链接读取原 Markdown，不复制改写研究结论。
 - Qwen 项目主对话只提供信息架构、文件结构和验证清单草案；由于该会话无 shell/写入能力，实际文件修改、MkDocs 配置纠错、浏览器验证和截图均由 Codex 完成。Codex 已纠正其不适用的 snippet 语法和 Mermaid formatter 名称。
 - 已验证：`mkdocs build --strict` 成功；本地服务可访问；首页、七组导航、证据页、宽表格横向滚动和 Mermaid SVG 均经真实浏览器检查；截图位于 `output/playwright/`。
-- 未启动 TASK-006；用户验收前本任务保持 `TASK-005A_REVIEW_READY`。
+- 在 `TASK-005A` 交接提交形成时尚未启动 TASK-006；此项只记录当时状态，不覆盖用户随后对 TASK-006 的明确启动授权。
+- GPT 验收：2026-09-20 针对提交 `0da0996543cff09f17751472f8e53efd2a8b8be9` 返回 `TASK-005A_ACCEPTED`，状态为 `ACCEPTED / CLOSED`。
+- 验收结论：本地构建、页面访问、内容展示和原始证据保留符合要求；原 Markdown 继续作为 Source of Truth，MkDocs 作为统一阅读展示层。
+- 关闭边界：不再为 TASK-005A 增加非必要功能；后续调研可以复用当前展示结构，但不得据此扩大网页工程范围。
+- 后续状态：保留已经启动的 `TASK-006`，不得重置为 `NOT_STARTED`，也无需重新启动或重复创建。
 
 ---
-
-# 前置已关闭任务记录
 
 ## TASK-005：L01 核心架构深挖与 PIC Harness 技术路线收敛
 
@@ -190,4 +274,4 @@ G. 3–5 个 Candidate Route Seeds，暂不最终确定路线。
 - 未执行：候选代码、solver、DRC、benchmark 或物理实验；外部论文指标均未复算。
 - GPT 验收：2026-09-16 返回 `ACCEPT`，无需打回修改。
 - 后续约束：TASK-006 必须先区分 device-level 与 circuit-level；verification 使用 `Research-grade deterministic verification` 的诚实上限；正式报告区分 implementation reuse 与 architecture-pattern reuse；DesignSpec 仍是待实验验证的工程假设，不得预设为科研创新。
-- 当前边界：`TASK-006 = NOT_STARTED`。本次验收不自动授权启动 TASK-006。
+- 验收当时边界：`TASK-006 = NOT_STARTED`。该句记录 TASK-005 验收时点；用户后续已独立授权启动 TASK-006。

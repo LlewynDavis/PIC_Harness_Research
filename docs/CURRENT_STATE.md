@@ -1,6 +1,6 @@
 # 当前真实状态
 
-更新日期：2026-09-16
+更新日期：2026-09-20
 
 ## 已完成
 
@@ -21,13 +21,33 @@
 - 已完成 `TASK-005` 的审查包：六对象技术地图/架构拆解、Harness Capability Matrix、Verification Ladder、Reference Architecture V0、RESULT schema V0、最小状态机、Build vs Reuse、Research Gap Matrix、5 个路线种子和路线级对抗性审查，材料位于 `references/task-005/`。
 - GPT 已在项目主对话对 `TASK-005_REVIEW_READY` 返回 `ACCEPT`；`TASK-005 = ACCEPTED / CLOSED`，无需返工。
 - GPT 要求后续保留四项约束：先区分 device-level 与 circuit-level；verification 的诚实上限为 research-grade deterministic verification；区分实现复用与架构模式复用；DesignSpec 必须通过对照实验验证价值，不能预设为核心创新。
-- `TASK-006 = NOT_STARTED`，尚未获得用户启动指令。
+- 用户已于 2026-09-17 明确启动 `TASK-006` 文献框架整合任务；后续验收不得将其重置为 `NOT_STARTED`。
 - 用户已正式启动 `TASK-005A｜Research Portal MVP`：仅用 MkDocs Material 为 `references/task-005/` 增加本地人工阅读层，原研究 Markdown 保持 Source of Truth，不增加研究结论。
 - 已完成 `TASK-005A` 的最小门户实现：MkDocs Material 首页覆盖核心结论、技术地图、Capability Matrix、Reference Architecture V0、Research Gap → Entry Point、5 个路线种子和证据入口；左侧导航可进入原始研究材料的构建时嵌入页。
 - 已通过 `mkdocs build --strict`、本地服务访问和真实浏览器检查；Mermaid 已渲染为 SVG，宽表格容器为横向滚动，验收截图位于 `output/playwright/`。`references/task-005/` 未被修改。
-- `TASK-005A = TASK-005A_REVIEW_READY`，等待用户验收；`TASK-006 = NOT_STARTED`。
+- GPT 已于 2026-09-20 针对提交 `0da0996543cff09f17751472f8e53efd2a8b8be9` 返回 `TASK-005A_ACCEPTED`；`TASK-005A = ACCEPTED / CLOSED`，不再增加非必要功能。
+- `TASK-006` 保持已经启动并进入 `TASK-006_REVIEW_READY` 的实际状态，无需重新启动或重复创建。
 - 本轮 Qwen 科研子任务通过既有项目主对话下达，未使用“AI协同”通道，也未新建多余科研对话。其只读输出未被直接采用，Codex 已用固定 commit 源码和论文正文复核并纠正关键字段。
 - 已纠正 Qwen 渠道记录：初次科研召回实际因 `qwen -c` 误入 `AI协同` 会话，随后已在既有 Qwen 项目主对话完成只读复核；该误用不再被表述为独立科研会话。
+- 已完成 `TASK-006` 审查包：三方向技术地图、跨方向/内部比较、研究条件矩阵、三条候选路线、最小验证实验、对抗性审查与来源日志均位于 `references/task-006/`。
+- 暂定路线优先级为：分层 Agentic PIC 评价基座优先；DAS PIC-aware 约束传播与 Photonic AI 器件误差—任务误差联合验证作为条件路线。该排序是待验收研究判断，不是已授权工程路线。
+- Research Portal 已增加 TASK-006 中文总览与五个专题入口；TASK-005 已验收档案继续保留。
+
+## 当前调研重点
+
+项目仍处于 `Phase 1｜国内外研究现状、发展前景、核心难点和技术路线调研`。Agentic PIC Design 调研新增：
+
+- Model vs Harness 能力边界；
+- Internalization vs Externalization；
+- Adaptive Tool Calling；
+- Uncertainty-aware Agent；
+- PIC Agent Benchmark。
+
+上述内容均为候选理论框架、研究问题或待验证假设，不增加任何实现状态。
+
+## 阶段触发提醒
+
+- `DEFERRED`：已记录“Jev 类有限决策模型在 PIC Agent Harness 中的适用性”。当主要领域调研完成并开始收敛技术路线，或准备开展工具路由、失败分类、自适应 Tool Calling 对照实验时，Codex 应先询问用户是否纳入技术比较或实验设计；用户确认前不得启动相关调研、安装、接入或实现。
 
 ## 尚未实现
 
@@ -45,7 +65,7 @@
 
 ## 当前证据边界
 
-本仓库当前证明项目骨架、双模型治理规则、一次人工三方对齐以及 `TASK-004`、`TASK-005` 的公开证据调研已经完成并获 GPT 验收；`TASK-005A` 已形成仅供人工阅读的 MkDocs Material 门户并进入用户验收。核心源码核验固定在交付物记录的 commit；没有候选在本仓库中被执行，因此不构成模型接入、软件复现、物理验证或科研实验。论文作者报告的指标不得当作本项目实验结果。当前唯一待验收任务为 `TASK-005A_REVIEW_READY`，`TASK-006 = NOT_STARTED`。
+本仓库当前证明项目骨架、双模型治理规则、一次人工三方对齐以及 `TASK-004`、`TASK-005` 的公开证据调研已经完成并获 GPT 验收；`TASK-005A` 的 MkDocs Material 人工阅读门户也已验收关闭。`TASK-006` 现处于 `REVIEW_READY`：三方向路线收敛仅来自文献、源码和官方材料，不构成模型接入、软件复现、物理验证或科研实验。论文作者报告的指标不得当作本项目实验结果；TASK-007 未启动。
 
 ## 更新规则
 

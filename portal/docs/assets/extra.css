@@ -24,3 +24,14 @@
   overflow-x: auto;
   text-align: center;
 }
+
+/* 按用户要求仅优化桌面阅读，不承担手机视口验收。 */
+@media screen and (min-width: 76.25em) {
+  .md-grid {
+    max-width: 95rem;
+  }
+
+  .md-content__inner {
+    max-width: none;
+  }
+}
