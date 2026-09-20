@@ -25,6 +25,7 @@ theme:
         name: 切换至浅色模式
   features:
     - navigation.sections
+    - navigation.path
     - navigation.top
     - content.code.copy
     - search.highlight
@@ -63,20 +64,24 @@ nav:
   - TASK-006 路线收敛:
       - 首页: index.md
       - 审查包: task-006-overview.md
-      - 三方向技术地图: task-006-technical-map.md
-      - DAS × 智能体设计: task-006-das-agentic.md
-      - 光子人工智能计算项目: task-006-photonic-ai-projects.md
-      - 智能体 PIC 项目: task-006-agentic-projects.md
-      - 跨方向与内部比较: task-006-comparison.md
-      - Paper2Agent 候选技术: task-006-paper2agent.md
-      - 候选研究路线: task-006-routes.md
-      - 条件与对抗性审查: task-006-critical-review.md
+      - 三方向技术地图:
+          - 地图总览: task-006-technical-map.md
+          - DAS × 智能体设计: task-006-das-agentic.md
+          - 光子人工智能计算项目: task-006-photonic-ai-projects.md
+          - 智能体 PIC 项目: task-006-agentic-projects.md
+          - Paper2Agent 候选技术: task-006-paper2agent.md
+      - 比较与路线:
+          - 跨方向与内部比较: task-006-comparison.md
+          - 候选研究路线: task-006-routes.md
+          - 条件与对抗性审查: task-006-critical-review.md
       - 证据与检索: task-006-evidence.md
   - TASK-005 已验收档案:
       - 审查材料总览: review-package.md
-      - 技术层级地图: technical-map-and-objects.md
-      - 能力矩阵: capability-and-verification-matrix.md
-      - 参考架构: reference-architecture-v0.md
-      - 研究缺口: research-gaps-and-route-seeds.md
-      - 候选路线: candidate-routes.md
-      - 证据与来源: source-log.md
+      - 架构与能力:
+          - 技术层级地图: technical-map-and-objects.md
+          - 能力矩阵: capability-and-verification-matrix.md
+          - 参考架构: reference-architecture-v0.md
+      - 路线与证据:
+          - 研究缺口: research-gaps-and-route-seeds.md
+          - 候选路线: candidate-routes.md
+          - 证据与来源: source-log.md
