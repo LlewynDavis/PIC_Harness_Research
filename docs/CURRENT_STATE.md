@@ -31,7 +31,8 @@
 - 已纠正 Qwen 渠道记录：初次科研召回实际因 `qwen -c` 误入 `AI协同` 会话，随后已在既有 Qwen 项目主对话完成只读复核；该误用不再被表述为独立科研会话。
 - 已完成 `TASK-006` 审查包：三方向技术地图、跨方向/内部比较、研究条件矩阵、三条候选路线、最小验证实验、对抗性审查与来源日志均位于 `references/task-006/`。
 - 暂定路线优先级为：分层 Agentic PIC 评价基座优先；DAS PIC-aware 约束传播与 Photonic AI 器件误差—任务误差联合验证作为条件路线。该排序是待验收研究判断，不是已授权工程路线。
-- Research Portal 已增加 TASK-006 中文总览与五个专题入口；TASK-005 已验收档案继续保留。
+- Research Portal 已增加 TASK-006 中文总览与六个专题入口；TASK-005 已验收档案继续保留。
+- Paper2Agent 已作为 `03 Agentic PIC Design` 下“科学计算工具自动构建与验证”的正式调研候选纳入 TASK-006 技术地图、内部比较与证据日志；当前仅完成论文与固定提交源码的只读核验，未安装、未执行、未接入 MCP，也未改变候选路线排序。
 
 ## 当前调研重点
 
@@ -42,6 +43,7 @@
 - Adaptive Tool Calling；
 - Uncertainty-aware Agent；
 - PIC Agent Benchmark。
+- 科学计算方法到可测试、可追溯 Agent Tool 的半自动转换，以及与少量手写 Typed Tool Contract 的成本—可靠性对照。
 
 上述内容均为候选理论框架、研究问题或待验证假设，不增加任何实现状态。
 

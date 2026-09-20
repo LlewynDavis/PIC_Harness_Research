@@ -23,6 +23,7 @@
 | Tool adapter | PIC 工具契约不统一 | 对非法参数、超时、缺依赖和工具错误做 fault injection | 边界拦截与错误分类提升，副作用受控 | typed Python function 足够；MCP/wrapper 本身不是贡献 | 薄基础设施 |
 | RESULT / ledger | 现有输出不可统一复核 | 对故障运行做 replay，比较普通日志与最小 envelope | 缺失条件发现率、复核一致性或定位时间改善 | 复杂 schema 维护成本大于收益 | 并入基础路线 |
 | Failure recovery | blind retry 与分类恢复收益未知 | fail-fast / blind retry / classified recovery 对照 | 恢复率提高且错误接受率不升 | 人工注入故障不代表真实分布 | 后续扩展 |
+| Scientific tool construction / Paper2Agent | 新的科学代码如何以受控、可测试、可追溯方式接入 Harness，PIC 证据仍为空 | 后续如获授权：同一成熟 PIC API，比较手写 2–3 个 typed wrapper 与半自动生成流程 | 接入/维护成本下降，契约缺陷不增加，参考行为与失败证据完整 | 成熟 gdsfactory/SAX API 的少量手写 wrapper 已足够；自动生成增加环境修复、安全审查和维护负担 | 正式候选机制，非既定路线 |
 
 ## 收敛关系
 

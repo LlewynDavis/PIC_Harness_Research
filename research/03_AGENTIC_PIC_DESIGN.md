@@ -124,6 +124,14 @@ Agent 研究不能只问“是否拥有工具”，还需要研究“什么时�
 - **RQ-05：** 如何区分模型推理失败、工具选择失败、工具执行失败、物理模型失败和验证失败？
 - **RQ-06：** PIC Agent Benchmark 应如何分别评价模型内部能力、外部工具能力以及两者协同能力？
 
+## 正式候选：科学计算工具自动构建与验证
+
+Paper2Agent 已作为 TASK-006 下的正式调研候选纳入本研究线。其候选价值是把具有代码、数据、教程和参考结果的科学方法，转化为带 Tool Contract、测试和来源记录的 Agent Tools；它不是通用论文阅读能力，也不等同于自动发现新科学方法。
+
+当前证据只支持“论文报告了跨学科工具生成与自动验证，固定提交源码提供了 Skill/MCP 构建、独立验证和追溯机制”。本项目没有运行 Paper2Agent，也没有发现其在 PIC、EDA、PDK 或复杂物理仿真中的公开验证。参考结果复现与 MCP 可运行均不能证明物理模型或制造约束正确。
+
+完整问题拆解、评价口径、PIC 迁移风险、与 PhIDO/AutoPhotonicDesign/gdsfactory/PICBench 的关系及手写 Typed Tool Contract 替代方案，见 [Paper2Agent 候选技术记录](/task-006-paper2agent.html)。该候选不改变当前路线排序；是否实验须由后续任务另行授权。
+
 ## Agent Benchmark 调研框架
 
 PIC Agent Benchmark 不应只报告最终任务成功率。至少需要调研以下维度。

@@ -70,5 +70,8 @@ Requirement
 | Adaptive Tool Calling | 有候选假设和对照框架 | uncertainty proxy、决策阈值和正确率—成本关系未知 |
 | Verification / Benchmark | PICBench circuit-level；TASK-005 ladder | 缺 geometry/DRC/物理分层、等预算与失败归因 |
 | Failure Recovery | 多系统有局部 retry/session | 缺跨工具 failure taxonomy、rollback、termination 与收益实验 |
+| 科学方法 → Tool 构建 | Paper2Agent 论文与固定提交源码展示了从可执行研究资产到 typed MCP Tool、参考运行、独立验证和追溯记录的流程 | 未见 PIC/EDA/PDK 公开验证；参考行为一致不等于物理或制造正确；相对手写成熟 API wrapper 的收益未知 |
 
 `FACT`：现有项目各自覆盖局部能力。`INFERENCE`：当前最可证伪的切口是先建立可信评价基座，再检验 typed IR 或 adaptive tool calling，而不是先造完整 Harness。
+
+Paper2Agent 的正式候选记录见[科学计算工具自动构建与验证](/task-006-paper2agent.html)。它位于 Tool Registry/Adapter 的**构建与验证入口**，不改变当前路线排序，也不代表已选择自动工具生成。

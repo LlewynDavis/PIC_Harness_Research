@@ -19,6 +19,7 @@
 - `research/04_COMPARATIVE_ANALYSIS.md` 已形成横向比较维度草案；
 - TASK-004/005 已验收证据继续有效，不重新开展无边界扫描；
 - 上述内容是本轮输入，不是已经完成综合路线收敛的证明。
+- 用户已授权将 Paper2Agent 增补为 `03 Agentic PIC Design` 下的正式调研候选，仅核验论文、源码和 PIC 迁移边界；不安装、不运行、不接入，也不据此改变研究路线。
 
 ### 允许范围
 
@@ -62,6 +63,7 @@
 - 完成日期：2026-09-20。
 - 交付目录：`references/task-006/`；门户入口位于 `portal/docs/task-006-*.md`。
 - 已形成三方向技术地图、跨方向矩阵、Agentic PIC 内部比较、条件确认矩阵、三条候选路线、最小实验及成败判据、路线级反例和一手来源日志。
+- 已增补 Paper2Agent 候选技术记录，并将其定位到“科学方法/代码 → Tool Registry/Adapter”的构建与验证入口；未把作者成功率迁移到 PIC，也未将自动工具生成确定为技术路线。
 - Qwen 通过既有项目主对话完成 DAS/PAC 只读候选整理；Codex 已纠正其 arXiv DAS 覆盖不足，并回到 Optica、Nature、Science、IEEE 等一手来源复核。
 - 未执行 Agent/benchmark/simulator 实现、正式仿真、流片、封装或物理实验；外部作者指标均未复算。
 - 当前只进入审查，不启动 TASK-007。

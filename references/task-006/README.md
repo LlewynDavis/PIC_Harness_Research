@@ -12,6 +12,7 @@
 
 - [三方向技术地图](/task-006-technical-map.html)
 - [跨方向与 Agentic PIC 内部比较](/task-006-comparison.html)
+- [Paper2Agent 候选技术记录](/task-006-paper2agent.html)
 - [候选研究路线与最小实验](/task-006-routes.html)
 - [条件矩阵与对抗性审查](/task-006-critical-review.html)
 - [检索记录与一手证据](/task-006-evidence.html)

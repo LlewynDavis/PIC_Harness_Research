@@ -39,6 +39,13 @@
 
 来源：Nature、Nature Photonics、Nature Communications、Science、Optica、PubMed、作者预印本和官方代码仓库。
 
+## Paper2Agent 定向核验
+
+- 论文：通过 DOI `10.1038/s41586-026-11044-y` 定位 Nature 正式版本，核对正文、Methods、评价样本、成功定义、结果与 Discussion 限制。
+- 源码：只读浅克隆官方仓库并固定到 `8c2d059165ef8cdcb70dbea76655b9c2b55b38e6`；核对根许可证、`skills/paper2agent/`、Paper2MCP 工作流、Tool Contract 指南和 `verify_mcp_server.py`。
+- 关键词核查：在固定源码中检索 PIC、EDA、PDK、gdsfactory、SAX、COMSOL、Lumerical、DRC 等领域词；未发现明确的 PIC/EDA 验证材料。
+- 执行边界：没有安装依赖、运行仓库代码、生成 MCP Server 或复现实验；源码级判断均标为 `CODE VERIFIED`，而非 `RUN VERIFIED` 或物理验证。
+
 ## 纳入与排除
 
 纳入：原始论文、作者预印本、出版社/会议官方页面、能改变路线判断的官方代码。

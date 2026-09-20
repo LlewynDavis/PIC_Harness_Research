@@ -37,6 +37,11 @@
 - [TASK-005 参考架构 V0](/reference-architecture-v0.html)
 - [TASK-005 研究缺口与路线种子](/research-gaps-and-route-seeds.html)
 
+| 对象 | 来源 | 本轮用途 | 证据边界 |
+|---|---|---|---|
+| Paper2Agent 论文 | [Nature 正式版本](https://doi.org/10.1038/s41586-026-11044-y) | 核验问题定义、构建流程、评价样本、成功判据、结果与限制 | 论文结果为 `AUTHOR CLAIM`；本项目未复算，不能迁移为 PIC 成功率 |
+| Paper2Agent 源码 | [GitHub 固定提交 `8c2d059`](https://github.com/jmiao24/Paper2Agent/tree/8c2d059165ef8cdcb70dbea76655b9c2b55b38e6) | 核验当前 Skill/MCP 构建流程、Tool Contract、验证脚本、追溯字段与许可证 | `CODE VERIFIED` 仅表示只读源码可见；未安装、未执行、未验证物理正确性 |
+
 ## 方法引用
 
 本轮对抗性证据审查使用：Kassis, T., Agarwal, V., He, Y., Patel, D., & Brueckner, A. M. (2026). *Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents*. arXiv:2609.00065. [DOI](https://doi.org/10.48550/arXiv.2609.00065).
