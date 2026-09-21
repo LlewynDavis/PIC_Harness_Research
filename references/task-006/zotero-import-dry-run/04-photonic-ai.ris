@@ -1,0 +1,357 @@
+TY  - JOUR
+AU  - Bai, Bowen
+AU  - Yang, Qipeng
+AU  - Shu, Haowen
+AU  - Chang, Lin
+AU  - Yang, Fenghe
+AU  - Shen, Bitao
+AU  - Tao, Zihan
+AU  - Wang, Jing
+AU  - Xu, Shaofu
+AU  - Xie, Weiqiang
+AU  - Zou, Weiwen
+AU  - Hu, Weiwei
+AU  - Bowers, John E.
+AU  - Wang, Xingjun
+TI  - Microcomb-based integrated photonic processing unit
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2023
+VL  - 14
+IS  - 1
+DO  - 10.1038/s41467-022-35506-9
+UR  - https://doi.org/10.1038/s41467-022-35506-9
+N2  - Abstract The emergence of parallel convolution-operation technology has substantially powered the complexity and functionality of optical neural networks (ONN) by harnessing the dimension of optical wavelength. However, this advanced architecture faces remarkable challenges in high-level integration and on-chip operation. In this work, convolution based on time-wavelength plane stretching approach is implemented on a microcomb-driven chip-based photonic processing unit (PPU). To support the oper
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Cheng, Junwei
+AU  - Huang, Chaoran
+AU  - Zhang, Jialong
+AU  - Wu, Bo
+AU  - Zhang, Wenkai
+AU  - Liu, Xinyu
+AU  - Zhang, Jiahui
+AU  - Tang, Yiyi
+AU  - Zhou, Hailong
+AU  - Zhang, Qiming
+AU  - Gu, Min
+AU  - Dong, Jianji
+AU  - Zhang, Xinliang
+TI  - Multimodal deep learning using on-chip diffractive optics with in situ training capability
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2024
+VL  - 15
+IS  - 1
+DO  - 10.1038/s41467-024-50677-3
+UR  - https://doi.org/10.1038/s41467-024-50677-3
+N2  - Abstract Multimodal deep learning plays a pivotal role in supporting the processing and learning of diverse data types within the realm of artificial intelligence generated content (AIGC). However, most photonic neuromorphic processors for deep learning can only handle a single data modality (either vision or audio) due to the lack of abundant parameter training in optical domain. Here, we propose and demonstrate a trainable diffractive optical neural network (TDONN) chip based on on-chip diffra
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Zhou, Tiankuang
+AU  - Jiang, Yizhou
+AU  - Xu, Zhihao
+AU  - Xue, Zhiwei
+AU  - Fang, Lu
+TI  - Hundred-layer photonic deep learning
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2025
+VL  - 16
+IS  - 1
+DO  - 10.1038/s41467-025-65356-0
+UR  - https://doi.org/10.1038/s41467-025-65356-0
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Zhou, Tiankuang
+AU  - Lin, Xing
+AU  - Wu, Jiamin
+AU  - Chen, Yitong
+AU  - Xie, Hao
+AU  - Li, Yipeng
+AU  - Fan, Jingtao
+AU  - Wu, Huaqiang
+AU  - Fang, Lu
+AU  - Dai, Qionghai
+TI  - Large-scale neuromorphic optoelectronic computing with a reconfigurable diffractive processing unit
+JO  - Nature Photonics
+T2  - Nature Photonics
+JA  - Nat. Photonics
+PY  - 2021
+VL  - 15
+IS  - 5
+SP  - 367
+EP  - 373
+DO  - 10.1038/s41566-021-00796-w
+UR  - https://doi.org/10.1038/s41566-021-00796-w
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Xu, Xingyuan
+AU  - Tan, Mengxi
+AU  - Corcoran, Bill
+AU  - Wu, Jiayang
+AU  - Boes, Andreas
+AU  - Nguyen, Thach G.
+AU  - Chu, Sai T.
+AU  - Little, Brent E.
+AU  - Hicks, Damien G.
+AU  - Morandotti, Roberto
+AU  - Mitchell, Arnan
+AU  - Moss, David J.
+TI  - 11 TOPS photonic convolutional accelerator for optical neural networks
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2021
+VL  - 589
+IS  - 7840
+SP  - 44
+EP  - 51
+DO  - 10.1038/s41586-020-03063-0
+UR  - https://doi.org/10.1038/s41586-020-03063-0
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Feldmann, J.
+AU  - Youngblood, N.
+AU  - Karpov, M.
+AU  - Gehring, H.
+AU  - Li, X.
+AU  - Stappers, M.
+AU  - Le Gallo, M.
+AU  - Fu, X.
+AU  - Lukashchuk, A.
+AU  - Raja, A. S.
+AU  - Liu, J.
+AU  - Wright, C. D.
+AU  - Sebastian, A.
+AU  - Kippenberg, T. J.
+AU  - Pernice, W. H. P.
+AU  - Bhaskaran, H.
+TI  - Parallel convolutional processing using an integrated photonic tensor core
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2021
+VL  - 589
+IS  - 7840
+SP  - 52
+EP  - 58
+DO  - 10.1038/s41586-020-03070-1
+UR  - https://doi.org/10.1038/s41586-020-03070-1
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Ashtiani, Farshid
+AU  - Geers, Alexander J.
+AU  - Aflatouni, Firooz
+TI  - An on-chip photonic deep neural network for image classification
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2022
+VL  - 606
+IS  - 7914
+SP  - 501
+EP  - 506
+DO  - 10.1038/s41586-022-04714-0
+UR  - https://doi.org/10.1038/s41586-022-04714-0
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Hua, Shiyue
+AU  - Divita, Erwan
+AU  - Yu, Shanshan
+AU  - Peng, Bo
+AU  - Roques-Carmes, Charles
+AU  - Su, Zhan
+AU  - Chen, Zhang
+AU  - Bai, Yanfei
+AU  - Zou, Jinghui
+AU  - Zhu, Yunpeng
+AU  - Xu, Yelong
+AU  - Lu, Cheng-kuan
+AU  - Di, Yuemiao
+AU  - Chen, Hui
+AU  - Jiang, Lushan
+AU  - Wang, Lijie
+AU  - Ou, Longwu
+AU  - Zhang, Chaohong
+AU  - Chen, Junjie
+AU  - Zhang, Wen
+AU  - Zhu, Hongyan
+AU  - Kuang, Weijun
+AU  - Wang, Long
+AU  - Meng, Huaiyu
+AU  - Steinman, Maurice
+AU  - Shen, Yichen
+TI  - An integrated large-scale photonic accelerator with ultralow latency
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2025
+VL  - 640
+IS  - 8058
+SP  - 361
+EP  - 367
+DO  - 10.1038/s41586-025-08786-6
+UR  - https://doi.org/10.1038/s41586-025-08786-6
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Ahmed, Sufi R.
+AU  - Baghdadi, Reza
+AU  - Bernadskiy, Mikhail
+AU  - Bowman, Nate
+AU  - Braid, Ryan
+AU  - Carr, Jim
+AU  - Chen, Chen
+AU  - Ciccarella, Pietro
+AU  - Cole, Matthew
+AU  - Cooke, John
+AU  - Desai, Kishor
+AU  - Dorta, Carlos
+AU  - Elmhurst, Jonathan
+AU  - Gardiner, Bryce
+AU  - Greenwald, Elliot
+AU  - Gupta, Shashank
+AU  - Husbands, Parry
+AU  - Jones, Brian
+AU  - Kopa, Anthony
+AU  - Lee, Ho John
+AU  - Madhavan, Arulselvan
+AU  - Mendrela, Adam
+AU  - Moore, Nicholas
+AU  - Nair, Lakshmi
+AU  - Om, Aditya
+AU  - Patel, Subie
+AU  - Patro, Rutayan
+AU  - Pellowski, Rob
+AU  - Radhakrishnani, Esha
+AU  - Sane, Sandeep
+AU  - Sarkis, Nicholas
+AU  - Stadolnik, Joe
+AU  - Tymchenko, Mykhailo
+AU  - Wang, Gongyu
+AU  - Winikka, Kurt
+AU  - Wleklinski, Alexandra
+AU  - Zelman, Josh
+AU  - Ho, Richard
+AU  - Jain, Ritesh
+AU  - Basumallik, Ayon
+AU  - Bunandar, Darius
+AU  - Harris, Nicholas C.
+TI  - Universal photonic artificial intelligence acceleration
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2025
+VL  - 640
+IS  - 8058
+SP  - 368
+EP  - 374
+DO  - 10.1038/s41586-025-08854-x
+UR  - https://doi.org/10.1038/s41586-025-08854-x
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Sludds A
+AU  - Bandyopadhyay S
+AU  - Chen Z
+AU  - Zhong Z
+AU  - Cochrane J
+AU  - Bernstein L
+AU  - Bunandar D
+AU  - Dixon PB
+AU  - Hamilton SA
+AU  - Streshinsky M
+AU  - Novack A
+AU  - Baehr-Jones T
+AU  - Hochberg M
+AU  - Ghobadi M
+AU  - Hamerly R
+AU  - Englund D
+TI  - Delocalized photonic deep learning on the internet's edge.
+JO  - Science (New York, N.Y.)
+T2  - Science (New York, N.Y.)
+JA  - Science
+PY  - 2022
+VL  - 378
+IS  - 6617
+SP  - 270
+EP  - 276
+DO  - 10.1126/science.abq8271
+UR  - https://doi.org/10.1126/science.abq8271
+N2  - Advanced machine learning models are currently impossible to run on edge devices such as smart sensors and unmanned aerial vehicles owing to constraints on power, processing, and memory. We introduce an approach to machine learning inference based on delocalized analog processing across networks. In this approach, named Netcast, cloud-based "smart transceivers" stream weight data to edge devices, enabling ultraefficient photonic inference. We demonstrate image recognition at ultralow optical ene
+AN  - PMID:36264813
+DB  - PubMed
+ER  - 
+
+TY  - JOUR
+AU  - Chen Y
+AU  - Nazhamaiti M
+AU  - Xu H
+AU  - Meng Y
+AU  - Zhou T
+AU  - Li G
+AU  - Fan J
+AU  - Wei Q
+AU  - Wu J
+AU  - Qiao F
+AU  - Fang L
+AU  - Dai Q
+TI  - All-analog photoelectronic chip for high-speed vision tasks.
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2023
+VL  - 623
+IS  - 7985
+SP  - 48
+EP  - 57
+DO  - 10.1038/s41586-023-06558-8
+UR  - https://doi.org/10.1038/s41586-023-06558-8
+N2  - Photonic computing enables faster and more energy-efficient processing of vision data(1-5). However, experimental superiority of deployable systems remains a challenge because of complicated optical nonlinearities, considerable power consumption of analog-to-digital converters (ADCs) for downstream digital processing and vulnerability to noises and system errors(1,6-8). Here we propose an all-analog chip combining electronic and light computing (ACCEL). It has a systemic energy efficiency of 74.
+AN  - PMID:37880362
+DB  - PubMed
+ER  - 
+
+TY  - JOUR
+AU  - Xu Z
+AU  - Zhou T
+AU  - Ma M
+AU  - Deng C
+AU  - Dai Q
+AU  - Fang L
+TI  - Large-scale photonic chiplet Taichi empowers 160-TOPS/W artificial general intelligence.
+JO  - Science (New York, N.Y.)
+T2  - Science (New York, N.Y.)
+JA  - Science
+PY  - 2024
+VL  - 384
+IS  - 6692
+SP  - 202
+EP  - 209
+DO  - 10.1126/science.adl1203
+UR  - https://doi.org/10.1126/science.adl1203
+N2  - The pursuit of artificial general intelligence (AGI) continuously demands higher computing performance. Despite the superior processing speed and efficiency of integrated photonic circuits, their capacity and scalability are restricted by unavoidable errors, such that only simple tasks and shallow models are realized. To support modern AGIs, we designed Taichi-large-scale photonic chiplets based on an integrated diffractive-interference hybrid design and a general distributed computing architect
+AN  - PMID:38603505
+DB  - PubMed
+ER  -
+

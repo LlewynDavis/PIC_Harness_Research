@@ -1,0 +1,111 @@
+TY  - PREPRINT
+AU  - Tsai, Yun-Da
+AU  - Liu, Mingjie
+AU  - Ren, Haoxing
+TI  - RTLFixer: Automatically Fixing RTL Syntax Errors with Large Language Models
+PY  - 2023
+DO  - 10.48550/arXiv.2311.16543
+UR  - https://arxiv.org/abs/2311.16543
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Wang, Yiting
+AU  - Ye, Wanghao
+AU  - He, Yexiao
+AU  - Chen, Yiran
+AU  - Qu, Gang
+AU  - Li, Ang
+TI  - MCP4EDA: LLM-Powered Model Context Protocol RTL-to-GDSII Automation with Backend Aware Synthesis Optimization
+PY  - 2025
+DO  - 10.48550/arXiv.2507.19570
+UR  - https://arxiv.org/abs/2507.19570
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Meng, Gang
+AU  - Bocanegra Vargas, Andres Felipe
+AU  - Ji, Xinwei
+AU  - Garcia-Gaitan, Federico
+AU  - Reyes-Osorio, Felipe
+AU  - Varela-Manjarres, Jalil
+AU  - Ren, Yafei
+AU  - Dinpajooh, Mohammadhasan
+AU  - Nikolić, Branislav K.
+AU  - Li, Tao E.
+TI  - FermiLink: A Unified Agent Framework for Multidomain Autonomous Scientific Simulations
+PY  - 2026
+DO  - 10.48550/arXiv.2604.03460
+UR  - https://arxiv.org/abs/2604.03460
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Kassis, Timothy
+AU  - Agarwal, Vinayak
+AU  - He, Yuhuan
+AU  - Patel, Darshil
+AU  - Brueckner, Aubrey M.
+TI  - Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents
+PY  - 2026
+DO  - 10.48550/arXiv.2609.00065
+UR  - https://arxiv.org/abs/2609.00065
+DB  - arXiv
+ER  -
+
+TY  - JOUR
+AU  - Huang, Yi
+AU  - Zheng, Bowen
+AU  - Dong, Yunxi
+AU  - Tang, Hong
+AU  - Zhao, Huan
+AU  - Shawon, S. M. Rakibul Hasan
+AU  - Zhang, Hualiang
+TI  - A Self‐Evolving Agentic Framework for Metasurface Inverse Design
+JO  - Laser &amp; Photonics Reviews
+T2  - Laser &amp; Photonics Reviews
+JA  - Laser &amp;amp; Photonics Reviews
+PY  - 2026
+DO  - 10.1002/lpor.71739
+UR  - https://doi.org/10.1002/lpor.71739
+N2  - ABSTRACT Metasurface inverse design can realize complex optical functionality, but turning a target optical response into executable optimization code still requires substantial expertise in computational electromagnetics and solver‐specific software engineering. We present a self‐evolving agentic framework that lowers this barrier by coupling a coding agent, explicit human‐readable skill files, and a deterministic physics‐based evaluator. Rather than updating model weights, it revises the skill
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Miao, Jiacheng
+AU  - Davis, Joe R.
+AU  - Zhang, Yaohui
+AU  - Pritchard, Jonathan K.
+AU  - Zou, James
+TI  - Reimagining research papers as interactive and reliable AI agents
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2026
+DO  - 10.1038/s41586-026-11044-y
+UR  - https://doi.org/10.1038/s41586-026-11044-y
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Lupoiu, Robert
+AU  - Shao, Yixuan
+AU  - Dai, Tianxiang
+AU  - Mao, Chenkai
+AU  - Edée, Kofi
+AU  - Fan, Jonathan A.
+TI  - A multi-agentic framework for real-time, autonomous freeform metasurface design
+JO  - Science Advances
+T2  - Science Advances
+JA  - Sci. Adv.
+PY  - 2025
+VL  - 11
+IS  - 44
+DO  - 10.1126/sciadv.adx8006
+UR  - https://doi.org/10.1126/sciadv.adx8006
+N2  - Innovation in nanophotonics currently relies on human experts who synergize specialized knowledge in photonics and coding with simulation and optimization algorithms, entailing design cycles that are time-consuming, computationally demanding, and frequently suboptimal. We introduce MetaChat, a multi-agentic design framework that can translate semantically described photonic design goals into high-performance, freeform device layouts in an automated, nearly real-time manner. Multistep reasoning i
+DB  - CrossRef
+ER  - 
+

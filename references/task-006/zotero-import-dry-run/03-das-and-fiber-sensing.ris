@@ -1,0 +1,171 @@
+TY  - PREPRINT
+AU  - Sandmann, André
+AU  - Azendorf, Florian
+AU  - Alnairat, Saif
+AU  - Eiselt, Michael
+TI  - Acoustic Sensing with Correlation and Coherent Detection using an Integrated Coherent Transceiver
+PY  - 2023
+DO  - 10.48550/arXiv.2306.04199
+UR  - https://arxiv.org/abs/2306.04199
+DB  - arXiv
+ER  -
+
+TY  - JOUR
+AU  - Cheng, Zhuo
+AU  - Shu, Xiaoqian
+AU  - Ma, Lingmei
+AU  - Chen, Bigeng
+AU  - Li, Caiyun
+AU  - Sun, Chunlei
+AU  - Wei, Maoliang
+AU  - Yu, Shaoliang
+AU  - Li, Lan
+AU  - Lin, Hongtao
+AU  - Rao, Yunjiang
+TI  - On-chip silicon electro-optical modulator with ultra-high extinction ratio for fiber-optic distributed acoustic sensing
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2023
+VL  - 14
+IS  - 1
+DO  - 10.1038/s41467-023-43244-9
+UR  - https://doi.org/10.1038/s41467-023-43244-9
+N2  - Abstract Ultra-high extinction ratio (ER) optical modulation is crucial for achieving high-performance fiber-optic distributed acoustic sensing (DAS) for various applications. Bulky acousto-optical modulators (AOM) as one of the key devices in DAS have been used for many years, but their relatively large volume and high power consumption are becoming the bottlenecks to hinder the development of ultra-compact and energy-efficient DAS systems that are highly demanded in practice. Here, an on-chip 
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Ip, Ezra
+AU  - Huang, Yue-Kai
+AU  - Huang, Ming-Fang
+AU  - Yaman, Fatih
+AU  - Wellbrock, Glenn
+AU  - Xia, Tiejun
+AU  - Wang, Ting
+AU  - Asahi, Koji
+AU  - Aono, Yoshiaki
+TI  - DAS Over 1,007-km Hybrid Link With 10-Tb/s DP-16QAM Co-Propagation Using Frequency-Diverse Chirped Pulses
+JO  - Journal of Lightwave Technology
+T2  - Journal of Lightwave Technology
+JA  - J. Lightwave Technol.
+PY  - 2023
+VL  - 41
+IS  - 4
+SP  - 1077
+EP  - 1086
+DO  - 10.1109/jlt.2022.3219369
+UR  - https://doi.org/10.1109/jlt.2022.3219369
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Li, Jian-Ting
+AU  - Chang, Bing
+AU  - Du, Jun-Ting
+AU  - Tan, Teng
+AU  - Geng, Yong
+AU  - Zhou, Heng
+AU  - Liang, Yu-Pei
+AU  - Zhang, Hao
+AU  - Yan, Guo-Feng
+AU  - Ma, Ling-Mei
+AU  - Ran, Zeng-Ling
+AU  - Wang, Zi-Nan
+AU  - Yao, Bai-Cheng
+AU  - Rao, Yun-Jiang
+TI  - Coherently parallel fiber-optic distributed acoustic sensing using dual Kerr soliton microcombs
+JO  - Science Advances
+T2  - Science Advances
+JA  - Sci. Adv.
+PY  - 2024
+VL  - 10
+IS  - 3
+DO  - 10.1126/sciadv.adf8666
+UR  - https://doi.org/10.1126/sciadv.adf8666
+N2  - Fiber-optic distributed acoustic sensing (DAS) has proven to be a revolutionary technology for the detection of seismic and acoustic waves with ultralarge scale and ultrahigh sensitivity, and is widely used in oil/gas industry and intrusion monitoring. Nowadays, the single-frequency laser source in DAS becomes one of the bottlenecks limiting its advance. Here, we report a dual-comb–based coherently parallel DAS concept, enabling linear superposition of sensing signals scaling with the comb-line 
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Idjadi, Mohamad Hossein
+AU  - Grillanda, Stefano
+AU  - Fontaine, Nicolas
+AU  - Mazur, Mikael
+AU  - Kim, Kwangwoong
+AU  - Huang, Tzu-Yung
+AU  - Bolle, Cristian
+AU  - Kopf, Rose
+AU  - Cappuzzo, Mark
+AU  - Liu, Kaikai
+AU  - Heim, David A. S.
+AU  - Hunter, Andrew
+AU  - Nelson, Karl D.
+AU  - Blumenthal, Daniel J.
+TI  - Dual-Wavelength ϕ-OFDR Using a Hybrid-Integrated Laser Stabilized to an Integrated SiN Coil Resonator
+JO  - Optical Fiber Communication Conference (OFC) 2025
+T2  - Optical Fiber Communication Conference (OFC) 2025
+PY  - 2025
+SP  - Tu2K.5
+DO  - 10.1364/ofc.2025.tu2k.5
+UR  - https://doi.org/10.1364/ofc.2025.tu2k.5
+N2  - We demonstrate dual-wavelength distributed acoustic sensing over 37 km of standard single-mode fiber using φ-OFDR, utilizing a scalable hybrid-integrated dual-wavelength laser chip frequency-locked to a high-Q integrated SiN coil resonator.
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Jin, Zhicheng
+AU  - Chen, Jiageng
+AU  - Li, Zhengwen
+AU  - Li, Hanzhao
+AU  - Hu, Keke
+AU  - Yu, Xuhui
+AU  - He, Zuyuan
+TI  - Hybrid Photonic Integrated Interrogator for Distributed Acoustic Sensing
+JO  - Optical Fiber Communication Conference (OFC) 2026
+T2  - Optical Fiber Communication Conference (OFC) 2026
+PY  - 2026
+SP  - W4D.2
+DO  - 10.1364/ofc.2026.w4d.2
+UR  - https://doi.org/10.1364/ofc.2026.w4d.2
+N2  - We demonstrate a highly integrated DAS interrogator via hybrid integration of an InP external-cavity laser and an SOI PIC, achieving 73.27 p ε /Hz strain resolution and ~ 4m spatial resolution over 10km fiber.
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Lin, Zhongjin
+AU  - Shi, Wei
+TI  - Photonic integrated circuit-based fiber-optic temperature and strain sensing system
+JO  - Optics Letters
+T2  - Optics Letters
+JA  - Opt. Lett.
+PY  - 2022
+VL  - 47
+IS  - 15
+SP  - 3620
+DO  - 10.1364/ol.460314
+UR  - https://doi.org/10.1364/ol.460314
+N2  - A low-cost, multi-function fiber-optic sensing system is highly desirable for physical security monitoring. Using the silicon photonic integrated circuit technology, we propose and demonstrate a compact fiber-optic sensing system which can simultaneously measure the temperature and strain information. A key enabler of the proposed system is an on-chip optical interrogator consisting of a two-dimensional grating coupler, four microring resonators, and four on-chip photodetectors. The interrogator
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Jin, Zhicheng
+AU  - Chen, Jiageng
+AU  - Chang, Yanming
+AU  - Liu, Qingwen
+AU  - He, Zuyuan
+TI  - Silicon photonic integrated interrogator for fiber-optic distributed acoustic sensing
+JO  - Photonics Research
+T2  - Photonics Research
+JA  - Photon. Res.
+PY  - 2024
+VL  - 12
+IS  - 3
+SP  - 465
+DO  - 10.1364/prj.512298
+UR  - https://doi.org/10.1364/prj.512298
+N2  - Distributed acoustic sensing (DAS) technology has been a promising tool in various applications. Currently, the large size and relatively high cost of DAS equipment composed of discrete devices restrict its further popularization to some degree, and the photonic integration technology offers a potential solution. In this paper, we demonstrate an integrated interrogator for DAS on the silicon-on-insulator (SOI) platform. The design of the chip revolves around a Mach–Zehnder modulator (MZM) transm
+DB  - CrossRef
+ER  - 
+

@@ -2,17 +2,17 @@
 
 本页把调研中的“论文”和“软件项目”分开登记。论文标题或项目名均可直接点击进入一手出处；存在代码时另列官方仓库。仓库链接仅证明公开可访问，是否可复用仍以许可证与固定提交核验为准。
 
-## Zotero 导入预检
+## Zotero 导入记录
 
 | 项目 | 结果 |
 |---|---|
 | 可信论文记录 | 32 条：DAS 8、光子人工智能计算 12、Agentic PIC / 方法 12 |
 | Zotero 已有 | 1 条：PhIDO / *AI agents for photonic integrated circuit design automation* |
-| 待导入 | 31 条；实际写入前按 DOI → arXiv/PMID → 题名与第一作者去重 |
+| 已导入 | 31 条新增；与既有 PhIDO 合计 36 个顶层论文条目 |
 | 明确排除 | PhIDO-Agentic 数据集 DOI `10.5683/SP4/T5QU9C`；纯仓库/官方文档；无可验证书目信息的项目 |
 | 本地预检文件 | `references/task-006/zotero-import-ids.txt`；`references/task-006/zotero-import-dry-run/task-006-zotero-import.ris` |
 
-当前仅完成本地 RIS 生成和去重预检，尚未向 Zotero 写入。RIS 共 32 条，`TY` 与 `ER` 记录数一致。
+RIS 共 32 条，`TY` 与 `ER` 记录数一致；已按四个中文主分类完成 Zotero 写入。Zotero API 核验顶层条目 36 个、题名唯一 36 个。
 
 ### 建议写入位置
 
@@ -23,7 +23,7 @@
 | `06_DAS与光纤传感` | 本页 DAS 论文 8 条 | 8 |
 | `07_光计算与AI芯片` | 本页光子人工智能计算论文 12 条 | 12 |
 
-合计预计新增 31 条。为避免把所有记录误导入当前选中的 `02_Photonic_Inverse_Design`，实际写入前必须先确认上述四个目标收藏夹。
+合计新增 31 条，写入目标为上述四个中文主分类；英文分类尚未删除。
 
 ## 面向智能体的 PIC 设计与方法论文
 
