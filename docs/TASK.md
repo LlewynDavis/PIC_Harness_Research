@@ -2,7 +2,7 @@
 
 ## TASK-007：PIC_Harness_Research 正式调研报告与组会汇报
 
-- 状态：`AUTHORIZED / ACTIVE`
+- 状态：`REVIEW_READY`（等待 GPT / 用户验收）
 - 启动日期：2026-09-21
 - 起始提交：`bf28b08ab667a86df575cff7c70f81fab8f73ee5`
 - 前置任务：`TASK-004 / TASK-005 / TASK-005A / TASK-006 = ACCEPTED / CLOSED`
@@ -62,6 +62,21 @@
 ### 完成回传
 
 完成后进入 `TASK-007_REVIEW_READY`，回传 Git commit、工作树状态、报告与 PPT 路径、Portal 入口、章节概览、证据与质量检查、未决问题，以及 Qwen 子任务和 Codex 复核记录。等待 GPT 和用户验收，不自动进入工程实现或研究路线选定。
+
+### 完成记录
+
+- 完成日期：2026-09-21。
+- 交付提交：`3ed876f5fce34d38a47907d6c68c476f6a51d090`。
+- 正式报告及证据记录：`references/task-007/`。
+- 组会 PPT：`presentations/task-007-group-meeting/TASK-007-组会汇报.pptx`；25 页，可编辑源为同目录 `outline.json` 和 workspace 文件。
+- Portal：新增 TASK-007 首页、正式报告、全文证据审计、引用核验、检索、术语和候选路线页面。
+- Qwen：在既有项目主对话完成一次只读术语、证据标签和跨文件矛盾审计；Codex 复核后采纳“作者指标统一降为作者报告”“明确全文核读途径”等建议，驳回其因并发时点导致的文件缺失误报及无证据的 PhIDO 期刊名质疑。
+- 引用核验：Crossref 核对 20 个核心 DOI 的题名、年份和载体；5 个 arXiv、1 个 arXiv DOI 和 3 个官方仓库链接可解析；报告 9 个本地引用均已解析。
+- PPT 自动 QA：25 页，overflow 0、overlap 0、placeholder 0、geometry error 0、design error/warning 0/0；保留 3 个非阻断 geometry warning。
+- PPT 视觉 QA：因本机无 `soffice`，使用 Microsoft PowerPoint 导出 25/25 张 1600×900 PNG；第一轮发现并修复 Mermaid 中文字体缺失和末页失衡，第二轮复查通过。
+- Portal：`mkdocs build --strict` 通过；静态产物含首页、报告、证据审计、路线和引用页面。
+- 未执行：实验、仿真、benchmark、Agent/Harness 实现、课题组资源匹配或最终路线选择。
+- 当前边界：只进入 `TASK-007_REVIEW_READY`；GPT 和用户验收前不启动后续任务。
 
 ---
 
