@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Huang, Yi
+AU  - Zheng, Bowen
+AU  - Dong, Yunxi
+AU  - Tang, Hong
+AU  - Zhao, Huan
+AU  - Shawon, S. M. Rakibul Hasan
+AU  - Zhang, Hualiang
+TI  - A Self‐Evolving Agentic Framework for Metasurface Inverse Design
+JO  - Laser &amp; Photonics Reviews
+T2  - Laser &amp; Photonics Reviews
+JA  - Laser &amp;amp; Photonics Reviews
+PY  - 2026
+DO  - 10.1002/lpor.71739
+UR  - https://doi.org/10.1002/lpor.71739
+N2  - ABSTRACT Metasurface inverse design can realize complex optical functionality, but turning a target optical response into executable optimization code still requires substantial expertise in computational electromagnetics and solver‐specific software engineering. We present a self‐evolving agentic framework that lowers this barrier by coupling a coding agent, explicit human‐readable skill files, and a deterministic physics‐based evaluator. Rather than updating model weights, it revises the skill
+DB  - CrossRef
+ER  - 

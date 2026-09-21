@@ -28,7 +28,7 @@
 /* 按用户要求仅优化桌面阅读，不承担手机视口验收。 */
 @media screen and (min-width: 76.25em) {
   .md-grid {
-    max-width: 95rem;
+    max-width: min(132rem, calc(100vw - 2rem));
   }
 
   .md-content__inner {

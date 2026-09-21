@@ -1,0 +1,27 @@
+TY  - JOUR
+AU  - Bai, Bowen
+AU  - Yang, Qipeng
+AU  - Shu, Haowen
+AU  - Chang, Lin
+AU  - Yang, Fenghe
+AU  - Shen, Bitao
+AU  - Tao, Zihan
+AU  - Wang, Jing
+AU  - Xu, Shaofu
+AU  - Xie, Weiqiang
+AU  - Zou, Weiwen
+AU  - Hu, Weiwei
+AU  - Bowers, John E.
+AU  - Wang, Xingjun
+TI  - Microcomb-based integrated photonic processing unit
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2023
+VL  - 14
+IS  - 1
+DO  - 10.1038/s41467-022-35506-9
+UR  - https://doi.org/10.1038/s41467-022-35506-9
+N2  - Abstract The emergence of parallel convolution-operation technology has substantially powered the complexity and functionality of optical neural networks (ONN) by harnessing the dimension of optical wavelength. However, this advanced architecture faces remarkable challenges in high-level integration and on-chip operation. In this work, convolution based on time-wavelength plane stretching approach is implemented on a microcomb-driven chip-based photonic processing unit (PPU). To support the oper
+DB  - CrossRef
+ER  - 

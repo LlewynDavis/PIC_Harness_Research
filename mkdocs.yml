@@ -74,7 +74,9 @@ nav:
           - 跨方向与内部比较: task-006-comparison.md
           - 候选研究路线: task-006-routes.md
           - 条件与对抗性审查: task-006-critical-review.md
-      - 证据与检索: task-006-evidence.md
+      - 证据与检索:
+          - 论文与项目出处索引: task-006-source-index.md
+          - 来源日志与检索记录: task-006-evidence.md
   - TASK-005 已验收档案:
       - 审查材料总览: review-package.md
       - 架构与能力:

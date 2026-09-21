@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Lin, Zhongjin
+AU  - Shi, Wei
+TI  - Photonic integrated circuit-based fiber-optic temperature and strain sensing system
+JO  - Optics Letters
+T2  - Optics Letters
+JA  - Opt. Lett.
+PY  - 2022
+VL  - 47
+IS  - 15
+SP  - 3620
+DO  - 10.1364/ol.460314
+UR  - https://doi.org/10.1364/ol.460314
+N2  - A low-cost, multi-function fiber-optic sensing system is highly desirable for physical security monitoring. Using the silicon photonic integrated circuit technology, we propose and demonstrate a compact fiber-optic sensing system which can simultaneously measure the temperature and strain information. A key enabler of the proposed system is an on-chip optical interrogator consisting of a two-dimensional grating coupler, four microring resonators, and four on-chip photodetectors. The interrogator
+DB  - CrossRef
+ER  - 

@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Jin, Zhicheng
+AU  - Chen, Jiageng
+AU  - Chang, Yanming
+AU  - Liu, Qingwen
+AU  - He, Zuyuan
+TI  - Silicon photonic integrated interrogator for fiber-optic distributed acoustic sensing
+JO  - Photonics Research
+T2  - Photonics Research
+JA  - Photon. Res.
+PY  - 2024
+VL  - 12
+IS  - 3
+SP  - 465
+DO  - 10.1364/prj.512298
+UR  - https://doi.org/10.1364/prj.512298
+N2  - Distributed acoustic sensing (DAS) technology has been a promising tool in various applications. Currently, the large size and relatively high cost of DAS equipment composed of discrete devices restrict its further popularization to some degree, and the photonic integration technology offers a potential solution. In this paper, we demonstrate an integrated interrogator for DAS on the silicon-on-insulator (SOI) platform. The design of the chip revolves around a Mach–Zehnder modulator (MZM) transm
+DB  - CrossRef
+ER  - 

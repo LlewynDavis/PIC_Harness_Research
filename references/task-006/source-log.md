@@ -23,11 +23,11 @@
 | Feldmann et al., 2021 | [Nature](https://doi.org/10.1038/s41586-020-03070-1) | PCM 光子 tensor core | 核指标不等于完整推理吞吐 |
 | Zhou et al., 2021 | [Nature Photonics](https://doi.org/10.1038/s41566-021-00796-w) | 自由空间可重构 DPU | 非 PIC；对准和数据加载边界 |
 | Ashtiani et al., 2022 | [Nature](https://doi.org/10.1038/s41586-022-04714-0) | 片上 PDNN 与非线性 | 小规模任务，外部控制仍重要 |
-| Sludds et al., 2022 | [Science / PubMed](https://pubmed.ncbi.nlm.nih.gov/36264813/) | Netcast 分布式推理 | 40 aJ 是接收端光能，不是墙插总能耗 |
+| Sludds et al., 2022 | [Science](https://doi.org/10.1126/science.abq8271) / [PubMed](https://pubmed.ncbi.nlm.nih.gov/36264813/) | Netcast 分布式推理 | 40 aJ 是接收端光能，不是墙插总能耗 |
 | Bai et al., 2023 | [Nature Communications](https://doi.org/10.1038/s41467-022-35506-9) | 微梳 + MRR 权重库 | 原型实耗与未来集成投影必须分开 |
-| Chen et al., 2023 | [Nature / PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10620079/) | ACCEL 全模拟光电视觉 | 任务专用，operation 口径不可直接等同数字 MAC |
+| Chen et al., 2023 | [Nature](https://doi.org/10.1038/s41586-023-06558-8) / [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10620079/) | ACCEL 全模拟光电视觉 | 任务专用，operation 口径不可直接等同数字 MAC |
 | Cheng et al., 2024 | [Nature Communications](https://doi.org/10.1038/s41467-024-50677-3) | TDONN 片上原位训练 | 输入预处理、FPGA/TEC 与热功耗仍存在 |
-| Xu et al., 2024 | [Science / PubMed](https://pubmed.ncbi.nlm.nih.gov/38603505/) | Taichi chiplet | “AGI”是作者定位，不是通用智能验证 |
+| Xu et al., 2024 | [Science](https://doi.org/10.1126/science.adl1203) / [PubMed](https://pubmed.ncbi.nlm.nih.gov/38603505/) | Taichi chiplet | “AGI”是作者定位，不是通用智能验证 |
 | Hua et al., 2025 | [Nature](https://doi.org/10.1038/s41586-025-08786-6) | PACE 大规模混合封装 | Ising 专用任务，不是通用 DNN |
 | Ahmed et al., 2025 | [Nature](https://doi.org/10.1038/s41586-025-08854-x) / [官方代码与数据](https://github.com/lightmatter-ai/upaia-paper-2025) | 真实模型与完整软件/硬件系统 | 不同任务精度损失差异大 |
 | Zhou et al., 2025 | [Nature Communications](https://doi.org/10.1038/s41467-025-65356-0) | 深层模型映射 | 单层芯片复用，不是数百物理层单片集成 |

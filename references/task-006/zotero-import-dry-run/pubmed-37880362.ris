@@ -1,0 +1,28 @@
+TY  - JOUR
+AU  - Chen Y
+AU  - Nazhamaiti M
+AU  - Xu H
+AU  - Meng Y
+AU  - Zhou T
+AU  - Li G
+AU  - Fan J
+AU  - Wei Q
+AU  - Wu J
+AU  - Qiao F
+AU  - Fang L
+AU  - Dai Q
+TI  - All-analog photoelectronic chip for high-speed vision tasks.
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2023
+VL  - 623
+IS  - 7985
+SP  - 48
+EP  - 57
+DO  - 10.1038/s41586-023-06558-8
+UR  - https://doi.org/10.1038/s41586-023-06558-8
+N2  - Photonic computing enables faster and more energy-efficient processing of vision data(1-5). However, experimental superiority of deployable systems remains a challenge because of complicated optical nonlinearities, considerable power consumption of analog-to-digital converters (ADCs) for downstream digital processing and vulnerability to noises and system errors(1,6-8). Here we propose an all-analog chip combining electronic and light computing (ACCEL). It has a systemic energy efficiency of 74.
+AN  - PMID:37880362
+DB  - PubMed
+ER  - 

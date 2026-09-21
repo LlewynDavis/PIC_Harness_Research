@@ -1,0 +1,26 @@
+TY  - JOUR
+AU  - Cheng, Junwei
+AU  - Huang, Chaoran
+AU  - Zhang, Jialong
+AU  - Wu, Bo
+AU  - Zhang, Wenkai
+AU  - Liu, Xinyu
+AU  - Zhang, Jiahui
+AU  - Tang, Yiyi
+AU  - Zhou, Hailong
+AU  - Zhang, Qiming
+AU  - Gu, Min
+AU  - Dong, Jianji
+AU  - Zhang, Xinliang
+TI  - Multimodal deep learning using on-chip diffractive optics with in situ training capability
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2024
+VL  - 15
+IS  - 1
+DO  - 10.1038/s41467-024-50677-3
+UR  - https://doi.org/10.1038/s41467-024-50677-3
+N2  - Abstract Multimodal deep learning plays a pivotal role in supporting the processing and learning of diverse data types within the realm of artificial intelligence generated content (AIGC). However, most photonic neuromorphic processors for deep learning can only handle a single data modality (either vision or audio) due to the lack of abundant parameter training in optical domain. Here, we propose and demonstrate a trainable diffractive optical neural network (TDONN) chip based on on-chip diffra
+DB  - CrossRef
+ER  - 

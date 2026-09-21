@@ -54,5 +54,7 @@ flowchart LR
 
 ## 已验收档案
 
+- [论文与项目出处索引](task-006-source-index.md)：点击项目或论文名称直达 DOI、arXiv、PubMed 或官方仓库，并查看 Zotero 导入预检状态。
+
 - [TASK-005 架构深挖与 Reference Architecture V0](review-package.md)
 - TASK-004 第一轮候选池保留在既有研究档案中。

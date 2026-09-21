@@ -1,0 +1,23 @@
+TY  - JOUR
+AU  - Sharma, Ankita
+AU  - Fu, Yuqi
+AU  - Ansari, Vahid
+AU  - Iyer, Rishabh
+AU  - Kuang, Fiona
+AU  - Mistry, Kashish
+AU  - Aishy, Raisa Islam
+AU  - Ahmad, Sara
+AU  - Matres, Joaquin
+AU  - Englund, Dirk R.
+AU  - Poon, Joyce K. S.
+TI  - AI agents for photonic integrated circuit design automation
+JO  - APL Machine Learning
+T2  - APL Machine Learning
+PY  - 2025
+VL  - 3
+IS  - 4
+DO  - 10.1063/5.0300741
+UR  - https://doi.org/10.1063/5.0300741
+N2  - We present photonics intelligent design and optimization, a proof-of-concept multi-agent framework that converts natural-language photonic integrated circuit (PIC) design requests into layout mask files. This work demonstrates end-to-end PIC design automation using large language models (LLMs), with the goal of achieving structurally valid rather than performance-qualified layouts. We compare seven reasoning LLMs using a testbench of 102 design descriptions that ranged from single devices to 112
+DB  - CrossRef
+ER  - 

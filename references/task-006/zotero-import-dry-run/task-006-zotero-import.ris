@@ -1,0 +1,718 @@
+TY  - PREPRINT
+AU  - Sandmann, André
+AU  - Azendorf, Florian
+AU  - Alnairat, Saif
+AU  - Eiselt, Michael
+TI  - Acoustic Sensing with Correlation and Coherent Detection using an Integrated Coherent Transceiver
+PY  - 2023
+DO  - 10.48550/arXiv.2306.04199
+UR  - https://arxiv.org/abs/2306.04199
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Tsai, Yun-Da
+AU  - Liu, Mingjie
+AU  - Ren, Haoxing
+TI  - RTLFixer: Automatically Fixing RTL Syntax Errors with Large Language Models
+PY  - 2023
+DO  - 10.48550/arXiv.2311.16543
+UR  - https://arxiv.org/abs/2311.16543
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Wu, Yuchao
+AU  - Yu, Xiaofei
+AU  - Chen, Hao
+AU  - Luo, Yang
+AU  - Tong, Yeyu
+AU  - Ma, Yuzhe
+TI  - PICBench: Benchmarking LLMs for Photonic Integrated Circuits Design
+PY  - 2025
+DO  - 10.48550/arXiv.2502.03159
+UR  - https://arxiv.org/abs/2502.03159
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Wang, Yiting
+AU  - Ye, Wanghao
+AU  - He, Yexiao
+AU  - Chen, Yiran
+AU  - Qu, Gang
+AU  - Li, Ang
+TI  - MCP4EDA: LLM-Powered Model Context Protocol RTL-to-GDSII Automation with Backend Aware Synthesis Optimization
+PY  - 2025
+DO  - 10.48550/arXiv.2507.19570
+UR  - https://arxiv.org/abs/2507.19570
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Meng, Gang
+AU  - Bocanegra Vargas, Andres Felipe
+AU  - Ji, Xinwei
+AU  - Garcia-Gaitan, Federico
+AU  - Reyes-Osorio, Felipe
+AU  - Varela-Manjarres, Jalil
+AU  - Ren, Yafei
+AU  - Dinpajooh, Mohammadhasan
+AU  - Nikolić, Branislav K.
+AU  - Li, Tao E.
+TI  - FermiLink: A Unified Agent Framework for Multidomain Autonomous Scientific Simulations
+PY  - 2026
+DO  - 10.48550/arXiv.2604.03460
+UR  - https://arxiv.org/abs/2604.03460
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Kharel, Prashanta
+AU  - Khavasi, Amin
+AU  - Chen, Xinzhong
+AU  - Hughes, Tyler W.
+TI  - Autonomous agentic design for photonics
+PY  - 2026
+DO  - 10.48550/arXiv.2606.00915
+UR  - https://arxiv.org/abs/2606.00915
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Jiang, Xiaohan
+AU  - Li, Zeyu
+AU  - Zhang, Wei
+AU  - Xu, Jiang
+TI  - PICopilot: An LLM-based Agentic Framework for Assisting Photonic Integrated Circuit Design via Script Generation
+PY  - 2026
+DO  - 10.48550/arXiv.2608.01791
+UR  - https://arxiv.org/abs/2608.01791
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Vungarala, Deepak
+AU  - Najafi, Deniz
+AU  - Aljoudi, Abdulrahman
+AU  - Ghanaatian, Zahra
+AU  - Khoshavi, Navid
+AU  - Datta, Gourav
+AU  - Roohi, Arman
+AU  - Nikdast, Mahdi
+AU  - Angizi, Shaahin
+TI  - PICasso: An AI-Enabled Design Framework for Autonomous Optimization of Silicon Photonic Devices
+PY  - 2026
+DO  - 10.48550/arXiv.2608.26113
+UR  - https://arxiv.org/abs/2608.26113
+DB  - arXiv
+ER  -
+
+TY  - PREPRINT
+AU  - Kassis, Timothy
+AU  - Agarwal, Vinayak
+AU  - He, Yuhuan
+AU  - Patel, Darshil
+AU  - Brueckner, Aubrey M.
+TI  - Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents
+PY  - 2026
+DO  - 10.48550/arXiv.2609.00065
+UR  - https://arxiv.org/abs/2609.00065
+DB  - arXiv
+ER  -
+
+TY  - JOUR
+AU  - Huang, Yi
+AU  - Zheng, Bowen
+AU  - Dong, Yunxi
+AU  - Tang, Hong
+AU  - Zhao, Huan
+AU  - Shawon, S. M. Rakibul Hasan
+AU  - Zhang, Hualiang
+TI  - A Self‐Evolving Agentic Framework for Metasurface Inverse Design
+JO  - Laser &amp; Photonics Reviews
+T2  - Laser &amp; Photonics Reviews
+JA  - Laser &amp;amp; Photonics Reviews
+PY  - 2026
+DO  - 10.1002/lpor.71739
+UR  - https://doi.org/10.1002/lpor.71739
+N2  - ABSTRACT Metasurface inverse design can realize complex optical functionality, but turning a target optical response into executable optimization code still requires substantial expertise in computational electromagnetics and solver‐specific software engineering. We present a self‐evolving agentic framework that lowers this barrier by coupling a coding agent, explicit human‐readable skill files, and a deterministic physics‐based evaluator. Rather than updating model weights, it revises the skill
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Bai, Bowen
+AU  - Yang, Qipeng
+AU  - Shu, Haowen
+AU  - Chang, Lin
+AU  - Yang, Fenghe
+AU  - Shen, Bitao
+AU  - Tao, Zihan
+AU  - Wang, Jing
+AU  - Xu, Shaofu
+AU  - Xie, Weiqiang
+AU  - Zou, Weiwen
+AU  - Hu, Weiwei
+AU  - Bowers, John E.
+AU  - Wang, Xingjun
+TI  - Microcomb-based integrated photonic processing unit
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2023
+VL  - 14
+IS  - 1
+DO  - 10.1038/s41467-022-35506-9
+UR  - https://doi.org/10.1038/s41467-022-35506-9
+N2  - Abstract The emergence of parallel convolution-operation technology has substantially powered the complexity and functionality of optical neural networks (ONN) by harnessing the dimension of optical wavelength. However, this advanced architecture faces remarkable challenges in high-level integration and on-chip operation. In this work, convolution based on time-wavelength plane stretching approach is implemented on a microcomb-driven chip-based photonic processing unit (PPU). To support the oper
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Cheng, Zhuo
+AU  - Shu, Xiaoqian
+AU  - Ma, Lingmei
+AU  - Chen, Bigeng
+AU  - Li, Caiyun
+AU  - Sun, Chunlei
+AU  - Wei, Maoliang
+AU  - Yu, Shaoliang
+AU  - Li, Lan
+AU  - Lin, Hongtao
+AU  - Rao, Yunjiang
+TI  - On-chip silicon electro-optical modulator with ultra-high extinction ratio for fiber-optic distributed acoustic sensing
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2023
+VL  - 14
+IS  - 1
+DO  - 10.1038/s41467-023-43244-9
+UR  - https://doi.org/10.1038/s41467-023-43244-9
+N2  - Abstract Ultra-high extinction ratio (ER) optical modulation is crucial for achieving high-performance fiber-optic distributed acoustic sensing (DAS) for various applications. Bulky acousto-optical modulators (AOM) as one of the key devices in DAS have been used for many years, but their relatively large volume and high power consumption are becoming the bottlenecks to hinder the development of ultra-compact and energy-efficient DAS systems that are highly demanded in practice. Here, an on-chip 
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Cheng, Junwei
+AU  - Huang, Chaoran
+AU  - Zhang, Jialong
+AU  - Wu, Bo
+AU  - Zhang, Wenkai
+AU  - Liu, Xinyu
+AU  - Zhang, Jiahui
+AU  - Tang, Yiyi
+AU  - Zhou, Hailong
+AU  - Zhang, Qiming
+AU  - Gu, Min
+AU  - Dong, Jianji
+AU  - Zhang, Xinliang
+TI  - Multimodal deep learning using on-chip diffractive optics with in situ training capability
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2024
+VL  - 15
+IS  - 1
+DO  - 10.1038/s41467-024-50677-3
+UR  - https://doi.org/10.1038/s41467-024-50677-3
+N2  - Abstract Multimodal deep learning plays a pivotal role in supporting the processing and learning of diverse data types within the realm of artificial intelligence generated content (AIGC). However, most photonic neuromorphic processors for deep learning can only handle a single data modality (either vision or audio) due to the lack of abundant parameter training in optical domain. Here, we propose and demonstrate a trainable diffractive optical neural network (TDONN) chip based on on-chip diffra
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Zhou, Tiankuang
+AU  - Jiang, Yizhou
+AU  - Xu, Zhihao
+AU  - Xue, Zhiwei
+AU  - Fang, Lu
+TI  - Hundred-layer photonic deep learning
+JO  - Nature Communications
+T2  - Nature Communications
+JA  - Nat Commun
+PY  - 2025
+VL  - 16
+IS  - 1
+DO  - 10.1038/s41467-025-65356-0
+UR  - https://doi.org/10.1038/s41467-025-65356-0
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Zhou, Tiankuang
+AU  - Lin, Xing
+AU  - Wu, Jiamin
+AU  - Chen, Yitong
+AU  - Xie, Hao
+AU  - Li, Yipeng
+AU  - Fan, Jingtao
+AU  - Wu, Huaqiang
+AU  - Fang, Lu
+AU  - Dai, Qionghai
+TI  - Large-scale neuromorphic optoelectronic computing with a reconfigurable diffractive processing unit
+JO  - Nature Photonics
+T2  - Nature Photonics
+JA  - Nat. Photonics
+PY  - 2021
+VL  - 15
+IS  - 5
+SP  - 367
+EP  - 373
+DO  - 10.1038/s41566-021-00796-w
+UR  - https://doi.org/10.1038/s41566-021-00796-w
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Xu, Xingyuan
+AU  - Tan, Mengxi
+AU  - Corcoran, Bill
+AU  - Wu, Jiayang
+AU  - Boes, Andreas
+AU  - Nguyen, Thach G.
+AU  - Chu, Sai T.
+AU  - Little, Brent E.
+AU  - Hicks, Damien G.
+AU  - Morandotti, Roberto
+AU  - Mitchell, Arnan
+AU  - Moss, David J.
+TI  - 11 TOPS photonic convolutional accelerator for optical neural networks
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2021
+VL  - 589
+IS  - 7840
+SP  - 44
+EP  - 51
+DO  - 10.1038/s41586-020-03063-0
+UR  - https://doi.org/10.1038/s41586-020-03063-0
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Feldmann, J.
+AU  - Youngblood, N.
+AU  - Karpov, M.
+AU  - Gehring, H.
+AU  - Li, X.
+AU  - Stappers, M.
+AU  - Le Gallo, M.
+AU  - Fu, X.
+AU  - Lukashchuk, A.
+AU  - Raja, A. S.
+AU  - Liu, J.
+AU  - Wright, C. D.
+AU  - Sebastian, A.
+AU  - Kippenberg, T. J.
+AU  - Pernice, W. H. P.
+AU  - Bhaskaran, H.
+TI  - Parallel convolutional processing using an integrated photonic tensor core
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2021
+VL  - 589
+IS  - 7840
+SP  - 52
+EP  - 58
+DO  - 10.1038/s41586-020-03070-1
+UR  - https://doi.org/10.1038/s41586-020-03070-1
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Ashtiani, Farshid
+AU  - Geers, Alexander J.
+AU  - Aflatouni, Firooz
+TI  - An on-chip photonic deep neural network for image classification
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2022
+VL  - 606
+IS  - 7914
+SP  - 501
+EP  - 506
+DO  - 10.1038/s41586-022-04714-0
+UR  - https://doi.org/10.1038/s41586-022-04714-0
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Hua, Shiyue
+AU  - Divita, Erwan
+AU  - Yu, Shanshan
+AU  - Peng, Bo
+AU  - Roques-Carmes, Charles
+AU  - Su, Zhan
+AU  - Chen, Zhang
+AU  - Bai, Yanfei
+AU  - Zou, Jinghui
+AU  - Zhu, Yunpeng
+AU  - Xu, Yelong
+AU  - Lu, Cheng-kuan
+AU  - Di, Yuemiao
+AU  - Chen, Hui
+AU  - Jiang, Lushan
+AU  - Wang, Lijie
+AU  - Ou, Longwu
+AU  - Zhang, Chaohong
+AU  - Chen, Junjie
+AU  - Zhang, Wen
+AU  - Zhu, Hongyan
+AU  - Kuang, Weijun
+AU  - Wang, Long
+AU  - Meng, Huaiyu
+AU  - Steinman, Maurice
+AU  - Shen, Yichen
+TI  - An integrated large-scale photonic accelerator with ultralow latency
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2025
+VL  - 640
+IS  - 8058
+SP  - 361
+EP  - 367
+DO  - 10.1038/s41586-025-08786-6
+UR  - https://doi.org/10.1038/s41586-025-08786-6
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Ahmed, Sufi R.
+AU  - Baghdadi, Reza
+AU  - Bernadskiy, Mikhail
+AU  - Bowman, Nate
+AU  - Braid, Ryan
+AU  - Carr, Jim
+AU  - Chen, Chen
+AU  - Ciccarella, Pietro
+AU  - Cole, Matthew
+AU  - Cooke, John
+AU  - Desai, Kishor
+AU  - Dorta, Carlos
+AU  - Elmhurst, Jonathan
+AU  - Gardiner, Bryce
+AU  - Greenwald, Elliot
+AU  - Gupta, Shashank
+AU  - Husbands, Parry
+AU  - Jones, Brian
+AU  - Kopa, Anthony
+AU  - Lee, Ho John
+AU  - Madhavan, Arulselvan
+AU  - Mendrela, Adam
+AU  - Moore, Nicholas
+AU  - Nair, Lakshmi
+AU  - Om, Aditya
+AU  - Patel, Subie
+AU  - Patro, Rutayan
+AU  - Pellowski, Rob
+AU  - Radhakrishnani, Esha
+AU  - Sane, Sandeep
+AU  - Sarkis, Nicholas
+AU  - Stadolnik, Joe
+AU  - Tymchenko, Mykhailo
+AU  - Wang, Gongyu
+AU  - Winikka, Kurt
+AU  - Wleklinski, Alexandra
+AU  - Zelman, Josh
+AU  - Ho, Richard
+AU  - Jain, Ritesh
+AU  - Basumallik, Ayon
+AU  - Bunandar, Darius
+AU  - Harris, Nicholas C.
+TI  - Universal photonic artificial intelligence acceleration
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2025
+VL  - 640
+IS  - 8058
+SP  - 368
+EP  - 374
+DO  - 10.1038/s41586-025-08854-x
+UR  - https://doi.org/10.1038/s41586-025-08854-x
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Miao, Jiacheng
+AU  - Davis, Joe R.
+AU  - Zhang, Yaohui
+AU  - Pritchard, Jonathan K.
+AU  - Zou, James
+TI  - Reimagining research papers as interactive and reliable AI agents
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2026
+DO  - 10.1038/s41586-026-11044-y
+UR  - https://doi.org/10.1038/s41586-026-11044-y
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Sharma, Ankita
+AU  - Fu, Yuqi
+AU  - Ansari, Vahid
+AU  - Iyer, Rishabh
+AU  - Kuang, Fiona
+AU  - Mistry, Kashish
+AU  - Aishy, Raisa Islam
+AU  - Ahmad, Sara
+AU  - Matres, Joaquin
+AU  - Englund, Dirk R.
+AU  - Poon, Joyce K. S.
+TI  - AI agents for photonic integrated circuit design automation
+JO  - APL Machine Learning
+T2  - APL Machine Learning
+PY  - 2025
+VL  - 3
+IS  - 4
+DO  - 10.1063/5.0300741
+UR  - https://doi.org/10.1063/5.0300741
+N2  - We present photonics intelligent design and optimization, a proof-of-concept multi-agent framework that converts natural-language photonic integrated circuit (PIC) design requests into layout mask files. This work demonstrates end-to-end PIC design automation using large language models (LLMs), with the goal of achieving structurally valid rather than performance-qualified layouts. We compare seven reasoning LLMs using a testbench of 102 design descriptions that ranged from single devices to 112
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Ip, Ezra
+AU  - Huang, Yue-Kai
+AU  - Huang, Ming-Fang
+AU  - Yaman, Fatih
+AU  - Wellbrock, Glenn
+AU  - Xia, Tiejun
+AU  - Wang, Ting
+AU  - Asahi, Koji
+AU  - Aono, Yoshiaki
+TI  - DAS Over 1,007-km Hybrid Link With 10-Tb/s DP-16QAM Co-Propagation Using Frequency-Diverse Chirped Pulses
+JO  - Journal of Lightwave Technology
+T2  - Journal of Lightwave Technology
+JA  - J. Lightwave Technol.
+PY  - 2023
+VL  - 41
+IS  - 4
+SP  - 1077
+EP  - 1086
+DO  - 10.1109/jlt.2022.3219369
+UR  - https://doi.org/10.1109/jlt.2022.3219369
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Li, Jian-Ting
+AU  - Chang, Bing
+AU  - Du, Jun-Ting
+AU  - Tan, Teng
+AU  - Geng, Yong
+AU  - Zhou, Heng
+AU  - Liang, Yu-Pei
+AU  - Zhang, Hao
+AU  - Yan, Guo-Feng
+AU  - Ma, Ling-Mei
+AU  - Ran, Zeng-Ling
+AU  - Wang, Zi-Nan
+AU  - Yao, Bai-Cheng
+AU  - Rao, Yun-Jiang
+TI  - Coherently parallel fiber-optic distributed acoustic sensing using dual Kerr soliton microcombs
+JO  - Science Advances
+T2  - Science Advances
+JA  - Sci. Adv.
+PY  - 2024
+VL  - 10
+IS  - 3
+DO  - 10.1126/sciadv.adf8666
+UR  - https://doi.org/10.1126/sciadv.adf8666
+N2  - Fiber-optic distributed acoustic sensing (DAS) has proven to be a revolutionary technology for the detection of seismic and acoustic waves with ultralarge scale and ultrahigh sensitivity, and is widely used in oil/gas industry and intrusion monitoring. Nowadays, the single-frequency laser source in DAS becomes one of the bottlenecks limiting its advance. Here, we report a dual-comb–based coherently parallel DAS concept, enabling linear superposition of sensing signals scaling with the comb-line 
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Lupoiu, Robert
+AU  - Shao, Yixuan
+AU  - Dai, Tianxiang
+AU  - Mao, Chenkai
+AU  - Edée, Kofi
+AU  - Fan, Jonathan A.
+TI  - A multi-agentic framework for real-time, autonomous freeform metasurface design
+JO  - Science Advances
+T2  - Science Advances
+JA  - Sci. Adv.
+PY  - 2025
+VL  - 11
+IS  - 44
+DO  - 10.1126/sciadv.adx8006
+UR  - https://doi.org/10.1126/sciadv.adx8006
+N2  - Innovation in nanophotonics currently relies on human experts who synergize specialized knowledge in photonics and coding with simulation and optimization algorithms, entailing design cycles that are time-consuming, computationally demanding, and frequently suboptimal. We introduce MetaChat, a multi-agentic design framework that can translate semantically described photonic design goals into high-performance, freeform device layouts in an automated, nearly real-time manner. Multistep reasoning i
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Idjadi, Mohamad Hossein
+AU  - Grillanda, Stefano
+AU  - Fontaine, Nicolas
+AU  - Mazur, Mikael
+AU  - Kim, Kwangwoong
+AU  - Huang, Tzu-Yung
+AU  - Bolle, Cristian
+AU  - Kopf, Rose
+AU  - Cappuzzo, Mark
+AU  - Liu, Kaikai
+AU  - Heim, David A. S.
+AU  - Hunter, Andrew
+AU  - Nelson, Karl D.
+AU  - Blumenthal, Daniel J.
+TI  - Dual-Wavelength ϕ-OFDR Using a Hybrid-Integrated Laser Stabilized to an Integrated SiN Coil Resonator
+JO  - Optical Fiber Communication Conference (OFC) 2025
+T2  - Optical Fiber Communication Conference (OFC) 2025
+PY  - 2025
+SP  - Tu2K.5
+DO  - 10.1364/ofc.2025.tu2k.5
+UR  - https://doi.org/10.1364/ofc.2025.tu2k.5
+N2  - We demonstrate dual-wavelength distributed acoustic sensing over 37 km of standard single-mode fiber using φ-OFDR, utilizing a scalable hybrid-integrated dual-wavelength laser chip frequency-locked to a high-Q integrated SiN coil resonator.
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Jin, Zhicheng
+AU  - Chen, Jiageng
+AU  - Li, Zhengwen
+AU  - Li, Hanzhao
+AU  - Hu, Keke
+AU  - Yu, Xuhui
+AU  - He, Zuyuan
+TI  - Hybrid Photonic Integrated Interrogator for Distributed Acoustic Sensing
+JO  - Optical Fiber Communication Conference (OFC) 2026
+T2  - Optical Fiber Communication Conference (OFC) 2026
+PY  - 2026
+SP  - W4D.2
+DO  - 10.1364/ofc.2026.w4d.2
+UR  - https://doi.org/10.1364/ofc.2026.w4d.2
+N2  - We demonstrate a highly integrated DAS interrogator via hybrid integration of an InP external-cavity laser and an SOI PIC, achieving 73.27 p ε /Hz strain resolution and ~ 4m spatial resolution over 10km fiber.
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Lin, Zhongjin
+AU  - Shi, Wei
+TI  - Photonic integrated circuit-based fiber-optic temperature and strain sensing system
+JO  - Optics Letters
+T2  - Optics Letters
+JA  - Opt. Lett.
+PY  - 2022
+VL  - 47
+IS  - 15
+SP  - 3620
+DO  - 10.1364/ol.460314
+UR  - https://doi.org/10.1364/ol.460314
+N2  - A low-cost, multi-function fiber-optic sensing system is highly desirable for physical security monitoring. Using the silicon photonic integrated circuit technology, we propose and demonstrate a compact fiber-optic sensing system which can simultaneously measure the temperature and strain information. A key enabler of the proposed system is an on-chip optical interrogator consisting of a two-dimensional grating coupler, four microring resonators, and four on-chip photodetectors. The interrogator
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Jin, Zhicheng
+AU  - Chen, Jiageng
+AU  - Chang, Yanming
+AU  - Liu, Qingwen
+AU  - He, Zuyuan
+TI  - Silicon photonic integrated interrogator for fiber-optic distributed acoustic sensing
+JO  - Photonics Research
+T2  - Photonics Research
+JA  - Photon. Res.
+PY  - 2024
+VL  - 12
+IS  - 3
+SP  - 465
+DO  - 10.1364/prj.512298
+UR  - https://doi.org/10.1364/prj.512298
+N2  - Distributed acoustic sensing (DAS) technology has been a promising tool in various applications. Currently, the large size and relatively high cost of DAS equipment composed of discrete devices restrict its further popularization to some degree, and the photonic integration technology offers a potential solution. In this paper, we demonstrate an integrated interrogator for DAS on the silicon-on-insulator (SOI) platform. The design of the chip revolves around a Mach–Zehnder modulator (MZM) transm
+DB  - CrossRef
+ER  - 
+
+TY  - JOUR
+AU  - Sludds A
+AU  - Bandyopadhyay S
+AU  - Chen Z
+AU  - Zhong Z
+AU  - Cochrane J
+AU  - Bernstein L
+AU  - Bunandar D
+AU  - Dixon PB
+AU  - Hamilton SA
+AU  - Streshinsky M
+AU  - Novack A
+AU  - Baehr-Jones T
+AU  - Hochberg M
+AU  - Ghobadi M
+AU  - Hamerly R
+AU  - Englund D
+TI  - Delocalized photonic deep learning on the internet's edge.
+JO  - Science (New York, N.Y.)
+T2  - Science (New York, N.Y.)
+JA  - Science
+PY  - 2022
+VL  - 378
+IS  - 6617
+SP  - 270
+EP  - 276
+DO  - 10.1126/science.abq8271
+UR  - https://doi.org/10.1126/science.abq8271
+N2  - Advanced machine learning models are currently impossible to run on edge devices such as smart sensors and unmanned aerial vehicles owing to constraints on power, processing, and memory. We introduce an approach to machine learning inference based on delocalized analog processing across networks. In this approach, named Netcast, cloud-based "smart transceivers" stream weight data to edge devices, enabling ultraefficient photonic inference. We demonstrate image recognition at ultralow optical ene
+AN  - PMID:36264813
+DB  - PubMed
+ER  - 
+
+TY  - JOUR
+AU  - Chen Y
+AU  - Nazhamaiti M
+AU  - Xu H
+AU  - Meng Y
+AU  - Zhou T
+AU  - Li G
+AU  - Fan J
+AU  - Wei Q
+AU  - Wu J
+AU  - Qiao F
+AU  - Fang L
+AU  - Dai Q
+TI  - All-analog photoelectronic chip for high-speed vision tasks.
+JO  - Nature
+T2  - Nature
+JA  - Nature
+PY  - 2023
+VL  - 623
+IS  - 7985
+SP  - 48
+EP  - 57
+DO  - 10.1038/s41586-023-06558-8
+UR  - https://doi.org/10.1038/s41586-023-06558-8
+N2  - Photonic computing enables faster and more energy-efficient processing of vision data(1-5). However, experimental superiority of deployable systems remains a challenge because of complicated optical nonlinearities, considerable power consumption of analog-to-digital converters (ADCs) for downstream digital processing and vulnerability to noises and system errors(1,6-8). Here we propose an all-analog chip combining electronic and light computing (ACCEL). It has a systemic energy efficiency of 74.
+AN  - PMID:37880362
+DB  - PubMed
+ER  - 
+
+TY  - JOUR
+AU  - Xu Z
+AU  - Zhou T
+AU  - Ma M
+AU  - Deng C
+AU  - Dai Q
+AU  - Fang L
+TI  - Large-scale photonic chiplet Taichi empowers 160-TOPS/W artificial general intelligence.
+JO  - Science (New York, N.Y.)
+T2  - Science (New York, N.Y.)
+JA  - Science
+PY  - 2024
+VL  - 384
+IS  - 6692
+SP  - 202
+EP  - 209
+DO  - 10.1126/science.adl1203
+UR  - https://doi.org/10.1126/science.adl1203
+N2  - The pursuit of artificial general intelligence (AGI) continuously demands higher computing performance. Despite the superior processing speed and efficiency of integrated photonic circuits, their capacity and scalability are restricted by unavoidable errors, such that only simple tasks and shallow models are realized. To support modern AGIs, we designed Taichi-large-scale photonic chiplets based on an integrated diffractive-interference hybrid design and a general distributed computing architect
+AN  - PMID:38603505
+DB  - PubMed
+ER  - 
+

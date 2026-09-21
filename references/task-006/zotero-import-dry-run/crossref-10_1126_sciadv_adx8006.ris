@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Lupoiu, Robert
+AU  - Shao, Yixuan
+AU  - Dai, Tianxiang
+AU  - Mao, Chenkai
+AU  - Edée, Kofi
+AU  - Fan, Jonathan A.
+TI  - A multi-agentic framework for real-time, autonomous freeform metasurface design
+JO  - Science Advances
+T2  - Science Advances
+JA  - Sci. Adv.
+PY  - 2025
+VL  - 11
+IS  - 44
+DO  - 10.1126/sciadv.adx8006
+UR  - https://doi.org/10.1126/sciadv.adx8006
+N2  - Innovation in nanophotonics currently relies on human experts who synergize specialized knowledge in photonics and coding with simulation and optimization algorithms, entailing design cycles that are time-consuming, computationally demanding, and frequently suboptimal. We introduce MetaChat, a multi-agentic design framework that can translate semantically described photonic design goals into high-performance, freeform device layouts in an automated, nearly real-time manner. Multistep reasoning i
+DB  - CrossRef
+ER  - 

@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Xu Z
+AU  - Zhou T
+AU  - Ma M
+AU  - Deng C
+AU  - Dai Q
+AU  - Fang L
+TI  - Large-scale photonic chiplet Taichi empowers 160-TOPS/W artificial general intelligence.
+JO  - Science (New York, N.Y.)
+T2  - Science (New York, N.Y.)
+JA  - Science
+PY  - 2024
+VL  - 384
+IS  - 6692
+SP  - 202
+EP  - 209
+DO  - 10.1126/science.adl1203
+UR  - https://doi.org/10.1126/science.adl1203
+N2  - The pursuit of artificial general intelligence (AGI) continuously demands higher computing performance. Despite the superior processing speed and efficiency of integrated photonic circuits, their capacity and scalability are restricted by unavoidable errors, such that only simple tasks and shallow models are realized. To support modern AGIs, we designed Taichi-large-scale photonic chiplets based on an integrated diffractive-interference hybrid design and a general distributed computing architect
+AN  - PMID:38603505
+DB  - PubMed
+ER  - 

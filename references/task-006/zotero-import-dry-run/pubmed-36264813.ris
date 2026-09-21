@@ -1,0 +1,32 @@
+TY  - JOUR
+AU  - Sludds A
+AU  - Bandyopadhyay S
+AU  - Chen Z
+AU  - Zhong Z
+AU  - Cochrane J
+AU  - Bernstein L
+AU  - Bunandar D
+AU  - Dixon PB
+AU  - Hamilton SA
+AU  - Streshinsky M
+AU  - Novack A
+AU  - Baehr-Jones T
+AU  - Hochberg M
+AU  - Ghobadi M
+AU  - Hamerly R
+AU  - Englund D
+TI  - Delocalized photonic deep learning on the internet's edge.
+JO  - Science (New York, N.Y.)
+T2  - Science (New York, N.Y.)
+JA  - Science
+PY  - 2022
+VL  - 378
+IS  - 6617
+SP  - 270
+EP  - 276
+DO  - 10.1126/science.abq8271
+UR  - https://doi.org/10.1126/science.abq8271
+N2  - Advanced machine learning models are currently impossible to run on edge devices such as smart sensors and unmanned aerial vehicles owing to constraints on power, processing, and memory. We introduce an approach to machine learning inference based on delocalized analog processing across networks. In this approach, named Netcast, cloud-based "smart transceivers" stream weight data to edge devices, enabling ultraefficient photonic inference. We demonstrate image recognition at ultralow optical ene
+AN  - PMID:36264813
+DB  - PubMed
+ER  - 
