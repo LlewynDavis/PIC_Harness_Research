@@ -1,0 +1,59 @@
+{
+  "topic": "面向光子芯片智能设计的三方向技术调研",
+  "content_maturity": "serious/work",
+  "audience_posture": "coworkers/operators",
+  "emotional_register": "trustworthy",
+  "format_promise": "A clean, editable PowerPoint deck with one dominant idea per slide, disciplined alignment, and enough visual rhythm to avoid generic card grids.",
+  "anti_format": [
+    "repeated title plus three cards on every slide",
+    "body text placed by feel instead of grid constants",
+    "decorative shapes without a reading job",
+    "shrinking text below readability floors to solve density"
+  ],
+  "canvas_and_grid": {
+    "aspect": "16:9",
+    "margin_x_in": 0.5,
+    "footer_reserve_in": 0.32,
+    "header_policy": "measured title/subtitle stack; body starts at returned contentTop",
+    "column_policy": "derive columns from margin and gutter constants, not magic numbers"
+  },
+  "visual_system": {
+    "style_preset": "lab-report",
+    "dominant_color": "0B2545",
+    "accent_primary": "0B2545",
+    "accent_secondary": "C9302C",
+    "palette_role_map": {
+      "background": "dominant or neutral field",
+      "accent": "navigation, KPI emphasis, rails, and labels",
+      "muted": "captions and provenance"
+    }
+  },
+  "title_page_concept": {
+    "chosen_archetype": "topic-specific opener chosen from the preset and content",
+    "dominant_element": "large topic-specific title",
+    "supporting_element": "short subtitle or one strong hero asset",
+    "why_this_could_only_be_this_deck": "Replace with a sentence before final delivery."
+  },
+  "structure_strategy": {
+    "primary_scaffold": "open editorial content slides with measured headers",
+    "repeated_elements": [
+      "shared margins",
+      "consistent source/footer treatment",
+      "limited accent rails"
+    ],
+    "allowed_variations": [
+      "standard clean report slides",
+      "split",
+      "cards-2",
+      "cards-3 with promote_card",
+      "timeline only when the sequence is truly time-based",
+      "table",
+      "matrix",
+      "optional kpi-hero only when one metric deserves isolation",
+      "flow",
+      "generated-image"
+    ],
+    "container_policy": "Cards are for modular comparisons or evidence groups, not the default way to make prose look designed.",
+    "rhythm_break_plan": "Use a rhythm break only when the content asks for it: a true hero metric, a full-bleed/source-backed image, a major section turn, or a decisive chart. Do not add a KPI hero just to break rhythm. Do not add a timeline just because a slide has steps; use report bands, a table, or a figure when those are clearer."
+  }
+}

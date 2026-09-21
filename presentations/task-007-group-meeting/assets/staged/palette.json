@@ -1,0 +1,12 @@
+{
+  "topic": "\u9762\u5411\u5149\u5b50\u82af\u7247\u667a\u80fd\u8bbe\u8ba1\u7684\u4e09\u65b9\u5411\u6280\u672f\u8c03\u7814",
+  "palette_id": "clinical_labs_v1",
+  "palette_key": "enterprise_graphite_v1",
+  "palette": {
+    "dominant": "0F172A",
+    "support": "1E3A5F",
+    "accent": "14B8A6",
+    "neutral": "F8FAFC"
+  },
+  "matched_keywords": []
+}

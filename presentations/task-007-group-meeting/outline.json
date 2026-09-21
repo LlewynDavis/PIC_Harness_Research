@@ -1,0 +1,274 @@
+{
+  "title": "面向光子芯片智能设计的三方向技术调研",
+  "subtitle": "DAS 光电混合集成 · Photonic AI Computing · Agentic PIC Design",
+  "deck_style": {
+    "font_pair": "system_clean_v1",
+    "visual_density": "medium",
+    "emoji_mode": "none",
+    "research_visual_mode": false,
+    "header_mode": "lab-clean",
+    "footer_mode": "source-line",
+    "footer_page_numbers": true,
+    "summary_callout_mode": "lab-box"
+  },
+  "compliance": {"require_attribution": false, "auto_image_sources": false},
+  "slides": [
+    {
+      "type": "title",
+      "title": "面向光子芯片智能设计的三方向技术调研",
+      "subtitle": "DAS 光电混合集成 · Photonic AI Computing · Agentic PIC Design\nTASK-007 组会汇报｜证据截止 2026-09-21"
+    },
+    {
+      "type": "content", "variant": "cards-3",
+      "title": "三个目标：物理系统、计算硬件与设计方法",
+      "cards": [
+        {"title": "保底目标", "body": "AI 辅助设计 DAS 光电混合集成芯片，贯通需求、设计与验证流程。"},
+        {"title": "中等目标", "body": "将 AI 推理计算映射到光子硬件，审视任务精度与完整系统成本。"},
+        {"title": "最高目标", "body": "建立可调用设计、仿真、优化和验证工具的 PIC Agent Harness。"}
+      ],
+      "summary_callout": "三者相互关联，但不能用“有 AI”“有 PIC”或“有 Agent”互相替代。",
+      "sources": ["TASK-007 任务规格；正式报告第 1 章"]
+    },
+    {
+      "type": "content", "variant": "split",
+      "title": "研究方法：范围综述 + 定向全文核证",
+      "body": "继承 TASK-004/005/006 已验收候选池，只补充会改变研究现状或候选路线判断的一手证据；本轮不是 PRISMA 系统综述。",
+      "highlights": ["FACT：一手材料直接支持", "AUTHOR CLAIM：作者报告、未复算", "CODE VERIFIED：固定提交可见", "INFERENCE / UNKNOWN：分析与证据缺口"],
+      "sources": ["TASK-007 search-and-screening-log.md；full-text-evidence-audit.md"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "三方向现状一览",
+      "headers": ["方向", "当前最强证据", "主要缺口", "常见过度表述"],
+      "rows": [
+        ["DAS 光电混合集成", "PIC/混合模块进入真实 DAS", "系统约束、封装与长期证据", "有 PIC = 完整 DAS 芯片"],
+        ["Photonic AI", "芯片及任务级系统演示", "误差、控制、转换与总能耗", "核心 TOPS/W = 系统更优"],
+        ["Agentic PIC", "局部工具闭环与仿真在环", "通用开源、验证与失败恢复", "生成脚本 = 自动设计"]
+      ],
+      "column_weights": [1.1, 1.6, 1.8, 1.7],
+      "caption": "结论强度按公开论文、代码与官方资料划定。",
+      "sources": ["正式报告第 5.1 节"]
+    },
+    {
+      "type": "content", "variant": "cards-3", "title": "01｜DAS 光电混合集成", "subtitle": "从单器件到完整系统，先看边界",
+      "cards": [
+        {"title": "已有基础", "body": "PIC 已进入真实 DAS 实验。"},
+        {"title": "持续集成", "body": "混合集成继续纳入激光、微光学与热控。"},
+        {"title": "关键未知", "body": "AI 端到端设计与物理验证证据仍缺失。"}
+      ]
+    },
+    {
+      "type": "content", "slide_intent": "process", "visual_intent": "flow",
+      "title": "DAS 性能来自完整链路，而非单一器件",
+      "assets": {"diagram": "assets/diagrams/das-chain.png"},
+      "message": "距离、分辨率与灵敏度共同受光源、链路、接收、电子与算法影响。",
+      "caption": "因此不同论文的最佳单项指标不能脱离测试条件拼接。",
+      "sources": ["正式报告第 2.1 节"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "四个集成层级必须分开",
+      "headers": ["层级", "典型内容", "能够证明", "不能证明"],
+      "rows": [
+        ["单器件", "调制器/探测器/激光", "局部性能", "完整收发或系统"],
+        ["PIC", "调制/偏振/混频/探测", "片上光学前端", "电子、光源、封装均闭合"],
+        ["混合模块", "PIC + 激光/电子/TEC", "模块接口与部分系统功能", "全部外部链路解决"],
+        ["完整系统", "真实光纤与端到端解调", "给定条件下系统性能", "量产与所有工况"]
+      ],
+      "column_weights": [0.9, 1.6, 1.6, 1.8],
+      "sources": ["正式报告第 2.2 节"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "DAS 代表工作：从器件到混合模块",
+      "headers": ["工作", "实际达到", "主要边界"],
+      "rows": [
+        ["Jin 2024", "SOI 收发 PIC + 12.1/49 km 实验", "激光、放大、采集与 DSP 外置"],
+        ["Jin 2026", "InP 激光 + SOI PIC 模块 + 10 km 演示", "会议短文；多项系统组件仍外置"],
+        ["Cheng 2023", "高 ER 调制器进入 2 km DAS 对照", "只替换发射调制子模块"],
+        ["双微梳 2024", "并行多波长 DAS", "泵浦、控制、探测与 DSP 复杂"],
+        ["非 PIC 1007 km", "长距离反例", "距离不由 PIC 集成自然带来"]
+      ],
+      "column_weights": [1.1, 2.2, 2.6],
+      "caption": "所有数值均为作者报告，本项目未复现实验。",
+      "sources": ["PRJ 2024; OFC 2026 W4D.2; Nat Commun 2023; Sci Adv 2024; JLT 2022"]
+    },
+    {
+      "type": "content", "variant": "comparison-2col",
+      "title": "OFC 2026：集成进了一步，但系统尚未闭合",
+      "left": {"title": "已进入模块", "body": ["<3 kHz InP 外腔激光", "SOI 调制与双偏振相干接收", "微透镜、隔离器与 TEC", "约 40 × 40 × 10 mm"]},
+      "right": {"title": "仍在模块外", "body": ["EDFA 与环行器", "AWG、TIA 与 DAQ", "离线 DSP", "长期漂移、良率和完整功耗未知"]},
+      "verdict": "更准确的结论：混合集成 interrogator 进入真实 DAS 演示，而非完整系统片上化。",
+      "sources": ["Jin et al., OFC 2026, W4D.2，用户提供原文逐页核读"]
+    },
+    {
+      "type": "content", "variant": "cards-3",
+      "title": "DAS 的关键缺口不在“能否画版图”",
+      "cards": [
+        {"title": "跨域约束", "body": "系统距离/灵敏度如何传播到激光、PIC、电子、封装和 DSP？"},
+        {"title": "可比性", "body": "距离、标距、带宽、频率和统计口径不同，不能用单值排序。"},
+        {"title": "长期工程证据", "body": "温漂、耦合、控制、封装、良率和重复性仍缺统一记录。"}
+      ],
+      "summary_callout": "UNKNOWN：尚无 Agent 端到端设计并物理验证 DAS 光电混合集成芯片的公开证据。",
+      "sources": ["正式报告第 2.4–2.5 节"]
+    },
+    {
+      "type": "content", "variant": "cards-3", "title": "02｜Photonic AI Computing", "subtitle": "真实芯片与任务演示已经出现，系统边界成为焦点",
+      "cards": [
+        {"title": "干涉网格", "body": "可编程矩阵计算，受相位、插损与校准约束。"},
+        {"title": "微环/WDM/微梳", "body": "波长并行，受热漂移、工艺与光源约束。"},
+        {"title": "衍射/混合系统", "body": "高并行任务演示，受重构、接口和系统边界约束。"}
+      ]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "三类主计算架构",
+      "headers": ["路线", "优势", "已到达", "主要代价"],
+      "rows": [
+        ["MZI / 相干网格", "可编程线性变换", "片上网络、64×64 MAC", "相位漂移、插损、校准"],
+        ["MRR / WDM / 微梳", "波长并行、紧凑权重", "卷积、权重库、分布式推理", "热漂移、工艺偏差、光源"],
+        ["衍射 / 自由空间 / 芯粒", "大规模传播并行", "任务级系统与芯粒扩展", "对准、重构、非线性、接口"]
+      ],
+      "column_weights": [1.2, 1.5, 1.9, 1.9],
+      "sources": ["Nature/Nature Photonics/Science 2021–2025 代表论文；正式报告第 3 章"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "代表系统：真实完成度比宣传标签更重要",
+      "headers": ["对象", "实际证据层", "需要保留的限制"],
+      "rows": [
+        ["Ashtiani 2022", "芯片级端到端 PDNN", "任务规模与外围控制"],
+        ["Netcast 2022", "分布式系统 + 真实推理", "40 aJ 是接收端光能"],
+        ["ACCEL 2023", "全模拟光电视觉任务", "任务专用，operation 口径不同"],
+        ["Taichi 2024", "光子芯粒 + 任务演示", "AGI 是作者定位"],
+        ["PACE 2025", "2.5D 64×64 MAC + Ising", "不是通用 DNN；外部激光"],
+        ["通用加速器 2025", "多模型/任务 + 公开代码数据", "不同任务精度损失不同"]
+      ],
+      "column_weights": [1.3, 2.0, 2.6],
+      "sources": ["Nature 2022/2025; Science 2022/2024; 正式报告第 3 章"]
+    },
+    {
+      "type": "content", "variant": "comparison-2col",
+      "title": "核心算子指标 ≠ 完整系统优势",
+      "left": {"title": "常被突出", "body": ["TOPS/W 或 aJ/op", "光学传播延迟", "并行通道数", "核心矩阵规模"]},
+      "right": {"title": "必须共同计入", "body": ["激光与耦合损耗", "DAC/ADC、驱动与探测", "控制、校准与温控", "存储、数据移动和任务精度"]},
+      "verdict": "公平比较需要同任务、同精度目标和明确墙插系统边界。",
+      "sources": ["Netcast, PACE, UPAIA 等正文与方法边界；正式报告第 3.5 节"]
+    },
+    {
+      "type": "content", "variant": "cards-3",
+      "title": "Photonic AI 的共同研究缺口",
+      "cards": [
+        {"title": "误差链", "body": "器件/热/工艺误差如何传播到光学算子、网络层和任务精度？"},
+        {"title": "系统成本链", "body": "激光、转换、控制、存储和数据移动如何统一计量？"},
+        {"title": "可扩展性", "body": "规模增长时插损、串扰、校准、封装和良率如何变化？"}
+      ],
+      "summary_callout": "领域已越过“是否能运行 AI”阶段，但尚未统一证明何时优于电子或其他光子路线。",
+      "sources": ["正式报告第 3.7 节"]
+    },
+    {
+      "type": "content", "variant": "cards-3", "title": "03｜Agentic PIC Design", "subtitle": "从脚本生成走向工具闭环，但离制造级自治仍远",
+      "cards": [
+        {"title": "输入", "body": "需求、DesignSpec 与知识/PDK。"},
+        {"title": "执行", "body": "稳定 Tool Contract 与真实 simulation/CAD/EDA。"},
+        {"title": "证据", "body": "RESULT、独立评价、状态与失败恢复。"}
+      ]
+    },
+    {
+      "type": "content", "slide_intent": "process", "visual_intent": "flow",
+      "title": "Agentic PIC 的最小闭环",
+      "assets": {"diagram": "assets/diagrams/agentic-chain.png"},
+      "message": "LLM 负责计划与候选；确定性工具产生物理/数值证据；评价器和账本决定结论强度。",
+      "caption": "单次脚本生成或 solver invocation 不等于闭环自动设计。",
+      "sources": ["TASK-005 技术地图；正式报告第 4.1 节"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "代表对象覆盖的是不同层，不是同一种系统",
+      "headers": ["对象", "强项", "诚实上限"],
+      "rows": [
+        ["PhIDO", "NL→DSL→GDS/DRC→SAX", "结构与电路级 proof-of-concept"],
+        ["AutoPhotonicDesign", "真实 solver 驱动迭代", "专家配置后的仿真在环"],
+        ["gdsfactory/gplugins", "版图/PDK/solver 适配", "Tool Layer，不是 Agent 证明"],
+        ["PICBench", "JSON netlist + SAX 评价", "电路级 benchmark"],
+        ["MetaChat", "代理优化 + FDFD 数据/抽查", "相邻超表面机制参照"],
+        ["PICopilot / PICasso", "脚本生成 / 论文描述链", "无公开实现核验或仅作者主张"]
+      ],
+      "column_weights": [1.4, 2.2, 2.5],
+      "sources": ["PhIDO 2025; arXiv 2502/2606/2608; Sci Adv 2025; TASK-005 源码审查"]
+    },
+    {
+      "type": "content", "variant": "comparison-2col",
+      "title": "两条最强证据，也暴露两个不同瓶颈",
+      "left": {"title": "PhIDO｜结构化设计链", "body": ["YAML DSL + Pydantic", "gdsfactory GDS 与 DRC", "SAX 电路仿真", "终点以结构有效性为主"]},
+      "right": {"title": "AutoPhotonicDesign｜真实仿真在环", "body": ["propose–simulate–evaluate–iterate", "真实物理求解器", "工程师提供脚本与 evaluator", "多物理示例仍需专家纠错"]},
+      "verdict": "一个接近 Harness 骨架，一个证明 solver-in-loop；都不是无条件、制造级端到端自治。",
+      "sources": ["PhIDO APL Machine Learning 2025；AutoPhotonicDesign arXiv:2606.00915"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "验证阶梯：每一级只能支持相应结论",
+      "headers": ["层级", "回答的问题", "不能外推"],
+      "rows": [
+        ["Syntax / Geometry", "描述与几何是否合法？", "性能与制造"],
+        ["DRC", "是否违反给定几何规则？", "LVS、物理性能、signoff"],
+        ["Circuit Simulation", "紧凑模型电路响应如何？", "器件全波与工艺角"],
+        ["Full-wave", "给定材料/网格/边界下场响应？", "制造与系统性能"],
+        ["LVS / PDK", "连接和工艺模型是否一致？", "所有工况可靠"],
+        ["Corner / Signoff / 实物", "是否达到更强制造/实物证据？", "未测试条件下普遍有效"]
+      ],
+      "column_weights": [1.4, 2.0, 2.7],
+      "sources": ["TASK-005 Verification Ladder；正式报告第 1.4、4.5 节"]
+    },
+    {
+      "type": "content", "slide_intent": "process", "visual_intent": "flow",
+      "title": "PIC Harness Reference Architecture V0",
+      "assets": {"diagram": "assets/diagrams/reference-architecture.png"},
+      "message": "把模型判断、工具执行、原始产物、评价和验证门分开，才能形成可审计闭环。",
+      "caption": "V0 是研究比较框架，不是已实现系统，也不预设所有模块都要自研。",
+      "sources": ["TASK-005 Reference Architecture V0；正式报告第 4.4 节"]
+    },
+    {
+      "type": "content", "variant": "table",
+      "title": "跨方向连接：同一“证据链”问题的三种表现",
+      "headers": ["方向", "输入", "确定性证据", "关键断点"],
+      "rows": [
+        ["DAS", "距离/分辨率/灵敏度", "链路模型、器件/系统测量", "需求→器件/封装约束"],
+        ["Photonic AI", "模型与任务", "芯片测量、任务精度、总功耗", "器件误差→任务/系统成本"],
+        ["Agentic PIC", "自然语言与设计目标", "CAD/solver/DRC/LVS/ledger", "工具调用→可信结论"]
+      ],
+      "column_weights": [1.2, 1.8, 2.1, 2.2],
+      "sources": ["正式报告第 5.2–5.3 节"]
+    },
+    {
+      "type": "content", "variant": "cards-3",
+      "title": "三条候选研究路线（非最终方向）",
+      "cards": [
+        {"title": "A｜证据优先 Harness", "body": "最小 Tool Contract + RESULT/evidence ledger + 分层 verification。难点：证明方法净收益。"},
+        {"title": "B｜DAS 约束传播", "body": "系统指标 → 器件/电路/封装约束图。难点：跨域模型和不可比指标。"},
+        {"title": "C｜光子 AI 证据链", "body": "器件误差 → 任务精度 → 完整系统成本。难点：数据缺失与边界统一。"}
+      ],
+      "summary_callout": "本轮不做资源匹配、不设计实验、不设成功阈值，也不选择最终路线。",
+      "sources": ["TASK-007 candidate-routes-and-open-questions.md"]
+    },
+    {
+      "type": "content", "variant": "matrix",
+      "title": "四个 strongest counterexamples",
+      "quadrants": [
+        {"title": "PIC ≠ 更长距离", "body": "非 PIC DAS 已有 1007 km 反例；集成更直接影响 SWaP 与工程一致性。"},
+        {"title": "高 ER ≠ 系统集成", "body": "68 dB 调制器只替换子模块，光源、接收、电子仍需系统证据。"},
+        {"title": "TOPS/W ≠ 总能效", "body": "激光、ADC/DAC、控制、温控、存储与精度必须计入。"},
+        {"title": "Tool 调用 ≠ 设计成功", "body": "模型、边界、收敛、DRC/LVS/PDK 与实物证据必须分层。"}
+      ],
+      "sources": ["TASK-006 critical review；TASK-007 full-text evidence audit"]
+    },
+    {
+      "type": "content", "variant": "comparison-2col",
+      "title": "结论与待讨论问题",
+      "left": {"title": "当前结论", "body": ["DAS：真实 PIC/模块已有，AI 端到端设计未知", "Photonic AI：真实任务已有，系统边界不统一", "Agentic PIC：局部闭环已有，制造级自治缺失", "共同断点：需求、工具、证据与验证未贯通"]},
+      "right": {"title": "下一步讨论", "body": ["贡献落在方法、DAS 系统还是光子计算评价？", "目标证据层是流程、仿真还是实物/系统？", "哪些 PDK、solver 与公开数据可作事实基础？", "Harness 如何证明科研价值而非工具包装？"]},
+      "verdict": "当前只提交候选路线和开放问题，等待导师与用户讨论后再收敛。",
+      "sources": ["正式报告第 6 章；TASK-007 evidence audit"]
+    }
+  ]
+}

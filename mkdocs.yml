@@ -1,5 +1,5 @@
 site_name: PIC 执行框架研究门户（PIC Harness Research Portal）
-site_description: TASK-004 至 TASK-006 调研成果的本地人工阅读层
+site_description: TASK-004 至 TASK-007 调研成果的本地人工阅读层
 
 docs_dir: portal/docs
 site_dir: portal/site
@@ -61,8 +61,17 @@ extra_javascript:
   - assets/mermaid-init.js
 
 nav:
-  - TASK-006 路线收敛:
+  - TASK-007 正式调研:
       - 首页: index.md
+      - 交付物总览: task-007-overview.md
+      - 正式技术调研报告: task-007-report.md
+      - 证据与来源:
+          - 核心全文证据审计: task-007-evidence-audit.md
+          - 引用与链接核查: task-007-citations.md
+          - 检索与筛选记录: task-007-search.md
+          - 术语表: task-007-terms.md
+      - 候选研究路线: task-007-routes.md
+  - TASK-006 路线收敛:
       - 审查包: task-006-overview.md
       - 三方向技术地图:
           - 地图总览: task-006-technical-map.md

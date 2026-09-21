@@ -1,0 +1,12 @@
+{
+  "topic": "面向光子芯片智能设计的三方向技术调研",
+  "source_policy": "优先论文正文、官方仓库和已验收证据日志；所有外部数值均为作者报告。",
+  "items": [
+    {"id": "e1", "claim": "Jin 2026 将 InP 外腔激光与 SOI 收发 PIC 集成为模块", "source": "OFC 2026 W4D.2 用户提供原文", "status": "full-text checked"},
+    {"id": "e2", "claim": "PACE 为 64×64 光学 MAC 和 2.5D PIC/EIC 系统", "source": "Nature 2025, 10.1038/s41586-025-08786-6", "status": "full-text checked"},
+    {"id": "e3", "claim": "PhIDO 终点以结构有效性而非性能资格为主", "source": "APL Machine Learning 2025, 10.1063/5.0300741", "status": "local PDF checked"},
+    {"id": "e4", "claim": "AutoPhotonicDesign 真实调用 solver，但需要工程师配置和纠错", "source": "arXiv:2606.00915", "status": "HTML full text checked"}
+  ],
+  "chart_candidates": [],
+  "open_questions": ["最终研究贡献层级", "目标证据层级", "可用 PDK/solver/数据", "Harness 方法如何证明净收益"]
+}

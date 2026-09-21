@@ -1,0 +1,25 @@
+{
+  "topic": "面向光子芯片智能设计的三方向技术调研",
+  "audience": "程教授与课题组组会",
+  "objective": "用约 20 分钟解释三个领域已做到什么、真正缺什么，以及三条非最终候选路线。",
+  "thesis": "真实进展已经跨越器件、系统与工具层，但局部成功到可追溯、可比较、可制造系统之间仍有证据断点。",
+  "narrative_arc": [
+    {"act": "研究问题与方法", "purpose": "建立三个目标与证据边界", "slides": ["1-4"]},
+    {"act": "DAS", "purpose": "区分器件、PIC、混合模块和系统", "slides": ["5-10"]},
+    {"act": "Photonic AI", "purpose": "区分核心算子与完整系统", "slides": ["11-15"]},
+    {"act": "Agentic PIC", "purpose": "区分脚本生成、Tool 调用和验证闭环", "slides": ["16-21"]},
+    {"act": "综合与路线", "purpose": "连接缺口并给出非最终路线", "slides": ["22-25"]}
+  ],
+  "slide_plan": [
+    {"slide_id": "s1", "role": "title", "message": "三方向调研", "variant": "title", "visual_strategy": "lab report cover", "evidence_needs": [], "asset_needs": []},
+    {"slide_id": "s5", "role": "section", "message": "DAS 集成边界", "variant": "cards-3", "visual_strategy": "three boundary cards", "evidence_needs": ["e1"], "asset_needs": []},
+    {"slide_id": "s11", "role": "section", "message": "Photonic AI 系统边界", "variant": "cards-3", "visual_strategy": "three route cards", "evidence_needs": ["e2"], "asset_needs": []},
+    {"slide_id": "s16", "role": "section", "message": "Agentic PIC 验证闭环", "variant": "cards-3", "visual_strategy": "input execution evidence cards", "evidence_needs": ["e3", "e4"], "asset_needs": []},
+    {"slide_id": "s23", "role": "synthesis", "message": "三条非最终候选路线", "variant": "cards-3", "visual_strategy": "parallel route cards", "evidence_needs": [], "asset_needs": []}
+  ],
+  "design_notes": {
+    "style_preset_reason": "lab-report 适合中文科研组会，减少装饰并保留页脚来源。",
+    "rhythm_break": "使用 3 张 Mermaid 流程图、8 张表格与对比/卡片页交替。",
+    "visual_motif": "蓝灰科研报告风，关键限制用对照结构而非营销大数字。"
+  }
+}
