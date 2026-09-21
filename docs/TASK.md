@@ -75,6 +75,7 @@
 - Qwen 通过既有项目主对话完成 DAS/PAC 只读候选整理；Codex 已纠正其 arXiv DAS 覆盖不足，并回到 Optica、Nature、Science、IEEE 等一手来源复核。
 - 未执行 Agent/benchmark/simulator 实现、正式仿真、流片、封装或物理实验；外部作者指标均未复算。
 - 当前只进入审查，不启动 TASK-007。
+- 用户已取消此前讨论中的 `TASK-007｜实验设计`。TASK-006 验收后的当前允许方向仅为调研证据整合与经授权的 L01 报告整理；不得自动起草或实施 benchmark、仿真、Harness、对照实验或其他实验设计。
 
 ### 延后研究事项（不属于当前执行范围）
 
