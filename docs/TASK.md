@@ -1,5 +1,72 @@
 # 当前唯一执行任务
 
+## TASK-007：PIC_Harness_Research 正式调研报告与组会汇报
+
+- 状态：`AUTHORIZED / ACTIVE`
+- 启动日期：2026-09-21
+- 起始提交：`bf28b08ab667a86df575cff7c70f81fab8f73ee5`
+- 前置任务：`TASK-004 / TASK-005 / TASK-005A / TASK-006 = ACCEPTED / CLOSED`
+- 授权来源：用户在当前对话中提供完整 TASK-007 规格并明确授权启动。
+- 执行协调器：Codex；Qwen 项目主对话承担有收益的独立只读抽取、初稿和交叉检查，结果须由 Codex 回到全文、代码或官方材料复核。
+
+### 目标
+
+基于 TASK-004、005、006 已验收成果，形成正式中文技术调研报告、约 20–25 页组会 PPT、更新后的 Research Portal、引用与证据核查记录，以及 2–3 条不预设为最终方向的候选研究路线。报告服务于 DAS 光电混合集成芯片、Photonic AI Computing 和通用光芯片设计 Agent Harness 三层课题目标。
+
+### 方法
+
+- 采用结构化 scoping review（范围综述）与主题综合，不把本轮误称为穷尽式系统综述或元分析；
+- 使用 `literature-review` 组织范围、筛选、主题综合和引用核验；
+- 使用 `nature-academic-search` 仅补充缺失代表工作与核验引文；
+- 使用 `nature-reader` 对影响研究现状与候选路线的核心论文做全文、页码、图表和方法级核证；
+- 使用 `scientific-critical-thinking` 对路线级结论、性能口径、系统边界和最强反例进行对抗性审查；
+- 延续 `FACT / AUTHOR CLAIM / CODE VERIFIED / INFERENCE / UNKNOWN` 标签，并明确理论、数值仿真、芯片实验和系统级演示的差别。
+
+### 允许范围
+
+- 复用并综合 TASK-004、005、006 的研究材料，不简单拼接旧 Markdown；
+- 对现有候选集进行定向全文复核、引文核验和必要的少量补证据；
+- 在 `references/task-007/` 编写正式报告、证据矩阵、术语表、全文核查记录和候选路线总结；
+- 使用 presentation-skill 的持久化 workspace 制作可编辑 PPTX，并执行几何与视觉 QA；
+- 将正式报告、三方向现状、比较矩阵和候选路线接入现有 MkDocs Portal；
+- 更新项目事实源并形成可追溯 Git 提交。
+
+### 禁止范围
+
+- 不开展课题组资源匹配或实施可行性评估；
+- 不设计最小实验、成败判据、实验预算或具体实施协议；
+- 不确定最终研究方向、论文创新点或工程路线；
+- 不实现或运行 Agent、Harness、MCP、Tool Adapter、benchmark、solver、仿真或芯片设计；
+- 不把论文作者指标写成本项目实验结果，不把个人偏好写成既定科研路线；
+- 不访问或修改 `D:\AI_PIC_Demo`；
+- 不自动启动后续工程任务。
+
+### 核心交付物
+
+1. 正式技术调研报告；
+2. 约 20–25 页、面向 20 分钟组会的可编辑 PPT；
+3. 更新后的 Research Portal；
+4. 引用、全文与证据核查记录；
+5. 2–3 条 Candidate Research Routes 与尚待解决问题总结。
+
+### 验收要求
+
+- 三方向均按“技术原理 → 主要路线 → 代表成果 → 实际进展 → 难点 → Research Gap”综合；
+- 重要结论可追溯到论文全文、官方技术文档、公开代码或实验数据；
+- 明确区分器件、芯片、光电混合模块和完整系统，及 GDS、DRC、LVS、物理仿真、PDK compliance、foundry signoff；
+- 报告与 PPT 不预设最终研究方向，不包含实验设计；
+- 引用元数据、DOI/URL、正文引用和参考文献表一致；
+- PPT 通过 presentation-skill 的自动 QA 和至少一轮渲染后视觉复核；
+- Portal 通过 `mkdocs build --strict`；文档通过 `git diff --check`，最终形成干净提交。
+
+### 完成回传
+
+完成后进入 `TASK-007_REVIEW_READY`，回传 Git commit、工作树状态、报告与 PPT 路径、Portal 入口、章节概览、证据与质量检查、未决问题，以及 Qwen 子任务和 Codex 复核记录。等待 GPT 和用户验收，不自动进入工程实现或研究路线选定。
+
+---
+
+# 最近关闭任务记录
+
 ## TASK-006：三方向比较与候选研究路线收敛
 
 - 状态：`ACCEPTED / CLOSED`
