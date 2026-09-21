@@ -51,7 +51,7 @@ RIS 共 32 条，`TY` 与 `ER` 记录数一致；已按四个中文主分类完�
 | [通信相干收发芯片用于声学传感](https://arxiv.org/abs/2306.04199) | arXiv:2306.04199, 2023 | 预印本/会议级 proof-of-concept |
 | [双微梳并行 DAS](https://doi.org/10.1126/sciadv.adf8666) | Science Advances, 2024 | 高性能系统基线 |
 | [混合集成双波长激光与 φ-OFDR](https://doi.org/10.1364/OFC.2025.Tu2K.5) | OFC 2025 | 会议论文；对应 arXiv:2411.00237 |
-| [InP–SOI 混合集成解调器](https://doi.org/10.1364/OFC.2026.W4D.2) | OFC 2026 | 会议短文 |
+| [InP–SOI 混合集成解调器](https://doi.org/10.1364/OFC.2026.W4D.2) | OFC 2026 | 会议短文；用户提供原文已完成页级核读 |
 | [1007 km DAS 非 PIC 反例](https://doi.org/10.1109/JLT.2022.3219369) | Journal of Lightwave Technology, 2022 | 距离不由 PIC 集成自然带来 |
 | [PIC 光纤温度/应变传感阴性对照](https://doi.org/10.1364/OL.460314) | Optics Letters, 2022 | FBG interrogator，不是 Rayleigh DAS |
 

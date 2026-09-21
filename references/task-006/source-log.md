@@ -11,9 +11,16 @@
 | Sandmann et al., 2023 | [arXiv:2306.04199](https://arxiv.org/abs/2306.04199) | 通信 coherent PIC 复用 | 预印本/会议级 proof-of-concept |
 | Li et al., 2024 | [Science Advances](https://doi.org/10.1126/sciadv.adf8666) | 双微梳并行 DAS | 高性能但系统复杂度高 |
 | Idjadi et al., 2025 | [OFC](https://doi.org/10.1364/OFC.2025.Tu2K.5) / [arXiv:2411.00237](https://arxiv.org/abs/2411.00237) | 混合集成双波长激光 + 37 km φ-OFDR | 会议证据；大量片外组件 |
-| Jin et al., 2026 | [OFC](https://doi.org/10.1364/OFC.2026.W4D.2) | InP–SOI hybrid interrogator | 会议短文，长期稳定性/完整 BOM 不明 |
+| Jin et al., 2026 | [OFC](https://doi.org/10.1364/OFC.2026.W4D.2) | InP–SOI 混合集成解调器；激光–PIC–封装接口主证据 | 已核读用户提供的 3 页原文；长期稳定性、良率、开放数据和完整 BOM 不明 |
 | Ip et al., 2022 | [JLT](https://doi.org/10.1109/JLT.2022.3219369) | 1007 km 非 PIC 反例 | 证明距离不由 PIC 集成自然带来 |
 | Lin & Shi, 2022 | [Optics Letters](https://doi.org/10.1364/OL.460314) | FBG interrogator negative control | 不是 Rayleigh DAS |
+
+### Jin et al., 2026 原文核读记录
+
+- 原文：用户提供的 OFC 2026 三页会议论文；SHA-256 `F414D482E7B87F391D1889CB3D56A1D0FA578E7C478956BAE028D450508A044B`。
+- 第 1–2 页与图 1：InP 外腔激光经两枚微透镜和微型隔离器连接 SOI PIC；激光线宽低于 3 kHz，PIC 为 4.95 mm × 2.80 mm，模块约 40 mm × 40 mm × 10 mm，并包含热电制冷器。
+- 第 2–3 页与图 2–3：10 km TGD-OFDR 实验仍使用外置 EDFA、环行器、AWG、TIA、DAQ 和离线 DSP；作者报告约 4 m 空间分辨率和 73.27 pε/√Hz 的第 99 百分位通道应变分辨率。
+- 对抗性边界：会议短文未给出完整功耗/成本、制造良率、长期环境漂移、重复样本和开放原始数据；不同于 Jin 2024 的距离、空间分辨率和统计定义，因此不能直接按单一灵敏度数字判定新方案优于旧方案。
 
 ## 光子人工智能计算（Photonic AI Computing）
 

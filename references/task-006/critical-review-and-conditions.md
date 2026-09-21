@@ -29,9 +29,10 @@
 ### Claim 1｜DAS 已存在 PIC 端到端实验，但不是全芯片系统
 
 - `FACT/AUTHOR CLAIM`：2024 SOI interrogator 包含片上 MZM、偏振处理和双偏振 I/Q receiver，并报告 49 km 结果。
+- `FACT/AUTHOR CLAIM`：2026 OFC 短文把线宽低于 3 kHz 的 InP 外腔激光与 SOI PIC 混合集成为约 40 mm × 40 mm × 10 mm 模块，并报告 10 km DAS 演示。
 - `FACT/AUTHOR CLAIM`：2023 高 ER EOM 在真实 2 km DAS 中与商业 AOM 对比。
-- `COUNTEREVIDENCE`：激光、放大、环行、采集、DSP、封装/控制仍未闭合。
-- `INFERENCE`：研究空白不是“让 PIC 第一次进入 DAS”，而是系统约束传播、公平 A/B、稳定性和可制造性。
+- `COUNTEREVIDENCE`：2026 模块已纳入激光和部分热控/封装，但 EDFA、环行器、AWG、TIA、DAQ 和 DSP 仍未闭合；短文未给出良率、完整功耗/成本和长期环境数据。
+- `INFERENCE`：研究空白不是“让 PIC 或激光第一次进入 DAS”，而是跨平台系统约束传播、公平 A/B、稳定性和可制造性。
 
 ### Claim 2｜Photonic AI 已有真实系统，但系统优势不可由核心 TOPS/W 推出
 
