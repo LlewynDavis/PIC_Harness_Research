@@ -8,6 +8,7 @@
 - 禁止范围：不修改原研究结论、技术路线、代码，不运行科研实验，不访问 `D:\AI_PIC_Demo`，不宣称已在用户账户中导入成功。
 - 交付：`learning/vocabulary/PIC_AI_Research_Vocabulary_V1.xlsx` 和 `learning/vocabulary/Knowt_Import_V1.tsv`，共 200 条；A/B/C/D/E 分别 40/45/35/45/35。
 - 验证：独立用只读 `openpyxl` 打开 XLSX，核对两张工作表、列名、数量、分类、术语去重、非空字段及 200 行导入页与 TSV 逐行一致；两张工作表首段已渲染目视检查。Knowt 网页端粘贴导入尚未在用户账户实测。
+- iPhone 直传补充：用户提供 Knowt App“从设备上传文件”截图后，按 Knowt 官方支持的 PDF 文件入口，新增 `learning/vocabulary/Knowt_iPhone_Upload_V1.pdf`。PDF 为 16 页，每条以 `Term` 和 `Definition` 连续排版；文本读回检查 200 对，按忽略换行的原文核对均与 Excel 导入页一致，并目视检查首、中、末页。文件已上传至用户 Google Drive 且核对为 PDF。Knowt 的 PDF 路径使用 AI 生成卡片，是否逐字保留 200 张需用户上传后在 App 内检查。
 
 ---
 
