@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#FFFFFF"/>
+<text x="204" y="42" fill="#155C83" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">研究现状</text>
+<text x="618" y="42" fill="#B84343" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">证据断点</text>
+<text x="1010" y="42" fill="#B96920" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">候选路线</text>
+<circle cx="45" cy="130" r="31" fill="#155C83" stroke="#155C83" stroke-width="1"/>
+<text x="45" y="141" fill="#FFFFFF" font-size="28" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">A</text>
+<rect x="94" y="81" width="313" height="101" rx="12" fill="#EAF3F8" stroke="#155C83" stroke-width="2"/>
+<text x="250" y="141" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">PhIDO + solver 在环</text>
+<line x1="416" y1="131" x2="485" y2="131" stroke="#155C83" stroke-width="4" stroke-linecap="round"/>
+<polygon points="485.0,131.0 475.0,137.7 475.0,124.3" fill="#155C83"/>
+<rect x="493" y="81" width="316" height="101" rx="12" fill="#FCEEEE" stroke="#B84343" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="651" y="141" fill="#1B2838" font-size="22" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">跨工具证据不可直接互认</text>
+<line x1="817" y1="131" x2="877" y2="131" stroke="#B96920" stroke-width="4" stroke-linecap="round"/>
+<polygon points="877.0,131.0 867.0,137.7 867.0,124.3" fill="#B96920"/>
+<rect x="887" y="81" width="288" height="101" rx="12" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="1031" y="140" fill="#B96920" font-size="24" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">证据优先 Harness</text>
+<circle cx="45" cy="278" r="31" fill="#087F8C" stroke="#087F8C" stroke-width="1"/>
+<text x="45" y="289" fill="#FFFFFF" font-size="28" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">B</text>
+<rect x="94" y="229" width="313" height="101" rx="12" fill="#E8F4F2" stroke="#087F8C" stroke-width="2"/>
+<text x="250" y="289" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">DAS PIC / 混合模块</text>
+<line x1="416" y1="279" x2="485" y2="279" stroke="#087F8C" stroke-width="4" stroke-linecap="round"/>
+<polygon points="485.0,279.0 475.0,285.7 475.0,272.3" fill="#087F8C"/>
+<rect x="493" y="229" width="316" height="101" rx="12" fill="#FCEEEE" stroke="#B84343" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="651" y="289" fill="#1B2838" font-size="22" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">系统需求难传到芯片约束</text>
+<line x1="817" y1="279" x2="877" y2="279" stroke="#B96920" stroke-width="4" stroke-linecap="round"/>
+<polygon points="877.0,279.0 867.0,285.7 867.0,272.3" fill="#B96920"/>
+<rect x="887" y="229" width="288" height="101" rx="12" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="1031" y="288" fill="#B96920" font-size="24" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">DAS 约束传播</text>
+<circle cx="45" cy="426" r="31" fill="#B96920" stroke="#B96920" stroke-width="1"/>
+<text x="45" y="437" fill="#FFFFFF" font-size="28" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">C</text>
+<rect x="94" y="377" width="313" height="101" rx="12" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="250" y="437" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">光子核 + 任务演示</text>
+<line x1="416" y1="427" x2="485" y2="427" stroke="#B96920" stroke-width="4" stroke-linecap="round"/>
+<polygon points="485.0,427.0 475.0,433.7 475.0,420.3" fill="#B96920"/>
+<rect x="493" y="377" width="316" height="101" rx="12" fill="#FCEEEE" stroke="#B84343" stroke-width="2" stroke-dasharray="8 7"/>
+<text x="651" y="437" fill="#1B2838" font-size="22" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">精度与总成本口径不一</text>
+<line x1="817" y1="427" x2="877" y2="427" stroke="#B96920" stroke-width="4" stroke-linecap="round"/>
+<polygon points="877.0,427.0 867.0,433.7 867.0,420.3" fill="#B96920"/>
+<rect x="887" y="377" width="288" height="101" rx="12" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="1031" y="436" fill="#B96920" font-size="24" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">光子 AI 证据链</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#FFFFFF"/>
+<text x="28" y="179" fill="#526477" font-size="24" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">主要路径</text>
+<text x="28" y="296" fill="#526477" font-size="24" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">文献已验证</text>
+<text x="28" y="413" fill="#526477" font-size="24" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">待补证据</text>
+<rect x="198" y="24" width="315" height="86" rx="12" fill="#155C83" stroke="#155C83" stroke-width="2"/>
+<text x="355" y="76" fill="#FFFFFF" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">DAS｜传感系统</text>
+<rect x="198" y="142" width="315" height="93" rx="11" fill="#EAF3F8" stroke="#155C83" stroke-width="2"/>
+<text x="355" y="199" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">PIC / 混合模块</text>
+<rect x="198" y="259" width="315" height="93" rx="11" fill="#EAF3F8" stroke="#155C83" stroke-width="2"/>
+<text x="355" y="316" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">真实光纤实验</text>
+<rect x="198" y="376" width="315" height="93" rx="11" fill="#FCEEEE" stroke="#B84343" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="355" y="433" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">需求→器件 / 封装</text>
+<line x1="355" y1="236" x2="355" y2="257" stroke="#155C83" stroke-width="3" stroke-linecap="round"/>
+<polygon points="355.0,257.0 348.3,247.0 361.7,247.0" fill="#155C83"/>
+<line x1="355" y1="353" x2="355" y2="374" stroke="#B84343" stroke-width="3" stroke-linecap="round"/>
+<polygon points="355.0,374.0 348.3,364.0 361.7,364.0" fill="#B84343"/>
+<rect x="528" y="24" width="315" height="86" rx="12" fill="#087F8C" stroke="#087F8C" stroke-width="2"/>
+<text x="685" y="76" fill="#FFFFFF" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">光子 AI｜任务计算</text>
+<rect x="528" y="142" width="315" height="93" rx="11" fill="#E8F4F2" stroke="#087F8C" stroke-width="2"/>
+<text x="685" y="199" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">干涉 / WDM / 衍射</text>
+<rect x="528" y="259" width="315" height="93" rx="11" fill="#E8F4F2" stroke="#087F8C" stroke-width="2"/>
+<text x="685" y="316" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">芯片与任务演示</text>
+<rect x="528" y="376" width="315" height="93" rx="11" fill="#FCEEEE" stroke="#B84343" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="685" y="433" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">误差→精度 / 成本</text>
+<line x1="685" y1="236" x2="685" y2="257" stroke="#087F8C" stroke-width="3" stroke-linecap="round"/>
+<polygon points="685.0,257.0 678.3,247.0 691.7,247.0" fill="#087F8C"/>
+<line x1="685" y1="353" x2="685" y2="374" stroke="#B84343" stroke-width="3" stroke-linecap="round"/>
+<polygon points="685.0,374.0 678.3,364.0 691.7,364.0" fill="#B84343"/>
+<rect x="858" y="24" width="315" height="86" rx="12" fill="#B96920" stroke="#B96920" stroke-width="2"/>
+<text x="1015" y="76" fill="#FFFFFF" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">Agentic PIC｜方法</text>
+<rect x="858" y="142" width="315" height="93" rx="11" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="1015" y="199" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">输入 / 工具 / 验证</text>
+<rect x="858" y="259" width="315" height="93" rx="11" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="1015" y="316" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">局部工具闭环</text>
+<rect x="858" y="376" width="315" height="93" rx="11" fill="#FCEEEE" stroke="#B84343" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="1015" y="433" fill="#1B2838" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">独立评价 / 跨层</text>
+<line x1="1015" y1="236" x2="1015" y2="257" stroke="#B96920" stroke-width="3" stroke-linecap="round"/>
+<polygon points="1015.0,257.0 1008.3,247.0 1021.7,247.0" fill="#B96920"/>
+<line x1="1015" y1="353" x2="1015" y2="374" stroke="#B84343" stroke-width="3" stroke-linecap="round"/>
+<polygon points="1015.0,374.0 1008.3,364.0 1021.7,364.0" fill="#B84343"/>
+</svg>

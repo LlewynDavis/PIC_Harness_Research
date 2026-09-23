@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#FFFFFF"/>
+<rect x="212" y="35" width="199" height="58" rx="5" fill="#0B2545" stroke="#0B2545" stroke-width="0"/>
+<text x="311.5" y="73" fill="#FFFFFF" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">结构化输入</text>
+<rect x="417" y="35" width="199" height="58" rx="5" fill="#0B2545" stroke="#0B2545" stroke-width="0"/>
+<text x="516.5" y="73" fill="#FFFFFF" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">工具执行</text>
+<rect x="622" y="35" width="199" height="58" rx="5" fill="#0B2545" stroke="#0B2545" stroke-width="0"/>
+<text x="721.5" y="73" fill="#FFFFFF" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">仿真证据</text>
+<rect x="827" y="35" width="199" height="58" rx="5" fill="#0B2545" stroke="#0B2545" stroke-width="0"/>
+<text x="926.5" y="73" fill="#FFFFFF" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">评价</text>
+<rect x="1032" y="35" width="159" height="58" rx="5" fill="#0B2545" stroke="#0B2545" stroke-width="0"/>
+<text x="1111.5" y="73" fill="#FFFFFF" font-size="22" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">版图 / 规则</text>
+<rect x="20" y="106" width="178" height="72" rx="9" fill="#EAF3F8" stroke="#155C83" stroke-width="2"/>
+<text x="109" y="151" fill="#155C83" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">PhIDO</text>
+<rect x="212" y="106" width="199" height="72" rx="7" fill="#EAF3F8" stroke="#155C83" stroke-width="1.5"/>
+<text x="311.5" y="150" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">YAML DSL</text>
+<rect x="417" y="106" width="199" height="72" rx="7" fill="#EAF3F8" stroke="#155C83" stroke-width="1.5"/>
+<text x="516.5" y="150" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">GDS 生成</text>
+<rect x="622" y="106" width="199" height="72" rx="7" fill="#EAF3F8" stroke="#155C83" stroke-width="1.5"/>
+<text x="721.5" y="150" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">SAX 电路</text>
+<rect x="827" y="106" width="199" height="72" rx="7" fill="#EAF3F8" stroke="#155C83" stroke-width="1.5"/>
+<text x="926.5" y="150" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">结构 / DRC</text>
+<rect x="1032" y="106" width="159" height="72" rx="7" fill="#EAF3F8" stroke="#155C83" stroke-width="1.5"/>
+<text x="1111.5" y="150" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">GDS / DRC</text>
+<rect x="20" y="193" width="178" height="72" rx="9" fill="#E8F4F2" stroke="#087F8C" stroke-width="2"/>
+<text x="109" y="238" fill="#087F8C" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">AutoPD</text>
+<rect x="212" y="193" width="199" height="72" rx="7" fill="#E8F4F2" stroke="#087F8C" stroke-width="1.5"/>
+<text x="311.5" y="237" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">脚本约束</text>
+<rect x="417" y="193" width="199" height="72" rx="7" fill="#E8F4F2" stroke="#087F8C" stroke-width="1.5"/>
+<text x="516.5" y="237" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">Agent 迭代</text>
+<rect x="622" y="193" width="199" height="72" rx="7" fill="#E8F4F2" stroke="#087F8C" stroke-width="1.5"/>
+<text x="721.5" y="237" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">真实 solver</text>
+<rect x="827" y="193" width="199" height="72" rx="7" fill="#E8F4F2" stroke="#087F8C" stroke-width="1.5"/>
+<text x="926.5" y="237" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">预设 FoM</text>
+<rect x="1032" y="193" width="159" height="72" rx="7" fill="#E8F4F2" stroke="#087F8C" stroke-width="1.5"/>
+<text x="1111.5" y="237" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">局部检查</text>
+<rect x="20" y="280" width="178" height="72" rx="9" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="109" y="325" fill="#B96920" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">PICBench</text>
+<rect x="212" y="280" width="199" height="72" rx="7" fill="#FFF2E5" stroke="#B96920" stroke-width="1.5"/>
+<text x="311.5" y="324" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">JSON netlist</text>
+<rect x="417" y="280" width="199" height="72" rx="7" fill="#FFF2E5" stroke="#B96920" stroke-width="1.5"/>
+<text x="516.5" y="324" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">生成 + 反馈</text>
+<rect x="622" y="280" width="199" height="72" rx="7" fill="#FFF2E5" stroke="#B96920" stroke-width="1.5"/>
+<text x="721.5" y="324" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">SAX 模型</text>
+<rect x="827" y="280" width="199" height="72" rx="7" fill="#FFF2E5" stroke="#B96920" stroke-width="1.5"/>
+<text x="926.5" y="324" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">golden 比较</text>
+<rect x="1032" y="280" width="159" height="72" rx="7" fill="#F4F7FA" stroke="#C8D3DE" stroke-width="1.5"/>
+<text x="1111.5" y="324" fill="#526477" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">未展示</text>
+<rect x="20" y="367" width="178" height="72" rx="9" fill="#F4F7FA" stroke="#526477" stroke-width="2"/>
+<text x="109" y="412" fill="#526477" font-size="23" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">gdsfactory</text>
+<rect x="212" y="367" width="199" height="72" rx="7" fill="#F4F7FA" stroke="#526477" stroke-width="1.5"/>
+<text x="311.5" y="411" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">PDK / netlist</text>
+<rect x="417" y="367" width="199" height="72" rx="7" fill="#F4F7FA" stroke="#526477" stroke-width="1.5"/>
+<text x="516.5" y="411" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">确定性 API</text>
+<rect x="622" y="367" width="199" height="72" rx="7" fill="#F4F7FA" stroke="#526477" stroke-width="1.5"/>
+<text x="721.5" y="411" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">求解器适配</text>
+<rect x="827" y="367" width="199" height="72" rx="7" fill="#F4F7FA" stroke="#526477" stroke-width="1.5"/>
+<text x="926.5" y="411" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">调用者决定</text>
+<rect x="1032" y="367" width="159" height="72" rx="7" fill="#F4F7FA" stroke="#526477" stroke-width="1.5"/>
+<text x="1111.5" y="411" fill="#1B2838" font-size="21" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">GDS / DRC</text>
+<text x="600" y="490" fill="#526477" font-size="22" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">单元格表示文献 / 源码中可定位的环节；gdsfactory 为工具生态，不是 Agent 验证</text>
+</svg>

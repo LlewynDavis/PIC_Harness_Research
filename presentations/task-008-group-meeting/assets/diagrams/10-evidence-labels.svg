@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#FFFFFF"/>
+<rect x="30" y="174" width="245" height="172" rx="16" fill="#EAF3F8" stroke="#155C83" stroke-width="2.5"/>
+<text x="152" y="225" fill="#155C83" font-size="25" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">论文原文 / 固定源码</text>
+<text x="152" y="271" fill="#155C83" font-size="25" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">公开数据与实验条件</text>
+<line x1="283" y1="260" x2="346" y2="78" stroke="#155C83" stroke-width="3" stroke-linecap="round"/>
+<polygon points="346.0,78.0 349.1,89.6 336.4,85.2" fill="#155C83"/>
+<rect x="356" y="26" width="470" height="102" rx="12" fill="#EAF3F8" stroke="#155C83" stroke-width="2"/>
+<text x="380" y="65" fill="#155C83" font-size="23" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">FACT / CODE VERIFIED</text>
+<text x="380" y="102" fill="#1B2838" font-size="20" font-weight="400" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">可直接定位的结构、方法或源码行为</text>
+<line x1="832" y1="77" x2="883" y2="77" stroke="#155C83" stroke-width="3" stroke-linecap="round"/>
+<polygon points="883.0,77.0 873.0,83.7 873.0,70.3" fill="#155C83"/>
+<rect x="891" y="26" width="283" height="102" rx="12" fill="#FFFFFF" stroke="#155C83" stroke-width="2"/>
+<text x="1032" y="87" fill="#155C83" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">报告为可核对事实</text>
+<line x1="283" y1="260" x2="346" y2="201" stroke="#087F8C" stroke-width="3" stroke-linecap="round"/>
+<polygon points="346.0,201.0 343.3,212.7 334.2,202.9" fill="#087F8C"/>
+<rect x="356" y="149" width="470" height="102" rx="12" fill="#E8F4F2" stroke="#087F8C" stroke-width="2"/>
+<text x="380" y="188" fill="#087F8C" font-size="23" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">AUTHOR CLAIM</text>
+<text x="380" y="225" fill="#1B2838" font-size="20" font-weight="400" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">论文给出但本项目未独立复算的指标</text>
+<line x1="832" y1="200" x2="883" y2="200" stroke="#087F8C" stroke-width="3" stroke-linecap="round"/>
+<polygon points="883.0,200.0 873.0,206.7 873.0,193.3" fill="#087F8C"/>
+<rect x="891" y="149" width="283" height="102" rx="12" fill="#FFFFFF" stroke="#087F8C" stroke-width="2"/>
+<text x="1032" y="210" fill="#087F8C" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">说清作者与测试条件</text>
+<line x1="283" y1="260" x2="346" y2="324" stroke="#B96920" stroke-width="3" stroke-linecap="round"/>
+<polygon points="346.0,324.0 334.2,321.6 343.8,312.2" fill="#B96920"/>
+<rect x="356" y="272" width="470" height="102" rx="12" fill="#FFF2E5" stroke="#B96920" stroke-width="2"/>
+<text x="380" y="311" fill="#B96920" font-size="23" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">INFERENCE</text>
+<text x="380" y="348" fill="#1B2838" font-size="20" font-weight="400" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">多篇工作之间的能力与缺口判断</text>
+<line x1="832" y1="323" x2="883" y2="323" stroke="#B96920" stroke-width="3" stroke-linecap="round"/>
+<polygon points="883.0,323.0 873.0,329.7 873.0,316.3" fill="#B96920"/>
+<rect x="891" y="272" width="283" height="102" rx="12" fill="#FFFFFF" stroke="#B96920" stroke-width="2"/>
+<text x="1032" y="333" fill="#B96920" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">标为调研推论</text>
+<line x1="283" y1="260" x2="346" y2="447" stroke="#B84343" stroke-width="3" stroke-linecap="round"/>
+<polygon points="346.0,447.0 336.5,439.7 349.2,435.4" fill="#B84343"/>
+<rect x="356" y="395" width="470" height="102" rx="12" fill="#FCEEEE" stroke="#B84343" stroke-width="2"/>
+<text x="380" y="434" fill="#B84343" font-size="23" font-weight="700" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">UNKNOWN</text>
+<text x="380" y="471" fill="#1B2838" font-size="20" font-weight="400" text-anchor="start" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">原文、数据或条件仍不足</text>
+<line x1="832" y1="446" x2="883" y2="446" stroke="#B84343" stroke-width="3" stroke-linecap="round"/>
+<polygon points="883.0,446.0 873.0,452.7 873.0,439.3" fill="#B84343"/>
+<rect x="891" y="395" width="283" height="102" rx="12" fill="#FFFFFF" stroke="#B84343" stroke-width="2"/>
+<text x="1032" y="456" fill="#B84343" font-size="23" font-weight="600" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">明确保留未决项</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#FFFFFF"/>
+<rect x="35" y="70" width="350" height="280" rx="14" fill="#EAF3F8" stroke="#155C83" stroke-width="2.2"/>
+<rect x="35" y="70" width="350" height="58" rx="12" fill="#155C83" stroke="#155C83" stroke-width="0"/>
+<text x="210" y="108" fill="#FFFFFF" font-size="25" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">DAS 光电混合集成</text>
+<text x="210" y="173" fill="#155C83" font-size="29" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">具体物理系统</text>
+<text x="210" y="229" fill="#1B2838" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">光源→传感光纤</text>
+<text x="210" y="267" fill="#1B2838" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">→相干接收与解调</text>
+<rect x="420" y="70" width="350" height="280" rx="14" fill="#E8F4F2" stroke="#087F8C" stroke-width="2.2"/>
+<rect x="420" y="70" width="350" height="58" rx="12" fill="#087F8C" stroke="#087F8C" stroke-width="0"/>
+<text x="595" y="108" fill="#FFFFFF" font-size="25" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">光子 AI 计算</text>
+<text x="595" y="173" fill="#087F8C" font-size="29" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">计算硬件</text>
+<text x="595" y="229" fill="#1B2838" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">输入→光学线性核</text>
+<text x="595" y="267" fill="#1B2838" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">→探测与电子处理</text>
+<rect x="805" y="70" width="350" height="280" rx="14" fill="#FFF2E5" stroke="#B96920" stroke-width="2.2"/>
+<rect x="805" y="70" width="350" height="58" rx="12" fill="#B96920" stroke="#B96920" stroke-width="0"/>
+<text x="980" y="108" fill="#FFFFFF" font-size="25" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">Agentic PIC Design</text>
+<text x="980" y="173" fill="#B96920" font-size="29" font-weight="700" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">设计方法与工具链</text>
+<text x="980" y="229" fill="#1B2838" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">需求→工具调用</text>
+<text x="980" y="267" fill="#1B2838" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">→物理证据与修正</text>
+<line x1="978" y1="371" x2="210" y2="371" stroke="#B96920" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 8"/>
+<polygon points="210.0,371.0 219.1,364.9 219.1,377.1" fill="#B96920"/>
+<line x1="978" y1="405" x2="595" y2="405" stroke="#B96920" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 8"/>
+<polygon points="595.0,405.0 604.1,398.9 604.1,411.1" fill="#B96920"/>
+<text x="595" y="452" fill="#526477" font-size="24" font-weight="400" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">Agent 方法可服务物理场景或计算硬件；这是候选联系，非已完成路线</text>
+</svg>

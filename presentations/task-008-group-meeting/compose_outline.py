@@ -59,7 +59,7 @@ main = [
           ],
           caption="距离和性能均为作者报告；不同试验条件下不作直接排名。",
           sources=["Jin 2024 doi:10.1364/PRJ.512298；Jin 2026 doi:10.1364/OFC.2026.W4D.2；Cheng 2023 doi:10.1038/s41467-023-43244-9"],
-          notes="核心问题：现有集成究竟做到哪一级。逐行区分器件、PIC 前端、混合模块与完整 DAS 系统；提醒 2026 工作不是全系统片上化。若追问指标，翻附录详细证据页。下一页转向光子 AI 的三种计算架构。"),
+          notes="核心问题：现有集成究竟做到哪一级。逐行区分器件、PIC 前端、混合模块与完整 DAS 系统；提醒 2026 工作不是全系统片上化。若追问指标，可回到正式报告对应论文与证据审计。下一页转向光子 AI 的三种计算架构。"),
     reuse(12,
           title="光子 AI 主要以干涉、波长复用与衍射承担线性运算",
           rows=[
@@ -142,35 +142,64 @@ main = [
             ],
             summary_callout="当前只请求研究方向讨论；不把未授权的实验、流片或工程计划当作既定安排。",
             sources=["TASK-007 正式报告 §6.5；candidate-routes-and-open-questions.md"],
-            notes="核心问题：邀请组内判断下一阶段该补什么证据。依次讨论聚焦问题、证据层级与代表论文；若被问到实验计划，说明当前工作仅为调研，具体方案需另立任务。附录可支撑论文和验证层级追问。"),
+          notes="核心问题：邀请组内判断下一阶段该补什么证据。依次讨论聚焦问题、证据层级与代表论文；若被问到实验计划，说明当前工作仅为调研，具体方案需另立任务。论文和验证层级细节可回到正式报告核对。"),
 ]
 
+main.insert(9, content(
+    "代表工作覆盖设计链的不同环节，验证上限并不相同", "flow",
+    assets={"diagram": "assets/diagrams/07-capability-matrix.svg"},
+    footer="依据 Sharma 等 2025、Kharel 等 2026、Wu 等 2025 与 gdsfactory 官方源码梳理；概念矩阵，详见图示来源表。",
+    sources=["TASK-007 正式报告 §4.2–4.4；TASK-005 technical-map-and-objects.md"],
+    notes="核心问题：代表性工作分别覆盖设计链的哪些步骤。矩阵只映射论文或源码可以定位的环节，不将工具生态当作 Agent 成果，也不把结构/电路仿真外推到制造级签核。下一页比较三个研究方向。",
+))
+# The added capability matrix replaces the old conclusion table. The discussion
+# page remains the closing slide; the formal report holds detailed evidence.
+main.pop(13)
 
-appendix = [
-    content("附录｜按方向查找代表工作与证据边界", "cards-3",
-            cards=[
-                {"title": "DAS｜16–18 页", "body": "集成层级、代表论文与 Jin 2026 模块内外边界。"},
-                {"title": "光子 AI｜19–20 页", "body": "更多任务演示，以及核心算子与完整系统指标。"},
-                {"title": "Agentic PIC｜21–25 页", "body": "技术覆盖、验证阶梯、架构 V0 与最强反例。"},
-            ],
-            summary_callout="主讲到第 14 页结束；以下内容用于组会追问，不改变报告结论。",
-            sources=["TASK-007 正式报告与已验收 PPT 附录材料"]),
-    reuse(7, title="附录｜DAS：器件、PIC、混合模块与系统层级"),
-    reuse(8, title="附录｜DAS：代表论文与作者报告指标"),
-    reuse(9, title="附录｜Jin 2026 混合模块内外边界"),
-    reuse(13, title="附录｜光子 AI：更多任务与系统演示"),
-    reuse(14, title="附录｜光子 AI：核心算子与完整系统口径"),
-    reuse(18, title="附录｜Agentic PIC：完整代表对象覆盖"),
-    reuse(19, title="附录｜PhIDO 与 AutoPhotonicDesign 的证据边界"),
-    reuse(20, title="附录｜验证阶梯：每一级只支持相应结论"),
-    reuse(21, title="附录｜PIC Harness Reference Architecture V0"),
-    reuse(24, title="附录｜四个反例约束过度外推"),
-]
-appendix[-1]["quadrants"][3]["body"] = "模型、收敛、DRC/LVS/PDK 与实物验证须分层。"
+diagram_pages = {
+    1: ("01-three-goals.svg", "根据 TASK-007 正式报告 §1.1 重绘；三目标关系是研究框架，不表示已实现统一系统。"),
+    3: ("02-das-system.svg", "根据 TASK-007 正式报告 §2.1 重绘的通用 DAS 链路；非某论文单片实现。"),
+    4: ("03-das-integration.svg", "据 Jin 等（2024，doi:10.1364/PRJ.512298）与 Jin 等（2026，doi:10.1364/OFC.2026.W4D.2）重绘；距离为作者报告。"),
+    5: ("04-photonic-system.svg", "根据 TASK-007 正式报告 §3.1–3.5 重绘；通用计算系统链路，非单篇论文结构。"),
+    6: ("05-photonic-families.svg", "根据 TASK-007 正式报告 §3.2–3.4 重绘；每列为架构家族概念，不对应单一论文器件。"),
+    11: ("08-evidence-gaps.svg", "依据 TASK-007 正式报告 §5.3 重绘；缺口与切入点均为跨文献推论。"),
+    12: ("09-route-derivation.svg", "依据 TASK-007 candidate-routes-and-open-questions.md 重绘；A/B/C 均未选定。"),
+    2: ("10-evidence-labels.svg", "依据 TASK-007 正式报告 §1.2 与 full-text-evidence-audit.md 重绘；标签界定结论的证据级别。"),
+    10: ("11-cross-direction-matrix.svg", "依据 TASK-007 正式报告 §5.1–5.3 与 TASK-006 对比矩阵重绘；待补证据为调研推论。"),
+}
+for idx, (filename, footer) in diagram_pages.items():
+    slide = main[idx]
+    slide["variant"] = "flow"
+    slide["slide_intent"] = "process"
+    slide["visual_intent"] = "flow"
+    slide["assets"] = {"diagram": f"assets/diagrams/{filename}"}
+    slide["footer"] = footer
+    for key in ("body", "highlights", "cards", "rows", "headers", "summary_callout", "caption"):
+        slide.pop(key, None)
+
+main[7].update({
+    "title": "AutoPhotonicDesign：目标进入设计、校验与仿真循环",
+    "variant": "flow",
+    "assets": {"diagram": "assets/paper-figures/autopd-fig1b.png"},
+    "footer": "Kharel 等（2026），Fig. 1(b)，arXiv:2606.00915；原图局部裁剪。显示该论文工作流，非本项目实现。",
+    "sources": ["Kharel 等，Autonomous agentic design for photonics，arXiv:2606.00915，Fig. 1(b)"],
+    "notes": "核心问题：真实 Agent 设计循环如何连接人给定的目标、设计修改、规则校验、物理仿真与结果记录。这是 AutoPhotonicDesign 论文 Fig. 1(b) 原图局部，不是本项目实现；论文实验仍需要工程师前期配置和专家纠错。下一页对比 PhIDO 的不同覆盖方式。",
+})
+main[8].update({
+    "title": "PhIDO 原图展示自然语言到版图、规则与电路评价的分段流程",
+    "variant": "flow",
+    "assets": {"diagram": "assets/paper-figures/phido-fig1.png"},
+    "footer": "Sharma 等（2025），Fig. 1，APL Machine Learning，doi:10.1063/5.0300741；原图裁剪。FDTD 支路不代表主发布已验证。",
+    "sources": ["Sharma 等，AI agents for photonic integrated circuit design automation，APL Machine Learning 4, 046113 (2025)，Fig. 1"],
+    "notes": "核心问题：PhIDO 的四段流程分别验证到哪里。用原论文 Fig. 1 说明 Interpreter、Designer、Layout、Circuit Verification 的关系；指出论文主要证明结构和电路流程，FDTD 因版本兼容未进入主发布，不能读成器件物理性能达标。下一页用矩阵对比代表工作覆盖与验证上限。",
+})
+for idx in (7, 8):
+    for key in ("body", "highlights", "cards", "rows", "headers", "summary_callout", "caption"):
+        main[idx].pop(key, None)
 
 outline = copy.deepcopy(original)
-outline["slides"] = main + appendix
-assert len(main) == 14 and len(appendix) == 11
+outline["slides"] = main
+assert len(main) == 14
 assert all(slide.get("notes") for slide in main)
 TARGET.write_text(json.dumps(outline, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(f"Wrote {TARGET}: {len(main)} main + {len(appendix)} appendix")
+print(f"Wrote {TARGET}: {len(main)} main, no appendix")

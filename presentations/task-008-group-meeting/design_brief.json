@@ -3,7 +3,7 @@
   "content_maturity": "serious/work",
   "audience_posture": "coworkers/operators",
   "emotional_register": "trustworthy",
-  "format_promise": "A clean, editable PowerPoint deck with one dominant idea per slide, disciplined alignment, and enough visual rhythm to avoid generic card grids.",
+  "format_promise": "14-slide, no-appendix editable research deck with source-linked technical diagrams and original paper figures where available.",
   "anti_format": [
     "repeated title plus three cards on every slide",
     "body text placed by feel instead of grid constants",
@@ -26,7 +26,8 @@
       "background": "dominant or neutral field",
       "accent": "navigation, KPI emphasis, rails, and labels",
       "muted": "captions and provenance"
-    }
+    },
+    "figure_policy": "Use source-linked SVG redrawings for principles and synthesis, high-resolution labeled crops for original paper figures; no decorative science imagery."
   },
   "title_page_concept": {
     "chosen_archetype": "simple dark typographic opener",
@@ -35,7 +36,7 @@
     "why_this_could_only_be_this_deck": "封面明确列出 DAS、光子人工智能计算与 Agentic PIC 三个导师目标，并注明证据截止日期。"
   },
   "structure_strategy": {
-    "primary_scaffold": "open editorial content slides with measured headers",
+    "primary_scaffold": "one core judgment, one explanatory diagram, one concise source footer on technical slides",
     "repeated_elements": [
       "shared margins",
       "consistent source/footer treatment",

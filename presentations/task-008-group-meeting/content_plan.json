@@ -4,21 +4,217 @@
   "objective": "用 15–20 分钟解释三个目标、代表性文献的实际验证、跨方向缺口及 A/B/C 候选路线，支持组内讨论。",
   "thesis": "局部器件、任务与工具链已经取得真实进展；跨层证据仍不足以直接推出完整系统或制造级自治结论。",
   "narrative_arc": [
-    {"act": "目标与证据规则", "purpose": "解释三个目标及调研方法", "slides": "1–3"},
-    {"act": "三方向现状", "purpose": "用系统图、技术路线和代表论文说明验证层级", "slides": "4–9"},
-    {"act": "比较与研究问题", "purpose": "按统一维度比较，提出可追溯缺口与 A/B/C", "slides": "10–12"},
-    {"act": "结论与讨论", "purpose": "区分事实、推断和待确认问题", "slides": "13–14"},
-    {"act": "附录", "purpose": "保留代表论文、验证阶梯与反例供追问", "slides": "15–25"}
+    {
+      "act": "目标与证据规则",
+      "purpose": "用关系图和证据标签建立调研范围",
+      "slides": "1–3"
+    },
+    {
+      "act": "DAS 与光子 AI",
+      "purpose": "用系统与架构图解释原理、集成层级和代表性演示",
+      "slides": "4–7"
+    },
+    {
+      "act": "Agentic PIC",
+      "purpose": "用两篇原论文 Figure 和能力矩阵解释设计、仿真、规则与评价边界",
+      "slides": "8–10"
+    },
+    {
+      "act": "综合判断",
+      "purpose": "三方向对比、缺口及 A/B/C 候选路线推导",
+      "slides": "11–13"
+    },
+    {
+      "act": "讨论",
+      "purpose": "收集下一轮调研所需的一手证据",
+      "slides": "14"
+    }
   ],
   "slide_plan": [
-    {"slide_id": "s1", "role": "title", "message": "三个研究方向的组会调研", "variant": "title", "visual_strategy": "简洁学术封面", "evidence_needs": [], "asset_needs": []},
-    {"slide_id": "s4", "role": "DAS 系统图", "message": "DAS 指标由完整链路决定", "variant": "flow", "visual_strategy": "已有概念流程图", "evidence_needs": ["e1"], "asset_needs": ["das-chain"]},
-    {"slide_id": "s8", "role": "Agentic PIC 技术链", "message": "工具调用需形成独立验证闭环", "variant": "flow", "visual_strategy": "已有概念流程图", "evidence_needs": ["e3", "e4"], "asset_needs": ["agentic-chain"]},
-    {"slide_id": "s12", "role": "候选路线", "message": "A/B/C 是待讨论的研究路线", "variant": "table", "visual_strategy": "三路线同维度比较", "evidence_needs": ["e1", "e2", "e3", "e4"], "asset_needs": []}
+    {
+      "slide_id": "s1",
+      "role": "title",
+      "message": "面向光子芯片智能设计的三方向技术调研",
+      "variant": "title",
+      "visual_strategy": "text",
+      "evidence_needs": [],
+      "asset_needs": []
+    },
+    {
+      "slide_id": "s2",
+      "role": "technical explanation",
+      "message": "三个目标分别对应物理场景、计算硬件与设计方法",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [],
+      "asset_needs": [
+        "assets/diagrams/01-three-goals.svg"
+      ]
+    },
+    {
+      "slide_id": "s3",
+      "role": "technical explanation",
+      "message": "用已核验文献回答路线、进展、缺口与候选问题",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [],
+      "asset_needs": [
+        "assets/diagrams/10-evidence-labels.svg"
+      ]
+    },
+    {
+      "slide_id": "s4",
+      "role": "technical explanation",
+      "message": "DAS 指标由光源、传感链路、接收与算法共同决定",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e1"
+      ],
+      "asset_needs": [
+        "assets/diagrams/02-das-system.svg"
+      ]
+    },
+    {
+      "slide_id": "s5",
+      "role": "technical explanation",
+      "message": "DAS 已有 PIC 与混合模块进入真实传感实验",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e1"
+      ],
+      "asset_needs": [
+        "assets/diagrams/03-das-integration.svg"
+      ]
+    },
+    {
+      "slide_id": "s6",
+      "role": "technical explanation",
+      "message": "光子 AI 主要以干涉、波长复用与衍射承担线性运算",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e2"
+      ],
+      "asset_needs": [
+        "assets/diagrams/04-photonic-system.svg"
+      ]
+    },
+    {
+      "slide_id": "s7",
+      "role": "technical explanation",
+      "message": "真实任务演示已出现，但核心指标不能代替系统结论",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e2"
+      ],
+      "asset_needs": [
+        "assets/diagrams/05-photonic-families.svg"
+      ]
+    },
+    {
+      "slide_id": "s8",
+      "role": "technical explanation",
+      "message": "AutoPhotonicDesign：目标进入设计、校验与仿真循环",
+      "variant": "flow",
+      "visual_strategy": "source figure",
+      "evidence_needs": [
+        "e4"
+      ],
+      "asset_needs": [
+        "assets/paper-figures/autopd-fig1b.png"
+      ]
+    },
+    {
+      "slide_id": "s9",
+      "role": "technical explanation",
+      "message": "PhIDO 原图展示自然语言到版图、规则与电路评价的分段流程",
+      "variant": "flow",
+      "visual_strategy": "source figure",
+      "evidence_needs": [
+        "e3"
+      ],
+      "asset_needs": [
+        "assets/paper-figures/phido-fig1.png"
+      ]
+    },
+    {
+      "slide_id": "s10",
+      "role": "technical explanation",
+      "message": "代表工作覆盖设计链的不同环节，验证上限并不相同",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e3",
+        "e4"
+      ],
+      "asset_needs": [
+        "assets/diagrams/07-capability-matrix.svg"
+      ]
+    },
+    {
+      "slide_id": "s11",
+      "role": "synthesis",
+      "message": "三方向的共同断点是需求、工具与结论之间的证据链",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "asset_needs": [
+        "assets/diagrams/11-cross-direction-matrix.svg"
+      ]
+    },
+    {
+      "slide_id": "s12",
+      "role": "synthesis",
+      "message": "代表性缺口从已有能力推导，而非由“未检索到”证明",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "asset_needs": [
+        "assets/diagrams/08-evidence-gaps.svg"
+      ]
+    },
+    {
+      "slide_id": "s13",
+      "role": "synthesis",
+      "message": "A/B/C 是三条待讨论的研究路线，不是已选课题",
+      "variant": "flow",
+      "visual_strategy": "vector technical diagram",
+      "evidence_needs": [
+        "e1",
+        "e2",
+        "e3",
+        "e4"
+      ],
+      "asset_needs": [
+        "assets/diagrams/09-route-derivation.svg"
+      ]
+    },
+    {
+      "slide_id": "s14",
+      "role": "discussion",
+      "message": "请讨论研究问题、证据层级与下一轮调研重点",
+      "variant": "cards-3",
+      "visual_strategy": "discussion cards",
+      "evidence_needs": [],
+      "asset_needs": []
+    }
   ],
   "design_notes": {
     "style_preset_reason": "延续 TASK-007 的 lab-report 风格与可编辑表格，适合正式组会。",
-    "visual_strategy": "DAS 与 Agentic PIC 使用已有来源标注的概念流程图；光子 AI 与跨方向比较使用简明原生表格。",
-    "reading_rule": "主讲页只保留可投影阅读的技术判断；参数和工作明细进入附录。"
+    "visual_strategy": "12/12 technical and synthesis slides (2–13) use explanatory diagrams, source paper figures or matrices; the cover and discussion pages serve different roles.",
+    "reading_rule": "每张图先解释一个问题；证据、作者报告与推论通过页脚和讲稿区分；无附录。"
   }
 }
