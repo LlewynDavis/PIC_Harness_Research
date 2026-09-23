@@ -1,0 +1,7 @@
+flowchart LR
+  A[Requirement / Spec] --> B[Planner + Tool Registry]
+  B --> C[Execution + Raw Artifacts]
+  C --> D[Evaluator + Evidence Ledger]
+  D --> E{Verification Gate}
+  E -->|重试| B
+  E -->|升级| F[Human]

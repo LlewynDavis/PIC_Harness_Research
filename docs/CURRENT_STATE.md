@@ -4,6 +4,8 @@
 
 ## 已完成
 
+- 用户于 2026-09-23 授权的 `TASK-008｜组会调研 PPT 优化` 已完成交付并处于 `REVIEW_READY`：基于 TASK-007 已验收报告与可编辑 workspace，形成 14 页主讲加 11 页附录的独立 PPTX、PDF、主讲备注及验证记录，位于 `presentations/task-008-group-meeting/`。TASK-007 原始交付和验收结论未修改；本次未开展新实验或确定最终研究方向。
+
 - 已建立独立的 `PIC_Harness_Research` Git 仓库。
 - 已建立最小长期维护目录与文档骨架。
 - 已明确旧项目 `D:\AI_PIC_Demo` 的封存和只读边界。

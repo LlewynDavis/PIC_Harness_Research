@@ -1,0 +1,24 @@
+{
+  "topic": "面向光子芯片智能设计的三方向技术调研",
+  "audience": "导师、指导老师与课题组组会；具备光电子背景，不预设熟悉 Agent Harness",
+  "objective": "用 15–20 分钟解释三个目标、代表性文献的实际验证、跨方向缺口及 A/B/C 候选路线，支持组内讨论。",
+  "thesis": "局部器件、任务与工具链已经取得真实进展；跨层证据仍不足以直接推出完整系统或制造级自治结论。",
+  "narrative_arc": [
+    {"act": "目标与证据规则", "purpose": "解释三个目标及调研方法", "slides": "1–3"},
+    {"act": "三方向现状", "purpose": "用系统图、技术路线和代表论文说明验证层级", "slides": "4–9"},
+    {"act": "比较与研究问题", "purpose": "按统一维度比较，提出可追溯缺口与 A/B/C", "slides": "10–12"},
+    {"act": "结论与讨论", "purpose": "区分事实、推断和待确认问题", "slides": "13–14"},
+    {"act": "附录", "purpose": "保留代表论文、验证阶梯与反例供追问", "slides": "15–25"}
+  ],
+  "slide_plan": [
+    {"slide_id": "s1", "role": "title", "message": "三个研究方向的组会调研", "variant": "title", "visual_strategy": "简洁学术封面", "evidence_needs": [], "asset_needs": []},
+    {"slide_id": "s4", "role": "DAS 系统图", "message": "DAS 指标由完整链路决定", "variant": "flow", "visual_strategy": "已有概念流程图", "evidence_needs": ["e1"], "asset_needs": ["das-chain"]},
+    {"slide_id": "s8", "role": "Agentic PIC 技术链", "message": "工具调用需形成独立验证闭环", "variant": "flow", "visual_strategy": "已有概念流程图", "evidence_needs": ["e3", "e4"], "asset_needs": ["agentic-chain"]},
+    {"slide_id": "s12", "role": "候选路线", "message": "A/B/C 是待讨论的研究路线", "variant": "table", "visual_strategy": "三路线同维度比较", "evidence_needs": ["e1", "e2", "e3", "e4"], "asset_needs": []}
+  ],
+  "design_notes": {
+    "style_preset_reason": "延续 TASK-007 的 lab-report 风格与可编辑表格，适合正式组会。",
+    "visual_strategy": "DAS 与 Agentic PIC 使用已有来源标注的概念流程图；光子 AI 与跨方向比较使用简明原生表格。",
+    "reading_rule": "主讲页只保留可投影阅读的技术判断；参数和工作明细进入附录。"
+  }
+}
