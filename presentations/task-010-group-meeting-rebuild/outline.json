@@ -1,0 +1,365 @@
+{
+  "title": "面向光子芯片智能设计的国内外研究现状与技术路线分析",
+  "subtitle": "首次正式组会调研汇报",
+  "deck_style": {
+    "font_pair": "system_clean_v1",
+    "visual_density": "medium",
+    "emoji_mode": "none",
+    "research_visual_mode": true,
+    "header_mode": "stack",
+    "title_layout": "masthead",
+    "title_motif": "none",
+    "footer_mode": "source-line",
+    "footer_page_numbers": true
+  },
+  "compliance": {
+    "auto_image_sources": false,
+    "require_attribution": false
+  },
+  "slides": [
+    {
+      "type": "title",
+      "title": "面向光子芯片智能设计的\n国内外研究现状与\n技术路线分析",
+      "title_layout": "masthead",
+      "kicker": "PIC_HARNESS_RESEARCH · 组会调研",
+      "subtitle": "DAS 光电混合集成 · 光子人工智能计算 · Agentic PIC Design\n汇报人：林子涵｜纤维光学与生物光子学课题组｜2026 年 9 月 23 日",
+      "notes": "开场说明：本次为三个目标的调研汇报，重点深入 Agentic PIC Design；后半部分提出个人倾向供组内讨论，尚未确定正式课题。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "三个研究目标：对象不同，可能交叉",
+      "subtitle": "物理系统、计算硬件与设计方法分别建立证据链",
+      "message": "先分别理解三个技术体系，再讨论交叉",
+      "assets": {
+        "diagram": "assets/p02-three-directions.svg"
+      },
+      "footer": "来源：项目 README；TASK-007 正式调研报告 §1",
+      "notes": "DAS 关注分布式感知系统的光电集成；光子 AI 关注光学硬件承担推理运算；Agentic PIC 关注智能设计方法与专业工具协同。三者并列，不是既定实施阶段。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "从论文进展走向可讨论的研究问题",
+      "subtitle": "既看技术方法，也看实际验证与边界",
+      "message": "证据核验决定候选路线是否成立",
+      "assets": {
+        "diagram": "assets/p03-evidence-chain.svg"
+      },
+      "footer": "来源：TASK-007 正式调研报告 §方法；全文证据审计",
+      "notes": "本轮是结构化范围综述，不是穷尽式系统综述。依次核对研究对象、代表工作、原文证据，再归纳待研究问题；作者主张、本项目核验与未知项分开表述。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "DAS：从光纤后向散射恢复沿线扰动",
+      "subtitle": "发射、传感、相干接收与解调是一条完整信号链",
+      "message": "PIC 可承担部分光学收发功能",
+      "assets": {
+        "diagram": "assets/p04-das-system.svg"
+      },
+      "footer": "依据：TASK-007 正式调研报告 §DAS 原理；Jin 等 2024/2026",
+      "notes": "窄线宽光经调制形成探测光进入传感光纤。扰动改变沿线 Rayleigh 后向散射，回波与本振在相干接收端转换为电信号，采集与 DSP 解调得到距离和振动。箭头分别表示发射与返回路径。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "DAS 集成：比较功能边界，而非只比芯片尺寸",
+      "subtitle": "器件、PIC、混合模块与系统级演示是不同层级",
+      "message": "集成越高，外部功能边界越要写清",
+      "assets": {
+        "diagram": "assets/p05-das-levels.svg"
+      },
+      "footer": "依据：Jin 等 2024, Photonics Research；Jin 等 2026, OFC W4D.2",
+      "notes": "2024 SOI PIC 集成调制、偏振处理、光学混合和平衡探测，激光及采集仍片外。2026 工作进一步把 InP 外腔激光、微光学、SOI PIC 和 TEC 封装在模块中，但并非完整系统片上化。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "Jin 等：混合集成模块进入 10 km DAS 演示",
+      "subtitle": "InP 激光 + 微光学 + SOI 收发 PIC + TEC",
+      "message": "真实光纤演示成立；EDFA、采集与 DSP 仍外置",
+      "assets": {
+        "diagram": "assets/p06-jin-module.svg"
+      },
+      "footer": "根据 Jin 等（2026）OFC W4D.2 改绘；doi:10.1364/OFC.2026.W4D.2",
+      "notes": "原始 PDF 在当前 Zotero 附件中未找到，因此按已核验会议论文与正式报告重绘。模块约 40×40×10 mm，激光线宽低于 3 kHz；作者在 10 km G.652.D 上报告约 4 m 空间分辨率与 73.27 pε/√Hz 特定统计口径应变分辨率。三页论文缺少完整功耗、良率、长期漂移和重复样本数据。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "光子 AI：把线性运算放进光学路径",
+      "subtitle": "以 y = W x 为例，输入和权重需被编码到光场",
+      "message": "电子系统仍承担控制、非线性与结果处理",
+      "assets": {
+        "diagram": "assets/p07-ai-hybrid.svg"
+      },
+      "footer": "依据：TASK-007 正式调研报告 §光子 AI；Wetzstein 等 2020, Nature",
+      "notes": "以矩阵向量乘法说明：电子数据编码到光，光学网络实现线性变换，探测转换为电信号。完整推理还涉及激光、调制器、存储、非线性、校准和电子输出；不能只计光学核心能耗。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "三类光学计算架构，限制条件各不相同",
+      "subtitle": "MZI、微环/WDM 与衍射传播分别利用不同物理机制",
+      "message": "架构比较要回到任务、接口与系统边界",
+      "assets": {
+        "diagram": "assets/p08-ai-architectures.svg"
+      },
+      "footer": "依据：TASK-007 正式调研报告 §3；Zhou 等 2021；Feldmann 等 2021",
+      "notes": "MZI 用相位和干涉形成可调线性变换；微环与波分复用利用波长选择和加权；衍射结构利用传播与相位调制形成任务相关映射。图是通用机理简化图，并非某篇论文的实际器件版图。"
+    },
+    {
+      "type": "content",
+      "variant": "image-sidebar",
+      "slide_intent": "evidence",
+      "visual_intent": "hero",
+      "title": "ACCEL：任务级视觉演示与计算边界",
+      "subtitle": "原论文 Fig. 1(b) 展示衍射光学编码与模拟电子计算",
+      "assets": {
+        "hero_image": "assets/accel-fig1b.png"
+      },
+      "image_side": "left",
+      "sidebar_sections": [
+        {
+          "title": "结构",
+          "body": "衍射光学编码 OAC → 光电探测 → 模拟电子计算 EAC"
+        },
+        {
+          "title": "实验",
+          "body": "作者报告准确率：Fashion-MNIST 85.5%；三类 ImageNet 82.0%；视频 92.6%"
+        },
+        {
+          "title": "边界",
+          "body": "74.8 Peta-OPS/W 与 72 ns 使用论文定义口径；不可等同通用数字推理"
+        }
+      ],
+      "caption": "Chen 等（2023），Nature，Fig. 1(b) 局部；CC BY 4.0。",
+      "footer": "doi:10.1038/s41586-023-06558-8；PMC10620079，Fig. 1(b)",
+      "notes": "原图 Fig. 1(b) 是 ACCEL 的 OAC 加模拟电子 EAC。论文在 Fashion-MNIST、三类 ImageNet 和延时视频识别给出任务级实验；作者报告 85.5%、82.0%、92.6% 准确率。性能数字依论文 operation 和系统定义，不能泛化为完整通用 AI 推理。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "以 1×2 MMI 为例：设计需要穿过物理验证链",
+      "subtitle": "从性能要求到几何、仿真、优化、版图与检查",
+      "message": "可用工具自动化；物理达标仍须由求解器和验证器判断",
+      "assets": {
+        "diagram": "assets/p10-mmi-design.svg"
+      },
+      "footer": "依据：TASK-005 技术地图；TASK-007 §Agentic PIC；概念示意",
+      "notes": "用 1×2 MMI 贯穿后续三页。输入目标包括两路功率分配、损耗、波长及工艺边界；宽度 W、长度 L 是可调几何参数。仿真检查传输与不平衡，版图需满足 DRC。此页是教学示例，没有运行仿真。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "从 LLM 脚本生成到 Agent 工具循环",
+      "subtitle": "关键差别是能否读取工具结果并决定下一步",
+      "message": "工具调用不等于自动完成物理设计",
+      "assets": {
+        "diagram": "assets/p11-agent-vs-llm.svg"
+      },
+      "footer": "依据：TASK-005 能力/验证矩阵；PhIDO、PICopilot、AutoPD 原文",
+      "notes": "单次脚本生成由工程师运行和检查。Agent 方法增加任务状态、工具接口、输出检查及下一步决策；是否真正闭环要看工具调用与验证证据。PICopilot 主要评价脚本输出，AutoPhotonicDesign 展示真实仿真迭代。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "Agentic PIC 参考架构：约束必须进入工具链",
+      "subtitle": "需求、设计知识、专业工具与物理反馈形成可追溯循环",
+      "message": "这是跨论文参考架构，不是单篇论文完成的系统",
+      "assets": {
+        "diagram": "assets/p12-reference-architecture.svg"
+      },
+      "footer": "综合 TASK-005 参考架构与 TASK-007 §4 改绘",
+      "notes": "1×2 MMI 的要求先形成可检查设计规范；Agent/Harness 管理步骤与工具接口；器件模型和 PDK 提供知识边界；仿真、版图和 DRC 给出可核验输出。反馈不应由模型自评代替物理计算。图为综合参考架构。"
+    },
+    {
+      "type": "content",
+      "variant": "image-sidebar",
+      "slide_intent": "evidence",
+      "visual_intent": "hero",
+      "title": "PhIDO：自然语言进入研究级 PIC 设计流程",
+      "subtitle": "原论文 Fig. 1 连接解释、设计、版图与电路验证",
+      "assets": {
+        "hero_image": "assets/phido-fig1.png"
+      },
+      "image_side": "left",
+      "sidebar_sections": [
+        {
+          "title": "输入",
+          "body": "自然语言 → 实体/规格 → YAML DSL 与 Pydantic 校验"
+        },
+        {
+          "title": "工具",
+          "body": "gdsfactory 生成 GDS/DRC；部分任务经 SAX 电路模型"
+        },
+        {
+          "title": "验证边界",
+          "body": "102 个 prompt；结构/电路级 proof-of-concept，非 foundry signoff"
+        }
+      ],
+      "caption": "Sharma 等（2025），APL Machine Learning，Fig. 1 原图；CC BY 4.0。",
+      "footer": "doi:10.1063/5.0300741；Fig. 1",
+      "notes": "解释图中四个角色而非只念 Agent 名称。论文以 102 个 prompt 评价流程，作者报告单器件最高约 91%、≤15 元件电路 pass@5 约 57%。FDTD 分支因兼容性没有进入主发布。GDS/DRC 与 SAX 不等于实际器件性能或代工签核。"
+    },
+    {
+      "type": "content",
+      "variant": "image-sidebar",
+      "slide_intent": "evidence",
+      "visual_intent": "hero",
+      "title": "PICopilot：多 Agent 协作生成 PIC 设计脚本",
+      "subtitle": "原论文 Fig. 2 展示任务分解、检索、合成与静态评价",
+      "assets": {
+        "hero_image": "assets/picopilot-fig2.png"
+      },
+      "image_side": "left",
+      "sidebar_sections": [
+        {
+          "title": "任务",
+          "body": "设计说明拆成版图、DRC、FDTD 等脚本子任务"
+        },
+        {
+          "title": "方法",
+          "body": "规划 + 工具手册检索 + 程序生成/合成 + 脚本评价"
+        },
+        {
+          "title": "证据边界",
+          "body": "48 个脚本任务；作者报告全部完成，未核验公开实现和自治执行"
+        }
+      ],
+      "caption": "Jiang 等（2026），ICCAD 论文预印本，Fig. 2 原图；学术汇报引用。",
+      "footer": "arXiv:2608.01791；Fig. 2",
+      "notes": "图中 PIC Designer 提供任务；Task Planner 分解，Function-specific Script Generator 经手册检索生成代码，Script Synthesizer 汇总，Script Evaluator 做静态与自定义检查。论文的任务是脚本生成，不可把产出的 FDTD 脚本等同已经运行的物理结果。"
+    },
+    {
+      "type": "content",
+      "variant": "image-sidebar",
+      "slide_intent": "evidence",
+      "visual_intent": "hero",
+      "title": "AutoPhotonicDesign：真实物理求解器驱动迭代",
+      "subtitle": "原论文 Fig. 2 展示被动弯曲器件的 50 次实验过程",
+      "assets": {
+        "hero_image": "assets/autopd-fig2.png"
+      },
+      "image_side": "left",
+      "sidebar_sections": [
+        {
+          "title": "任务",
+          "body": "人类定义目标、约束和评价程序"
+        },
+        {
+          "title": "闭环",
+          "body": "提出设计 → Tidy3D 求解 → 评价 → 保留/修正"
+        },
+        {
+          "title": "边界",
+          "body": "器件级仿真在环；专家设置和纠错仍重要"
+        }
+      ],
+      "caption": "Kharel 等（2026），arXiv:2606.00915，Fig. 2 原图；学术汇报引用。",
+      "footer": "arXiv:2606.00915；Fig. 2",
+      "notes": "红叉是被丢弃尝试、绿点是保留结果、绿线是迄今最优。论文展示真实物理求解器输出驱动设计迭代，这是较强的仿真在环证据。但人类工程师准备 design.py/program.md 的目标、约束与 evaluator；多物理调制器例子还需要专家修正。图中横轴 50 experiments 不能直接转化为通用成功率。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "代表性工作覆盖了不同设计环节",
+      "subtitle": "对比的是论文所展示的任务与证据层级",
+      "message": "下一步需细查物理约束如何表达、传递和保持",
+      "assets": {
+        "diagram": "assets/p16-capability-matrix.svg"
+      },
+      "footer": "依据：TASK-005 能力矩阵；TASK-007 §4.2；四篇原文",
+      "notes": "矩阵不是全领域支持/不支持判断。PhIDO 验证结构/电路流程；PICopilot 主要为脚本任务；AutoPhotonicDesign 有真实 solver；PICBench 通过 JSON netlist 与 SAX 评价。待核表示本轮论文证据未足以确定。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "三方向形成不同的候选研究问题",
+      "subtitle": "综合比较研究对象、已验证进展和仍待考察的边界",
+      "message": "A/B/C 是调研候选，不是已选课题",
+      "assets": {
+        "diagram": "assets/p17-cross-direction.svg"
+      },
+      "footer": "依据：TASK-006 候选路线；TASK-007 候选路线总结",
+      "notes": "路线 A 正式名称为证据优先的 Agentic PIC Harness 方法研究，B 是 DAS 系统需求到光电混合集成约束的可追溯传播，C 是光子 AI 的器件误差—任务精度—系统成本联合证据链。图中是压缩后的题眼；三条均不是已选课题，不能用单一成熟度排序。个人更希望进一步研究 Agentic PIC 中真实物理设计问题。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "从需求理解到物理验证：约束能否贯穿设计？",
+      "subtitle": "四层技术问题对应不同论文已有能力和待核证据",
+      "message": "优先深入需求理解与物理约束处理",
+      "assets": {
+        "diagram": "assets/p18-four-layers.svg"
+      },
+      "footer": "依据：PhIDO Fig. 1；PICopilot Fig. 2；AutoPD Fig. 2；PICBench；TASK-007 §研究缺口",
+      "notes": "PhIDO 与 PICBench 展示结构化表示；AutoPhotonicDesign 展示人类设定约束后的求解器循环；PICopilot 展示脚本评价。值得进一步核验的是复杂物理约束的表达、一致性、跨工具传递与设计过程保持，而不是断言整个领域没有物理约束能力。"
+    },
+    {
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "evidence",
+      "visual_intent": "flow",
+      "title": "个人倾向：从物理约束理解切入真实 PIC 设计",
+      "subtitle": "Agentic PIC Design 是主要方向；具体技术方案尚待讨论",
+      "message": "需求解析是基础能力，不预设为最终创新点",
+      "assets": {
+        "diagram": "assets/p19-research-inclination.svg"
+      },
+      "footer": "来源：用户确认的个人倾向；TASK-007 候选路线仅作背景",
+      "notes": "总体目标是让 AI 在专业工具与物理要求支持下参与真实器件/电路设计。当前优先研究设计需求理解和物理约束处理，随后可能延伸到工具执行、仿真反馈与跨任务复用。三个未决问题：已有方法做到何种程度；侧重表达、冲突、传递还是保持；选择什么物理任务验证价值与通用性。"
+    },
+    {
+      "type": "content",
+      "variant": "comparison-2col",
+      "title": "总结与组内讨论",
+      "subtitle": "以证据约束判断，以具体设计任务收敛问题",
+      "left": {
+        "title": "三点收获",
+        "body": [
+          "DAS、光子 AI、Agentic PIC 的研究对象与技术体系不同",
+          "Agentic PIC 已覆盖结构、脚本、仿真在环等不同能力层级",
+          "个人倾向优先关注需求理解与物理约束处理"
+        ]
+      },
+      "right": {
+        "title": "两个讨论问题",
+        "body": [
+          "是否适合优先深入 PIC 设计需求与物理约束处理？",
+          "下一阶段聚焦哪些具体技术问题和代表工作，才能明确研究贡献？"
+        ]
+      },
+      "verdict": "当前是研究倾向，不是已确定的课题、算法或实验计划。",
+      "footer": "来源：TASK-007 正式报告与候选路线；用户确认的最新研究倾向",
+      "notes": "结束时用三个收获复述证据边界，不作完成系统或实验承诺。请导师和师兄师姐优先讨论切入问题是否合适，以及用哪类具体 PIC 器件或电路任务检验其价值。预留问答。"
+    }
+  ]
+}

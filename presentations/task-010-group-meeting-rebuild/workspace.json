@@ -1,0 +1,16 @@
+{
+  "workspace_version": 1,
+  "deck_title": "\u9762\u5411\u5149\u5b50\u82af\u7247\u667a\u80fd\u8bbe\u8ba1\u7684\u56fd\u5185\u5916\u7814\u7a76\u73b0\u72b6\u4e0e\u6280\u672f\u8def\u7ebf\u5206\u6790",
+  "deck_slug": "deck-workspace",
+  "style_contract": "style_contract.json",
+  "content_plan": "content_plan.json",
+  "design_brief": "design_brief.json",
+  "evidence_plan": "evidence_plan.json",
+  "outline": "outline.json",
+  "asset_plan": "asset_plan.json",
+  "notes": "notes.md",
+  "assets_dir": "assets",
+  "staged_assets_dir": "assets/staged",
+  "build_dir": "build",
+  "reference_pptx": null
+}

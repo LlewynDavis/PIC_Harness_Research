@@ -1,0 +1,22 @@
+{
+  "workspace_assets_version": 1,
+  "topic": "\u9762\u5411\u5149\u5b50\u82af\u7247\u667a\u80fd\u8bbe\u8ba1\u7684\u56fd\u5185\u5916\u7814\u7a76\u73b0\u72b6\u4e0e\u6280\u672f\u8def\u7ebf\u5206\u6790",
+  "palette_path": "G:\\PIC_Harness_Research\\presentations\\task-010-group-meeting-rebuild\\assets\\staged\\palette.json",
+  "palette": {
+    "topic": "\u9762\u5411\u5149\u5b50\u82af\u7247\u667a\u80fd\u8bbe\u8ba1\u7684\u56fd\u5185\u5916\u7814\u7a76\u73b0\u72b6\u4e0e\u6280\u672f\u8def\u7ebf\u5206\u6790",
+    "palette_id": "space_mission_v1",
+    "palette_key": "enterprise_graphite_v1",
+    "palette": {
+      "dominant": "07111F",
+      "support": "102443",
+      "accent": "6FE7FF",
+      "neutral": "EAF1FA"
+    },
+    "matched_keywords": []
+  },
+  "images": [],
+  "backgrounds": [],
+  "charts": [],
+  "generated_images": [],
+  "attribution_csv": "G:\\PIC_Harness_Research\\presentations\\task-010-group-meeting-rebuild\\assets\\attribution.csv"
+}

@@ -1,0 +1,5 @@
+file_name,file_path,title,source_page,image_url,license,license_url,artist,credit,query
+accel-fig1b.png,assets/accel-fig1b.png,ACCEL Fig. 1(b),https://doi.org/10.1038/s41586-023-06558-8,https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-06558-8/MediaObjects/41586_2023_6558_Fig1_HTML.png,CC BY 4.0,https://creativecommons.org/licenses/by/4.0/,Chen et al. 2023,Original figure cropped for academic presentation,
+phido-fig1.png,assets/phido-fig1.png,PhIDO Fig. 1,https://doi.org/10.1063/5.0300741,,CC BY 4.0,https://creativecommons.org/licenses/by/4.0/,Sharma et al. 2025,Original figure cropped from Zotero PDF,
+picopilot-fig2.png,assets/picopilot-fig2.png,PICopilot Fig. 2,https://arxiv.org/abs/2608.01791,,Academic quotation; broader reuse requires review,https://arxiv.org/abs/2608.01791,Jiang et al. 2026,Original figure cropped from Zotero PDF,
+autopd-fig2.png,assets/autopd-fig2.png,AutoPhotonicDesign Fig. 2,https://arxiv.org/abs/2606.00915,,Academic quotation; broader reuse requires review,https://arxiv.org/abs/2606.00915,Kharel et al. 2026,Original figure cropped from Zotero PDF,

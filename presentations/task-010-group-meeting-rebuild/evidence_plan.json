@@ -1,0 +1,16 @@
+{
+  "topic": "PIC_Harness_Research 首次正式组会调研汇报",
+  "source_policy": "以 TASK-007 已验收报告和对应原文为事实源；作者指标按作者口径；概念图与原论文 Figure 明确区分。",
+  "items": [
+    {"id": "jin-2024", "slides": [4, 5], "claim": "SOI PIC 集成 DAS 光学收发前端；关键系统组件仍片外", "source": "doi:10.1364/PRJ.512298", "level": "paper experiment"},
+    {"id": "jin-2026", "slides": [5, 6], "claim": "InP ECL 与 SOI PIC 混合集成模块进入 10 km 光纤演示", "source": "doi:10.1364/OFC.2026.W4D.2", "level": "author-reported conference experiment"},
+    {"id": "accel", "slides": [8, 9], "claim": "ACCEL 运行真实视觉任务；性能指标有论文定义的运算边界", "source": "doi:10.1038/s41586-023-06558-8", "level": "paper experiment"},
+    {"id": "phido", "slides": [11, 13, 16, 18], "claim": "自然语言到 YAML、GDS/DRC 与部分 SAX 电路评价", "source": "doi:10.1063/5.0300741; TASK-007 code audit", "level": "paper and fixed-commit read-only code"},
+    {"id": "picopilot", "slides": [11, 14, 16, 18], "claim": "48 个 PIC 脚本任务；不等同自治工具执行", "source": "arXiv:2608.01791", "level": "author-reported script benchmark"},
+    {"id": "autopd", "slides": [11, 15, 16, 18], "claim": "人类设定目标和 evaluator 后的真实求解器迭代", "source": "arXiv:2606.00915", "level": "paper simulation in loop"},
+    {"id": "picbench", "slides": [16, 18], "claim": "24 个电路题通过 JSON netlist 与 SAX 评价", "source": "arXiv:2502.03159", "level": "paper benchmark"},
+    {"id": "routes", "slides": [17, 18, 19], "claim": "A/B/C 均是候选；个人倾向于 Agentic PIC 的需求与物理约束处理", "source": "TASK-007 candidate routes; user instruction", "level": "research inference and user preference"}
+  ],
+  "chart_candidates": [],
+  "open_questions": ["物理约束理解与处理现有证据到何程度？", "表达、冲突、跨工具传递和过程保持何者优先？", "用什么真实 PIC 设计任务验证价值与通用性？"]
+}

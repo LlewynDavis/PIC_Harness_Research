@@ -1,5 +1,26 @@
 # 当前任务与任务记录
 
+## TASK-010：基于最新大纲重做首次正式组会 PPT
+
+- 状态：`REVIEW_READY`（2026-09-23，待用户审阅）
+- 起始提交：`7abc0f1a2f68d3867fa26dbfe0ff558ac9c49b87`
+- 授权来源：用户提供完整 P1–P20 新大纲，要求直接从新工作区重做学术 PPT，保留已核验研究内容与论文证据，不沿用旧版页面结构和视觉布局。
+- 目标：交付约 20 页、15–20 分钟的可编辑 PPTX、PDF 预览、逐页简短讲解备注及图示/引文证据索引；三方向均覆盖，P10–P16 深入 Agentic PIC，P17–P19 递进形成比较、待研究问题及个人倾向。
+- 允许范围：只读复核已验收 TASK-005/006/007 调研成果和 Zotero PDF；在 `presentations/task-010-group-meeting-rebuild/` 新建独立 workspace、绘制准确技术图示、裁剪并标注许可允许的论文 Figure；更新本任务及 `docs/CURRENT_STATE.md`；执行完整内容、渲染和几何 QA。
+- 禁止范围：不改写已验收研究结论，不运行实验、仿真、Benchmark 或 Agent/Harness 开发，不将候选路线和个人倾向写成已定课题，不修改 Zotero 库或 `D:\AI_PIC_Demo`。工作树已有 `AGENTS.md` 未提交改动不属于本任务。
+- 验收：核对原图与技术主张、证据边界和 P18–P19 措辞；渲染逐页检查可读性、讲解备注、来源和引用；运行 workspace QA、PPTX/PDF 读回及 `git diff --check`。附录是否保留按用户对最新大纲与此前“不保留附录”的澄清处理。
+
+### 完成记录
+
+- 全新独立 workspace：`presentations/task-010-group-meeting-rebuild/`；20 页主讲，无附录，保留此前用户明确提出的“不保留附录”。TASK-007/008 原始交付未修改。
+- 正式 PPTX/PDF 为该目录下 `PIC_Harness_Research_首次组会调研_20页.*`；每页均有讲解备注。14 张自绘 SVG 图与 4 张论文 Figure 分别承担原理/综合分析和真实成果展示；页码、来源、局部裁剪、许可和边界详见 `figure-and-evidence-index.md`。
+- P17–P19 按新大纲组织为跨方向比较、四层问题推导、个人研究倾向；未把 A/B/C 或需求解析写成最终课题/创新点。
+- 验证：presentation-skill 严格 QA 退出 0，溢出/重叠/占位符/视觉警告均 0；14 条图示面积密度提示经人工视觉检查为非阻断；PowerPoint 成功导出 20/20 页 PNG 和 PDF，PPTX 20 页与 20 页备注、PDF 20 页读回通过。图示逐页审查与时长安排见 `qa-summary.md`。本项目未复算论文实验或完成汇报人的实讲计时。
+- Zotero API 在本次制作时超时；已有 PhIDO、PICopilot、AutoPhotonicDesign PDF 本地附件可只读访问。Jin 2026 原图附件未找到，用已核验材料改绘；ACCEL 使用官方开放获取 Fig. 1(b)。未修改 Zotero 库。
+- 工作树原有 `AGENTS.md` 未提交改动不属于本任务，不纳入交付提交。
+
+---
+
 ## TASK-009：PIC × AI Agent 科研英语词库 V1
 
 - 状态：`DELIVERED`（2026-09-23，待用户在 Knowt 实际导入）

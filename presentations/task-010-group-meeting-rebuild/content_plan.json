@@ -1,0 +1,170 @@
+{
+  "topic": "面向光子芯片智能设计的国内外研究现状与技术路线分析",
+  "audience": "课题组师兄师姐及导师",
+  "objective": "20 页 / 15–20 分钟，三方向综述后深入 Agentic PIC 并讨论个人倾向",
+  "thesis": "Agentic PIC 值得从真实物理设计任务的需求与约束处理进一步研究",
+  "narrative_arc": [
+    {
+      "act": "框架",
+      "slides": "P1–P3"
+    },
+    {
+      "act": "DAS",
+      "slides": "P4–P6"
+    },
+    {
+      "act": "光子 AI",
+      "slides": "P7–P9"
+    },
+    {
+      "act": "Agentic PIC",
+      "slides": "P10–P16"
+    },
+    {
+      "act": "综合与讨论",
+      "slides": "P17–P20"
+    }
+  ],
+  "slide_plan": [
+    {
+      "slide_id": "P1",
+      "role": "message",
+      "message": "面向光子芯片智能设计的\n国内外研究现状与\n技术路线分析",
+      "variant": "title",
+      "visual_strategy": "comparison"
+    },
+    {
+      "slide_id": "P2",
+      "role": "evidence",
+      "message": "先分别理解三个技术体系，再讨论交叉",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P3",
+      "role": "evidence",
+      "message": "证据核验决定候选路线是否成立",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P4",
+      "role": "evidence",
+      "message": "PIC 可承担部分光学收发功能",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P5",
+      "role": "evidence",
+      "message": "集成越高，外部功能边界越要写清",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P6",
+      "role": "evidence",
+      "message": "真实光纤演示成立；EDFA、采集与 DSP 仍外置",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P7",
+      "role": "evidence",
+      "message": "电子系统仍承担控制、非线性与结果处理",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P8",
+      "role": "evidence",
+      "message": "架构比较要回到任务、接口与系统边界",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P9",
+      "role": "evidence",
+      "message": "ACCEL：任务级视觉演示与计算边界",
+      "variant": "image-sidebar",
+      "visual_strategy": "original-figure"
+    },
+    {
+      "slide_id": "P10",
+      "role": "evidence",
+      "message": "可用工具自动化；物理达标仍须由求解器和验证器判断",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P11",
+      "role": "evidence",
+      "message": "工具调用不等于自动完成物理设计",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P12",
+      "role": "evidence",
+      "message": "这是跨论文参考架构，不是单篇论文完成的系统",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P13",
+      "role": "evidence",
+      "message": "PhIDO：自然语言进入研究级 PIC 设计流程",
+      "variant": "image-sidebar",
+      "visual_strategy": "original-figure"
+    },
+    {
+      "slide_id": "P14",
+      "role": "evidence",
+      "message": "PICopilot：多 Agent 协作生成 PIC 设计脚本",
+      "variant": "image-sidebar",
+      "visual_strategy": "original-figure"
+    },
+    {
+      "slide_id": "P15",
+      "role": "evidence",
+      "message": "AutoPhotonicDesign：真实物理求解器驱动迭代",
+      "variant": "image-sidebar",
+      "visual_strategy": "original-figure"
+    },
+    {
+      "slide_id": "P16",
+      "role": "evidence",
+      "message": "下一步需细查物理约束如何表达、传递和保持",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P17",
+      "role": "evidence",
+      "message": "A/B/C 是调研候选，不是已选课题",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P18",
+      "role": "evidence",
+      "message": "优先深入需求理解与物理约束处理",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P19",
+      "role": "evidence",
+      "message": "需求解析是基础能力，不预设为最终创新点",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
+    },
+    {
+      "slide_id": "P20",
+      "role": "message",
+      "message": "总结与组内讨论",
+      "variant": "comparison-2col",
+      "visual_strategy": "comparison"
+    }
+  ]
+}

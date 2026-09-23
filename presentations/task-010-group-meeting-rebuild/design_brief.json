@@ -1,0 +1,42 @@
+{
+  "topic": "面向光子芯片智能设计的国内外研究现状与技术路线分析",
+  "content_maturity": "technical/educational",
+  "audience_posture": "research group",
+  "emotional_register": "trustworthy",
+  "format_promise": "图示解释技术，原论文 Figure 证明真实工作；中文学术简洁版式",
+  "anti_format": [
+    "旧版页面结构与布局",
+    "大幅装饰性 AI 图",
+    "整页 PDF 缩小",
+    "连续重复卡片"
+  ],
+  "canvas_and_grid": {
+    "aspect": "16:9",
+    "margin_x_in": 0.5,
+    "footer_reserve_in": 0.32
+  },
+  "title_page_concept": {
+    "chosen_archetype": "editorial masthead",
+    "dominant_element": "论文题目",
+    "supporting_element": "三个方向"
+  },
+  "structure_strategy": {
+    "primary_scaffold": "解释性技术图 + 关键判断",
+    "repeated_elements": [
+      "来源底注",
+      "页码"
+    ],
+    "allowed_variations": [
+      "flow",
+      "image-sidebar",
+      "comparison-2col"
+    ],
+    "container_policy": "只为模块和证据边界加容器"
+  },
+  "design_dna": "editorial academic technical atlas",
+  "renderer_treatments": {
+    "header_mode": "stack",
+    "title_layout": "masthead",
+    "footer_mode": "source-line"
+  }
+}
