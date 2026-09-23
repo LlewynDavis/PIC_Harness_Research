@@ -1,8 +1,8 @@
-# 当前唯一执行任务
+# 当前任务与任务记录
 
 ## TASK-007：PIC_Harness_Research 正式调研报告与组会汇报
 
-- 状态：`REVIEW_READY`（等待 GPT / 用户验收）
+- 状态：`ACCEPTED / CLOSED`
 - 启动日期：2026-09-21
 - 起始提交：`bf28b08ab667a86df575cff7c70f81fab8f73ee5`
 - 前置任务：`TASK-004 / TASK-005 / TASK-005A / TASK-006 = ACCEPTED / CLOSED`
@@ -76,7 +76,8 @@
 - PPT 视觉 QA：因本机无 `soffice`，使用 Microsoft PowerPoint 导出 25/25 张 1600×900 PNG；第一轮发现并修复 Mermaid 中文字体缺失和末页失衡，第二轮复查通过。
 - Portal：`mkdocs build --strict` 通过；静态产物含首页、报告、证据审计、路线和引用页面。
 - 未执行：实验、仿真、benchmark、Agent/Harness 实现、课题组资源匹配或最终路线选择。
-- 当前边界：只进入 `TASK-007_REVIEW_READY`；GPT 和用户验收前不启动后续任务。
+- GPT 验收：2026-09-23 针对交付提交 `3ed876f5fce34d38a47907d6c68c476f6a51d090` 返回 `TASK-007_ACCEPTED`，状态为 `ACCEPTED / CLOSED`。
+- 关闭边界：TASK-007 的调研报告与组会汇报交付已完成；当前没有新的执行任务。验收不代表确定了最终研究路线，也不授权实验、仿真或工程实现；后续工作须另行建立并授权任务。
 
 ---
 

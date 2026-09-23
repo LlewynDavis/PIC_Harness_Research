@@ -63,7 +63,7 @@ Agentic PIC Design 调研新增一条独立主线：`Model Internalization vs Ha
 
 ## TASK-007 正式调研报告阶段
 
-TASK-004、005、006 已完成并验收关闭。当前获准的 TASK-007 在 Phase 1 内把既有证据综合为正式技术调研报告和组会 PPT，并更新 Research Portal。它可以对路线关键论文做全文核证和少量补证据，但不进入课题组条件评估、实验设计、仿真、Harness 实现或最终路线选定。
+TASK-004、005、006 已完成并验收关闭。TASK-007 已在 Phase 1 内完成正式技术调研报告和组会 PPT，并更新 Research Portal；GPT 已验收关闭。该阶段没有进入课题组条件评估、实验设计、仿真、Harness 实现或最终路线选定。验收不自动授权后续阶段；每项后续工作须先在 `docs/TASK.md` 中建立唯一、边界明确并经授权的任务。
 
 ## TASK-006 阶段性收敛
 
