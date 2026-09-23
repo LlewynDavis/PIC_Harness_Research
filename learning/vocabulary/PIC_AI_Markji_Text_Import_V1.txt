@@ -1,0 +1,800 @@
+Amplitude
+---
+振幅｜描述光场大小的量，光强通常与其平方相关。例句：The output amplitude depends on coupling.
+===
+Bandwidth
+---
+带宽｜器件维持规定响应的频率或波长范围。例句：The detector bandwidth limits the signal.
+===
+Coupling
+---
+耦合｜光功率或光场在相邻结构或模式间传递的过程。例句：Coupling transfers light into the ring.
+===
+Coupling coefficient
+---
+耦合系数｜量化结构或模式之间耦合强度的参数。例句：The coupling coefficient sets the split ratio.
+===
+Effective index
+---
+有效折射率｜以等效折射率描述波导模式的相位传播。例句：The effective index changes with width.
+===
+Extinction ratio
+---
+消光比｜器件高低输出状态的光功率比，常以分贝表示。例句：The modulator has a high extinction ratio.
+===
+Frequency
+---
+频率｜光场单位时间内振荡的次数，与波长相互对应。例句：The optical frequency is tuned.
+===
+Insertion loss
+---
+插入损耗｜器件接入光路造成的额外功率损失，通常以分贝表示。例句：The device exhibits low insertion loss.
+===
+Light propagation
+---
+光传播｜光在介质或波导中沿路径传输，受材料与结构共同影响。例句：Light propagates through the waveguide.
+===
+Optical interference
+---
+光干涉｜相干光场叠加后形成增强或减弱的光强分布。例句：The MZI relies on optical interference.
+===
+Optical mode
+---
+光学模式｜满足结构边界条件的特定电磁场分布。例句：The optical mode is confined to the core.
+===
+Optical power
+---
+光功率｜单位时间传递的光能量，是损耗与效率的常用基准。例句：Optical power drops after the coupler.
+===
+Phase
+---
+相位｜描述周期光场振荡位置的量，决定干涉输出。例句：Phase controls the interferometer output.
+===
+Phase shift
+---
+相移｜光传播或调制引起的相位变化，可用于调节干涉。例句：The heater induces a phase shift.
+===
+PIC
+---
+光子集成电路｜在芯片上集成多个光学器件与互连的电路。例句：The PIC integrates several waveguides.
+===
+Polarization
+---
+偏振｜光电场振动方向的性质，会影响器件响应。例句：Polarization affects the coupling efficiency.
+===
+Propagation constant
+---
+传播常数｜描述模式沿传播方向相位积累速率的参数。例句：The solver reports the propagation constant.
+===
+Propagation loss
+---
+传播损耗｜光沿波导传输时产生的单位长度功率衰减。例句：Propagation loss limits circuit scale.
+===
+Refractive index
+---
+折射率｜表征材料中光相速度相对真空减小程度的参数。例句：The core has a higher refractive index.
+===
+Resonance
+---
+谐振｜在特定频率或波长下场增强或响应突出的现象。例句：Resonance shifts with temperature.
+===
+Silicon photonics
+---
+硅光子学｜利用硅基材料与工艺实现集成光学器件的技术。例句：Silicon photonics enables dense integration.
+===
+Transmittance
+---
+透射率｜输出透射光功率与入射光功率之比。例句：Transmittance varies with wavelength.
+===
+Waveguide
+---
+光波导｜依靠折射率分布限制并引导光传播的结构。例句：The waveguide carries light across the chip.
+===
+Wavelength
+---
+波长｜光波相邻同相位位置之间的距离，常用于指定工作点。例句：The device operates at this wavelength.
+===
+Diffraction
+---
+衍射｜光遇到孔径或结构后偏离直线传播并形成空间分布。例句：Diffraction shapes the output field.
+===
+Dispersion
+---
+色散｜光的传播特性随频率或波长变化的现象。例句：Dispersion broadens the optical pulse.
+===
+Evanescent field
+---
+倏逝场｜从导波结构边界向外延伸并快速衰减的场。例句：The evanescent field couples to the ring.
+===
+Free spectral range
+---
+自由光谱范围｜相邻谐振峰或周期性谱特征之间的间隔。例句：The ring has a wide free spectral range.
+===
+Group index
+---
+群折射率｜描述光脉冲包络或群速度的等效折射率。例句：Group index affects the delay.
+===
+Guided mode
+---
+导模｜在波导中受约束并沿长度方向传播的模式。例句：Only one guided mode is supported.
+===
+Mode profile
+---
+模式场型｜光学模式在横截面上的场强和相位分布。例句：The mode profile overlaps the fiber mode.
+===
+Multimode waveguide
+---
+多模波导｜在指定条件下支持多个传播模式的波导。例句：The multimode waveguide supports several modes.
+===
+Optical confinement
+---
+光场约束｜光场被限制在波导芯区附近的程度。例句：Strong optical confinement reduces bend size.
+===
+Quality factor
+---
+品质因数｜衡量谐振峰相对窄度及能量存储能力的参数。例句：A higher quality factor narrows the resonance.
+===
+Reflectance
+---
+反射率｜反射光功率与入射光功率之比。例句：Reflectance is low near resonance.
+===
+Single-mode waveguide
+---
+单模波导｜在指定条件下只支持一个目标传播模式的波导。例句：A single-mode waveguide simplifies routing.
+===
+TE mode
+---
+横电模式｜主要电场分量横向于传播方向的波导模式。例句：The waveguide supports a TE mode.
+===
+TM mode
+---
+横磁模式｜主要磁场分量横向于传播方向的波导模式。例句：The TM mode has a different effective index.
+===
+Angular frequency
+---
+角频率｜以弧度每秒表示的振荡速率，等于频率乘以二π。例句：Angular frequency appears in the field equation.
+===
+Return loss
+---
+回波损耗｜以分贝衡量反射功率相对入射功率的大小。例句：High return loss indicates weak reflection.
+===
+Boundary condition
+---
+边界条件｜规定计算域边界上场或变量行为的约束。例句：The boundary condition affects the result.
+===
+Circuit-level simulation
+---
+电路级仿真｜使用器件模型或散射参数计算整条光路的响应。例句：Circuit-level simulation predicts the filter response.
+===
+Coherent detection
+---
+相干探测｜利用本振与信号光干涉恢复幅度和相位信息。例句：Coherent detection recovers the phase signal.
+===
+DAS
+---
+分布式声学传感｜利用光纤沿线散射信号感知位置相关振动或动态应变。例句：The PIC serves a DAS receiver.
+===
+Design constraint
+---
+设计约束｜限定结构、性能或工艺参数允许范围的条件。例句：The design constraint limits minimum spacing.
+===
+Directional coupler
+---
+定向耦合器｜利用相邻波导的倏逝场耦合转移光功率。例句：The directional coupler transfers optical power.
+===
+DRC
+---
+设计规则检查｜检查版图几何是否满足指定工艺规则。例句：The layout passes DRC.
+===
+Electromagnetic field
+---
+电磁场｜由相互关联的电场与磁场组成的物理场。例句：The electromagnetic field is confined in the core.
+===
+FDTD
+---
+时域有限差分法｜在时空网格上求解麦克斯韦方程的数值方法。例句：FDTD resolves the device response.
+===
+FEM
+---
+有限元法｜将计算域离散为单元以求解电磁场方程的方法。例句：FEM computes the waveguide modes.
+===
+Grating coupler
+---
+光栅耦合器｜借助周期结构在芯片波导与自由空间或光纤间耦光。例句：The grating coupler couples light from a fiber.
+===
+Laser linewidth
+---
+激光线宽｜激光频谱的宽度，与相干探测的相位噪声相关。例句：Laser linewidth affects coherent sensing.
+===
+LVS
+---
+版图与原理图一致性检查｜比较版图提取连接与原理图或网表是否一致。例句：LVS checks the extracted connectivity.
+===
+Maxwell's equations
+---
+麦克斯韦方程组｜描述电磁场与电荷、电流关系的基本方程组。例句：The solver discretizes Maxwell's equations.
+===
+Mesh
+---
+网格｜数值仿真中对空间或时间计算域的离散划分。例句：A finer mesh resolves the gap.
+===
+Mesh convergence
+---
+网格收敛性｜检查加密网格后关键仿真结果是否趋于稳定。例句：Mesh convergence was checked before reporting loss.
+===
+Microring resonator
+---
+微环谐振器｜环形波导利用谐振选择特定波长的器件。例句：The microring resonator filters wavelengths.
+===
+MMI
+---
+多模干涉器｜利用多模区自成像实现分光或合光的器件。例句：The MMI splits the input light.
+===
+Mode solver
+---
+模式求解器｜计算波导本征模式及其有效折射率的工具。例句：The mode solver finds the fundamental mode.
+===
+MZI
+---
+马赫–曾德尔干涉仪｜通过两臂相位差调控输出的干涉结构。例句：The MZI converts phase shifts into intensity changes.
+===
+Objective function
+---
+目标函数｜把设计质量表示为可优化的数值准则。例句：The objective function penalizes high loss.
+===
+Optical modulator
+---
+光调制器｜利用电或热控制改变光的强度、相位等性质。例句：The optical modulator encodes the signal.
+===
+Optical splitter
+---
+光分束器｜把一路输入光分配到多个输出端口的器件。例句：The optical splitter feeds both arms.
+===
+Optimization
+---
+优化｜在约束下调整设计变量以改善指定目标的过程。例句：Optimization reduces the simulated loss.
+===
+PDK
+---
+工艺设计套件｜包含工艺规则、器件模型和验证资源的工艺资料包。例句：The PDK defines the allowed layer stack.
+===
+Phase shifter
+---
+相移器｜通过材料或结构变化调节光传播相位的器件。例句：The phase shifter tunes the MZI.
+===
+Photodetector
+---
+光电探测器｜将入射光信号转换为可测电信号的器件。例句：The photodetector measures the output light.
+===
+Port
+---
+端口｜定义器件或电路中光信号输入输出的位置与模式。例句：The output port collects the guided mode.
+===
+Rayleigh backscattering
+---
+瑞利后向散射｜光纤中的微小折射率起伏使部分入射光向后传播。例句：DAS analyzes Rayleigh backscattering.
+===
+S-parameters
+---
+散射参数｜描述端口间入射与出射波幅度关系的参数。例句：The S-parameters describe the circuit response.
+===
+BPM
+---
+光束传播法｜沿主要传播方向逐步计算光场演化的近似方法。例句：BPM models propagation through the taper.
+===
+Compact model
+---
+紧凑模型｜用简化参数关系近似器件响应供电路级仿真。例句：The compact model speeds up circuit simulation.
+===
+Edge coupler
+---
+端面耦合器｜在芯片边缘实现光纤与波导模式匹配的结构。例句：The edge coupler reduces interface loss.
+===
+Eigenmode
+---
+本征模式｜满足给定结构方程和边界条件的固有场解。例句：The eigenmode is normalized before coupling.
+===
+Electro-optic effect
+---
+电光效应｜外加电场改变材料光学性质的效应。例句：The modulator exploits the electro-optic effect.
+===
+Fabrication tolerance
+---
+制造公差｜制造过程中尺寸与材料参数允许出现的偏差。例句：Fabrication tolerance affects the ring response.
+===
+GDSII
+---
+GDSII 版图格式｜用于交换集成电路几何版图数据的常见文件格式。例句：The layout is exported as GDSII.
+===
+Interrogator
+---
+解调仪｜向传感链路发光并读出散射或反射信号的系统。例句：The interrogator reads the fiber response.
+===
+Laser diode
+---
+激光二极管｜通过半导体受激辐射产生相干光的光源。例句：The laser diode supplies the input light.
+===
+Parameter sweep
+---
+参数扫描｜按设定范围重复计算以观察设计变量对结果的影响。例句：The parameter sweep varies the waveguide width.
+===
+Photonic–electronic integration
+---
+光电混合集成｜在系统或模块中协同集成光学与电子器件及接口。例句：Photonic–electronic integration adds interface constraints.
+===
+PML
+---
+完美匹配层｜在仿真边界吸收出射波以减小反射的人工层。例句：The PML absorbs outgoing waves.
+===
+Process corner
+---
+工艺角｜用参数组合表征制造波动下的代表工况。例句：The circuit is evaluated across process corners.
+===
+Thermo-optic effect
+---
+热光效应｜温度变化引起材料折射率变化的效应。例句：The thermo-optic effect shifts the resonance.
+===
+Yield
+---
+良率｜满足规定验收条件的制造样本占总样本比例。例句：Yield depends on the chosen specification.
+===
+Activation function
+---
+激活函数｜对线性计算结果施加非线性映射的函数。例句：The activation function follows the optical layer.
+===
+AI for Photonics
+---
+人工智能用于光子学｜利用人工智能辅助光子器件或系统设计优化的方向。例句：AI for Photonics searches device geometries.
+===
+Calibration
+---
+校准｜通过测量和调节补偿器件偏差或漂移的过程。例句：Calibration corrects phase errors.
+===
+Computational precision
+---
+计算精度｜运算结果与目标数值接近的程度，受噪声与量化影响。例句：Computational precision depends on noise.
+===
+Diffractive neural network
+---
+衍射神经网络｜利用多层衍射结构完成光场变换的神经网络架构。例句：The diffractive neural network shapes the output field.
+===
+Energy efficiency
+---
+能效｜单位能量完成的有效运算或任务量。例句：Energy efficiency depends on system boundaries.
+===
+Hybrid optoelectronic computing
+---
+光电混合计算｜把光学计算与电子控制、存储或非线性处理结合。例句：Hybrid optoelectronic computing uses electronic control.
+===
+Inference
+---
+推理｜用已设定模型参数处理新输入并产生预测的过程。例句：The photonic chip performs inference.
+===
+Latency
+---
+延迟｜从输入进入系统到获得输出所需的时间。例句：Conversion adds latency to the system.
+===
+Matrix multiplication
+---
+矩阵乘法｜将输入向量或矩阵与权重矩阵相乘的核心线性运算。例句：The chip accelerates matrix multiplication.
+===
+MVM
+---
+矩阵向量乘法｜矩阵与输入向量相乘，常用作光学推理算子。例句：The MVM unit maps weights to optical paths.
+===
+MZI mesh
+---
+MZI 干涉网格｜由多个可调干涉仪组成的可编程线性变换网络。例句：The MZI mesh implements a matrix transform.
+===
+Optical encoding
+---
+光学编码｜把输入数据映射到光的强度、相位或波长等自由度。例句：Optical encoding maps data to light intensity.
+===
+Optical neural network
+---
+光学神经网络｜在光学域实现神经网络部分或全部计算的架构。例句：The optical neural network processes input signals.
+===
+Optical–electrical conversion
+---
+光电转换｜在光信号与电信号之间进行转换的过程。例句：Optical–electrical conversion adds system cost.
+===
+Photonic accelerator
+---
+光子加速器｜用光学硬件加速特定计算任务的装置或系统。例句：The photonic accelerator performs linear operations.
+===
+Photonics for AI
+---
+光子硬件用于人工智能｜使用光子器件执行人工智能计算任务的研究方向。例句：Photonics for AI maps inference onto optical hardware.
+===
+Power consumption
+---
+功耗｜器件或系统运行时消耗的电功率。例句：Power consumption includes thermal control.
+===
+Programmability
+---
+可编程性｜器件或电路按目标任务重设参数和功能的能力。例句：Programmability enables multiple matrix settings.
+===
+System-level energy efficiency
+---
+系统级能效｜把光源、转换、控制和数据移动纳入计算的能效。例句：System-level energy efficiency includes the laser.
+===
+Task accuracy
+---
+任务准确率｜系统在指定推理任务上的预测正确程度。例句：Task accuracy is measured on held-out data.
+===
+Throughput
+---
+吞吐量｜单位时间内系统完成的运算或处理的数据量。例句：Throughput depends on the input rate.
+===
+Training
+---
+训练｜根据数据调整模型参数以降低目标误差的过程。例句：Training updates the network weights.
+===
+WDM
+---
+波分复用｜用不同波长在同一光路并行承载多个通道。例句：WDM increases channel parallelism.
+===
+Weight
+---
+权重｜神经网络中决定输入对输出贡献的可调参数。例句：Each phase shifter encodes a weight.
+===
+ADC
+---
+模数转换器｜将模拟探测信号转换为数字数据的电路。例句：The ADC digitizes the detector output.
+===
+DAC
+---
+数模转换器｜将数字输入转换为模拟驱动信号的电路。例句：The DAC drives the modulator.
+===
+Data movement
+---
+数据搬运｜在存储、电子接口与计算单元间传送数据的过程。例句：Data movement can dominate total energy.
+===
+Metasurface
+---
+超构表面｜由亚波长结构单元调控光波前的薄层器件。例句：The metasurface encodes optical weights.
+===
+Microring array
+---
+微环阵列｜多个微环协同实现加权、滤波或波长通道操作。例句：The microring array requires calibration.
+===
+Nonlinear activation
+---
+非线性激活｜为网络引入非线性处理能力的运算环节。例句：Nonlinear activation may occur electronically.
+===
+Optical convolution
+---
+光学卷积｜利用光学传播或器件实现卷积类线性运算。例句：Optical convolution extracts spatial features.
+===
+Quantization
+---
+量化｜把连续数值映射到有限离散等级的处理。例句：Quantization limits weight resolution.
+===
+TDM
+---
+时分复用｜让不同数据通道在不同时间片共享同一链路。例句：TDM reuses the optical path over time.
+===
+Thermal drift
+---
+热漂移｜温度变化造成器件参数或工作点随时间偏移。例句：Thermal drift changes the ring weights.
+===
+Adaptive Tool Calling
+---
+自适应工具调用｜依据任务风险、不确定性和成本动态决定工具调用。例句：Adaptive Tool Calling may request another simulation.
+===
+Agent Harness
+---
+智能体执行框架｜组织模型、工具、状态、证据、重试和终止条件的执行层。例句：The Agent Harness records each tool result.
+===
+Agent state
+---
+智能体状态｜记录任务进度、关键变量和已完成动作的信息。例句：Agent state stores the latest design version.
+===
+AI Agent
+---
+人工智能智能体｜可基于目标与状态规划行动并调用工具的系统。例句：The AI Agent calls a mode solver.
+===
+Auditability
+---
+可审计性｜让执行过程与结果能由他人依据记录独立核查。例句：Auditability requires saved tool outputs.
+===
+Benchmark
+---
+基准测试｜用固定任务、数据和规则比较系统表现的方法。例句：The benchmark includes circuit design tasks.
+===
+DesignSpec
+---
+设计规格表示｜把设计需求、单位、约束、接口和来源结构化的候选表示。例句：The DesignSpec records wavelength constraints.
+===
+Evaluator
+---
+评估器｜按明确准则对输出或执行轨迹作判断的组件。例句：The evaluator checks the generated netlist.
+===
+LLM
+---
+大语言模型｜经大规模文本训练、可用于理解和生成文本的模型。例句：The LLM drafts a design plan.
+===
+MCP
+---
+模型上下文协议｜定义模型客户端与外部工具或资源交互的协议。例句：The MCP server exposes the solver tool.
+===
+Orchestration
+---
+编排｜协调多个步骤、工具和依赖关系的执行过程。例句：Orchestration runs the solver after validation.
+===
+RAG
+---
+检索增强生成｜先检索外部资料，再基于检索内容生成回答的方法。例句：RAG retrieves the PDK documentation.
+===
+Requirement traceability
+---
+需求可追溯性｜将设计要求连到实现、检查和证据的对应关系。例句：Requirement traceability links specs to tests.
+===
+Retrieval
+---
+检索｜从文档或数据库中找出与当前问题相关的内容。例句：Retrieval finds the design rule.
+===
+Schema
+---
+模式定义｜规定结构化数据字段、类型和约束的规则。例句：The schema requires a wavelength field.
+===
+Source attribution
+---
+来源标注｜把判断或产物对应到具体可检查来源的记录。例句：Source attribution links the claim to a paper.
+===
+Structured output
+---
+结构化输出｜按预定字段和格式生成、便于程序校验的结果。例句：Structured output makes the plan parseable.
+===
+Task planning
+---
+任务规划｜将总体目标拆成可执行步骤并确定依赖关系。例句：Task planning precedes the simulation run.
+===
+Tool calling
+---
+工具调用｜模型按接口参数请求外部工具执行操作的过程。例句：Tool calling runs the validator.
+===
+Tool Contract
+---
+工具契约｜明确工具输入、单位、输出、异常及执行边界的接口约定。例句：The Tool Contract rejects invalid units.
+===
+Validation
+---
+有效性验证｜检查结果是否满足预期用途或任务需求。例句：Validation checks whether the design meets the goal.
+===
+Verification
+---
+符合性核验｜检查实现或结果是否符合明确规格与规则。例句：Verification checks the layout against rules.
+===
+Workflow
+---
+工作流｜按既定顺序与条件组织的一组任务步骤。例句：The workflow ends after verification.
+===
+Checkpoint
+---
+检查点｜保存可恢复的中间状态，供失败后继续执行。例句：A checkpoint preserves the validated layout.
+===
+DSL
+---
+领域专用语言｜为特定任务定义语法与语义的表示语言。例句：The DSL describes a photonic circuit.
+===
+Embedding
+---
+向量嵌入｜把文本等对象映射为便于相似性检索的数值向量。例句：The embedding represents a paper abstract.
+===
+Error handling
+---
+错误处理｜识别异常并按预定规则报告或处置失败。例句：Error handling reports an invalid port.
+===
+Evidence Ledger
+---
+证据账本｜串联需求、调用、结果、判断、失败和版本的记录。例句：The Evidence Ledger records the solver output.
+===
+Externalization
+---
+能力外置｜把计算或核验交给外部工具以获得可检查结果。例句：Externalization uses a deterministic solver.
+===
+Failure recovery
+---
+失败恢复｜在出错后恢复可控状态并继续或终止任务。例句：Failure recovery reloads the checkpoint.
+===
+Failure taxonomy
+---
+失败分类体系｜按原因或阶段归类失败以便分析和改进。例句：The failure taxonomy separates tool and model errors.
+===
+Golden response
+---
+参考答案｜用于对照评价的预先审定答案或目标输出。例句：The golden response defines the expected ports.
+===
+Grounding
+---
+证据锚定｜让生成的结论对应可检查的来源或工具结果。例句：Grounding links the answer to a source.
+===
+Guardrail
+---
+约束护栏｜限制系统执行越界或无效动作的规则与检查。例句：The guardrail blocks an unsafe tool call.
+===
+Human-in-the-loop
+---
+人工参与闭环｜在关键决策或异常节点由人审核并干预流程。例句：Human-in-the-loop review approves the design.
+===
+Internalization
+---
+能力内化｜把原先依赖外部工具的部分能力交由模型内部完成。例句：Internalization may reduce tool calls.
+===
+Pass@k
+---
+前 k 次尝试通过率｜衡量一个任务在最多 k 次独立尝试中至少成功一次的比例。例句：Pass@k is reported across sampled attempts.
+===
+Provenance
+---
+来源溯源｜记录数据、结论或产物来自何处及如何形成。例句：Provenance identifies the model and input file.
+===
+Retry
+---
+重试｜工具失败后按明确条件再次尝试同一操作。例句：Retry runs only after a transient error.
+===
+Rollback
+---
+回滚｜将状态或文件恢复到先前已知版本的操作。例句：Rollback restores the previous design.
+===
+Simulation-in-the-loop
+---
+仿真在环｜让仿真输出进入评价并驱动下一轮设计。例句：Simulation-in-the-loop updates the geometry.
+===
+Tool adapter
+---
+工具适配器｜把统一调用接口映射到具体软件或服务的组件。例句：The tool adapter converts solver inputs.
+===
+Tool Manifest
+---
+工具清单｜列出工具名称、用途、参数及调用条件的元数据。例句：The Tool Manifest lists available solvers.
+===
+Typed model
+---
+类型化模型｜用明确字段类型表达数据或接口约束的模型。例句：A typed model catches missing parameters.
+===
+Uncertainty-aware decision
+---
+考虑不确定性的决策｜将证据不足或预测不确定性纳入下一步动作选择。例句：An uncertainty-aware decision triggers verification.
+===
+Achieve
+---
+达到｜论文中指在给定条件下得到报告的性能或结果。例句：The device achieves stable coupling.
+===
+Address
+---
+解决或针对｜论文中表示针对已指出的问题提出处理办法，未必彻底解决。例句：This method addresses calibration error.
+===
+Assumption
+---
+假设前提｜论文中指分析或模型成立时预设的条件。例句：The model assumes negligible reflection.
+===
+Baseline
+---
+基线｜论文中用于衡量改进幅度的既有方法或固定设置。例句：We compare against a simple baseline.
+===
+Characterize
+---
+表征｜论文中指测量并描述器件或系统的关键性质。例句：We characterize the waveguide loss.
+===
+Comparison
+---
+对比｜论文中按共同指标和条件比较两个或多个对象。例句：The comparison uses the same test set.
+===
+Constraint
+---
+约束条件｜论文中指模型、设计或实验必须满足的限制条件。例句：The layout must satisfy the width constraint.
+===
+Demonstrate
+---
+展示或证明可行｜论文中指用实验或计算展示某能力，须核对演示范围。例句：We demonstrate optical inference on a chip.
+===
+Evaluate
+---
+评估｜论文中指按选定指标、数据和条件衡量方法表现。例句：We evaluate the model on held-out tasks.
+===
+Evidence
+---
+证据｜论文中指支撑论断的实验、数据、推导或可核来源。例句：The evidence supports this claim.
+===
+Implement
+---
+实现｜论文中指将方法落实为代码、器件或实际系统。例句：We implement the design in a PIC layout.
+===
+Improve
+---
+改善｜论文中表示相对某基线或先前条件取得更好结果。例句：Calibration improves task accuracy.
+===
+Integrate
+---
+集成｜论文中指把器件或模块连接成更高层级的系统。例句：We integrate the detector with the PIC.
+===
+Investigate
+---
+研究｜论文中表示系统考察某机制、关系或尚不明确的问题。例句：We investigate thermal drift in the ring.
+===
+Limitation
+---
+局限性｜论文中指方法、数据或结论适用范围的已知不足。例句：A key limitation is temperature sensitivity.
+===
+Optimize
+---
+优化｜论文中指依据目标与约束调整参数，不保证全局最优。例句：We optimize the coupler geometry.
+===
+Propose
+---
+提出｜论文中用于引入作者建议的新方法、模型或研究框架。例句：We propose a PIC design workflow.
+===
+Reproducibility
+---
+可复现性｜论文中指他人按所述条件能否重新得到相近结果。例句：Reproducibility needs code and settings.
+===
+Robustness
+---
+稳健性｜论文中指方法面对扰动或条件变化仍保持表现的能力。例句：We test robustness to fabrication errors.
+===
+Scalability
+---
+可扩展性｜论文中指方法扩展到更大规模时的性能与成本变化。例句：Scalability depends on control overhead.
+===
+Simulate
+---
+仿真｜论文中指用计算模型预测行为，须核对模型条件。例句：We simulate the optical field.
+===
+Trade-off
+---
+权衡｜论文中指改善一项指标可能牺牲另一项指标。例句：The design has a loss–bandwidth trade-off.
+===
+Uncertainty
+---
+不确定性｜论文中指测量、模型或推断结果可能的偏差范围。例句：We report uncertainty in the loss estimate.
+===
+Validate
+---
+验证有效性｜论文中指用实验或数据检验方法是否满足预期用途。例句：Measurements validate the model under these conditions.
+===
+Ablation study
+---
+消融研究｜通过去掉某组件来估计其对结果的贡献。例句：The ablation study removes calibration.
+===
+Consistent with
+---
+与…一致｜论文中指观察与某理论或先前结果相符，不表示证明。例句：The trend is consistent with the model.
+===
+Formulate
+---
+表述为模型｜论文中指把研究问题写成明确的数学或优化形式。例句：We formulate the task as constrained optimization.
+===
+Generalization
+---
+泛化能力｜论文中指结果能否适用于训练或测试范围外的新条件。例句：We examine generalization across devices.
+===
+Outperform
+---
+优于｜论文中指按指定指标超越比较对象，须核对口径。例句：The method outperforms the stated baseline.
+===
+Preliminary results
+---
+初步结果｜论文中指尚待更多样本或验证支持的早期发现。例句：Preliminary results suggest a possible gain.
+===
+Reproduce
+---
+复现｜论文中指按已述方法重新得到可比的结果。例句：We reproduce the reported simulation trend.
+===
+Sensitivity analysis
+---
+敏感性分析｜考察输入或参数变化对研究结果的影响。例句：Sensitivity analysis varies the ring width.
+===
+State of the art
+---
+当前先进水平｜论文中指特定任务和比较条件下已报告的领先方法。例句：We compare with the state of the art.
+===
+Suggest
+---
+提示｜论文中表达证据支持某解释但结论仍有不确定性。例句：The data suggest a thermal effect.
+===
+Statistically significant
+---
+统计显著的｜论文中指按所用统计检验达到预设显著性标准。例句：The difference is statistically significant.
+===
