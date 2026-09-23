@@ -1,5 +1,16 @@
 # 当前任务与任务记录
 
+## TASK-009：PIC × AI Agent 科研英语词库 V1
+
+- 状态：`DELIVERED`（2026-09-23，待用户在 Knowt 实际导入）
+- 授权来源：用户明确要求直接制作约 200 张专业科研英语单词卡，交付 Excel 与 UTF-8 TSV。
+- 允许范围：复用本仓库已核验调研及术语表，并核对 Knowt 官方手动导入说明；仅新增 `learning/vocabulary/` 成品及本任务记录。
+- 禁止范围：不修改原研究结论、技术路线、代码，不运行科研实验，不访问 `D:\AI_PIC_Demo`，不宣称已在用户账户中导入成功。
+- 交付：`learning/vocabulary/PIC_AI_Research_Vocabulary_V1.xlsx` 和 `learning/vocabulary/Knowt_Import_V1.tsv`，共 200 条；A/B/C/D/E 分别 40/45/35/45/35。
+- 验证：独立用只读 `openpyxl` 打开 XLSX，核对两张工作表、列名、数量、分类、术语去重、非空字段及 200 行导入页与 TSV 逐行一致；两张工作表首段已渲染目视检查。Knowt 网页端粘贴导入尚未在用户账户实测。
+
+---
+
 ## TASK-008：组会调研 PPT 优化
 
 - 状态：`REVIEW_READY`（图示化补充修订已交付，待用户审阅）
