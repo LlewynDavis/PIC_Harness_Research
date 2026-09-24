@@ -4,7 +4,7 @@
 
 ## 仓库共享
 
-- 用户于 2026-09-24 授权创建公开 GitHub 仓库 `https://github.com/LlewynDavis/PIC_Harness_Research`，用于向组员共享目前项目文件。远程已创建并配置为 `origin`；首次推送及远程分支核验正在完成中。
+- 用户于 2026-09-24 授权创建公开 GitHub 仓库 `https://github.com/LlewynDavis/PIC_Harness_Research`，用于向组员共享目前项目文件。已推送 `main`，并核验 GitHub 可见性为 `PUBLIC`、默认分支为 `main`、远程 HEAD 与本地提交一致。Office 临时锁文件由 `.gitignore` 排除。
 
 ## 已完成
 
