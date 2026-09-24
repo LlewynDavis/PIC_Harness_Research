@@ -9,6 +9,7 @@
 - 允许范围：新增 GitHub 远程仓库、配置 `origin`、推送项目提交；更新任务/状态文档以记录边界与实际结果；提交当前工作树中的项目文档改动；忽略 Office 临时锁文件。
 - 禁止范围：不邀请或向任何人发送消息；不改写研究内容；不删除用户文件；不推送 PowerPoint 临时锁文件。
 - 验收：远程仓库 URL、可见性、默认分支及远程 HEAD 与本地 `main` 一致；`git status` 干净；`git diff --check` 通过。
+- 进度：已创建公开仓库 `https://github.com/LlewynDavis/PIC_Harness_Research` 并配置 `origin`；GitHub 返回 `PUBLIC`。远程默认分支尚未初始化，等待推送。
 
 ## TASK-010：基于最新大纲重做首次正式组会 PPT
 
