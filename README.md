@@ -60,6 +60,10 @@ python -c "import pic_harness"
 
 开始任何工作前，请阅读 `AGENTS.md`、`docs/CURRENT_STATE.md`、`docs/TASK.md` 和 `docs/DECISIONS.md`。
 
+## 本地论文笔记
+
+项目论文以 `references/task-006/paper-and-repository-index.md` 的 32 篇为首批清单，逐篇对接独立 Obsidian Vault `GPT_Zotero_Paper_Knowledge_V1`。Zotero 父级 item key 用于原文定位；个人论文卡与 PDF 不纳入公开仓库。本机 Vault 路径保存在被 Git 忽略的 `configs/obsidian.local.yaml`；其项目索引位于 Vault 的 `论文知识库/01_Papers/PIC_Harness_Research_论文索引.md`。
+
 ## 研究门户（Research Portal）
 
 TASK-004 至 TASK-006 研究材料可通过本地 MkDocs Material 门户阅读。PowerShell 启动方式：

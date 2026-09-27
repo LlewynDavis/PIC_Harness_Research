@@ -1,5 +1,14 @@
 # 研究与工程决策
 
+## DEC-013：项目论文固定对接独立本地 Obsidian 知识库
+
+- 状态：`ACCEPTED`
+- 日期：2026-09-27
+- 决策：以项目已核验的论文出处索引确定项目文献范围，Zotero 父级 item key 作为原文定位键；论文笔记与项目索引维护在独立本地 Vault `GPT_Zotero_Paper_Knowledge_V1`。本机绝对路径只写入被 Git 忽略的 `configs/obsidian.local.yaml`。
+- 边界：个人论文卡、PDF 和未核实结论不进入公开仓库；没有 BibTeX CiteKey 时保留缺失，不用 Zotero item key 冒充。项目研究判断仍以仓库的证据文件、版本和实验记录为准。
+- 理由：让长期个人笔记与项目事实源持续互相定位，同时保留私有资料与公开工程仓库的边界。
+
+
 ## DEC-001：旧项目封存与仓库独立
 
 - 状态：`ACCEPTED`

@@ -1,6 +1,13 @@
 # 当前真实状态
 
-更新日期：2026-09-24
+更新日期：2026-09-27
+
+## TASK-012 本地论文知识库对接
+
+- 用户于 2026-09-27 授权将当前项目论文逐篇接入独立 Obsidian Vault。以 `references/task-006/paper-and-repository-index.md` 中的 32 篇论文为范围，Zotero Local API 只读确认当前库共 36 篇父级论文：项目 32 篇中 PhIDO 已有详细卡，另外 31 篇新建首轮笔记；旧有的另外 4 篇逆向设计基础卡保留。本地 Vault 现有 36 张论文卡。
+- 项目索引和固定对接说明位于独立 Vault 的 `论文知识库/01_Papers/PIC_Harness_Research_论文索引.md` 与 `论文知识库/00_System/PIC_Harness_Research_对接说明.md`。本机绝对路径仅保存在被 Git 忽略的 `configs/obsidian.local.yaml`，项目仓库不收纳论文卡与 PDF。
+- 29 篇新导入项目论文的本地关联 PDF 可访问；Taichi 2024 和 FBG PIC 传感对照文献无本地 PDF，卡片标记待核读。首轮笔记基于 PDF 摘要/首页和已核验项目研究材料，不能视为全部 32 篇的逐页全文精读或论文结果复现。
+- Zotero 未被修改。36 张卡的父级 item key、原文题名和 DOI 经 Local API 逐一核对；32 个项目索引的 Zotero 桌面定位链接与论文卡链接均通过结构检查。现行笔记不生成 BibTeX CiteKey。
 
 ## 仓库共享
 

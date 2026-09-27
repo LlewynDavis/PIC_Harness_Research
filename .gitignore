@@ -18,6 +18,7 @@ venv/
 .env
 .env.*
 !.env.example
+configs/obsidian.local.yaml
 
 # Editors and operating systems
 .vscode/

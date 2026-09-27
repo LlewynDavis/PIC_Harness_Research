@@ -1,5 +1,20 @@
 # 当前任务与任务记录
 
+## TASK-012：项目论文笔记接入独立 Obsidian 知识库
+
+- 状态：`COMPLETE`（2026-09-27）。
+- 起始提交：`71e09968995baacdde0965e3e3ce2b1c538c3102`；开始时 `main` 工作树干净。
+- 授权来源：用户要求“对当前项目所有论文依次做笔记放到 Obsidian；现在该项目论文固定与该笔记仓库对接”。
+- 范围：以 `references/task-006/paper-and-repository-index.md` 的 32 篇项目论文为当前批次，核对 Zotero item key、原文和既有研究证据；在独立本地知识库 `GPT_Zotero_Paper_Knowledge_V1` 建立或复用论文卡、项目索引与对接说明。早期另外四张逆向设计论文卡保留为已有知识，不重复创建。
+- 允许修改：本仓库的任务、状态、长期决策与对接说明及本地忽略配置；独立 Obsidian 知识库中的相关论文卡、索引和主页入口。
+- 禁止范围：不修改 Zotero 条目、附件或标签；不复制 PDF 到公开仓库；不修改 `D:\AI_PIC_Demo`；不把作者报告当作本项目实验结论；不发布内部笔记到 GitHub。
+- 验收：32 篇项目论文逐一对应 Zotero key 与唯一 Obsidian 论文卡；每卡列出原始出处、研究问题、方法、证据边界与项目关联；现有五卡不覆盖正文；项目索引和主页链接可解析；本地 Vault 路径写入被 Git 忽略的配置；执行 YAML、链接、文件覆盖和 `git diff --check` 核验。
+- 完成记录：独立 Vault 新增 31 张项目论文首轮笔记并复用 PhIDO 详细卡，形成 32 篇项目索引；早期其他四卡保留。新卡保留原文题名/DOI、Zotero 父级 key、来源层级、研究问题、方法、证据边界、项目关系和待复核项；未安装 Better BibTeX 或生成虚构 CiteKey。32 个 key 可从 Obsidian 索引定位 Zotero Desktop。
+- 证据与限制：Zotero Local API 只读核验当前 36 篇父级论文；项目新导入论文中 29 篇本地 PDF 可访问，Taichi 2024 与 Lin 2022 两篇无本地 PDF，明确标记待核读原文。当前 31 张新卡为首轮笔记，并未逐页精读所有全文、复算作者实验或进行物理验证。
+- 验证：36 张卡 YAML 可解析、父级 key 唯一、题名与 DOI 和 Zotero 记录一致；项目索引 32 条 Zotero URI 与 32 张对应论文卡可解析；本机 Vault 配置被 Git 忽略；仓库文档执行 `git diff --check` 与状态检查。
+
+---
+
 ## TASK-011：创建并发布同名 GitHub 仓库
 
 - 状态：`COMPLETE`（2026-09-24）
