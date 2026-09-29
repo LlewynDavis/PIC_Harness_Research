@@ -57,16 +57,16 @@
     {
       "slide_id": "P5",
       "role": "evidence",
-      "message": "集成越高，外部功能边界越要写清",
+      "message": "系统指标必须连同光纤长度和测量条件报告",
       "variant": "flow",
       "visual_strategy": "technical-diagram"
     },
     {
       "slide_id": "P6",
       "role": "evidence",
-      "message": "真实光纤演示成立；EDFA、采集与 DSP 仍外置",
-      "variant": "flow",
-      "visual_strategy": "technical-diagram"
+      "message": "Cheng 2023：四微环结构针对 DAS 发射脉冲",
+      "variant": "image-sidebar",
+      "visual_strategy": "original-figure"
     },
     {
       "slide_id": "P7",
@@ -85,9 +85,9 @@
     {
       "slide_id": "P9",
       "role": "evidence",
-      "message": "ACCEL：任务级视觉演示与计算边界",
-      "variant": "image-sidebar",
-      "visual_strategy": "original-figure"
+      "message": "光电混合矩阵乘法与完整推理性能要分别报告",
+      "variant": "flow",
+      "visual_strategy": "technical-diagram"
     },
     {
       "slide_id": "P10",
@@ -99,7 +99,7 @@
     {
       "slide_id": "P11",
       "role": "evidence",
-      "message": "工具调用不等于自动完成物理设计",
+      "message": "要核对反馈实际来自静态检查还是物理仿真",
       "variant": "flow",
       "visual_strategy": "technical-diagram"
     },
@@ -134,7 +134,7 @@
     {
       "slide_id": "P16",
       "role": "evidence",
-      "message": "下一步需细查物理约束如何表达、传递和保持",
+      "message": "比较 Agent 能力时先写清输入、反馈和约束来源",
       "variant": "flow",
       "visual_strategy": "technical-diagram"
     },

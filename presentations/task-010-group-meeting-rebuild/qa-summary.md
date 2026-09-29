@@ -1,5 +1,17 @@
 # TASK-010 PPT 验收记录
 
+## TASK-016 证据增强复核（2026-09-29）
+
+- 保持 20 页主讲、无附录。P5 依据 Jin 2024 Fig. 1/3/5/6 重画功能清单和片外依赖；P6 加入 Cheng 2023 Fig. 1 原图；P9 依据 Ahmed 2025 Fig. 2 与 Table 1 重画光电系统链并列任务结果；P11/P13–P16 修订三项 Agentic PIC 工作的流程、数值、内部/外部验证区别和能力矩阵。
+- 新裁剪的 PhIDO Fig. 5、Cheng Fig. 1/2 均检查坐标、图例和子图完整性。Cheng Fig. 1 实际用于 P6；其余新增原图用于报告和证据包。所有新图的 PDF 页码、裁剪框、DOI 与许可见 `references/task-016-evidence/figure-sources.md`。
+- `build_workspace.py --qa --skip-render --overwrite` 成功：preflight 0 error/0 warning/0 info；20 页、overflow 0、overlap 0、placeholder 0、visual warning 0、design error/warning 0。14 条 `density_too_high` 为图示面积提示。PowerPoint COM 导出 20/20 页 PNG 及 20 页 PDF；已目视检查全部 20 页联系图和 P5/P9 最终全尺寸渲染，未见裁切、错连或字图碰撞。原论文结果未复算，未在组会投影设备上试讲。
+
+---
+
+## TASK-010 初次交付记录（历史）
+
+以下逐页描述与验证记录对应证据增强前的初次交付。当前页面内容与最终验证以上方 TASK-016 复核为准。
+
 ## 页面与叙事
 
 最终为 20 页主讲、无附录：P1–P3 框架，P4–P6 DAS，P7–P9 光子 AI，P10–P16 Agentic PIC，P17–P20 综合与个人倾向。P17 对比三方向及候选 A/B/C，P18 从论文证据推导四层待研究问题，P19 表述个人倾向与三个未决问题；不把倾向写成最终课题。

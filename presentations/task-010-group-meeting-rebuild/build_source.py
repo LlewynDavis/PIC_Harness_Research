@@ -109,15 +109,14 @@ def diagram_das():
 
 
 def diagram_das_levels():
-    b=""
-    rows=[(75,"分立系统","激光 | 调制 | 光路 | 相干接收 | ADC/DSP",PALE),
-          (205,"SOI 收发 PIC","MZM | 偏振处理 | 90° 混合 | 平衡 PD",MINT),
-          (335,"混合集成模块","InP 激光 + 微光学 + SOI PIC + TEC",SAND)]
-    for y,t,d,c in rows:
-        b+=box(78,y,300,100,t,"",c)
-        b+=line(385,y+50,432,y+50)
-        b+=box(445,y,875,100,d,"",c,title_size=25)
-    b+=text(700,503,"集成层级不同；外部放大、环行、采集和处理需分别核算",24,TEAL,weight="bold")
+    b=rect(52,70,800,310,MINT,stroke=TEAL,rx=5,sw=3)
+    b+=text(452,112,"Jin 2024 SOI PIC 功能清单（据 Fig. 1(b)）",24,TEAL,weight="bold")
+    for x,title,detail in [(82,"发射","MZM"),(275,"辅助光路","PC + BS"),(488,"相干混合","PBRS + 90° hybrid"),(690,"探测","4×BPD")]:
+        b+=box(x,175,160,130,title,detail,PALE,21,17)
+    b+=box(900,72,420,120,"片外光学","窄线宽激光 · EDFA · 环行器",SAND,24,19)
+    b+=box(900,255,420,120,"片外电子与处理","AWG · TIA · DAQ · DSP",SAND,24,19)
+    b+=line(853,180,892,135,ORANGE,3,False,True)+line(853,275,892,310,ORANGE,3,False,True)
+    b+=text(700,483,"12.1 km：1.14 m / 59 pε/√Hz；49.0 km：3.78 m / 81 pε/√Hz",22,INK,weight="bold")
     return svg("p05-das-levels",b)
 
 
@@ -146,6 +145,21 @@ def diagram_ai():
         if i<4:b+=line(x+w+5,272,units[i+1][0]-8,272)
     b+=text(700,456,"激光、电光转换、校准、ADC 与控制都影响完整系统的能耗和时延",23,GREY)
     return svg("p07-ai-hybrid",b)
+
+
+def diagram_ahmed():
+    b=text(700,69,"Ahmed 2025：光电混合张量核与数字系统协同",29,TEAL,weight="bold")
+    units=[(35,"Host / PCIe","模型与数据"),(282,"DCI / SRAM","权重·调度·接口"),(575,"DAC → PTC","128×128 MVP"),(878,"ADC / 输出流水","量化·累加"),(1160,"模型任务","分类/语言")]
+    for i,(x,a,c) in enumerate(units):
+        w=215 if i in (0,4) else 245
+        b+=box(x,154,w,160,a,c,PALE if i in (0,1,4) else MINT,23,18)
+        if i<4:b+=line(x+w+4,234,[277,570,873,1155][i],234)
+    b+=rect(272,350,840,95,SAND,stroke="#dfc8b6",rx=3)
+    b+=text(690,388,"电子：编译、控制、存储、非线性、累加、校准",22,INK,weight="bold")
+    b+=text(690,424,"光电混合：矩阵向量乘法；4 个 PTC + 2 个 DCI",20,GREY)
+    b+=text(700,481,"CIFAR-10：86.4% vs FP32 88.3%；SQuAD F1：12.0 vs 43.5",19,INK)
+    b+=text(700,526,"65.5×10¹² ABFP16 ops/s ≠ 任务吞吐；功耗口径需含外围",19,ORANGE)
+    return svg("p09-ahmed-system",b)
 
 
 def diagram_ai_arch():
@@ -194,7 +208,7 @@ def diagram_agent():
     b+=box(85,150,225,137,"自然语言需求","1×2 MMI",PALE)
     b+=box(410,150,225,137,"生成 Python","工程师执行/检查",PALE)
     b+=line(315,220,405,220)
-    b+=text(1030,70,"Agent 工具循环",30,TEAL,weight="bold")
+    b+=text(1030,70,"求解器在环的设计循环",30,TEAL,weight="bold")
     nodes=[(740,130,"任务状态","目标/约束"),(1010,130,"工具调用","版图/仿真"),(1010,350,"结果评估","物理输出/错误"),(740,350,"下一步动作","修正或停止")]
     for x,y,t,d in nodes:b+=box(x,y,235,128,t,d,MINT if x==740 else SAND,title_size=23,detail_size=18)
     b+=line(979,195,1004,195)+line(1125,263,1125,344)+line(1005,415,979,415,ORANGE)+line(858,347,858,264,ORANGE)
@@ -217,23 +231,22 @@ def diagram_harness():
 
 
 def diagram_matrix():
-    cols=["结构化需求","物理约束","工具执行","反馈优化","版图/验证","跨任务复用"]
-    rows=[("PhIDO",["论文：YAML","论文：部分","论文+代码","论文：有限","论文：GDS/DRC","未明确"]),
-          ("PICopilot",["作者：脚本","作者：条件","作者：脚本","作者：评价","作者：脚本","代码未核"]),
-          ("AutoPD",["论文：人工设定","论文：人工设定","论文：求解器","论文：迭代","论文：器件","未明确"]),
-          ("PICBench",["论文：JSON","论文：任务条件","论文：SAX","论文：重试","未含 GDS","论文：24 题"])]
+    cols=["核心输入","Agent / 知识","工具或反馈","输出与判据","物理约束边界"]
+    rows=[("PhIDO",["NL 设计需求","两 Agent + RAG","GDS/DRC/SAX","有效图/版图","PDK 组件/规则"]),
+          ("PICopilot",["NL 脚本任务","多 Agent + 手册 RAG","内部静态检查","脚本/外部评分","非内部仿真反馈"]),
+          ("Kharel",["人定目标/约束","编码 Agent + 日志","DRC + 真求解器","数值达标/迭代","显式规则；专家初设"])]
     b=""
-    w0=200; cw=192
+    cw=218
     b+=rect(35,58,1330,72,INK,rx=0)
-    for j,c in enumerate(["研究工作"]+cols):b+=text(132+j*cw,104,c,20,"#ffffff",weight="bold")
+    for j,c in enumerate(["研究工作"]+cols):b+=text(145+j*cw,104,c,20,"#ffffff",weight="bold")
     for i,(name,vals) in enumerate(rows):
-        y=130+i*90
-        b+=rect(35,y,1330,90,"#f5f8f6" if i%2==0 else "#ffffff",rx=0)
-        b+=text(132,y+52,name,24,INK,weight="bold")
+        y=130+i*118
+        b+=rect(35,y,1330,118,"#f5f8f6" if i%2==0 else "#ffffff",rx=0)
+        b+=text(145,y+66,name,24,INK,weight="bold")
         for j,v in enumerate(vals):
-            color=TEAL if "代码" in v and "未" not in v else (ORANGE if v.startswith("作者") or "未" in v else GREY)
-            b+=text(132+(j+1)*cw,y+52,v,18,color)
-    b+=text(700,535,"论文=文中展示｜作者=作者报告｜代码=固定提交只读核验｜未明确/未核 ≠ 领域不存在",18,GREY)
+            color=ORANGE if "非内部" in v or "专家" in v else GREY
+            b+=text(145+(j+1)*cw,y+66,v,18,color)
+    b+=text(700,535,"验证层级不同：结构/GDS、脚本功能、数值求解；不能用单一成功率排序",19,TEAL,weight="bold")
     return svg("p16-capability-matrix",b)
 
 
@@ -292,7 +305,7 @@ def diagram_inclination():
 
 def make_diagrams():
     return {2:diagram_two(),3:diagram_three(),4:diagram_das(),5:diagram_das_levels(),
-            6:diagram_jin(),7:diagram_ai(),8:diagram_ai_arch(),10:diagram_mmi(),
+            7:diagram_ai(),8:diagram_ai_arch(),9:diagram_ahmed(),10:diagram_mmi(),
             11:diagram_agent(),12:diagram_harness(),16:diagram_matrix(),
             17:diagram_compare(),18:diagram_questions(),19:diagram_inclination()}
 
@@ -300,14 +313,14 @@ def make_diagrams():
 def flow(n,title,subtitle,message,footer,notes,diagrams):
     return {"type":"content","variant":"flow","slide_intent":"evidence","visual_intent":"flow",
             "title":title,"subtitle":subtitle,"message":message,"assets":{"diagram":diagrams[n]},
-            "footer":footer,"notes":notes}
+            "footer":footer,"sources":[footer],"notes":notes}
 
 
 def figure(n,title,subtitle,path,sections,caption,footer,notes):
     return {"type":"content","variant":"image-sidebar","slide_intent":"evidence","visual_intent":"hero",
             "title":title,"subtitle":subtitle,"assets":{"hero_image":path},"image_side":"left",
             "sidebar_sections":[{"title":a,"body":b} for a,b in sections],"caption":caption,
-            "footer":footer,"notes":notes}
+            "footer":footer,"sources":[footer],"notes":notes}
 
 
 def build():
@@ -315,35 +328,35 @@ def build():
     slides=[
         {"type":"title","title":"面向光子芯片智能设计的\n国内外研究现状与\n技术路线分析",
          "title_layout":"masthead","kicker":"PIC_HARNESS_RESEARCH · 组会调研",
-         "subtitle":"DAS 光电混合集成 · 光子人工智能计算 · Agentic PIC Design\n汇报人：林子涵｜纤维光学与生物光子学课题组｜2026 年 9 月 23 日",
+         "subtitle":"DAS 光电混合集成 · 光子人工智能计算 · Agentic PIC Design\n汇报人：林子涵｜纤维光学与生物光子学课题组｜2026 年 9 月 29 日（证据增强版）",
          "notes":"开场说明：本次为三个目标的调研汇报，重点深入 Agentic PIC Design；后半部分提出个人倾向供组内讨论，尚未确定正式课题。"},
         flow(2,"三个研究目标：对象不同，可能交叉","物理系统、计算硬件与设计方法分别建立证据链", "先分别理解三个技术体系，再讨论交叉", "来源：项目 README；TASK-007 正式调研报告 §1", "DAS 关注分布式感知系统的光电集成；光子 AI 关注光学硬件承担推理运算；Agentic PIC 关注智能设计方法与专业工具协同。三者并列，不是既定实施阶段。",d),
         flow(3,"从论文进展走向可讨论的研究问题","既看技术方法，也看实际验证与边界", "证据核验决定候选路线是否成立", "来源：TASK-007 正式调研报告 §方法；全文证据审计", "本轮是结构化范围综述，不是穷尽式系统综述。依次核对研究对象、代表工作、原文证据，再归纳待研究问题；作者主张、本项目核验与未知项分开表述。",d),
         flow(4,"DAS：从光纤后向散射恢复沿线扰动","发射、传感、相干接收与解调是一条完整信号链", "PIC 可承担部分光学收发功能", "依据：TASK-007 正式调研报告 §DAS 原理；Jin 等 2024/2026", "窄线宽光经调制形成探测光进入传感光纤。扰动改变沿线 Rayleigh 后向散射，回波与本振在相干接收端转换为电信号，采集与 DSP 解调得到距离和振动。箭头分别表示发射与返回路径。",d),
-        flow(5,"DAS 集成：比较功能边界，而非只比芯片尺寸","器件、PIC、混合模块与系统级演示是不同层级", "集成越高，外部功能边界越要写清", "依据：Jin 等 2024, Photonics Research；Jin 等 2026, OFC W4D.2", "2024 SOI PIC 集成调制、偏振处理、光学混合和平衡探测，激光及采集仍片外。2026 工作进一步把 InP 外腔激光、微光学、SOI PIC 和 TEC 封装在模块中，但并非完整系统片上化。",d),
-        flow(6,"Jin 等：混合集成模块进入 10 km DAS 演示","InP 激光 + 微光学 + SOI 收发 PIC + TEC", "真实光纤演示成立；EDFA、采集与 DSP 仍外置", "根据 Jin 等（2026）OFC W4D.2 改绘；doi:10.1364/OFC.2026.W4D.2", "原始 PDF 在当前 Zotero 附件中未找到，因此按已核验会议论文与正式报告重绘。模块约 40×40×10 mm，激光线宽低于 3 kHz；作者在 10 km G.652.D 上报告约 4 m 空间分辨率与 73.27 pε/√Hz 特定统计口径应变分辨率。三页论文缺少完整功耗、良率、长期漂移和重复样本数据。",d),
+        flow(5,"Jin 2024：SOI 芯片进入真实 DAS 收发链路","片上 MZM、偏振处理、相干混合与探测；片外模块另列", "系统指标必须连同光纤长度和测量条件报告", "根据 Jin 等（2024）Fig. 1(b)/3/5/6 改绘；doi:10.1364/PRJ.512298", "图依据 Jin 2024 Fig. 1(b) 和 Fig. 3 改绘，不是论文原图。Fig. 5：12.1 km、100 Hz PZT、0.819 m gauge length 下为 1.14 m 与 59 pε/√Hz；Fig. 6：49.0 km、4.01 m gauge length 下为 3.78 m 与 81 pε/√Hz。均为作者报告。窄线宽激光、EDFA、环行器、AWG、TIA、DAQ 和 DSP 仍片外；论文原始数据未公开。Sandmann 2023 Fig. 2/5 另展示通信 IC-TROSA 复用于 20 km 后 200 Hz 声学实验，是不同路线，不能用指标直接比较。",d),
+        figure(6,"Cheng 2023：四微环结构针对 DAS 发射脉冲","原论文 Fig. 1 显示耦合微环、透射谱与脉冲响应","assets/cheng-fig1-device-spectrum.png",
+               [("结构","4 个 10 µm 微环 + PIN 注入；通带与带外抑制"),("器件","动态 ER 68 dB；3.60 mW；上升/下降 6.54/0.40 ns"),("系统边界","2 km DAS 为 EOM 子模块替换；激光/EDFA/接收仍片外")],
+               "Cheng 等（2023），Nature Communications，Fig. 1(a–f) 原图；CC BY 4.0。", "doi:10.1038/s41467-023-43244-9；Fig. 1/2/4/5",
+               "Fig. 1(a) 是四微环结构，(d) 是不同 DC 偏压的原始透射谱，(f) 是脉冲响应。Fig. 2(a) 静态 71 dB、Fig. 2(c) self-heterodyne 动态 68 dB，不能混为一个测量。3.60 mW 是高占空比驱动下 EOM 本体功耗，非全系统。Fig. 4/5 的 2 km Φ-OTDR 台架报告 4 pε/√Hz，与商用 AOM 替换对照。作者指出温漂、硅非线性和约 6.5 ns 响应限制。"),
         flow(7,"光子 AI：把线性运算放进光学路径","以 y = W x 为例，输入和权重需被编码到光场", "电子系统仍承担控制、非线性与结果处理", "依据：TASK-007 正式调研报告 §光子 AI；Wetzstein 等 2020, Nature", "以矩阵向量乘法说明：电子数据编码到光，光学网络实现线性变换，探测转换为电信号。完整推理还涉及激光、调制器、存储、非线性、校准和电子输出；不能只计光学核心能耗。",d),
         flow(8,"三类光学计算架构，限制条件各不相同","MZI、微环/WDM 与衍射传播分别利用不同物理机制", "架构比较要回到任务、接口与系统边界", "依据：TASK-007 正式调研报告 §3；Zhou 等 2021；Feldmann 等 2021", "MZI 用相位和干涉形成可调线性变换；微环与波分复用利用波长选择和加权；衍射结构利用传播与相位调制形成任务相关映射。图是通用机理简化图，并非某篇论文的实际器件版图。",d),
-        figure(9,"ACCEL：任务级视觉演示与计算边界","原论文 Fig. 1(b) 展示衍射光学编码与模拟电子计算","assets/accel-fig1b.png",
-               [("结构","衍射光学编码 OAC → 光电探测 → 模拟电子计算 EAC"),("实验","作者报告准确率：Fashion-MNIST 85.5%；三类 ImageNet 82.0%；视频 92.6%"),("边界","74.8 Peta-OPS/W 与 72 ns 使用论文定义口径；不可等同通用数字推理")],
-               "Chen 等（2023），Nature，Fig. 1(b) 局部；CC BY 4.0。", "doi:10.1038/s41586-023-06558-8；PMC10620079，Fig. 1(b)",
-               "原图 Fig. 1(b) 是 ACCEL 的 OAC 加模拟电子 EAC。论文在 Fashion-MNIST、三类 ImageNet 和延时视频识别给出任务级实验；作者报告 85.5%、82.0%、92.6% 准确率。性能数字依论文 operation 和系统定义，不能泛化为完整通用 AI 推理。"),
+        flow(9,"Ahmed 2025：光子核心与电子系统共同运行 AI","根据原论文 Fig. 2 改绘；任务准确率见 Table 1", "光电混合矩阵乘法与完整推理性能要分别报告", "根据 Ahmed 等（2025）Fig. 1/2、Table 1 改绘；doi:10.1038/s41586-025-08854-x", "原论文 Fig. 2(a–c) 把 host、DCI、PTC 和 ABFP 计算链分开。本图是根据原文改绘，不是论文原图。4 个 128×128 PTC 与 2 个 DCI；作者报告 65.5×10¹² ABFP16 ops/s、78 W 电子功率和 1.6 W 光功率。Table 1：ResNet18 CIFAR-10 86.4% 对 FP32 88.3%；BERT-Tiny IMDb 83.2% 对 86.2%，但 SQuAD F1 12.0 对 43.5。ImageWoof 结果经过专门重新训练。主文未给完整统一墙插和各任务能耗；Methods 另列八只激光器每只 1.25 W 电功率。",d),
         flow(10,"以 1×2 MMI 为例：设计需要穿过物理验证链","从性能要求到几何、仿真、优化、版图与检查", "可用工具自动化；物理达标仍须由求解器和验证器判断", "依据：TASK-005 技术地图；TASK-007 §Agentic PIC；概念示意", "用 1×2 MMI 贯穿后续三页。输入目标包括两路功率分配、损耗、波长及工艺边界；宽度 W、长度 L 是可调几何参数。仿真检查传输与不平衡，版图需满足 DRC。此页是教学示例，没有运行仿真。",d),
-        flow(11,"从 LLM 脚本生成到 Agent 工具循环","关键差别是能否读取工具结果并决定下一步", "工具调用不等于自动完成物理设计", "依据：TASK-005 能力/验证矩阵；PhIDO、PICopilot、AutoPD 原文", "单次脚本生成由工程师运行和检查。Agent 方法增加任务状态、工具接口、输出检查及下一步决策；是否真正闭环要看工具调用与验证证据。PICopilot 主要评价脚本输出，AutoPhotonicDesign 展示真实仿真迭代。",d),
+        flow(11,"脚本生成与物理求解器循环的验证层级不同","左：生成代码；右：规则闸门、求解器数值、评价与迭代", "要核对反馈实际来自静态检查还是物理仿真", "依据：PICopilot §3.6/§4.1.4；Kharel §2/Fig. 1", "此图右侧是 Kharel 等 Fig. 1 和 §2 支持的通用求解器在环路径，不代表 PICopilot 已实现。PICopilot 内部 Script Evaluator 用静态代码检查、自定义检查库和 LLM，benchmark 才在外部执行脚本并比对参考输出；因此其 48/48 不是 Agent 内部电磁仿真迭代证据。Kharel 的 acceptance criteria 由工程师给定。",d),
         flow(12,"Agentic PIC 参考架构：约束必须进入工具链","需求、设计知识、专业工具与物理反馈形成可追溯循环", "这是跨论文参考架构，不是单篇论文完成的系统", "综合 TASK-005 参考架构与 TASK-007 §4 改绘", "1×2 MMI 的要求先形成可检查设计规范；Agent/Harness 管理步骤与工具接口；器件模型和 PDK 提供知识边界；仿真、版图和 DRC 给出可核验输出。反馈不应由模型自评代替物理计算。图为综合参考架构。",d),
         figure(13,"PhIDO：自然语言进入研究级 PIC 设计流程","原论文 Fig. 1 连接解释、设计、版图与电路验证","assets/phido-fig1.png",
                [("输入","自然语言 → 实体/规格 → YAML DSL 与 Pydantic 校验"),("工具","gdsfactory 生成 GDS/DRC；部分任务经 SAX 电路模型"),("验证边界","102 个 prompt；结构/电路级 proof-of-concept，非 foundry signoff")],
                "Sharma 等（2025），APL Machine Learning，Fig. 1 原图；CC BY 4.0。", "doi:10.1063/5.0300741；Fig. 1",
-               "解释图中四个角色而非只念 Agent 名称。论文以 102 个 prompt 评价流程，作者报告单器件最高约 91%、≤15 元件电路 pass@5 约 57%。FDTD 分支因兼容性没有进入主发布。GDS/DRC 与 SAX 不等于实际器件性能或代工签核。"),
+               "解释图中四段：interpreter、designer、layout、circuit verification；前两段是 LLM Agent，后两段主要是算法模块。102 个 prompt 中 level 1/2/3/4 为 23/10/60/9，7 模型每题各 5 次。Fig. 5 显示复杂度升高后成功率下降；正文报告单器件最高约 91%、levels 1–3 汇总 pass@5 最高 58%。Table II 的 S 仅要求有效 schematic 与 GDSII。FDTD 分支未进入主发布；结构成功不等于性能达标或 foundry signoff。"),
         figure(14,"PICopilot：多 Agent 协作生成 PIC 设计脚本","原论文 Fig. 2 展示任务分解、检索、合成与静态评价","assets/picopilot-fig2.png",
-               [("任务","设计说明拆成版图、DRC、FDTD 等脚本子任务"),("方法","规划 + 工具手册检索 + 程序生成/合成 + 脚本评价"),("证据边界","48 个脚本任务；作者报告全部完成，未核验公开实现和自治执行")],
+               [("任务","48 个脚本任务：基础 12 / 中等 12 / 高级 24"),("内部反馈","静态检查 + 自定义检查库 + LLM；并非求解器反馈"),("外部评分","脚本运行结果与参考输出相符；≥3/15 次才计 solved")],
                "Jiang 等（2026），ICCAD 论文预印本，Fig. 2 原图；学术汇报引用。", "arXiv:2608.01791；Fig. 2",
-               "图中 PIC Designer 提供任务；Task Planner 分解，Function-specific Script Generator 经手册检索生成代码，Script Synthesizer 汇总，Script Evaluator 做静态与自定义检查。论文的任务是脚本生成，不可把产出的 FDTD 脚本等同已经运行的物理结果。"),
+               "图中 PIC Designer 提供任务；Task Planner 分解，Function-specific Script Generator 经手册 RAG 生成代码，Script Synthesizer 汇总。§3.6 明确 Script Evaluator 内部用静态代码检查、自定义检查库和 LLM，不直接运行耗时的 PIC 工具。§4.1.4 的 benchmark 另运行脚本，功能结果与参考一致算 trial 成功，至少 3/15 次计 task solved。作者报告 48/48、总 pass@1 93.9%、pass@5 99.9%；都不是物理性能资格验证。本项目未核实公开实现。"),
         figure(15,"AutoPhotonicDesign：真实物理求解器驱动迭代","原论文 Fig. 2 展示被动弯曲器件的 50 次实验过程","assets/autopd-fig2.png",
-               [("任务","人类定义目标、约束和评价程序"),("闭环","提出设计 → Tidy3D 求解 → 评价 → 保留/修正"),("边界","器件级仿真在环；专家设置和纠错仍重要")],
+               [("规则与反馈","人类定目标；显式 DRC → Tidy3D 等求解器 → 定量验收"),("原图案例","12 µm SiN 弯曲：0.460 → 0.109 dB，50 次预算"),("边界","多物理 MZM 初始设置由专家纠错；结果是数值仿真")],
                "Kharel 等（2026），arXiv:2606.00915，Fig. 2 原图；学术汇报引用。", "arXiv:2606.00915；Fig. 2",
-               "红叉是被丢弃尝试、绿点是保留结果、绿线是迄今最优。论文展示真实物理求解器输出驱动设计迭代，这是较强的仿真在环证据。但人类工程师准备 design.py/program.md 的目标、约束与 evaluator；多物理调制器例子还需要专家修正。图中横轴 50 experiments 不能直接转化为通用成功率。"),
-        flow(16,"代表性工作覆盖了不同设计环节","对比的是论文所展示的任务与证据层级", "下一步需细查物理约束如何表达、传递和保持", "依据：TASK-005 能力矩阵；TASK-007 §4.2；四篇原文", "矩阵不是全领域支持/不支持判断。PhIDO 验证结构/电路流程；PICopilot 主要为脚本任务；AutoPhotonicDesign 有真实 solver；PICBench 通过 JSON netlist 与 SAX 评价。待核表示本轮论文证据未足以确定。",d),
+               "红叉为丢弃尝试、绿点为保留结果、绿线为迄今最优。弯曲器件是 400 nm SiN、1550 nm、150 nm 最小特征、12 µm 半径的仿真；50 是预算，最优在第 38 次。Fig. 3 另有 39 次 PN 结迭代、Fig. 5 有 192→0 DRC violations。多物理 MZM 首次在 30 GHz 得到约 15 Ω，参考值 48 Ω；Table S2 记录专家修正 mode 识别及 junction shunt 等设置，之后才进入九设计的自治循环。故不应宣称无条件独立理解物理。"),
+        flow(16,"PhIDO、PICopilot、Kharel：成功定义不同","结构/GDS、脚本功能、数值验收分别位于不同层级", "比较 Agent 能力时先写清输入、反馈和约束来源", "依据：PhIDO Fig. 1/Table II；PICopilot Fig. 2/Table 2–3；Kharel Fig. 1/Table S2", "完整八列比较表在 references/task-016-evidence/agentic-pic-comparison.md。PhIDO 的 S 是有效 schematic/GDSII；PICopilot 的 #Solved 是脚本外部运行后参考输出相符、至少 3/15 次；Kharel 是人类提供规则和定量目标后以求解器数值通过验收。它们不能按 91%、48/48 和器件损耗作单一能力排名。",d),
         flow(17,"三方向形成不同的候选研究问题","综合比较研究对象、已验证进展和仍待考察的边界", "A/B/C 是调研候选，不是已选课题", "依据：TASK-006 候选路线；TASK-007 候选路线总结", "路线 A 正式名称为证据优先的 Agentic PIC Harness 方法研究，B 是 DAS 系统需求到光电混合集成约束的可追溯传播，C 是光子 AI 的器件误差—任务精度—系统成本联合证据链。图中是压缩后的题眼；三条均不是已选课题，不能用单一成熟度排序。个人更希望进一步研究 Agentic PIC 中真实物理设计问题。",d),
         flow(18,"从需求理解到物理验证：约束能否贯穿设计？","四层技术问题对应不同论文已有能力和待核证据", "优先深入需求理解与物理约束处理", "依据：PhIDO Fig. 1；PICopilot Fig. 2；AutoPD Fig. 2；PICBench；TASK-007 §研究缺口", "PhIDO 与 PICBench 展示结构化表示；AutoPhotonicDesign 展示人类设定约束后的求解器循环；PICopilot 展示脚本评价。值得进一步核验的是复杂物理约束的表达、一致性、跨工具传递与设计过程保持，而不是断言整个领域没有物理约束能力。",d),
         flow(19,"个人倾向：从物理约束理解切入真实 PIC 设计","Agentic PIC Design 是主要方向；具体技术方案尚待讨论", "需求解析是基础能力，不预设为最终创新点", "来源：用户确认的个人倾向；TASK-007 候选路线仅作背景", "总体目标是让 AI 在专业工具与物理要求支持下参与真实器件/电路设计。当前优先研究设计需求理解和物理约束处理，随后可能延伸到工具执行、仿真反馈与跨任务复用。三个未决问题：已有方法做到何种程度；侧重表达、冲突、传递还是保持；选择什么物理任务验证价值与通用性。",d),
@@ -352,6 +365,7 @@ def build():
          "right":{"title":"两个讨论问题","body":["是否适合优先深入 PIC 设计需求与物理约束处理？","下一阶段聚焦哪些具体技术问题和代表工作，才能明确研究贡献？"]},
          "verdict":"当前是研究倾向，不是已确定的课题、算法或实验计划。",
          "footer":"来源：TASK-007 正式报告与候选路线；用户确认的最新研究倾向",
+         "sources":["TASK-007 正式报告与候选路线；用户确认的最新研究倾向"],
          "notes":"结束时用三个收获复述证据边界，不作完成系统或实验承诺。请导师和师兄师姐优先讨论切入问题是否合适，以及用哪类具体 PIC 器件或电路任务检验其价值。预留问答。"}
     ]
     assert len(slides)==20
@@ -370,7 +384,7 @@ def build():
                          {"act":"综合与讨论","slides":"P17–P20"}],
         "slide_plan":[{"slide_id":f"P{i+1}","role":s.get("slide_intent","message"),
                        "message":s.get("message",s["title"]),"variant":s.get("variant","title"),
-                       "visual_strategy":"original-figure" if i+1 in [9,13,14,15] else ("technical-diagram" if "diagram" in s.get("assets",{}) else "comparison")}
+                       "visual_strategy":"original-figure" if i+1 in [6,13,14,15] else ("technical-diagram" if "diagram" in s.get("assets",{}) else "comparison")}
                       for i,s in enumerate(slides)]},ensure_ascii=False,indent=2),encoding="utf-8")
     (ROOT/"design_brief.json").write_text(json.dumps({"topic":outline["title"],"content_maturity":"technical/educational",
         "audience_posture":"research group","emotional_register":"trustworthy",

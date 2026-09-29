@@ -1,5 +1,25 @@
 # 当前任务与任务记录
 
+## TASK-016：调研报告证据可视化增强
+
+- 状态：`REVIEW_READY`（2026-09-29）；已提交供 GPT 最终只读审查，不自行宣布验收。
+- 授权来源：用户在本对话给出的“调研报告证据可视化增强”任务。
+- 起始提交：`c02f121629f7eceb5d03e49d968894e48352cde9`，分支 `main`。开始时已有用户工作树改动：`output/task-007/面向光子芯片智能设计的三方向技术调研_飞书上传版.docx` 修改及同名 PDF 未跟踪；两者不纳入本轮提交。
+- 目标：在不扩大论文池、不改三方向和核心判断框架的前提下，为 PhIDO、PICopilot、Kharel 2026、Jin 2024、Cheng 2023、Sandmann 2023、Ahmed 2025 增补论文原图、原始结果口径、来源定位和证据边界，并形成 Agentic PIC 三项目比较。
+- 允许修改：现有调研 Markdown、最新组会 PPT 的源工作区和再生交付、独立证据日志与图表来源索引，以及本任务和当前状态记录。Zotero 与 PDF 只读；可在仓库交付中使用许可明确的原图，许可不明时保留定位或改绘。
+- 禁止范围：不新增方向或大量论文；不实施 Agent、simulator、benchmark、仿真、流片或实验；不修改 `D:\AI_PIC_Demo`；不把作者结果当成本项目复现；不覆盖前述用户未提交 DOCX/PDF。
+- 验证：逐项回到论文 PDF 核对图号、页码、数值、单位、条件和限制；图像裁剪保留含义；报告/PPT 结构与视觉检查、引用/路径检查及 `git diff --check`；列出 UNKNOWN。最终提交 completion commit 后等待 GPT 只读审查。
+
+### 完成记录
+
+- 起始 commit 为 `c02f121629f7eceb5d03e49d968894e48352cde9`；完成 commit 为包含本记录的提交，准确 SHA 在交接答复中给出。未覆盖开始时已有的用户 DOCX/PDF 改动。
+- `references/task-016-evidence/` 为本轮证据包：七篇本地 Zotero PDF 的 item key、SHA-256 与页数，逐项数据/条件/证据等级表，Figure 来源与许可、Agentic PIC 三项目八列比较，以及 unresolved/UNKNOWN。
+- `references/task-007/formal-research-report.md` 增加 PhIDO/Cheng 已许可原图、关键证据定位及系统与验证边界；`presentations/task-010-group-meeting-rebuild/` 的 20 页无附录 PPTX/PDF 同步更新。未改已确认的三方向结构和核心判断框架。
+- 核验：七篇 Zotero 本地原文只读访问、原图裁剪审阅；PPT 构建 QA 为 0 溢出/重叠/占位/视觉警告和 0 设计错误/警告；PowerPoint 导出 20/20 页 PNG 和 PDF，20 页联系图与关键页全尺寸检查；路径、CSV 和引用检查及 `git diff --check` 通过。14 条面积密度提示为技术图示占页的几何提示，见 PPT `qa-summary.md`。
+- 未执行：论文实验复现、仿真、独立原始数据重算、全系统能效复核、版权未明原图再分发、投影设备试讲。详见证据包 UNKNOWN 列表。等待 GPT 最终只读审查。
+
+---
+
 ## TASK-015：TASK-007 正式调研报告本地 DOCX 整理
 
 - 状态：`REVIEW_READY`（2026-09-29，待用户检查文件）。

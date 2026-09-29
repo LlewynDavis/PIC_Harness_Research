@@ -2,6 +2,13 @@
 
 更新日期：2026-09-29
 
+## TASK-016 调研报告证据可视化增强（REVIEW_READY）
+
+- 已对既有七篇代表论文的本地 Zotero PDF 逐项核对，形成 `references/task-016-evidence/` 证据包，包括三张许可明确的论文原图裁剪、PDF 来源和哈希、关键数据及条件表、三项目八列比较、证据边界与 UNKNOWN。论文性能均为作者报告，项目未复现实验。
+- 已更新 `references/task-007/formal-research-report.md` 和当前 20 页无附录组会 PPT 工作区及 PPTX/PDF，保留三方向结构。PPT 区分 Jin 片内/片外功能、Ahmed 光学核心/电子链路、PhIDO/PICopilot/Kharel 的不同验证层级。
+- PPT 构建 QA 与 20 页 PowerPoint 渲染通过，关键页已视觉审阅；详见 `presentations/task-010-group-meeting-rebuild/qa-summary.md`。版权未明的原图不在本轮新复制，原始实验日志/全系统功耗等未核实项已列出。完成 commit 待 GPT 最终只读审查，不自行视为验收。
+- 本轮开始时用户已有的 `output/task-007/` DOCX 修改和同名 PDF 未跟踪文件仍保留在工作树，未纳入本任务提交。
+
 ## TASK-015 正式调研报告本地 DOCX 整理
 
 - 用户指定完整报告、可上传飞书的 DOCX，且只需本地文件。已从 TASK-007 已验收 Markdown 整理出 20 页 DOCX，附既有 32 篇论文与 11 个项目/工具的可点击出处索引；原研究文件、结论和证据未改，未上传飞书。

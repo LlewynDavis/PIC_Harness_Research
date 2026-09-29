@@ -11,6 +11,8 @@
 
 ## 摘要
 
+**TASK-016 证据增强入口（2026-09-29）。** 本报告保留三方向与原有判断结构；七篇代表工作的论文原图、关键数据、实验条件、来源定位和 UNKNOWN 见[证据增强包](../task-016-evidence/README.md)，[Agentic PIC 三项目比较](../task-016-evidence/agentic-pic-comparison.md)和[逐项数据表](../task-016-evidence/key-data.csv)。新增数据均按论文作者报告标注，未由本项目复现。
+
 本报告围绕三个层次递进、但不能相互替代的课题目标展开：第一，人工智能辅助设计一款分布式声学传感（Distributed Acoustic Sensing，DAS）光电混合集成芯片并贯通设计流程；第二，将人工智能推理计算映射到光子硬件；第三，建立能够调用设计、仿真、优化和验证工具的光子芯片设计 Agent Harness。报告综合 TASK-004 至 TASK-006 的已验收成果，并对影响路线判断的代表论文、公开代码和官方资料进行了定向全文核证。
 
 调研显示，DAS 方向已经有硅光集成收发前端、高消光比调制器、微梳并行传感和 InP–SOI 混合集成窄线宽激光模块进入真实系统实验，但激光、放大、环行、电子采集、数字信号处理、封装与长期稳定性仍常以片外或未充分报告的形式存在。当前未发现公开证据证明人工智能 Agent 已端到端设计并物理验证一款 DAS 光电混合集成芯片。光子人工智能计算已经从核心算子演示发展到真实模型或任务的芯片/系统实验，涵盖干涉网格、微环/波分/微梳和衍射架构；然而，器件误差、校准、激光、光电转换、控制、存储和数据移动的边界并不统一，核心 TOPS/W 不能直接等同完整系统优势。Agentic PIC Design 则已出现自然语言到结构化电路、脚本生成、真实仿真在环、自动评价和工具适配等局部闭环，但没有一套公开、可复现的系统同时覆盖可靠需求表示、确定性工具调用、器件/电路仿真、版图、DRC/LVS、PDK 合规、失败恢复和 foundry signoff。
@@ -113,6 +115,8 @@ DAS 通常把相干光注入传感光纤，利用沿线瑞利后向散射的相�
 
 [Jin 等 2024](https://doi.org/10.1364/PRJ.512298) 将马赫–曾德尔调制、偏振旋转分束、两组 90° 光学混合和多路平衡探测集成于 SOI 芯片，并进入 12.1 km 与 49 km DAS 实验。`FACT`：PIC 已经进入端到端传感链路。`AUTHOR CLAIM`：具体距离、分辨率和灵敏度来自论文。其边界同样明确：窄线宽激光、放大、环行、采集与 DSP 仍在片外。因此更准确的表述是“集成 DAS 光学收发前端”，不是“完整 DAS 系统片上化”。
 
+**原图与数据定位。** 芯片功能见 Jin 等（2024）Fig. 1(b)，片外系统见 Fig. 3，12.1 km/49.0 km 的分辨率和噪声分别见 Fig. 5/6；[同条件数据与证据边界](../task-016-evidence/README.md#jin-2024系统级光路的片上片外划分)。论文原图的再分发许可未核实，因此本公开仓库只记录原文定位，不复制图片。
+
 ### 2.3.2 InP–SOI 混合集成光源与收发 PIC
 
 [Jin 等 OFC 2026](https://doi.org/10.1364/OFC.2026.W4D.2) 进一步把线宽低于 3 kHz 的 InP 外腔激光经两枚微透镜和微型隔离器连接至 SOI 收发 PIC，模块约 40 mm × 40 mm × 10 mm，并带 TEC。作者在 10 km G.652.D 光纤上报告约 4 m 空间分辨率和 73.27 pε/√Hz 的特定统计口径应变分辨率。该结果证明混合集成模块进入真实 DAS 演示，但三页会议短文未提供制造良率、完整功耗/成本、长期漂移、重复样本或开放原始数据；EDFA、环行器、AWG、TIA、DAQ 与离线 DSP 仍外置。它不能与 2024 工作在不同距离、分辨率和统计定义下直接用单一数字比较优劣。
@@ -121,9 +125,15 @@ DAS 通常把相干光注入传感光纤，利用沿线瑞利后向散射的相�
 
 [Cheng 等 2023](https://doi.org/10.1038/s41467-023-43244-9) 采用多微环耦合结构实现高消光比硅基电光调制器。论文正文报告静态 71 dB、self-heterodyne 动态 68 dB，多个通道超过 65 dB，并将器件放入 2 km DAS 台架对照。其贡献位于发射调制子模块；谐振器的温度/工艺敏感性、插损、驱动和频移能力仍需纳入系统设计。不能从“高 ER 器件进入 DAS”外推“完整解调器或系统已集成”。
 
+![Cheng 等四微环结构、透射谱与脉冲原图](../task-016-evidence/figures/cheng-fig1-device-spectrum.png)
+
+*Source: Cheng et al., 2023, “On-chip silicon electro-optical modulator with ultra-high extinction ratio for fiber-optic distributed acoustic sensing”, Fig. 1(a–f), DOI: 10.1038/s41467-023-43244-9；PDF p.2；CC BY 4.0；只去除无关正文，坐标与图例保留。Fig. 2 的[静态/动态 ER 原图](../task-016-evidence/figures/cheng-fig2-extinction.png)和带条件指标见[证据增强包](../task-016-evidence/README.md#cheng-2023面向-das-发射脉冲的四微环结构)。*
+
 ### 2.3.4 通信相干 PIC 复用
 
 [Sandmann 等 2023](https://arxiv.org/abs/2306.04199) 探索复用通信相干收发芯片进行声学传感。此路线利用成熟的双偏振 IQ 调制/接收和探测电子，但通信系统的高带宽并不自动满足 DAS 所需的低相位噪声、高动态范围、低漂移和长相干要求。它提示一个重要研究问题：AI 设计不能只做元件拼接，而应识别“可复用参数”和“必须重设计的传感特定约束”。
+
+其 Fig. 2（PDF p.2）展示 IC-TROSA 与外部激光/EDFA/环行器/采集的 CC-OTDR 链路；Fig. 5（PDF p.4）展示 20 km 后施加 200 Hz 扰动的相位差结果，约 0.9 rad 峰峰值为作者报告。[条件与边界](../task-016-evidence/README.md#sandmann-2023通信收发模块复用)。本地会议 PDF 带 IEEE/VDE 使用限制，未复制原图。
 
 ### 2.3.5 微梳并行与混合集成稳频光源
 
@@ -184,6 +194,8 @@ MZI 网格可分解并实现矩阵变换，优势是相位可编程与通用线�
 
 ## 3.5 评价光子 AI 的共同维度
 
+**Ahmed 等（2025）的系统案例。** 原文 Fig. 2（PDF p.3）展示 host/PCIe、数字控制接口、PTC 与数据转换；线性矩阵向量计算在光电混合张量核执行，非线性、累加、存储和调度依赖电子系统。作者报告 65.5×10¹² ABFP16 ops/s、78 W 电子功率与 1.6 W 光功率；Table 1（PDF p.6）同时显示 ResNet18 CIFAR-10 为 86.4%（FP32 88.3%），而 BERT-Tiny SQuAD F1 为 12.0（FP32 43.5）。ImageWoof 的 79.7% 是专门重新训练后的结果。`AUTHOR CLAIM`。该论文原图未在公开仓库复制；[完整条件与能耗边界](../task-016-evidence/README.md#photonic-ai-computingahmed-2025-系统层证据)见证据增强包。不能把张量核 operation 指标直接等同完整任务的吞吐或墙插能效。
+
 | 维度 | 必须报告的问题 | 常见误读 |
 |---|---|---|
 | 任务 | 模型、数据集、规模、训练/推理阶段 | 小型分类成功 = 通用 AI 成熟 |
@@ -230,7 +242,11 @@ flowchart TB
 
 ### 4.2.1 PhIDO / PhIDO-Agentic
 
-[PhIDO](https://doi.org/10.1063/5.0300741) 使用语言模型把自然语言解析为实体、规格和 YAML DSL，经 Pydantic 校验后生成 gdsfactory 版图、运行 DRC，并在合适任务上使用 SAX 电路模型。论文评估 102 个 prompt；作者报告单器件成功率最高约 91%，≤15 元件电路 pass@5 约 57%。正文同时明确这是 proof-of-concept，主要证明结构有效性而非器件/电路性能达标。FDTD 分支因版本兼容未进入主发布，公开基准的路由规模和 PDK 也有限。
+[PhIDO](https://doi.org/10.1063/5.0300741) 使用语言模型把自然语言解析为实体、规格和 YAML DSL，经 Pydantic 校验后生成 gdsfactory 版图、运行 DRC，并在合适任务上使用 SAX 电路模型。论文评估 102 个 prompt；作者在摘要中报告单器件成功率最高约 91%、≤15 元件电路 pass@5 约 57%，正文 §IV.A 对 levels 1–3 汇总给出的最高 pass@5 为 58%（两处口径分别保留）。正文同时明确这是 proof-of-concept，主要证明结构有效性而非器件/电路性能达标。FDTD 分支因版本兼容未进入主发布，公开基准的路由规模和 PDK 也有限。
+
+![PhIDO 各复杂度任务的成功与失败原图](../task-016-evidence/figures/phido-fig5-complexity.png)
+
+*Source: Sharma et al., 2025, “AI agents for photonic integrated circuit design automation”, Fig. 5, DOI: 10.1063/5.0300741；PDF p.8；CC BY 4.0。图中 `S` 的原文定义是有效 schematic 与 GDSII，Table II，PDF p.9；[按等级的 benchmark 构成与局限](../task-016-evidence/README.md#phido自然语言到结构有效的-pic-版图)。*
 
 `CODE VERIFIED`：固定提交可见结构化 schema、工具编排和部分设计/验证代码。`INFERENCE`：它是目前最接近 PIC 专用 Harness 骨架的开源项目之一，但仍不是 foundry-ready 自动设计系统。
 
@@ -241,6 +257,8 @@ PhIDO-Agentic 延伸了工具调用与多步执行，但无独立同行评审论
 [AutoPhotonicDesign](https://arxiv.org/abs/2606.00915) 展示商业编程智能体围绕真实物理求解器执行 propose → simulate → evaluate → iterate 循环，覆盖器件逆向设计和多物理问题。它是“simulation-in-the-loop”强证据，因为 solver 输出确实驱动下一轮设计。
 
 但工程师需要提供目标、约束、初始脚本和评价器；MZM 示例还需要专家纠正模式识别和 junction shunt 重复计算。由此应把其能力表述为“在人类配置和纠错后可自治迭代”，而不是无条件的自然语言端到端设计。其依赖商业工具/编程智能体也限制完全复现。
+
+原文 Fig. 1（PDF p.3）给出 Agent→DRC/求解器→定量验收→迭代；Fig. 2–6 和 Table S2/S3（PDF p.5–10/20）列出弯曲、MRM、RF、布线和多物理 MZM 结果。尤其 Table S2 明确记录首次 RF 设置失败以及随后专家修正。[五组指标与工程边界](../task-016-evidence/README.md#kharel显式规则和数值反馈中的设计循环)。这些是数值仿真证据，尚非本项目或论文的流片实测。
 
 ### 4.2.3 gdsfactory + gplugins
 
@@ -258,6 +276,8 @@ PhIDO-Agentic 延伸了工具调用与多步执行，但无独立同行评审论
 
 [PICopilot](https://arxiv.org/abs/2608.01791) 以 48 个脚本任务评价版图、DRC 和 FDTD 代码生成，作者报告完成全部任务并优于 GPT-5+通用 RAG。当前没有核验到公开实现，因此它可支持“领域 RAG/协作 Agent 提高脚本生成”的作者主张，不能支持稳定 Tool Contract 或自治工具执行。
 
+**反馈与“成功”需分开。** 原文 §3.6（PDF p.6）说内部 Script Evaluator 使用静态代码检查、自定义检查库和 LLM，而非直接运行耗时的 PIC 工具；§4.1.4/Table 2–3（PDF p.7）的 benchmark 则在外部执行脚本，并用功能输出与设计师参考结果一致、每任务至少 3/15 次成功定义 `#Solved`。因此 48/48 不是 Agent 内部电磁仿真在环的证据。[图、数据及对照边界](../task-016-evidence/README.md#picopilot脚本生成及评价边界)。
+
 [PICasso](https://arxiv.org/abs/2608.26113) 声称实现 NL → YAML → GDS → DRC/LVS → SAX → 优化，并覆盖 36 个任务。由于没有核验到公开实现，其架构和“manufacturable layouts”只能标为 `AUTHOR CLAIM`。通用 PDK、条件式 LVS 和电路仿真也不足以证明 foundry signoff。
 
 ### 4.2.7 专业工具协议与自动工具构建参照
@@ -265,6 +285,8 @@ PhIDO-Agentic 延伸了工具调用与多步执行，但无独立同行评审论
 [OpenROAD-MCP](https://github.com/The-OpenROAD-Project/OpenROAD-MCP) 在电子设计自动化领域展示会话、权限、超时、结构化错误和专业工具边界，可作为 Tool Adapter 机制参照，但不能直接证明 PIC 适用性。[Paper2Agent](https://doi.org/10.1038/s41586-026-11044-y) 把论文代码转化为带测试和追溯的 Skill/MCP 工具，可减少科学软件接入成本；其公开评价不是 PIC/EDA 任务，自动生成 wrapper 也不能保证物理模型、单位和适用域正确。
 
 ## 4.3 Harness Capability Matrix
+
+本轮新增的八列[PhIDO／PICopilot／Kharel 对比表](../task-016-evidence/agentic-pic-comparison.md)把自然语言输入、工具、输出、验证层级与物理约束处理并排核对；它不改变下面既有跨项目矩阵的范围。
 
 | 对象 | Spec/IR | Planner | 真实 Tool | Simulation | RESULT/Evaluator | Retry/State | Layout/Verification | 诚实上限 |
 |---|---|---|---|---|---|---|---|---|
