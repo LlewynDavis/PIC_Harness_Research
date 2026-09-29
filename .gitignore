@@ -36,3 +36,4 @@ secrets.*
 # TASK-005A Research Portal local outputs
 .playwright-cli/
 portal/site/
+tmp/task-007-docx-qa/

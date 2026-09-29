@@ -1,5 +1,17 @@
 # 当前任务与任务记录
 
+## TASK-015：TASK-007 正式调研报告本地 DOCX 整理
+
+- 状态：`REVIEW_READY`（2026-09-29，待用户检查文件）。
+- 授权来源：用户明确选择“完整报告的可上传 DOCX；只交付本地文件”。
+- 起始提交：`3c5c5eff4a5fe37af86e89e39a67b9f8f5dcb843`；开始时 `main` 工作树干净。
+- 范围：只读使用已验收的 `references/task-007/formal-research-report.md` 与 `references/task-006/paper-and-repository-index.md`，生成本地完整 DOCX；原 Markdown、证据和研究结论不修改。不上传飞书、不开展新调研或实验。
+- 交付：`output/task-007/面向光子芯片智能设计的三方向技术调研_飞书上传版.docx`；可复现构建脚本 `scripts/build_task007_feishu_docx.py`。正文保留六章、参考文献入口和附录 A/B；附录 C 依据既有出处索引列出 32 篇论文与 11 个工具/项目入口。
+- 验证：DOCX ZIP 结构完整；含 62 个标题段落、6 张表、2 张架构图、70 个外部超链接，无 MkDocs 本地相对链接；Word 导出 20 页 PDF 并逐页检查页面 PNG，未见表格单行拆断、裁切或乱码。内置 `render_docx.py` 因本机缺少 `soffice.exe` 失败，改用本机 Word COM 导出和 bundled Poppler 预览。未实际上传飞书，导入后样式仍需用户在飞书核对。
+- 后续：等待用户检查；不自动开始新的研究、实验或工程任务。
+
+---
+
 ## TASK-014：现有论文卡批量迁移至 V2 模板
 
 - 状态：`COMPLETE`（2026-09-27）。
