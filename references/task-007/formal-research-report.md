@@ -2,10 +2,10 @@
 
 ## DAS 光电混合集成、光子人工智能计算与 Agentic PIC Design
 
-**项目**：PIC_Harness_Research  
-**任务**：TASK-007｜正式调研报告与组会汇报  
-**版本**：V0.9（待 GPT / 用户审查）  
-**证据截止**：2026-09-21
+**项目**：PIC_Harness_Research<br>
+**任务**：TASK-007｜正式调研报告与组会汇报<br>
+**版本**：V0.9（TASK-016 证据增强，待 GPT / 用户审查）<br>
+**证据截止**：2026-09-29（七篇定向核读；原报告候选池截至 2026-09-21）
 
 ---
 
@@ -115,7 +115,7 @@ DAS 通常把相干光注入传感光纤，利用沿线瑞利后向散射的相�
 
 [Jin 等 2024](https://doi.org/10.1364/PRJ.512298) 将马赫–曾德尔调制、偏振旋转分束、两组 90° 光学混合和多路平衡探测集成于 SOI 芯片，并进入 12.1 km 与 49 km DAS 实验。`FACT`：PIC 已经进入端到端传感链路。`AUTHOR CLAIM`：具体距离、分辨率和灵敏度来自论文。其边界同样明确：窄线宽激光、放大、环行、采集与 DSP 仍在片外。因此更准确的表述是“集成 DAS 光学收发前端”，不是“完整 DAS 系统片上化”。
 
-**原图与数据定位。** 芯片功能见 Jin 等（2024）Fig. 1(b)，片外系统见 Fig. 3，12.1 km/49.0 km 的分辨率和噪声分别见 Fig. 5/6；[同条件数据与证据边界](../task-016-evidence/README.md#jin-2024系统级光路的片上片外划分)。论文原图的再分发许可未核实，因此本公开仓库只记录原文定位，不复制图片。
+**原图与数据定位。** 芯片功能见 Jin 等（2024）Fig. 1(b)，片外系统见 Fig. 3，12.1 km/49.0 km 的分辨率和噪声分别见 Fig. 5/6；[同条件数据与证据边界](../task-016-evidence/README.md#jin-2024)。论文原图的再分发许可未核实，因此本公开仓库只记录原文定位，不复制图片。
 
 ### 2.3.2 InP–SOI 混合集成光源与收发 PIC
 
@@ -127,13 +127,13 @@ DAS 通常把相干光注入传感光纤，利用沿线瑞利后向散射的相�
 
 ![Cheng 等四微环结构、透射谱与脉冲原图](../task-016-evidence/figures/cheng-fig1-device-spectrum.png)
 
-*Source: Cheng et al., 2023, “On-chip silicon electro-optical modulator with ultra-high extinction ratio for fiber-optic distributed acoustic sensing”, Fig. 1(a–f), DOI: 10.1038/s41467-023-43244-9；PDF p.2；CC BY 4.0；只去除无关正文，坐标与图例保留。Fig. 2 的[静态/动态 ER 原图](../task-016-evidence/figures/cheng-fig2-extinction.png)和带条件指标见[证据增强包](../task-016-evidence/README.md#cheng-2023面向-das-发射脉冲的四微环结构)。*
+*Source: Cheng et al., 2023, “On-chip silicon electro-optical modulator with ultra-high extinction ratio for fiber-optic distributed acoustic sensing”, Fig. 1(a–f), DOI: 10.1038/s41467-023-43244-9；PDF p.2；CC BY 4.0；只去除无关正文，坐标与图例保留。Fig. 2 的[静态/动态 ER 原图](../task-016-evidence/figures/cheng-fig2-extinction.png)和带条件指标见[证据增强包](../task-016-evidence/README.md#cheng-2023)。*
 
 ### 2.3.4 通信相干 PIC 复用
 
 [Sandmann 等 2023](https://arxiv.org/abs/2306.04199) 探索复用通信相干收发芯片进行声学传感。此路线利用成熟的双偏振 IQ 调制/接收和探测电子，但通信系统的高带宽并不自动满足 DAS 所需的低相位噪声、高动态范围、低漂移和长相干要求。它提示一个重要研究问题：AI 设计不能只做元件拼接，而应识别“可复用参数”和“必须重设计的传感特定约束”。
 
-其 Fig. 2（PDF p.2）展示 IC-TROSA 与外部激光/EDFA/环行器/采集的 CC-OTDR 链路；Fig. 5（PDF p.4）展示 20 km 后施加 200 Hz 扰动的相位差结果，约 0.9 rad 峰峰值为作者报告。[条件与边界](../task-016-evidence/README.md#sandmann-2023通信收发模块复用)。本地会议 PDF 带 IEEE/VDE 使用限制，未复制原图。
+其 Fig. 2（PDF p.2）展示 IC-TROSA 与外部激光/EDFA/环行器/采集的 CC-OTDR 链路；Fig. 5（PDF p.4）展示 20 km 后施加 200 Hz 扰动的相位差结果，约 0.9 rad 峰峰值为作者报告。[条件与边界](../task-016-evidence/README.md#sandmann-2023)。本地会议 PDF 带 IEEE/VDE 使用限制，未复制原图。
 
 ### 2.3.5 微梳并行与混合集成稳频光源
 
@@ -194,7 +194,7 @@ MZI 网格可分解并实现矩阵变换，优势是相位可编程与通用线�
 
 ## 3.5 评价光子 AI 的共同维度
 
-**Ahmed 等（2025）的系统案例。** 原文 Fig. 2（PDF p.3）展示 host/PCIe、数字控制接口、PTC 与数据转换；线性矩阵向量计算在光电混合张量核执行，非线性、累加、存储和调度依赖电子系统。作者报告 65.5×10¹² ABFP16 ops/s、78 W 电子功率与 1.6 W 光功率；Table 1（PDF p.6）同时显示 ResNet18 CIFAR-10 为 86.4%（FP32 88.3%），而 BERT-Tiny SQuAD F1 为 12.0（FP32 43.5）。ImageWoof 的 79.7% 是专门重新训练后的结果。`AUTHOR CLAIM`。该论文原图未在公开仓库复制；[完整条件与能耗边界](../task-016-evidence/README.md#photonic-ai-computingahmed-2025-系统层证据)见证据增强包。不能把张量核 operation 指标直接等同完整任务的吞吐或墙插能效。
+**Ahmed 等（2025）的系统案例。** 原文 Fig. 2（PDF p.3）展示 host/PCIe、数字控制接口、PTC 与数据转换；线性矩阵向量计算在光电混合张量核执行，非线性、累加、存储和调度依赖电子系统。作者报告 65.5×10¹² ABFP16 ops/s、78 W 电子功率与 1.6 W 光功率；Table 1（PDF p.6）同时显示 ResNet18 CIFAR-10 为 86.4%（FP32 88.3%），而 BERT-Tiny SQuAD F1 为 12.0（FP32 43.5）。ImageWoof 的 79.7% 是专门重新训练后的结果。`AUTHOR CLAIM`。该论文原图未在公开仓库复制；[完整条件与能耗边界](../task-016-evidence/README.md#ahmed-2025)见证据增强包。不能把张量核 operation 指标直接等同完整任务的吞吐或墙插能效。
 
 | 维度 | 必须报告的问题 | 常见误读 |
 |---|---|---|
@@ -246,7 +246,7 @@ flowchart TB
 
 ![PhIDO 各复杂度任务的成功与失败原图](../task-016-evidence/figures/phido-fig5-complexity.png)
 
-*Source: Sharma et al., 2025, “AI agents for photonic integrated circuit design automation”, Fig. 5, DOI: 10.1063/5.0300741；PDF p.8；CC BY 4.0。图中 `S` 的原文定义是有效 schematic 与 GDSII，Table II，PDF p.9；[按等级的 benchmark 构成与局限](../task-016-evidence/README.md#phido自然语言到结构有效的-pic-版图)。*
+*Source: Sharma et al., 2025, “AI agents for photonic integrated circuit design automation”, Fig. 5, DOI: 10.1063/5.0300741；PDF p.8；CC BY 4.0。图中 `S` 的原文定义是有效 schematic 与 GDSII，Table II，PDF p.9；[按等级的 benchmark 构成与局限](../task-016-evidence/README.md#phido)。*
 
 `CODE VERIFIED`：固定提交可见结构化 schema、工具编排和部分设计/验证代码。`INFERENCE`：它是目前最接近 PIC 专用 Harness 骨架的开源项目之一，但仍不是 foundry-ready 自动设计系统。
 
@@ -258,7 +258,7 @@ PhIDO-Agentic 延伸了工具调用与多步执行，但无独立同行评审论
 
 但工程师需要提供目标、约束、初始脚本和评价器；MZM 示例还需要专家纠正模式识别和 junction shunt 重复计算。由此应把其能力表述为“在人类配置和纠错后可自治迭代”，而不是无条件的自然语言端到端设计。其依赖商业工具/编程智能体也限制完全复现。
 
-原文 Fig. 1（PDF p.3）给出 Agent→DRC/求解器→定量验收→迭代；Fig. 2–6 和 Table S2/S3（PDF p.5–10/20）列出弯曲、MRM、RF、布线和多物理 MZM 结果。尤其 Table S2 明确记录首次 RF 设置失败以及随后专家修正。[五组指标与工程边界](../task-016-evidence/README.md#kharel显式规则和数值反馈中的设计循环)。这些是数值仿真证据，尚非本项目或论文的流片实测。
+原文 Fig. 1（PDF p.3）给出 Agent→DRC/求解器→定量验收→迭代；Fig. 2–6 和 Table S2/S3（PDF p.5–10/20）列出弯曲、MRM、RF、布线和多物理 MZM 结果。尤其 Table S2 明确记录首次 RF 设置失败以及随后专家修正。[五组指标与工程边界](../task-016-evidence/README.md#kharel)。这些是数值仿真证据，尚非本项目或论文的流片实测。
 
 ### 4.2.3 gdsfactory + gplugins
 
@@ -276,7 +276,7 @@ PhIDO-Agentic 延伸了工具调用与多步执行，但无独立同行评审论
 
 [PICopilot](https://arxiv.org/abs/2608.01791) 以 48 个脚本任务评价版图、DRC 和 FDTD 代码生成，作者报告完成全部任务并优于 GPT-5+通用 RAG。当前没有核验到公开实现，因此它可支持“领域 RAG/协作 Agent 提高脚本生成”的作者主张，不能支持稳定 Tool Contract 或自治工具执行。
 
-**反馈与“成功”需分开。** 原文 §3.6（PDF p.6）说内部 Script Evaluator 使用静态代码检查、自定义检查库和 LLM，而非直接运行耗时的 PIC 工具；§4.1.4/Table 2–3（PDF p.7）的 benchmark 则在外部执行脚本，并用功能输出与设计师参考结果一致、每任务至少 3/15 次成功定义 `#Solved`。因此 48/48 不是 Agent 内部电磁仿真在环的证据。[图、数据及对照边界](../task-016-evidence/README.md#picopilot脚本生成及评价边界)。
+**反馈与“成功”需分开。** 原文 §3.6（PDF p.6）说内部 Script Evaluator 使用静态代码检查、自定义检查库和 LLM，而非直接运行耗时的 PIC 工具；§4.1.4/Table 2–3（PDF p.7）的 benchmark 则在外部执行脚本，并用功能输出与设计师参考结果一致、每任务至少 3/15 次成功定义 `#Solved`。因此 48/48 不是 Agent 内部电磁仿真在环的证据。[图、数据及对照边界](../task-016-evidence/README.md#picopilot)。
 
 [PICasso](https://arxiv.org/abs/2608.26113) 声称实现 NL → YAML → GDS → DRC/LVS → SAX → 优化，并覆盖 36 个任务。由于没有核验到公开实现，其架构和“manufacturable layouts”只能标为 `AUTHOR CLAIM`。通用 PDK、条件式 LVS 和电路仿真也不足以证明 foundry signoff。
 

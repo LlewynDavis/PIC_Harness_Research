@@ -2,12 +2,14 @@
 
 更新日期：2026-09-29
 
-## TASK-016 调研报告证据可视化增强（REVIEW_READY）
+## TASK-016 调研报告证据可视化增强（DOCX 与网页端增补待只读审查）
 
 - 已对既有七篇代表论文的本地 Zotero PDF 逐项核对，形成 `references/task-016-evidence/` 证据包，包括三张许可明确的论文原图裁剪、PDF 来源和哈希、关键数据及条件表、三项目八列比较、证据边界与 UNKNOWN。论文性能均为作者报告，项目未复现实验。
 - 已更新 `references/task-007/formal-research-report.md` 和当前 20 页无附录组会 PPT 工作区及 PPTX/PDF，保留三方向结构。PPT 区分 Jin 片内/片外功能、Ahmed 光学核心/电子链路、PhIDO/PICopilot/Kharel 的不同验证层级。
 - PPT 构建 QA 与 20 页 PowerPoint 渲染通过，关键页已视觉审阅；详见 `presentations/task-010-group-meeting-rebuild/qa-summary.md`。版权未明的原图不在本轮新复制，原始实验日志/全系统功耗等未核实项已列出。完成 commit 待 GPT 最终只读审查，不自行视为验收。
-- 本轮开始时用户已有的 `output/task-007/` DOCX 修改和同名 PDF 未跟踪文件仍保留在工作树，未纳入本任务提交。
+- 用户于首轮 commit 后追加授权：将相同证据增强应用于当前已修改的飞书上传版 DOCX。已在用户版本上局部增补七篇代表工作证据卡、四张许可明确原图、三项目比较和 UNKNOWN；原有正文、六张表、两张图及 2026-09-29 日期保留。Word 导出 28 页并逐页审阅；详细验证见 `references/task-016-evidence/docx-portal-qa.md`。同名用户 PDF 不覆盖。
+- 用户又要求网页端同步。Research Portal 已同步正式报告与 TASK-016 证据页、来源和比较入口；`mkdocs build --strict`、站内链接/锚点/图片检查及浏览器页面审阅通过。版权许可未核实的 PICopilot/Kharel 原图在网页保留定位而不嵌图。本地门户尚未远程发布。
+- 增补完成 commit 的 SHA 在交接答复中给出，等待 GPT 最终只读审查；本项目未独立复现实验，也未上传飞书或自行宣布验收。
 
 ## TASK-015 正式调研报告本地 DOCX 整理
 

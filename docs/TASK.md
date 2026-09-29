@@ -2,21 +2,29 @@
 
 ## TASK-016：调研报告证据可视化增强
 
-- 状态：`REVIEW_READY`（2026-09-29）；已提交供 GPT 最终只读审查，不自行宣布验收。
+- 状态：`REVIEW_READY`（2026-09-29，DOCX 与网页端增补已完成，待 GPT 只读审查）；首轮交付 commit `e3a3f8316c0b18d7b2f890ba6f921fdb41a0f9ef` 已完成，用户随后要求将同样的证据增强应用于现有飞书上传版 DOCX 和 Research Portal 网页端。不自行宣布验收。
 - 授权来源：用户在本对话给出的“调研报告证据可视化增强”任务。
-- 起始提交：`c02f121629f7eceb5d03e49d968894e48352cde9`，分支 `main`。开始时已有用户工作树改动：`output/task-007/面向光子芯片智能设计的三方向技术调研_飞书上传版.docx` 修改及同名 PDF 未跟踪；两者不纳入本轮提交。
+- 起始提交：`c02f121629f7eceb5d03e49d968894e48352cde9`，分支 `main`。开始时已有用户工作树改动：`output/task-007/面向光子芯片智能设计的三方向技术调研_飞书上传版.docx` 修改及同名 PDF 未跟踪；前者经用户追加授权后以当前版本为基础增补并纳入本轮提交，后者不纳入。
 - 目标：在不扩大论文池、不改三方向和核心判断框架的前提下，为 PhIDO、PICopilot、Kharel 2026、Jin 2024、Cheng 2023、Sandmann 2023、Ahmed 2025 增补论文原图、原始结果口径、来源定位和证据边界，并形成 Agentic PIC 三项目比较。
 - 允许修改：现有调研 Markdown、最新组会 PPT 的源工作区和再生交付、独立证据日志与图表来源索引，以及本任务和当前状态记录。Zotero 与 PDF 只读；可在仓库交付中使用许可明确的原图，许可不明时保留定位或改绘。
-- 禁止范围：不新增方向或大量论文；不实施 Agent、simulator、benchmark、仿真、流片或实验；不修改 `D:\AI_PIC_Demo`；不把作者结果当成本项目复现；不覆盖前述用户未提交 DOCX/PDF。
+- 禁止范围：不新增方向或大量论文；不实施 Agent、simulator、benchmark、仿真、流片或实验；不修改 `D:\AI_PIC_Demo`；不把作者结果当成本项目复现；不覆盖用户未跟踪 PDF。
 - 验证：逐项回到论文 PDF 核对图号、页码、数值、单位、条件和限制；图像裁剪保留含义；报告/PPT 结构与视觉检查、引用/路径检查及 `git diff --check`；列出 UNKNOWN。最终提交 completion commit 后等待 GPT 只读审查。
 
 ### 完成记录
 
-- 起始 commit 为 `c02f121629f7eceb5d03e49d968894e48352cde9`；完成 commit 为包含本记录的提交，准确 SHA 在交接答复中给出。未覆盖开始时已有的用户 DOCX/PDF 改动。
+- 首轮起始 commit 为 `c02f121629f7eceb5d03e49d968894e48352cde9`，首轮完成 commit 为 `e3a3f8316c0b18d7b2f890ba6f921fdb41a0f9ef`；DOCX/网页增补完成 commit 的准确 SHA 在交接答复中给出。保留了用户 DOCX 原有修改，未改动用户 PDF。
 - `references/task-016-evidence/` 为本轮证据包：七篇本地 Zotero PDF 的 item key、SHA-256 与页数，逐项数据/条件/证据等级表，Figure 来源与许可、Agentic PIC 三项目八列比较，以及 unresolved/UNKNOWN。
 - `references/task-007/formal-research-report.md` 增加 PhIDO/Cheng 已许可原图、关键证据定位及系统与验证边界；`presentations/task-010-group-meeting-rebuild/` 的 20 页无附录 PPTX/PDF 同步更新。未改已确认的三方向结构和核心判断框架。
 - 核验：七篇 Zotero 本地原文只读访问、原图裁剪审阅；PPT 构建 QA 为 0 溢出/重叠/占位/视觉警告和 0 设计错误/警告；PowerPoint 导出 20/20 页 PNG 和 PDF，20 页联系图与关键页全尺寸检查；路径、CSV 和引用检查及 `git diff --check` 通过。14 条面积密度提示为技术图示占页的几何提示，见 PPT `qa-summary.md`。
 - 未执行：论文实验复现、仿真、独立原始数据重算、全系统能效复核、版权未明原图再分发、投影设备试讲。详见证据包 UNKNOWN 列表。等待 GPT 最终只读审查。
+
+### DOCX 增补边界（用户 2026-09-29 追加授权）
+
+- 起点：`e3a3f8316c0b18d7b2f890ba6f921fdb41a0f9ef`。允许在用户当前已修改的 `output/task-007/面向光子芯片智能设计的三方向技术调研_飞书上传版.docx` 上局部加入 TASK-016 已核验的原图、数据、三项目比较与 UNKNOWN，不从 Markdown 整体重建；保留用户日期及原有内容，并在写入前备份。允许增加可复现的最小编辑脚本及任务/状态记录。
+- 同名 `output/task-007/面向光子芯片智能设计的三方向技术调研.pdf` 是用户已有未跟踪文件，本轮不覆盖；不增加论文池、研究判断或实验。DOCX 图像仅使用许可明确的 PhIDO/Cheng 原图，版权未明论文保留 Figure/Table 定位或改绘。
+- 验证：前后文本及图表保留比对、DOCX 结构与来源/条件检查、逐页渲染视觉审阅、`git diff --check`；提交增补 commit 后等待 GPT 最终只读审查。
+- 网页端追加范围：`portal/docs/task-007-report.md` 已在构建时嵌入更新后的 Markdown 事实源；本轮允许修正证据图示的站内资源路径、增加证据包阅读入口、更新过时首页状态，并运行 `mkdocs build --strict` 和浏览器/生成 HTML 检查。门户继续只做展示层，不复制版权未明原图、不产生新的研究结论。
+- 增补交付：以用户已修改 DOCX 为基线局部增补七篇代表工作证据卡、四张许可明确的论文 Figure、三项目八列比较和 UNKNOWN；Research Portal 同步正式报告和证据包阅读页，导航、图示和数据表可用。具体保留检查、渲染、站内链接、许可边界和未执行事项见 `references/task-016-evidence/docx-portal-qa.md`。本地门户未远程发布，DOCX 未上传飞书。
 
 ---
 

@@ -16,6 +16,7 @@
 
 ## Agentic PIC Design：三条不同证据链
 
+<a id="phido"></a>
 ### PhIDO：自然语言到结构有效的 PIC 版图
 
 **核心判断。** Fig. 1 的四段是 interpreter → designer → layout → circuit verification，其中前两段由 LLM Agent 承担，后两段主要由算法模块与 CAD/电路工具承担。用户可以在阶段间检查和修改输出。论文的主评价目标是结构有效，不是器件性能。来源：Sharma 等，2025，*AI agents for photonic integrated circuit design automation*，Fig. 1，DOI [10.1063/5.0300741](https://doi.org/10.1063/5.0300741)，PDF p.3，§II。
@@ -33,6 +34,7 @@
 
 **“成功”的原文定义。** Table II 的 `S` 是整条流程无致命错误，得到有效 schematic 与 GDSII layout；`EE/CS/SG/PC/L` 分别定位实体提取、器件选择、原理图、参数、版图失败。文中还描述 GDSFactory 路由、DRC 和 SAX 电路仿真；该 benchmark 的 `S` 定义并未要求目标光学性能达到规格。`FACT`：Table II，PDF p.9；§II.E，PDF p.6。作者自称 proof of concept，指出 routing 对交叉或密集互联有限制、性能资格验证尚属未来工作；摘要与§V，PDF p.1/12。作者对非 OpenAI 模型引入 GPT-4o 结构化输出校验，跨模型结果不是完全独立模型能力比较；§II.B、Fig. 5 注，PDF p.4/8。
 
+<a id="picopilot"></a>
 ### PICopilot：脚本生成及评价边界
 
 **核心判断。** Fig. 2 展示 Task Planner → 功能专用生成 Agent（手册 RAG）→ Script Synthesizer → Script Evaluator。Evaluator 在**生成循环内部**使用静态代码检查、自定义检查库和 LLM，原文明确说逐次运行 PIC 工具过于耗时，因而未把直接执行作为内部反馈。来源：Jiang 等，2026，*PICopilot: An LLM-based Agentic Framework for Assisting Photonic Integrated Circuit Design via Script Generation*，Fig. 2、§3.6，DOI [10.48550/arXiv.2608.01791](https://doi.org/10.48550/arXiv.2608.01791)，PDF p.3/6。
@@ -49,6 +51,7 @@
 
 **证据边界。** benchmark 执行生成脚本用于外部评分，不能倒推内部 Agent 通过真实电磁结果做迭代；FDTD 脚本可运行、参考输出相符，也不等于优化后的器件已满足一套独立物理规格。原文没有形成 PDK/工艺角/流片签核结果，也未由本项目核验公开实现。`INFERENCE`：由 §3.6、§4.1.4 与任务定义联合限定。
 
+<a id="kharel"></a>
 ### Kharel：显式规则和数值反馈中的设计循环
 
 **核心判断。** 工程师提供问题说明、性能目标、可编辑仿真文件、几何/工艺约束、DRC 程序与评价器；Agent 修改候选，先过规则，调用求解器，读取数值结果并按 acceptance criteria 保留或回退。Fig. 1 是流程，Fig. 2–6 是各案例的原始结果。来源：Kharel 等，2026，*Autonomous agentic design for photonics*，Fig. 1–6，DOI [10.48550/arXiv.2606.00915](https://doi.org/10.48550/arXiv.2606.00915)，PDF p.3–10，§2–3。
@@ -69,6 +72,7 @@
 
 ## DAS：集成功能、外部依赖和系统指标
 
+<a id="jin-2024"></a>
 ### Jin 2024：系统级光路的片上/片外划分
 
 **核心判断。** Fig. 1(b) 的 SOI 芯片含 MZM 发射、PC/BS、PBRS、1×2 MMI、两组 90° hybrid 和四个平衡光电探测器；Fig. 3 的系统另有窄线宽激光、EDFA、环行器、AWG、TIA、DAQ、计算机/DSP 与传感光纤。Fig. 5/6 才是下面指标的实测定位。来源：Jin 等，2024，*Silicon photonic integrated interrogator for fiber-optic distributed acoustic sensing*，Fig. 1/3/5/6，DOI [10.1364/PRJ.512298](https://doi.org/10.1364/PRJ.512298)，PDF p.3/5/6/7。
@@ -80,6 +84,7 @@
 
 **边界。** 芯片进入真实传感链路，不等于完整 DAS 仪器集成；论文明确说光源、光放大器和环行器未集成，底层数据当时未公开。§5 与 Data Availability，PDF p.7–8。由于两组光纤长度、gauge length 和重复率不同，不把 59 与 81 pε/√Hz 当成单变量比较。
 
+<a id="cheng-2023"></a>
 ### Cheng 2023：面向 DAS 发射脉冲的四微环结构
 
 **核心判断。** 四枚 10 µm 半径耦合微环与 PIN 注入区形成窄通带和陡边；Fig. 1(d) 是随偏压变化的原始 transmission spectrum，Fig. 2(c–e) 是高动态 ER 的测量，Fig. 4/5 才证明器件替换进入 2 km DAS 台架。来源：Cheng 等，2023，*On-chip silicon electro-optical modulator with ultra-high extinction ratio for fiber-optic distributed acoustic sensing*，Fig. 1/2/4/5，DOI [10.1038/s41467-023-43244-9](https://doi.org/10.1038/s41467-023-43244-9)，PDF p.2–6。
@@ -100,10 +105,12 @@
 
 **边界。** 3.60 mW 是调制器本体电耗，不是激光、EDFA、探测和数据处理的全系统功耗。作者指出温度敏感、硅的非线性吸收及约 6.5 ns 响应会限制部分更短脉冲场景；§Discussion，PDF p.6。不能从器件高 ER 推出完整 DAS 收发 PIC 已实现。
 
+<a id="sandmann-2023"></a>
 ### Sandmann 2023：通信收发模块复用
 
 Fig. 2 将 IC-TROSA 纳入 CC-OTDR；其片内/封装有双偏振 IQ 调制、相干接收、探测与 TIA，片外仍有 <100 Hz 线宽激光、EDFA、滤波、环行器、示波器与离线相关处理。Fig. 5 在 **20 km launch fiber 之后**对一段光纤施加 200 Hz 扬声器信号，测得约 0.9 rad 峰峰相位变化；3.5 kHz 序列重复率对应最高 1.75 kHz 动态事件带宽。`AUTHOR CLAIM`：§III、Fig. 2/5，PDF p.2–4。来源：Sandmann 等，2023，*Acoustic Sensing with Correlation and Coherent Detection using an Integrated Coherent Transceiver*，DOI [10.48550/arXiv.2306.04199](https://doi.org/10.48550/arXiv.2306.04199)。本地会议 PDF 有 IEEE/VDE 授权限制，未将原图复制进公开仓库；需在本机 PDF p.2/4 查看原图。
 
+<a id="ahmed-2025"></a>
 ## Photonic AI Computing：Ahmed 2025 系统层证据
 
 **核心判断。** Fig. 2(a–c) 清楚分开 host/PCIe、数字控制接口 DCI、数据转换、PTC 与输出流水线。PTC 执行 128×128 矩阵向量乘法中的光电混合乘加；权重存储、编译与调度、数据转换、非线性、累加等仍由数字与电子部分完成。来源：Ahmed 等，2025，*Universal photonic artificial intelligence acceleration*，Fig. 1/2，DOI [10.1038/s41586-025-08854-x](https://doi.org/10.1038/s41586-025-08854-x)，PDF p.2–3。Nature PDF 标注独家许可，本包不再分发原图；原图从 Zotero PDF p.3 或 DOI 页面查看。
@@ -132,6 +139,7 @@ Fig. 2 将 IC-TROSA 纳入 CC-OTDR；其片内/封装有双偏振 IQ 调制、�
 
 **本轮新增判断（`INFERENCE`）。** 研究空间应更具体地表述为：复杂设计需求如何形成**可检查的约束**，在跨工具表示与数值反馈中保持一致，并在初始设置错误或目标冲突时被发现；不能笼统称已有 Agent“不理解物理”。依据：PhIDO Table II/§II.E，PICopilot §3.6/§4.1.4，Kharel §2/§S6。
 
+<a id="unknown"></a>
 ## 未解决与 UNKNOWN
 
 1. PhIDO Fig. 5 的逐模型、逐等级精确百分比在论文主文写明见 supplementary；本轮未拿到可核对的原始数值表，因此只引用正文明确数值，不从柱形图读出伪精度。

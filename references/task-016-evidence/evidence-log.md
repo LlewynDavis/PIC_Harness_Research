@@ -13,4 +13,4 @@
 | T016-P1 | Ahmed 光电张量核只承担计算链中的矩阵向量运算；任务准确率与电子控制、存储、转换和能耗必须一起看。 | Ahmed et al., 2025, Fig. 1/2、Table 1、Methods；PDF p.1–3/6/8；DOI 10.1038/s41586-025-08854-x。 | `FACT`：系统模块与任务口径；`AUTHOR CLAIM`：ops、功耗和准确率；`UNKNOWN`：统一墙插功耗与各任务 energy/inference。 |
 | T016-S1 | 三篇 Agentic PIC 论文的输入、Agent 反馈与成功定义不同，不能直接按成功率排序。 | Sharma Table II/§IV.A；Jiang §3.6/4.1.4；Kharel Fig. 1/Table S2/§S6；对应 PDF 定位见 A1–A3。 | `INFERENCE`：跨论文比较。见 [`agentic-pic-comparison.md`](agentic-pic-comparison.md)。 |
 
-图像可再分发范围、裁剪框与图号见 [`figure-sources.md`](figure-sources.md)。未核实问题集中在 [`README.md` 的 UNKNOWN 节](README.md#未解决与-unknown)。
+图像可再分发范围、裁剪框与图号见 [`figure-sources.md`](figure-sources.md)。未核实问题集中在 [`README.md` 的 UNKNOWN 节](README.md#unknown)。

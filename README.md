@@ -75,3 +75,5 @@ cd G:\PIC_Harness_Research
 ```
 
 浏览器打开 `http://127.0.0.1:8000/`。原始研究内容仍以 `references/task-005/` 与 `references/task-006/` Markdown 为事实源（Source of Truth）；Portal 只是阅读层。
+
+TASK-016 证据增强后的正式报告和证据包分别以 `references/task-007/formal-research-report.md` 与 `references/task-016-evidence/` 为事实源。直接构建门户前先运行 `& .\.venv\Scripts\python.exe scripts\sync_task016_portal.py`，再运行 `& .\.venv\Scripts\python.exe -m mkdocs build --strict`；`portal/serve.ps1` 已按此顺序执行。

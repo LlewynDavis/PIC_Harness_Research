@@ -5,6 +5,10 @@ try {
     if (-not (Test-Path ".venv\Scripts\python.exe")) {
         & "$PSScriptRoot\setup.ps1"
     }
+    & .\.venv\Scripts\python.exe scripts\sync_task016_portal.py
+    if ($LASTEXITCODE -ne 0) {
+        throw "Portal evidence sync failed"
+    }
     & .\.venv\Scripts\python.exe -m mkdocs build --strict
     if ($LASTEXITCODE -ne 0) {
         throw "mkdocs build --strict failed"

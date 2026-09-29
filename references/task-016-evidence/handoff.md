@@ -15,7 +15,7 @@
 | Agentic 对比 | [`agentic-pic-comparison.md`](agentic-pic-comparison.md) | PhIDO、PICopilot、Kharel 八列比较，重点分开输入、工具反馈和成功定义。 |
 | 新证据日志 | [`evidence-log.md`](evidence-log.md) | A1–A3、D1–D3、P1、S1 八项新判断及原文定位。 |
 | 原文版本 | [`source-manifest.md`](source-manifest.md) | Zotero 父级/附件 key、页数与 SHA-256；PDF 保持只读且不复制进仓库。 |
-| 未核实项 | [`README.md#未解决与-unknown`](README.md#未解决与-unknown) | 原始运行日志、统计口径、实物验证、系统能耗、图像再分发许可等。 |
+| 未核实项 | [`README.md#unknown`](README.md#unknown) | 原始运行日志、统计口径、实物验证、系统能耗、图像再分发许可等。 |
 
 三项最关键的本轮判断：PICopilot 内部静态反馈与外部 benchmark 执行需要分开（Jiang §3.6/4.1.4）；Kharel 的数值闭环依赖工程师给定约束和正确仿真初设，首次多物理设置有人工修正反例（Kharel Fig. 1/Table S2/§S6）；光子核心 ops 与完整 AI 任务吞吐、准确率和墙插能耗口径不同（Ahmed Fig. 2/Table 1/Methods）。等级及细节见证据日志。
 
