@@ -2,7 +2,7 @@
   "topic": "面向光子芯片智能设计的国内外研究现状与技术路线分析",
   "audience": "课题组师兄师姐及导师",
   "objective": "20 页 / 15–20 分钟，三方向综述后深入 Agentic PIC 并讨论个人倾向",
-  "thesis": "Agentic PIC 值得从真实物理设计任务的需求与约束处理进一步研究",
+  "thesis": "当前候选倾向是物理引导的 PIC 诊断与设计决策；新增价值与研究缺口尚待核验",
   "narrative_arc": [
     {
       "act": "框架",
@@ -148,14 +148,14 @@
     {
       "slide_id": "P18",
       "role": "evidence",
-      "message": "优先深入需求理解与物理约束处理",
+      "message": "研究集中于仿真之后；新增价值仍待证据核验",
       "variant": "flow",
       "visual_strategy": "technical-diagram"
     },
     {
       "slide_id": "P19",
       "role": "evidence",
-      "message": "需求解析是基础能力，不预设为最终创新点",
+      "message": "物理诊断 → 设计决策 → 下一轮仿真检验",
       "variant": "flow",
       "visual_strategy": "technical-diagram"
     },

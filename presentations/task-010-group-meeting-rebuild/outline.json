@@ -362,34 +362,34 @@
       "variant": "flow",
       "slide_intent": "evidence",
       "visual_intent": "flow",
-      "title": "从需求理解到物理验证：约束能否贯穿设计？",
-      "subtitle": "四层技术问题对应不同论文已有能力和待核证据",
-      "message": "优先深入需求理解与物理约束处理",
+      "title": "从“会调用工具”到“会做物理设计决策”",
+      "subtitle": "候选切入点：器件物理 + 真实仿真反馈支持诊断与下一步动作",
+      "message": "研究集中于仿真之后；新增价值仍待证据核验",
       "assets": {
         "diagram": "assets/p18-four-layers.svg"
       },
-      "footer": "依据：PhIDO Fig. 1；PICopilot Fig. 2；AutoPD Fig. 2；PICBench；TASK-007 §研究缺口",
+      "footer": "候选推断/用户倾向：TASK-007 §6.6；反例：Kharel Fig. 1–6 / Table S2",
       "sources": [
-        "依据：PhIDO Fig. 1；PICopilot Fig. 2；AutoPD Fig. 2；PICBench；TASK-007 §研究缺口"
+        "候选推断/用户倾向：TASK-007 §6.6；反例：Kharel Fig. 1–6 / Table S2"
       ],
-      "notes": "PhIDO 与 PICBench 展示结构化表示；AutoPhotonicDesign 展示人类设定约束后的求解器循环；PICopilot 展示脚本评价。值得进一步核验的是复杂物理约束的表达、一致性、跨工具传递与设计过程保持，而不是断言整个领域没有物理约束能力。"
+      "notes": "当前不是已经定题的路线。PhIDO 与 PICopilot 的评价层级不能证明领域整体缺乏物理决策；AutoPhotonicDesign 已有真实求解器反馈和自主迭代，是最强反例。需要核验可泛化诊断、动作选择和可靠性是否仍有实质缺口。物理推理失败和失败恢复都重要，但不是全部课题。"
     },
     {
       "type": "content",
       "variant": "flow",
       "slide_intent": "evidence",
       "visual_intent": "flow",
-      "title": "个人倾向：从物理约束理解切入真实 PIC 设计",
-      "subtitle": "Agentic PIC Design 是主要方向；具体技术方案尚待讨论",
-      "message": "需求解析是基础能力，不预设为最终创新点",
+      "title": "Physics-guided Autonomous PIC Design",
+      "subtitle": "物理驱动的自主光子芯片设计｜候选方向，尚待导师确认",
+      "message": "物理诊断 → 设计决策 → 下一轮仿真检验",
       "assets": {
         "diagram": "assets/p19-research-inclination.svg"
       },
-      "footer": "来源：用户确认的个人倾向；TASK-007 候选路线仅作背景",
+      "footer": "来源：2026-09-30 用户候选方向；TASK-007 §6.6；概念图非已实现系统",
       "sources": [
-        "来源：用户确认的个人倾向；TASK-007 候选路线仅作背景"
+        "来源：2026-09-30 用户候选方向；TASK-007 §6.6；概念图非已实现系统"
       ],
-      "notes": "总体目标是让 AI 在专业工具与物理要求支持下参与真实器件/电路设计。当前优先研究设计需求理解和物理约束处理，随后可能延伸到工具执行、仿真反馈与跨任务复用。三个未决问题：已有方法做到何种程度；侧重表达、冲突、传递还是保持；选择什么物理任务验证价值与通用性。"
+      "notes": "核心问题：Agent 如何利用器件物理与真实仿真反馈做出可靠的下一步决策。DesignSpec 是支持层，Agent 不替代 Maxwell solver；确定性评价器复核达标判断。基础器件推理、1–2 类器件仿真在环和复杂 PIC 只是分层验证概念，尚未确定任务/预算/判据。DAS 只是后续复杂场景候选之一，角色待导师确认。H1诊断缺口、H2可靠性增益、H3相对传统优化/逆设计价值均UNKNOWN。"
     },
     {
       "type": "content",
@@ -401,20 +401,20 @@
         "body": [
           "DAS、光子 AI、Agentic PIC 的研究对象与技术体系不同",
           "Agentic PIC 已覆盖结构、脚本、仿真在环等不同能力层级",
-          "个人倾向优先关注需求理解与物理约束处理"
+          "当前候选倾向：物理引导的设计诊断与决策"
         ]
       },
       "right": {
         "title": "两个讨论问题",
         "body": [
-          "是否适合优先深入 PIC 设计需求与物理约束处理？",
-          "下一阶段聚焦哪些具体技术问题和代表工作，才能明确研究贡献？"
+          "相对求解器闭环与传统优化，诊断决策有何增量价值？",
+          "DAS 最终角色与系统边界如何确定？"
         ]
       },
       "verdict": "当前是研究倾向，不是已确定的课题、算法或实验计划。",
-      "footer": "来源：TASK-007 正式报告与候选路线；用户确认的最新研究倾向",
+      "footer": "TASK-007 §6.6；用户候选倾向，尚待确认",
       "sources": [
-        "TASK-007 正式报告与候选路线；用户确认的最新研究倾向"
+        "TASK-007 §6.6；用户候选倾向"
       ],
       "notes": "结束时用三个收获复述证据边界，不作完成系统或实验承诺。请导师和师兄师姐优先讨论切入问题是否合适，以及用哪类具体 PIC 器件或电路任务检验其价值。预留问答。"
     }

@@ -1,6 +1,15 @@
 # 当前真实状态
 
-更新日期：2026-09-29
+更新日期：2026-09-30
+
+## TASK-017 候选方向三端同步（REVIEW_READY）
+
+- 新增候选方向“物理驱动的自主光子芯片设计（Physics-guided Autonomous PIC Design）”，重点为仿真后物理诊断与设计决策。来源为用户 2026-09-30 授权及既有研究材料，不是新的文献证据截止日期，不是最终定题。
+- 正式 Markdown 第六章新增 §6.6，详细事实源为 `references/task-007/candidate-research-direction.md`。当前用户 DOCX 原有 282 个正文 XML 块、13 张表、10 个媒体文件及样式/设置保留；局部新增十项候选分析、三幅概念图和三张表。
+- 门户首页/左导航新增候选方向入口，三幅 Mermaid 图与五类方法比较正常显示；PPT 保持 20 页，仅 P18–P19 和 P20 必要一致性修正。
+- DOCX Word 渲染 33 页并检查全部联系图及新章节全尺寸；PPT PowerPoint 20 页渲染与修正后复查通过；MkDocs 严格构建、1920×1080 桌面、3 幅 Mermaid 和 18 条站内链接/锚点检查通过。不做手机视口。
+- 详见 `references/task-017-candidate-direction/qa-and-handoff.md`。两个用户未跟踪 PDF 不覆盖、不纳入提交；备份在忽略目录 `tmp/task-017/report-user-baseline.docx`。Qwen 派发审查因连接错误无结果；不使用未经复核材料。
+- TASK-016 仍待审查；Jev 用户确认继续 DEFERRED；没有启动实验、仿真、实现、新调研或最终路线选定。只提交本地，不上传飞书或推送 GitHub。
 
 ## TASK-016 调研报告证据可视化增强（DOCX 与网页端增补待只读审查）
 

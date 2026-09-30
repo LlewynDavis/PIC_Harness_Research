@@ -1,5 +1,14 @@
 # TASK-010 PPT 验收记录
 
+## TASK-017 候选方向局部同步（2026-09-30）
+
+- 仅更新 P18/P19 概念图与来源、备注，P20 最小一致性修正；前 17 页 outline 内容未变。
+- 构建 preflight 0 error/warning；QA overflow/overlap/placeholder/visual warning/design error/warning 均为 0。14 条面积密度提示仍为既有技术图占页提示，不宣称没有全部警告。
+- PowerPoint 只读渲染 20/20 PNG 与 PDF。P18–P20 全尺寸检查；独立视觉审查后修正 P19 回环与 P20 换行，第二轮复查通过。
+- 候选方向与 H1–H3 明确为用户倾向/推断/UNKNOWN，不把 AutoPhotonicDesign 已有反馈迭代抹去，不扩大为已选课题。
+- Qwen 只读措辞/证据审查已派发，但 API 连接 ECONNRESET，未收到结果、不计为完成。最终内容由 Codex 对既有证据复核。
+
+
 ## TASK-016 证据增强复核（2026-09-29）
 
 - 保持 20 页主讲、无附录。P5 依据 Jin 2024 Fig. 1/3/5/6 重画功能清单和片外依赖；P6 加入 Cheng 2023 Fig. 1 原图；P9 依据 Ahmed 2025 Fig. 2 与 Table 1 重画光电系统链并列任务结果；P11/P13–P16 修订三项 Agentic PIC 工作的流程、数值、内部/外部验证区别和能力矩阵。

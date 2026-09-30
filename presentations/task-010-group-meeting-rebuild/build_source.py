@@ -269,37 +269,43 @@ def diagram_compare():
 
 
 def diagram_questions():
-    stages=[("1 需求理解","目标、参数、缺失信息","PhIDO: YAML；PICBench: JSON"),
-            ("2 物理约束处理","约束是否一致、可检查？","待进一步核验：复杂约束表达"),
-            ("3 工具执行","模型、版图、求解器输入","PhIDO: GDS/DRC；AutoPD: solver"),
-            ("4 结果验证反馈","实际物理结果决定调整","AutoPD: 仿真迭代；PICopilot: 脚本评价")]
+    stages=[("1 仿真结果","性能与求解条件","数值反馈；不自动等于物理正确"),
+            ("2 物理诊断","识别原因与关键变量","提出可被再仿真检验的假设"),
+            ("3 设计决策","选修改策略与动作","比较候选动作及其预期作用"),
+            ("4 下一轮仿真","工具执行与验证","验证预测；记录失败与更新")]
     b=""
     for i,(t,d,e) in enumerate(stages):
         x=30+i*347
-        c=SAND if i==1 else (MINT if i==3 else PALE)
-        b+=rect(x,94,319,340,c,stroke=ORANGE if i==1 else "#ceddd8",rx=4,sw=4 if i==1 else 2)
+        c=SAND if i in (1,2) else PALE
+        b+=rect(x,94,319,340,c,stroke=ORANGE if i in (1,2) else "#ceddd8",rx=4,sw=4 if i in (1,2) else 2)
         b+=text(x+159,158,t,25,INK,weight="bold")
         b+=text(x+159,244,d,19)
         b+=line(x+42,284,x+277,284,TEAL,2,False)
         for k,s in enumerate(e.split("；")):b+=text(x+159,337+k*30,s,18,GREY)
         if i<3:b+=line(x+324,262,x+341,262)
-    b+=text(700,505,"图中“待核验”是研究问题，不是对整个领域能力的否定",21,GREY)
+    b+=text(700,475,"强反例：AutoPhotonicDesign 已有求解器反馈与迭代，不能预设诊断缺口",21,TEAL)
+    b+=text(700,522,"候选方向：新增能力、相对优化的价值与可靠性增益均待验证",21,GREY)
     return svg("p18-four-layers",b)
 
 
 def diagram_inclination():
     b=""
-    b+=box(65,28,1270,93,"总体目标：面向真实 PIC 设计任务的智能设计方法","AI 在物理要求与专业工具支持下参与器件/电路设计",PALE,25,19)
-    b+=line(700,124,700,151)
-    b+=box(208,159,984,91,"当前优先切入：需求理解 + 物理约束处理","结构化要求 · 识别关键条件 · 一致性检查 · 正确传递",MINT,25,19)
-    b+=line(700,252,700,278)
-    b+=box(135,285,1130,82,"后续可能扩展：工具执行 → 仿真验证 → 反馈优化 → 跨任务复用","以 1×2 MMI 等真实任务考察价值；具体方案尚未确定",SAND,22,18)
-    b+=text(700,410,"尚未确定的三个问题",23,TEAL,weight="bold")
-    qs=["已有方法的约束能力到何程度？","重点研究表达、冲突、传递还是保持？","用哪个真实物理任务验证价值与通用性？"]
-    for i,q in enumerate(qs):
-        x=25+i*461
-        b+=rect(x,434,435,83,"#f7f9f8",stroke="#d8e5e0",rx=4)
-        b+=text(x+217,485,f"Q{i+1}  {q}",18,INK)
+    b+=box(30,18,1340,72,"候选目标：核心方法研究 + 自主 PIC Design Harness 系统载体","Agent 做诊断与策略选择；Solver / Optimizer 做精确计算与验证",PALE,24,19)
+    stages=[("需求 / 规划","DesignSpec 支持层"),("设计 / 求解","数值反馈及条件"),("物理诊断 / 决策","候选研究集中区域"),("动作执行 / 验证","达标后再版图；仍须验证")]
+    for i,(t,d) in enumerate(stages):
+        x=30+i*347
+        b+=box(x,124,319,116,t,d,MINT if i==2 else PALE,22,18)
+        if i<3:b+=line(x+323,179,x+342,179)
+    b+=line(1230,245,1230,273)
+    b+=line(1230,273,535,273)
+    b+=line(535,273,535,242)
+    b+=text(895,263,"未达标：修改设计 → 再仿真",17,GREY)
+    b+=text(700,316,"候选验证层级：基础器件推理 → 仿真在环 → 复杂 PIC → DAS 候选场景",22,TEAL,weight="bold")
+    b+=text(700,351,"MMI / MZI / 耦合器 / 微环 / 波导；具体任务、预算与判据尚未确定",19,GREY)
+    b+=rect(30,378,1340,157,SAND,rx=4)
+    b+=text(700,417,"尚待确认：与传统优化的差异 · 是否存在实质研究缺口",23,INK,weight="bold")
+    b+=text(700,456,"DAS 最终角色 · 硕士阶段方法深度与系统边界",22,INK)
+    b+=text(700,499,"USER RESEARCH PREFERENCE / INFERENCE；H1–H3 为 UNKNOWN",20,GREY)
     return svg("p19-research-inclination",b)
 
 
@@ -358,14 +364,14 @@ def build():
                "红叉为丢弃尝试、绿点为保留结果、绿线为迄今最优。弯曲器件是 400 nm SiN、1550 nm、150 nm 最小特征、12 µm 半径的仿真；50 是预算，最优在第 38 次。Fig. 3 另有 39 次 PN 结迭代、Fig. 5 有 192→0 DRC violations。多物理 MZM 首次在 30 GHz 得到约 15 Ω，参考值 48 Ω；Table S2 记录专家修正 mode 识别及 junction shunt 等设置，之后才进入九设计的自治循环。故不应宣称无条件独立理解物理。"),
         flow(16,"PhIDO、PICopilot、Kharel：成功定义不同","结构/GDS、脚本功能、数值验收分别位于不同层级", "比较 Agent 能力时先写清输入、反馈和约束来源", "依据：PhIDO Fig. 1/Table II；PICopilot Fig. 2/Table 2–3；Kharel Fig. 1/Table S2", "完整八列比较表在 references/task-016-evidence/agentic-pic-comparison.md。PhIDO 的 S 是有效 schematic/GDSII；PICopilot 的 #Solved 是脚本外部运行后参考输出相符、至少 3/15 次；Kharel 是人类提供规则和定量目标后以求解器数值通过验收。它们不能按 91%、48/48 和器件损耗作单一能力排名。",d),
         flow(17,"三方向形成不同的候选研究问题","综合比较研究对象、已验证进展和仍待考察的边界", "A/B/C 是调研候选，不是已选课题", "依据：TASK-006 候选路线；TASK-007 候选路线总结", "路线 A 正式名称为证据优先的 Agentic PIC Harness 方法研究，B 是 DAS 系统需求到光电混合集成约束的可追溯传播，C 是光子 AI 的器件误差—任务精度—系统成本联合证据链。图中是压缩后的题眼；三条均不是已选课题，不能用单一成熟度排序。个人更希望进一步研究 Agentic PIC 中真实物理设计问题。",d),
-        flow(18,"从需求理解到物理验证：约束能否贯穿设计？","四层技术问题对应不同论文已有能力和待核证据", "优先深入需求理解与物理约束处理", "依据：PhIDO Fig. 1；PICopilot Fig. 2；AutoPD Fig. 2；PICBench；TASK-007 §研究缺口", "PhIDO 与 PICBench 展示结构化表示；AutoPhotonicDesign 展示人类设定约束后的求解器循环；PICopilot 展示脚本评价。值得进一步核验的是复杂物理约束的表达、一致性、跨工具传递与设计过程保持，而不是断言整个领域没有物理约束能力。",d),
-        flow(19,"个人倾向：从物理约束理解切入真实 PIC 设计","Agentic PIC Design 是主要方向；具体技术方案尚待讨论", "需求解析是基础能力，不预设为最终创新点", "来源：用户确认的个人倾向；TASK-007 候选路线仅作背景", "总体目标是让 AI 在专业工具与物理要求支持下参与真实器件/电路设计。当前优先研究设计需求理解和物理约束处理，随后可能延伸到工具执行、仿真反馈与跨任务复用。三个未决问题：已有方法做到何种程度；侧重表达、冲突、传递还是保持；选择什么物理任务验证价值与通用性。",d),
+        flow(18,"从“会调用工具”到“会做物理设计决策”","候选切入点：器件物理 + 真实仿真反馈支持诊断与下一步动作", "研究集中于仿真之后；新增价值仍待证据核验", "候选推断/用户倾向：TASK-007 §6.6；反例：Kharel Fig. 1–6 / Table S2", "当前不是已经定题的路线。PhIDO 与 PICopilot 的评价层级不能证明领域整体缺乏物理决策；AutoPhotonicDesign 已有真实求解器反馈和自主迭代，是最强反例。需要核验可泛化诊断、动作选择和可靠性是否仍有实质缺口。物理推理失败和失败恢复都重要，但不是全部课题。",d),
+        flow(19,"Physics-guided Autonomous PIC Design","物理驱动的自主光子芯片设计｜候选方向，尚待导师确认", "物理诊断 → 设计决策 → 下一轮仿真检验", "来源：2026-09-30 用户候选方向；TASK-007 §6.6；概念图非已实现系统", "核心问题：Agent 如何利用器件物理与真实仿真反馈做出可靠的下一步决策。DesignSpec 是支持层，Agent 不替代 Maxwell solver；确定性评价器复核达标判断。基础器件推理、1–2 类器件仿真在环和复杂 PIC 只是分层验证概念，尚未确定任务/预算/判据。DAS 只是后续复杂场景候选之一，角色待导师确认。H1诊断缺口、H2可靠性增益、H3相对传统优化/逆设计价值均UNKNOWN。",d),
         {"type":"content","variant":"comparison-2col","title":"总结与组内讨论","subtitle":"以证据约束判断，以具体设计任务收敛问题",
-         "left":{"title":"三点收获","body":["DAS、光子 AI、Agentic PIC 的研究对象与技术体系不同","Agentic PIC 已覆盖结构、脚本、仿真在环等不同能力层级","个人倾向优先关注需求理解与物理约束处理"]},
-         "right":{"title":"两个讨论问题","body":["是否适合优先深入 PIC 设计需求与物理约束处理？","下一阶段聚焦哪些具体技术问题和代表工作，才能明确研究贡献？"]},
+         "left":{"title":"三点收获","body":["DAS、光子 AI、Agentic PIC 的研究对象与技术体系不同","Agentic PIC 已覆盖结构、脚本、仿真在环等不同能力层级","当前候选倾向：物理引导的设计诊断与决策"]},
+         "right":{"title":"两个讨论问题","body":["相对求解器闭环与传统优化，诊断决策有何增量价值？","DAS 最终角色与系统边界如何确定？"]},
          "verdict":"当前是研究倾向，不是已确定的课题、算法或实验计划。",
-         "footer":"来源：TASK-007 正式报告与候选路线；用户确认的最新研究倾向",
-         "sources":["TASK-007 正式报告与候选路线；用户确认的最新研究倾向"],
+         "footer":"TASK-007 §6.6；用户候选倾向，尚待确认",
+         "sources":["TASK-007 §6.6；用户候选倾向"],
          "notes":"结束时用三个收获复述证据边界，不作完成系统或实验承诺。请导师和师兄师姐优先讨论切入问题是否合适，以及用哪类具体 PIC 器件或电路任务检验其价值。预留问答。"}
     ]
     assert len(slides)==20
@@ -378,7 +384,7 @@ def build():
     (ROOT/"outline.json").write_text(json.dumps(outline,ensure_ascii=False,indent=2),encoding="utf-8")
     (ROOT/"content_plan.json").write_text(json.dumps({"topic":outline["title"],"audience":"课题组师兄师姐及导师",
         "objective":"20 页 / 15–20 分钟，三方向综述后深入 Agentic PIC 并讨论个人倾向",
-        "thesis":"Agentic PIC 值得从真实物理设计任务的需求与约束处理进一步研究",
+        "thesis":"当前候选倾向是物理引导的 PIC 诊断与设计决策；新增价值与研究缺口尚待核验",
         "narrative_arc":[{"act":"框架","slides":"P1–P3"},{"act":"DAS","slides":"P4–P6"},
                          {"act":"光子 AI","slides":"P7–P9"},{"act":"Agentic PIC","slides":"P10–P16"},
                          {"act":"综合与讨论","slides":"P17–P20"}],

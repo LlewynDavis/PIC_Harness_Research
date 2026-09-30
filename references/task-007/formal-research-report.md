@@ -415,6 +415,22 @@ DAS 的外部光学、电子、封装和长期稳定性，以及光子 AI 的激
 
 ---
 
+## 6.6 当前候选主线：物理驱动的自主光子芯片设计
+
+**Physics-guided Autonomous PIC Design（物理驱动的自主光子芯片设计）**是用户于 2026-09-30 提出的当前候选倾向（`USER RESEARCH PREFERENCE`），不是最终选题，也不代表已有文献已证明其新颖性或有效性。Route A/B/C 与三方向研究材料均保留。
+
+核心问题是：如何结合器件物理与真实仿真反馈，使 Agent 做出可检验的设计诊断和下一步决策，提高自主 PIC 设计可靠性？重点由需求与约束理解转向 `Simulation Result → Physics Diagnosis → Design Decision → Next Action`（仿真结果→物理诊断→设计决策→下一步动作）；DesignSpec 仍作为支持层，失败恢复作为重要能力而非全部研究对象。
+
+拟议概念（`INFERENCE`）采用双层分工：Agent 规划、解释、诊断、选择行动及管理状态；Solver / Optimizer / 确定性验证提供数值反馈。LLM 不代替物理求解器，Agent 的达标判断需独立验证。系统载体服务于方法贡献，而非以 LLM、MCP、仿真器和网页拼接宣称创新。
+
+**最强反例**：Kharel / AutoPhotonicDesign 已展示真实求解器反馈、定量验收与迭代，不能断言领域缺少物理决策。其多物理初设需要专家修正，也不证明所有 Agent 都不能诊断。固定变量与目标下，传统优化或逆设计可能比额外的 Agent 更简单、可靠和经济。
+
+**H1–H3（UNKNOWN）**分别是：现有系统是否真的存在诊断决策缺口；物理引导是否提升可靠性；相对传统优化/逆设计是否具有额外价值。当前没有同预算对照、跨任务迁移或诊断预测验证证据，不能写成研究成果。
+
+初步验证思路仅为候选概念：基础 PIC 推理覆盖→1–2 类器件仿真在环→复杂 PIC；DAS 可作为后续复杂应用与系统级验证场景之一，最终角色需导师确认。指标、预算、任务及成败判据未确定，本轮不执行实验、不开展实验方案细化。
+
+完整十项展开、三幅概念图、五类方法比较、证据缺口与导师待确认项见[候选方向详解](candidate-research-direction.md)。正式 DOCX 在本节局部增补同源详细内容，保留用户原稿修改。
+
 # 参考文献与证据入口
 
 本报告涉及的 32 篇核心论文、官方仓库、固定提交和许可证状态统一登记于[论文与项目出处索引](/task-006-source-index.html)。三方向详细来源见[一手证据与来源](/task-006-evidence.html)，Agentic PIC 架构深挖见 TASK-005 的[技术地图](/technical-map-and-objects.html)、[能力与验证矩阵](/capability-and-verification-matrix.html)和[参考架构 V0](/reference-architecture-v0.html)。

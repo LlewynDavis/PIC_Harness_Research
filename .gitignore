@@ -37,3 +37,4 @@ secrets.*
 .playwright-cli/
 portal/site/
 tmp/task-007-docx-qa/
+tmp/task-017/

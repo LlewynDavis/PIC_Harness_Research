@@ -10,6 +10,12 @@ title: TASK-007 正式调研总览
 
 ## 5–10 分钟阅读路径
 
+### 当前候选研究方向（Candidate Research Direction）
+
+[**物理驱动的自主光子芯片设计**](task-007-candidate-direction.md)：器件物理知识＋真实仿真反馈 → 诊断 → 下一步设计决策。页面含三幅概念图、五类方法比较及 H1–H3。状态为用户当前倾向与研究推断，尚待证据核验和导师确认；DAS、Photonic AI 原有研究均保留。
+
+> 候选方向更新：2026-09-30；未新增论文核验，不将此日期当作新的文献证据截止日。
+
 1. [正式技术调研报告](task-007-report.md)：六章正文，按原理、路线、代表工作、缺口和候选路线组织。
 2. [TASK-016 论文证据增强](task-016-evidence/README.md)：七篇代表工作原图、实验条件、数据与证据边界。
 3. [Agentic PIC 三项目比较](task-016-evidence/agentic-pic-comparison.md)：输入、反馈和验收层级的逐项对照。

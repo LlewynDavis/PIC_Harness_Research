@@ -1,5 +1,17 @@
 # 当前任务与任务记录
 
+## TASK-017：候选物理驱动自主 PIC 方向三端同步
+
+- 状态：`REVIEW_READY`（2026-09-30）；用户授权同步附件候选主线，明确保留现有 DOCX 用户修改。
+- 起始提交：`de0121904a3922836692d8448c22932a95dc085a`，`main`。已有 DOCX 修改和两个未跟踪用户 PDF；不覆盖 PDF。
+- 范围：正式报告候选路线章节、现有用户 DOCX 局部增补、门户候选方向入口与图示、当前 20 页 PPT P18–P19 及 P20 必要一致性修正；相关来源、编辑脚本、核查及治理记录。
+- 边界：物理驱动的自主光子芯片设计（Physics-guided Autonomous PIC Design）仅为 `USER RESEARCH PREFERENCE / INFERENCE`；H1–H3 未验证。保留三方向、既有研究证据和历史任务。TASK-016 仍待审查，不自行验收。
+- 禁止：新调研、实现、仿真、benchmark、实验方案细化、最终定题、上传飞书及远程发布。Jev 继续 `DEFERRED`（用户本轮明确确认）。
+- 验证：原 DOCX 正文/表格/图像保留，三端术语一致，论文定位与推断边界检查，DOCX/PPT 渲染审阅，门户严格构建及桌面检查，`git diff --check`，提交后等待审查。
+- 完成记录：保留 282 个原始正文 XML 块、13 张表和 10 个媒体，当前 DOCX 渲染 33 页；20 页 PPT 局部更新及复查、门户 3 图/18 链接检查通过。QA 与未执行事项见 `references/task-017-candidate-direction/qa-and-handoff.md`；完成 SHA 由交接答复记录，不自行验收。
+
+---
+
 ## TASK-016：调研报告证据可视化增强
 
 - 状态：`REVIEW_READY`（2026-09-29，DOCX 与网页端增补已完成，待 GPT 只读审查）；首轮交付 commit `e3a3f8316c0b18d7b2f890ba6f921fdb41a0f9ef` 已完成，用户随后要求将同样的证据增强应用于现有飞书上传版 DOCX 和 Research Portal 网页端。不自行宣布验收。

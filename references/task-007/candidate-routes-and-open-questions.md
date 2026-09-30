@@ -1,5 +1,7 @@
 # 候选研究路线与待讨论问题
 
+> 2026-09-30 当前候选倾向：**物理驱动的自主光子芯片设计（Physics-guided Autonomous PIC Design）**。这是 Agentic PIC 内部进一步收敛的 `USER RESEARCH PREFERENCE / INFERENCE`，不是三方向的淘汰或最终选题。重点为仿真后诊断与动作决策；[完整概念、反例与 UNKNOWN](candidate-research-direction.md)。以下 A/B/C 保留作为既有候选分析。
+
 本页给出 TASK-007 基于公开证据形成的 `INFERENCE（推论）`。三条路线均是供导师讨论的研究候选，不是已经确定的方向；本任务不评价课题组资源、不设计实验，也不设定成败阈值。
 
 ## Route A｜证据优先的 Agentic PIC Harness 方法研究

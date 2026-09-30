@@ -24,6 +24,7 @@ def main():
 
     report = REPORT.read_text(encoding="utf-8")
     report = report.replace("../task-016-evidence/", "task-016-evidence/")
+    report = report.replace("(candidate-research-direction.md", "(task-007-candidate-direction.md")
     preface = (
         "---\ntitle: 正式技术调研报告\n---\n\n"
         "<div class=\"sot-note\">事实源（Source of Truth）："
@@ -31,6 +32,22 @@ def main():
         "本页由 <code>scripts/sync_task016_portal.py</code> 生成，只调整站内链接。</div>\n\n"
     )
     (PORTAL / "task-007-report.md").write_text(preface + report, encoding="utf-8")
+    direction = (REPORT.parent / "candidate-research-direction.md").read_text(encoding="utf-8")
+    direction = direction.replace("../task-016-evidence/", "task-016-evidence/")
+    direction = direction.replace("(candidate-routes-and-open-questions.md", "(task-007-routes.md")
+    direction = direction.replace("(formal-research-report.md", "(task-007-report.md")
+    direction = direction.replace('#第六章-候选研究路线与后续讨论', '#_4')
+    (PORTAL / "task-007-candidate-direction.md").write_text(
+        '<div class="sot-note">事实源：references/task-007/candidate-research-direction.md；候选方向，不是最终定题。</div>\n\n' + direction,
+        encoding="utf-8",
+    )
+    routes = (REPORT.parent / "candidate-routes-and-open-questions.md").read_text(encoding="utf-8")
+    routes = routes.replace("(candidate-research-direction.md", "(task-007-candidate-direction.md")
+    routes = re.sub(r"  $", "<br>", routes, flags=re.MULTILINE)
+    (PORTAL / "task-007-routes.md").write_text(
+        '<div class="sot-note">事实源：references/task-007/candidate-routes-and-open-questions.md；本页为链接适配后的阅读副本。</div>\n\n' + routes,
+        encoding="utf-8",
+    )
 
     names = (
         "README.md",

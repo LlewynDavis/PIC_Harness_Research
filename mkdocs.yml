@@ -65,6 +65,7 @@ nav:
       - 首页: index.md
       - 交付物总览: task-007-overview.md
       - 正式技术调研报告: task-007-report.md
+      - 候选研究方向（Candidate Research Direction）: task-007-candidate-direction.md
       - 证据与来源:
           - TASK-016 论文证据增强: task-016-evidence/README.md
           - Agentic PIC 三项目比较: task-016-evidence/agentic-pic-comparison.md

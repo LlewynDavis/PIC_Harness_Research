@@ -1,5 +1,13 @@
 # 研究与工程决策
 
+## 2026-09-30 候选方向同步边界（TASK-017）
+
+- 用户当前倾向为物理驱动的自主光子芯片设计（Physics-guided Autonomous PIC Design），重点是仿真后诊断与下一步决策。仅作为 `USER RESEARCH PREFERENCE / INFERENCE` 写入三端，H1–H3 均保留 UNKNOWN；不作为已确定课题或已证明创新。
+- 原有三方向和 A/B/C 候选路线保留。DAS 暂列后续复杂场景之一，最终角色需导师确认；Agent 不替代物理求解与确定性验证。
+- 用户要求保留当前 DOCX 编辑；采用备份后局部插入，不重新从 Markdown 构建报告。两个已有用户 PDF 不覆盖。
+- Jev 用户本轮确认继续 `DEFERRED`；本授权仅更新材料，不启动新调研、实验、实现或远程发布。历史验收状态不改写。
+
+
 ## DEC-013：项目论文固定对接独立本地 Obsidian 知识库
 
 - 状态：`ACCEPTED`
