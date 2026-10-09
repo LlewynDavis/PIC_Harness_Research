@@ -1,6 +1,8 @@
 # Harness 课堂汇报｜项目重点版
 制作日期：2026-10-09。当前交付为 Harness_课堂汇报_项目重点版.pptx 与同名 PDF。
 
+完整口头讲稿另交付为 Harness_课堂汇报_完整讲稿.docx，4页、对应8张PPT。源文本为 spoken-script.md，运行 bundled Python 的 build_spoken_docx.py 可重建；speaker-notes.md 是较精简的备注稿。
+
 - 8页、16:9、无附录。P1–P2课题，P3–P7现成项目，P8总结。
 - 计划55/55/60/50/65/65/70/40秒，共7分40秒；尚未实际试讲。
 - 5页项目引用5个原文 Figure：PhIDO Fig.1/5、PICopilot Fig.2、Kharel Fig.1(b)/2(a)。P4选择模型子图及原始图例，不拼成虚构实验。

@@ -10,6 +10,8 @@
 - 验证：结构、来源与假设标注、七页备注与时间分配、构建 QA、PowerPoint 逐页渲染视觉检查、文件路径及 `git diff --check`。讲述时间为规划，未经实际试讲。
 - 完成记录：交付独立七页 PPTX/PDF、六幅解释性 SVG、原生论文比较表及七页备注；计划 450 秒。构建为 0 溢出/重叠/占位/设计错误，P3 有一条空白比例几何提示，视觉检查后保留。PowerPoint 导出七页并逐页与独立视觉审查；修正 P3 单字换行、行分隔和 P5 输入框间距。详见新工作区 `qa-summary.md`，完成 commit SHA 由答复给出。
 - 修订交付：当前八页项目重点版，P1–P2课题、P3–P7项目原图、P8总结；时间110/310/40秒，共460秒。Zotero启动后API/connector均HTTP200，三个附件URL及PDF哈希与TASK-016核读版本一致。引用PhIDO Fig.1/5、PICopilot Fig.2、Kharel Fig.1(b)/2(a)，原图说明与数据边界见索引和备注。构建QA零溢出/重叠/几何/视觉/设计错误，PowerPoint导出八页并完成主审与独立视觉检查。仅本地交付，未实际试讲或远程发布。
+- Word 追加授权：用户于 2026-10-09 要求将本对话完整口头文本稿交付为 Word。允许新增讲稿源 Markdown、DOCX 与最小构建脚本；仅排版，不改变研究事实。起点 `40591a6f095388539f1756b1bf2f704b1d4fe75f`，渲染并检查后交付。
+- Word 交付：`Harness_课堂汇报_完整讲稿.docx`，四页、八段对应PPT内容、逐页建议用时，总规划460秒。61个正文段落与源Markdown逐段一致；Word导出四页，Poppler渲染并逐页检查。内置render_docx因本机缺soffice失败，采用Word COM替代；未实际试讲。源为`spoken-script.md`，构建脚本为`build_spoken_docx.py`。
 
 ---
 
