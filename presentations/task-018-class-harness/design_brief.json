@@ -1,0 +1,30 @@
+{
+  "topic": "Harness 课堂课题方向汇报",
+  "content_maturity": "technical/educational",
+  "audience_posture": "students/learners",
+  "format_promise": "白底、少修饰、图示解释机制、可与 DAS 拼接",
+  "anti_format": [
+    "独立封面/目录/附录",
+    "通用科技插图",
+    "捏造实验曲线",
+    "重复三卡片"
+  ],
+  "canvas_and_grid": {
+    "aspect": "16:9",
+    "margin_x_in": 0.4,
+    "footer_reserve_in": 0.4
+  },
+  "structure_strategy": {
+    "primary_scaffold": "核心判断与一张主要图示",
+    "allowed_variations": [
+      "flow",
+      "table"
+    ],
+    "container_policy": "仅用于实际模块、状态与对照字段"
+  },
+  "design_dna": "custom classroom research explanation",
+  "title_page_concept": {
+    "chosen_archetype": "content opener for concatenation",
+    "dominant_element": "应用到设计循环；不设置独立封面"
+  }
+}

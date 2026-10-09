@@ -1,0 +1,179 @@
+{
+  "title": "面向光子芯片自主设计的 Agent Harness",
+  "subtitle": "课堂汇报｜Harness 模块｜初版",
+  "deck_style": {
+    "font_pair": "system_clean_v1",
+    "visual_density": "medium",
+    "emoji_mode": "none",
+    "research_visual_mode": false,
+    "header_mode": "stack",
+    "footer_mode": "source-line",
+    "footer_page_numbers": true
+  },
+  "compliance": {
+    "auto_image_sources": false,
+    "require_attribution": false
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "process",
+      "title": "从应用需求到芯片设计：为什么需要 Harness？",
+      "subtitle": "课题方向：面向光子芯片自主设计的 Agent Harness",
+      "notes": "计划用时：45 秒。\n\n前面同学介绍的是 DAS 系统的组成和需求。我的部分关注这些需求进入芯片设计流程之后，如何借助 AI 组织设计、仿真和修改。以一个器件为例，工程师先选择结构和参数，运行仿真，分析结果，再决定怎么修改。这一循环需要反复执行。我的课题方向是研究 Agent Harness，让模型能够通过专业工具获得反馈，并组织后续动作。这里汇报的是候选方向。",
+      "footer": "来源：候选方向材料 §2–6；拟议概念，非已实现系统｜1/7",
+      "sources": [
+        "来源：候选方向材料 §2–6；拟议概念，非已实现系统"
+      ],
+      "assets": {
+        "diagram": "assets/p01-design-loop.svg"
+      }
+    },
+    {
+      "id": "s2",
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "process",
+      "title": "Harness 如何连接 AI 与专业工具？",
+      "subtitle": "模型提出方案，专业工具与评价器提供可核验依据",
+      "notes": "计划用时：60 秒。\n\nHarness 可以理解为围绕智能体运行的执行框架。它接收设计目标与约束，把设计动作交给 CAD 或仿真工具，同时保存当前设计版本和执行过程。Agent 负责规划、解释和动作选择；仿真器返回数值结果，评价器计算指标并检查条件。评价反馈再进入下一轮。模型的解释不能直接作为物理正确性的依据，数值结果也要连同模型和仿真设置一起检查。",
+      "footer": "来源：候选方向材料 §2–6；拟议概念，非已实现系统｜2/7",
+      "sources": [
+        "来源：候选方向材料 §2–6；拟议概念，非已实现系统"
+      ],
+      "assets": {
+        "diagram": "assets/p02-harness-roles.svg"
+      }
+    },
+    {
+      "id": "s3",
+      "type": "content",
+      "variant": "table",
+      "slide_intent": "evidence",
+      "title": "已有 PIC Agent 做到了哪一步？",
+      "subtitle": "输出、反馈来源和成功定义必须一起看",
+      "notes": "计划用时：65 秒。\n\n已有工作证明了不同环节的可行性。PhIDO 将自然语言转成结构化设计和版图，主要基准评价结构有效性。PICopilot 面向脚本生成，内部反馈主要是静态代码和自定义检查，外部基准执行脚本并评分。Kharel 的工作已经有显式规则、真实数值求解器、定量验收和迭代，所以不能认为已有方法都只会写代码。但其多物理初设曾需要专家纠正。三项工作的成功定义不同，不能拿单一成功率排序。\n\n来源：Sharma et al., PhIDO, DOI:10.1063/5.0300741；Jiang et al., PICopilot, DOI:10.48550/arXiv.2608.01791；Kharel et al., Autonomous agentic design for photonics, DOI:10.48550/arXiv.2606.00915。论文能力与结果来自既有核读记录，不是本项目复现。",
+      "sources": [
+        "依据：PhIDO Fig.1/Table II；PICopilot §3.6/4；Kharel Fig.1/Table S2（详细 DOI 见备注）"
+      ],
+      "headers": [
+        "工作",
+        "主要输出",
+        "反馈来源",
+        "成功 / 验证边界"
+      ],
+      "rows": [
+        [
+          "PhIDO",
+          "结构化设计 / GDS",
+          "Schema、DRC；部分 SAX",
+          "主基准：结构有效\n不能推出光学性能达标"
+        ],
+        [
+          "PICopilot",
+          "PIC 设计脚本",
+          "内部静态检查\n外部执行评分",
+          "脚本功能正确\n内部非物理仿真闭环"
+        ],
+        [
+          "Kharel 2026",
+          "设计与迭代日志",
+          "规则 + 数值仿真\n定量验收",
+          "仿真闭环已展示\n初设与评价依赖专家"
+        ]
+      ],
+      "column_weights": [
+        0.15,
+        0.22,
+        0.26,
+        0.37
+      ],
+      "header_style": {
+        "fontSize": 18
+      },
+      "row_styles": [
+        {
+          "fontSize": 16,
+          "fill": "FFFFFF",
+          "border_color": "D1DDE3"
+        },
+        {
+          "fontSize": 16,
+          "fill": "F0F5F6",
+          "border_color": "D1DDE3"
+        },
+        {
+          "fontSize": 16,
+          "fill": "FFFFFF",
+          "border_color": "D1DDE3"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "process",
+      "title": "我的研究问题：仿真之后如何决定下一步？",
+      "subtitle": "关注仿真结果 → 物理诊断 → 设计决策",
+      "notes": "计划用时：60 秒。\n\n我的兴趣集中在仿真之后。结果不理想时，智能体能否定位性能瓶颈，提出原因假设，再选择修改参数、改变策略或补充验证？诊断需要形成可检验的预测，例如某个参数的变化应影响哪类指标。下一轮结果才能检验这个解释是否有用。这是当前拟研究的问题；既有仿真闭环是否已经具备足够的诊断能力，以及该方法是否有额外价值，都还需要核验。",
+      "footer": "来源：候选方向材料 §2–6；拟议概念，非已实现系统｜4/7",
+      "sources": [
+        "来源：候选方向材料 §2–6；拟议概念，非已实现系统"
+      ],
+      "assets": {
+        "diagram": "assets/p04-research-focus.svg"
+      }
+    },
+    {
+      "id": "s5",
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "process",
+      "title": "拟议方法：建立可验证的设计闭环",
+      "subtitle": "物理反馈驱动的诊断与决策｜拟议架构，尚未实现",
+      "notes": "计划用时：90 秒。\n\n拟议闭环从明确目标、变量与约束开始。生成候选结构后先检查几何和工艺条件，再运行数值仿真，并保存材料、模型和求解条件。Agent 根据反馈与器件知识提出诊断假设，选择下一步动作。动作可以是修改参数、做补充扫描，或回退到上一个设计。确定性评价器重新检查指标与约束；满足条件时输出，不满足时继续或转人工。研究重点在图中的结果诊断与动作选择，而 Harness 保存执行状态和证据，使整个过程可追溯。图是研究设想，没有表示我们已经实现这一系统。",
+      "footer": "来源：候选方向材料 §2–6；拟议概念，非已实现系统｜5/7",
+      "sources": [
+        "来源：候选方向材料 §2–6；拟议概念，非已实现系统"
+      ],
+      "assets": {
+        "diagram": "assets/p05-proposed-loop.svg"
+      }
+    },
+    {
+      "id": "s6",
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "process",
+      "title": "MMI 示例：分光不均衡时怎么办？",
+      "subtitle": "结构与诊断过程示意｜未运行实验，无性能数据",
+      "notes": "计划用时：75 秒。\n\n用一个一进二出 MMI 分光器说明。图中只是简化结构，不是具体论文器件或实验数据。假设仿真返回两路输出功率不均衡，首先要确认输入、模型和求解设置是否适用。随后提出可检验的候选原因，例如某些几何参数的变化是否会影响均衡。通过参数扫描或复算核对趋势，证据支持时才进行修改，再同时检查均衡和损耗。如果新结果不支持假设，就修正诊断，而不是继续沿着错误解释修改。这说明一次物理诊断应如何落到工具动作和后续验证。",
+      "footer": "来源：候选方向材料 §4、§6；MMI 简化结构与假设情境，非论文原图或实验结果｜6/7",
+      "sources": [
+        "来源：候选方向材料 §4、§6；MMI 简化结构与假设情境，非论文原图或实验结果"
+      ],
+      "assets": {
+        "diagram": "assets/p06-mmi-example.svg"
+      }
+    },
+    {
+      "id": "s7",
+      "type": "content",
+      "variant": "flow",
+      "slide_intent": "process",
+      "title": "如何验证价值，并对接 DAS？",
+      "subtitle": "验证思路为候选；任务、预算和判据待后续明确",
+      "notes": "计划用时：55 秒。\n\n方法的价值需要比较来证明。未来拟在相同任务、工具和预算下，对比普通工具调用 Agent、物理引导 Agent，以及适用的数值优化方法。关注三类问题：设计是否达标，执行花了多少成本，诊断和动作是否可靠。先在基础器件上建立证据，再讨论复杂 PIC。DAS 可以作为后续复杂应用场景之一，与同学的系统方向形成接口。具体任务和指标尚未确定；目前没有方法优越性的实验证据。",
+      "footer": "来源：候选方向材料 §2–6；拟议概念，非已实现系统｜7/7",
+      "sources": [
+        "来源：候选方向材料 §2–6；拟议概念，非已实现系统"
+      ],
+      "assets": {
+        "diagram": "assets/p07-evaluation-route.svg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "topic": "Agent Harness",
+  "audience": "课堂同学与教师",
+  "objective": "在7–8分钟内解释课题问题、方法、验证与DAS关系",
+  "thesis": "物理反馈驱动的诊断与决策是当前候选研究主线",
+  "narrative_arc": [
+    {
+      "act": "problem",
+      "slides": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "act": "evidence and question",
+      "slides": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "act": "method and example",
+      "slides": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "act": "evaluation",
+      "slides": [
+        "s7"
+      ]
+    }
+  ],
+  "slide_plan": [
+    {
+      "slide_id": "s1",
+      "role": "mechanism",
+      "message": "课题方向：面向光子芯片自主设计的 Agent Harness",
+      "variant": "flow",
+      "visual_strategy": "vector-diagram",
+      "planned_seconds": 45
+    },
+    {
+      "slide_id": "s2",
+      "role": "mechanism",
+      "message": "模型提出方案，专业工具与评价器提供可核验依据",
+      "variant": "flow",
+      "visual_strategy": "vector-diagram",
+      "planned_seconds": 60
+    },
+    {
+      "slide_id": "s3",
+      "role": "evidence",
+      "message": "输出、反馈来源和成功定义必须一起看",
+      "variant": "table",
+      "visual_strategy": "table",
+      "planned_seconds": 65
+    },
+    {
+      "slide_id": "s4",
+      "role": "mechanism",
+      "message": "关注仿真结果 → 物理诊断 → 设计决策",
+      "variant": "flow",
+      "visual_strategy": "vector-diagram",
+      "planned_seconds": 60
+    },
+    {
+      "slide_id": "s5",
+      "role": "mechanism",
+      "message": "物理反馈驱动的诊断与决策｜拟议架构，尚未实现",
+      "variant": "flow",
+      "visual_strategy": "vector-diagram",
+      "planned_seconds": 90
+    },
+    {
+      "slide_id": "s6",
+      "role": "mechanism",
+      "message": "结构与诊断过程示意｜未运行实验，无性能数据",
+      "variant": "flow",
+      "visual_strategy": "vector-diagram",
+      "planned_seconds": 75
+    },
+    {
+      "slide_id": "s7",
+      "role": "mechanism",
+      "message": "验证思路为候选；任务、预算和判据待后续明确",
+      "variant": "flow",
+      "visual_strategy": "vector-diagram",
+      "planned_seconds": 55
+    }
+  ]
+}

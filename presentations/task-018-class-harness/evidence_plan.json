@@ -1,0 +1,83 @@
+{
+  "sources": [
+    "../../references/task-007/candidate-research-direction.md",
+    "../../references/task-016-evidence/agentic-pic-comparison.md",
+    "../../references/task-016-evidence/evidence-log.md"
+  ],
+  "claims": [
+    {
+      "slide": "s3",
+      "level": "FACT / AUTHOR CLAIM",
+      "scope": "既有论文方法与验证层级",
+      "locator": "三项目比较与原文定位"
+    },
+    {
+      "slides": [
+        "s1",
+        "s2",
+        "s4",
+        "s5",
+        "s7"
+      ],
+      "level": "USER RESEARCH PREFERENCE / INFERENCE",
+      "scope": "拟议概念与候选评价"
+    },
+    {
+      "slide": "s6",
+      "level": "INFERENCE",
+      "scope": "MMI 结构与假设观察，仅示意，未运行实验"
+    }
+  ],
+  "unknown": [
+    "相对已有仿真闭环的创新性",
+    "相同预算下的净增益",
+    "诊断预测与结果一致性",
+    "跨器件泛化"
+  ],
+  "items": [
+    {
+      "id": "ev1",
+      "claim": "PhIDO 主基准评价结构有效性",
+      "source_url": "https://doi.org/10.1063/5.0300741",
+      "source_note": "Fig.1/Table II；既有核读记录",
+      "used_on_slides": [
+        "s3"
+      ],
+      "visual_use": "table"
+    },
+    {
+      "id": "ev2",
+      "claim": "PICopilot 内部静态检查与外部执行评分不同",
+      "source_url": "https://doi.org/10.48550/arXiv.2608.01791",
+      "source_note": "§3.6/4；既有核读记录",
+      "used_on_slides": [
+        "s3"
+      ],
+      "visual_use": "table"
+    },
+    {
+      "id": "ev3",
+      "claim": "Kharel 展示规则、求解器、定量验收闭环，初设曾需专家修正",
+      "source_url": "https://doi.org/10.48550/arXiv.2606.00915",
+      "source_note": "Fig.1/Table S2",
+      "used_on_slides": [
+        "s3"
+      ],
+      "visual_use": "table"
+    },
+    {
+      "id": "ev4",
+      "claim": "拟议物理诊断与决策主线及MMI示意",
+      "source_note": "references/task-007/candidate-research-direction.md §2–6；未验证设想",
+      "used_on_slides": [
+        "s1",
+        "s2",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "visual_use": "footer-source"
+    }
+  ]
+}
