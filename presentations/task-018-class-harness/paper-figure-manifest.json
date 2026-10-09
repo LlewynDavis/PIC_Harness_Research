@@ -1,0 +1,58 @@
+[
+  {
+    "file": "assets/papers/phido-fig5-panel.png",
+    "attachment_key": "KGSYYKEY",
+    "pdf_sha256": "f7063ef2dd4c1f37267684e809276897577b5a00f21da605ce52c3422cc17cd2",
+    "pdf_page": 8,
+    "crop_pt": [
+      410,
+      79,
+      540,
+      185
+    ],
+    "locator": "Fig.5, Gemini-2.5-pro/GPT-4o panel",
+    "edit": "crop only; original axes/data/legend unchanged"
+  },
+  {
+    "file": "assets/papers/phido-fig5-legend.png",
+    "attachment_key": "KGSYYKEY",
+    "pdf_sha256": "f7063ef2dd4c1f37267684e809276897577b5a00f21da605ce52c3422cc17cd2",
+    "pdf_page": 8,
+    "crop_pt": [
+      182,
+      287,
+      415,
+      311
+    ],
+    "locator": "Fig.5, original outcome-code legend",
+    "edit": "crop only; original axes/data/legend unchanged"
+  },
+  {
+    "file": "assets/papers/kharel-fig1b.png",
+    "attachment_key": "CLTWB7PW",
+    "pdf_sha256": "daef5a9de80fc3dd72286ccd63e8a36362dba31328549ba24dedb30fdd2ab683",
+    "pdf_page": 3,
+    "crop_pt": [
+      290,
+      313,
+      548,
+      452
+    ],
+    "locator": "Fig.1(b), original Agent loop",
+    "edit": "crop only; original axes/data/legend unchanged"
+  },
+  {
+    "file": "assets/papers/kharel-fig2a.png",
+    "attachment_key": "CLTWB7PW",
+    "pdf_sha256": "daef5a9de80fc3dd72286ccd63e8a36362dba31328549ba24dedb30fdd2ab683",
+    "pdf_page": 5,
+    "crop_pt": [
+      78,
+      75,
+      551,
+      309
+    ],
+    "locator": "Fig.2(a), original bend-loss iteration",
+    "edit": "crop only; original axes/data/legend unchanged"
+  }
+]

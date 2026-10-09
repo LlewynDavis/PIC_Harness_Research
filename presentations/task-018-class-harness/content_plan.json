@@ -1,93 +1,97 @@
 {
-  "topic": "Agent Harness",
+  "topic": "Harness 课堂项目重点版",
   "audience": "课堂同学与教师",
-  "objective": "在7–8分钟内解释课题问题、方法、验证与DAS关系",
-  "thesis": "物理反馈驱动的诊断与决策是当前候选研究主线",
+  "objective": "两页课题、五页现成项目、一页总结，计划460秒",
+  "thesis": "从原文架构与结果理解已有能力，再定位物理诊断与决策问题",
   "narrative_arc": [
     {
-      "act": "problem",
+      "act": "topic",
       "slides": [
         "s1",
         "s2"
       ]
     },
     {
-      "act": "evidence and question",
+      "act": "existing projects",
       "slides": [
         "s3",
-        "s4"
-      ]
-    },
-    {
-      "act": "method and example",
-      "slides": [
+        "s4",
         "s5",
-        "s6"
+        "s6",
+        "s7"
       ]
     },
     {
-      "act": "evaluation",
+      "act": "summary",
       "slides": [
-        "s7"
+        "s8"
       ]
     }
   ],
   "slide_plan": [
     {
       "slide_id": "s1",
-      "role": "mechanism",
-      "message": "课题方向：面向光子芯片自主设计的 Agent Harness",
+      "role": "context",
+      "message": "Harness 组织模型、专业工具、状态与验证；与 DAS 需求模块衔接",
       "variant": "flow",
-      "visual_strategy": "vector-diagram",
-      "planned_seconds": 45
+      "visual_strategy": "concept-diagram",
+      "planned_seconds": 55
     },
     {
       "slide_id": "s2",
-      "role": "mechanism",
-      "message": "模型提出方案，专业工具与评价器提供可核验依据",
+      "role": "context",
+      "message": "拟研究方向：诊断形成可检验预测，动作由后续结果验证",
       "variant": "flow",
-      "visual_strategy": "vector-diagram",
-      "planned_seconds": 60
+      "visual_strategy": "concept-diagram",
+      "planned_seconds": 55
     },
     {
       "slide_id": "s3",
       "role": "evidence",
-      "message": "输出、反馈来源和成功定义必须一起看",
-      "variant": "table",
-      "visual_strategy": "table",
-      "planned_seconds": 65
-    },
-    {
-      "slide_id": "s4",
-      "role": "mechanism",
-      "message": "关注仿真结果 → 物理诊断 → 设计决策",
+      "message": "原文 Fig. 1｜Interpreter → Designer → Layout → Circuit Verification",
       "variant": "flow",
-      "visual_strategy": "vector-diagram",
+      "visual_strategy": "original-paper-figure",
       "planned_seconds": 60
     },
     {
-      "slide_id": "s5",
-      "role": "mechanism",
-      "message": "物理反馈驱动的诊断与决策｜拟议架构，尚未实现",
+      "slide_id": "s4",
+      "role": "evidence",
+      "message": "原文 Fig. 5 局部｜用复杂度与失败阶段理解 benchmark",
       "variant": "flow",
-      "visual_strategy": "vector-diagram",
-      "planned_seconds": 90
+      "visual_strategy": "original-paper-figure",
+      "planned_seconds": 50
+    },
+    {
+      "slide_id": "s5",
+      "role": "evidence",
+      "message": "原文 Fig. 2｜脚本生成反馈与 benchmark 执行评分分开理解",
+      "variant": "flow",
+      "visual_strategy": "original-paper-figure",
+      "planned_seconds": 65
     },
     {
       "slide_id": "s6",
-      "role": "mechanism",
-      "message": "结构与诊断过程示意｜未运行实验，无性能数据",
+      "role": "evidence",
+      "message": "原文 Fig. 1(b)｜目标、显式规则、求解器与验收条件共同作用",
       "variant": "flow",
-      "visual_strategy": "vector-diagram",
-      "planned_seconds": 75
+      "visual_strategy": "original-paper-figure",
+      "planned_seconds": 65
     },
     {
       "slide_id": "s7",
-      "role": "mechanism",
-      "message": "验证思路为候选；任务、预算和判据待后续明确",
+      "role": "evidence",
+      "message": "原文 Fig. 2(a)｜数值仿真案例，不是流片测量结果",
       "variant": "flow",
-      "visual_strategy": "vector-diagram",
-      "planned_seconds": 55
+      "visual_strategy": "original-paper-figure",
+      "planned_seconds": 70
+    },
+    {
+      "slide_id": "s8",
+      "role": "context",
+      "message": "从结构生成、脚本生成走向可检验的设计诊断与决策",
+      "variant": "flow",
+      "visual_strategy": "concept-diagram",
+      "planned_seconds": 40
     }
   ]
 }

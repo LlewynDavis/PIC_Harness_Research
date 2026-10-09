@@ -1,11 +1,12 @@
-# 初版验证与交接
+# 项目重点版验证与交接
 
-日期：2026-10-09。起始 commit：`7aee380b729505d6dbac471e954093bdea6ac0cc`。完成 commit SHA 在交付答复中记录。
+日期：2026-10-09。修订起点：4987e8907befd06b4875537662bf3b28a53de983；完成SHA由交付答复记录。原7页初版保留。
 
-- PPTX 与 PDF 均为 7 页，16:9；PPT 内 7 页备注。计划时间 45/60/65/60/90/75/55 秒，共 450 秒。
-- 所有图示路径与来源均存在；六幅图为源 SVG，P3 为原生可编辑表格。可编辑程度见 README。
-- presentation-skill 构建 QA：0 overflow、0 overlap、0 placeholder、0 geometry error、0 visual warning、0 design error/warning；P3 有 1 条空白比例 warning（0.5705，略超过 0.55），表格清晰且不需要增加内容，视觉检查后保留。首张非 title 的 preflight 提示与后续拼接设计一致，保留内容型开场。
-- PowerPoint COM 导出 PDF 与 1600×900 PNG，实际查看七页联系图及关键页全尺寸；独立只读视觉审查覆盖全部七页。P3 修正单字换行并增加表格行分隔，P5 缩短输入框文字，修正页重新导出与检查。
-- ZIP 完整性、页数、讲稿时间、资源路径检查通过；提交前运行 `git diff --check`。
-- 未实际试讲、未在课堂投影设备上测试、未与同学 DAS PPT 拼接。方法尚为候选设想，MMI 无实验数据；本轮没有新增核读、实验、仿真或 Agent 实现。
-- 修改范围为本工作区及 `docs/TASK.md`、`docs/CURRENT_STATE.md`。原有用户 DOCX 修改和三个未跟踪 PDF 不纳入提交。
+- 8页PPTX/PDF、8页备注；前两页课题，五页现成项目，最后一页总结。计划460秒，未试讲。
+- 原图来自三篇既有论文。Zotero API先超时，用户启动后重连成功，版本10.0.5，API/connector均HTTP200；三项file-url及本地附件SHA已核对。未修改Zotero条目或PDF。
+- 论文原图5个Figure引用覆盖P3–P7；PhIDO/PICopilot复用已有图，PhIDO局部/Kharel两图从对应PDF裁出，原始坐标、图例与含义保持。原图完整题名/DOI/页码见来源索引，数据条件在页面及备注。
+- 构建QA：0溢出、0重叠、0占位、0几何错误/警告、0视觉警告、0设计错误/警告。首张非title的preflight提示与后续拼接的内容型开场一致，保留。
+- PowerPoint导出8页PDF与1600×900PNG。主审实际查看全部联系图及关键页；独立只读视觉审查实际查看全部8页，确认关键结构/坐标/图例/引用完整，P8为总结；仅P5文字较靠右，缩短为中文后重新导出并检查。
+- ZIP、PPT/PDF/备注页数、源图路径、来源与计划时间检查；提交前运行git diff --check。标题/脚注/讲稿为可编辑对象，原图与图旁注释位图的布局由源脚本编辑，不宣称全部为原生图形。
+- 未试讲、未与同学DAS模块实际拼接、未在课堂投影设备验证。未独立复现论文结果或运行Agent/仿真。PICopilot/Kharel公开图片再分发许可未核实，未远程发布或推送。
+- 修改范围为当前PPT工作区及docs/TASK.md、docs/CURRENT_STATE.md。用户原有DOCX修改及三个未跟踪PDF未纳入。
