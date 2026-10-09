@@ -1,0 +1,2 @@
+PASS: native Chinese annotation edited; original figure moved; both persisted after save/reopen.
+PASS: delivered deck unchanged.

@@ -8,7 +8,9 @@
     "palette_key": null,
     "output_pptx": "build/agent-harness.pptx",
     "qa_dir": "build/qa",
-    "qa_report": "build/qa/report.json"
+    "qa_report": "build/qa/report.json",
+    "renderer_extension": "build_native.cjs",
+    "rebuild_command": "rebuild.ps1"
   },
   "layout_rules": {
     "alignment_first": true,

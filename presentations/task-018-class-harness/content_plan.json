@@ -34,7 +34,7 @@
       "role": "context",
       "message": "Harness 组织模型、专业工具、状态与验证；与 DAS 需求模块衔接",
       "variant": "flow",
-      "visual_strategy": "concept-diagram",
+      "visual_strategy": "native-shapes",
       "planned_seconds": 55
     },
     {
@@ -42,7 +42,7 @@
       "role": "context",
       "message": "拟研究方向：诊断形成可检验预测，动作由后续结果验证",
       "variant": "flow",
-      "visual_strategy": "concept-diagram",
+      "visual_strategy": "native-shapes",
       "planned_seconds": 55
     },
     {
@@ -50,7 +50,7 @@
       "role": "evidence",
       "message": "原文 Fig. 1｜Interpreter → Designer → Layout → Circuit Verification",
       "variant": "flow",
-      "visual_strategy": "original-paper-figure",
+      "visual_strategy": "independent-paper-image-and-native-text",
       "planned_seconds": 60
     },
     {
@@ -58,7 +58,7 @@
       "role": "evidence",
       "message": "原文 Fig. 5 局部｜用复杂度与失败阶段理解 benchmark",
       "variant": "flow",
-      "visual_strategy": "original-paper-figure",
+      "visual_strategy": "independent-paper-image-and-native-text",
       "planned_seconds": 50
     },
     {
@@ -66,7 +66,7 @@
       "role": "evidence",
       "message": "原文 Fig. 2｜脚本生成反馈与 benchmark 执行评分分开理解",
       "variant": "flow",
-      "visual_strategy": "original-paper-figure",
+      "visual_strategy": "independent-paper-image-and-native-text",
       "planned_seconds": 65
     },
     {
@@ -74,7 +74,7 @@
       "role": "evidence",
       "message": "原文 Fig. 1(b)｜目标、显式规则、求解器与验收条件共同作用",
       "variant": "flow",
-      "visual_strategy": "original-paper-figure",
+      "visual_strategy": "independent-paper-image-and-native-text",
       "planned_seconds": 65
     },
     {
@@ -82,7 +82,7 @@
       "role": "evidence",
       "message": "原文 Fig. 2(a)｜数值仿真案例，不是流片测量结果",
       "variant": "flow",
-      "visual_strategy": "original-paper-figure",
+      "visual_strategy": "independent-paper-image-and-native-text",
       "planned_seconds": 70
     },
     {
@@ -90,7 +90,7 @@
       "role": "context",
       "message": "从结构生成、脚本生成走向可检验的设计诊断与决策",
       "variant": "flow",
-      "visual_strategy": "concept-diagram",
+      "visual_strategy": "native-shapes",
       "planned_seconds": 40
     }
   ]

@@ -9,6 +9,8 @@ try {
     $presentation.Export($previewPath, 'PNG', 1600, 900)
     $presentation.SaveAs((Join-Path $PSScriptRoot 'Harness_课堂汇报_项目重点版.pdf'), 32)
     Copy-Item -LiteralPath $deckPath -Destination (Join-Path $PSScriptRoot 'Harness_课堂汇报_项目重点版.pptx')
+    Copy-Item -LiteralPath $deckPath -Destination (Join-Path $PSScriptRoot 'Harness_课堂汇报_可编辑版.pptx')
+    Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'Harness_课堂汇报_项目重点版.pdf') -Destination (Join-Path $PSScriptRoot 'Harness_课堂汇报_可编辑版.pdf')
     Write-Output ("Exported {0} slides" -f $presentation.Slides.Count)
 }
 finally {

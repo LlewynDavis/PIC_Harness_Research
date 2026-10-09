@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-09",
+  "slides": [
+    {
+      "page": 1,
+      "native_text_objects": 15,
+      "independent_pictures": 0,
+      "total_objects": 27
+    },
+    {
+      "page": 2,
+      "native_text_objects": 14,
+      "independent_pictures": 0,
+      "total_objects": 24
+    },
+    {
+      "page": 3,
+      "native_text_objects": 10,
+      "independent_pictures": 1,
+      "total_objects": 15
+    },
+    {
+      "page": 4,
+      "native_text_objects": 11,
+      "independent_pictures": 2,
+      "total_objects": 17
+    },
+    {
+      "page": 5,
+      "native_text_objects": 10,
+      "independent_pictures": 1,
+      "total_objects": 15
+    },
+    {
+      "page": 6,
+      "native_text_objects": 10,
+      "independent_pictures": 1,
+      "total_objects": 15
+    },
+    {
+      "page": 7,
+      "native_text_objects": 10,
+      "independent_pictures": 1,
+      "total_objects": 15
+    },
+    {
+      "page": 8,
+      "native_text_objects": 13,
+      "independent_pictures": 0,
+      "total_objects": 17
+    }
+  ],
+  "native_text_total": 93,
+  "original_images_byte_identical": 6,
+  "concept_pages_without_pictures": [
+    1,
+    2,
+    8
+  ],
+  "notes_pages": 8
+}

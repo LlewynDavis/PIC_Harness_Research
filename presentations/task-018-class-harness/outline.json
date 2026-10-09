@@ -8,7 +8,9 @@
     "research_visual_mode": true,
     "header_mode": "stack",
     "footer_mode": "source-line",
-    "footer_page_numbers": true
+    "footer_page_numbers": true,
+    "font_body": "Microsoft YaHei",
+    "font_heading": "Microsoft YaHei"
   },
   "compliance": {
     "auto_image_sources": false,
@@ -22,14 +24,245 @@
       "slide_intent": "message",
       "title": "课题方向：面向光子芯片设计的 Agent Harness",
       "subtitle": "Harness 组织模型、专业工具、状态与验证；与 DAS 需求模块衔接",
-      "assets": {
-        "diagram": "assets/p02-harness-roles.svg"
-      },
+      "assets": {},
       "footer": "依据：候选方向材料 §2–4；概念职责分工｜1/8",
       "sources": [
         "依据：候选方向材料 §2–4；概念职责分工"
       ],
-      "notes": "计划用时：55 秒。\n\n前面同学介绍了 DAS 系统，我的课题关注这些需求进入芯片设计之后，AI 如何组织设计工具。Harness 是围绕 Agent 的执行框架，接收目标和约束，组织 CAD、仿真与确定性检查，保存版本和轨迹。Agent 负责规划与动作选择，专业工具提供数值结果，评价器复核目标。这个分工是理解后面三个现成项目的共同入口。我们当前汇报的是候选研究方向。"
+      "notes": "计划用时：55 秒。\n\n前面同学介绍了 DAS 系统，我的课题关注这些需求进入芯片设计之后，AI 如何组织设计工具。Harness 是围绕 Agent 的执行框架，接收目标和约束，组织 CAD、仿真与确定性检查，保存版本和轨迹。Agent 负责规划与动作选择，专业工具提供数值结果，评价器复核目标。这个分工是理解后面三个现成项目的共同入口。我们当前汇报的是候选研究方向。",
+      "native_elements": [
+        {
+          "kind": "rect",
+          "x": 0.5,
+          "y": 1.35,
+          "w": 9,
+          "h": 0.58,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "Harness：围绕 Agent 组织工具执行、状态保存和验证检查",
+          "x": 0.7,
+          "y": 1.42,
+          "w": 8.6,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": true,
+          "color": "167B78",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 0.5,
+          "y": 2.17,
+          "w": 1.95,
+          "h": 1.45,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "需求与约束",
+          "x": 0.6,
+          "y": 2.27,
+          "w": 1.75,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "目标指标\n工艺 / 几何条件",
+          "x": 0.6,
+          "y": 2.87,
+          "w": 1.75,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 2.85,
+          "y": 2.17,
+          "w": 1.95,
+          "h": 1.45,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "Agent",
+          "x": 2.95,
+          "y": 2.27,
+          "w": 1.75,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "规划设计\n解释结果 / 选动作",
+          "x": 2.95,
+          "y": 2.87,
+          "w": 1.75,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 5.2,
+          "y": 2.17,
+          "w": 1.95,
+          "h": 1.45,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "专业工具",
+          "x": 5.3,
+          "y": 2.27,
+          "w": 1.75,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "CAD / 仿真器\n产生结构与数值结果",
+          "x": 5.3,
+          "y": 2.87,
+          "w": 1.75,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 7.55,
+          "y": 2.17,
+          "w": 1.95,
+          "h": 1.45,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "确定性评价",
+          "x": 7.6499999999999995,
+          "y": 2.27,
+          "w": 1.75,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "计算指标\n检查约束与达标",
+          "x": 7.6499999999999995,
+          "y": 2.87,
+          "w": 1.75,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "line",
+          "x1": 2.49,
+          "y1": 2.91,
+          "x2": 2.79,
+          "y2": 2.91,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "line",
+          "x1": 4.84,
+          "y1": 2.91,
+          "x2": 5.14,
+          "y2": 2.91,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "line",
+          "x1": 7.19,
+          "y1": 2.91,
+          "x2": 7.49,
+          "y2": 2.91,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "line",
+          "x1": 8.525,
+          "y1": 3.69,
+          "x2": 8.525,
+          "y2": 4.16,
+          "color": "167B78",
+          "arrow": false
+        },
+        {
+          "kind": "line",
+          "x1": 8.525,
+          "y1": 4.16,
+          "x2": 3.825,
+          "y2": 4.16,
+          "color": "167B78",
+          "arrow": false
+        },
+        {
+          "kind": "line",
+          "x1": 3.825,
+          "y1": 4.16,
+          "x2": 3.825,
+          "y2": 3.69,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "text",
+          "text": "反馈：指标 + 条件 + 检查结果",
+          "x": 4.4,
+          "y": 4.35,
+          "w": 4.5,
+          "h": 0.31,
+          "fontSize": 15,
+          "bold": true,
+          "color": "167B78",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "版本与轨迹持续记录",
+          "x": 0.5,
+          "y": 4.38,
+          "w": 2.65,
+          "h": 0.3,
+          "fontSize": 12,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        }
+      ]
     },
     {
       "id": "s2",
@@ -38,14 +271,215 @@
       "slide_intent": "message",
       "title": "研究切入点：仿真后的物理诊断与设计决策",
       "subtitle": "拟研究方向：诊断形成可检验预测，动作由后续结果验证",
-      "assets": {
-        "diagram": "assets/p04-research-focus.svg"
-      },
+      "assets": {},
       "footer": "依据：候选方向材料 §2–4；拟研究问题，尚未验证｜2/8",
       "sources": [
         "依据：候选方向材料 §2–4；拟研究问题，尚未验证"
       ],
-      "notes": "计划用时：55 秒。\n\n课题重点放在仿真后的结果分析和决策。性能偏离目标时，Agent 能否提出有依据的原因假设，并决定修改参数、换策略或补充验证？诊断需要形成下一轮可检验的预测。反馈不支持预测时，就修正假设。现有 Agent 是否已经具备足够能力，以及这种方法能否带来额外价值，都需要核验。下面用三个现成项目说明已有工作到哪一层。"
+      "notes": "计划用时：55 秒。\n\n课题重点放在仿真后的结果分析和决策。性能偏离目标时，Agent 能否提出有依据的原因假设，并决定修改参数、换策略或补充验证？诊断需要形成下一轮可检验的预测。反馈不支持预测时，就修正假设。现有 Agent 是否已经具备足够能力，以及这种方法能否带来额外价值，都需要核验。下面用三个现成项目说明已有工作到哪一层。",
+      "native_elements": [
+        {
+          "kind": "text",
+          "text": "候选研究问题：如何利用物理知识与真实反馈选择下一步？",
+          "x": 0.5,
+          "y": 1.38,
+          "w": 9,
+          "h": 0.33,
+          "fontSize": 17,
+          "bold": true,
+          "color": "167B78",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 0.5,
+          "y": 2.12,
+          "w": 2.85,
+          "h": 1.45,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "仿真结果",
+          "x": 0.6,
+          "y": 2.22,
+          "w": 2.65,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "功率 / 光谱 / 场分布\n模型与求解条件",
+          "x": 0.6,
+          "y": 2.8200000000000003,
+          "w": 2.65,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 3.58,
+          "y": 2.12,
+          "w": 2.85,
+          "h": 1.45,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "物理诊断",
+          "x": 3.68,
+          "y": 2.22,
+          "w": 2.65,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "哪里偏离目标？\n提出原因假设",
+          "x": 3.68,
+          "y": 2.8200000000000003,
+          "w": 2.65,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 6.65,
+          "y": 2.12,
+          "w": 2.85,
+          "h": 1.45,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "设计决策",
+          "x": 6.75,
+          "y": 2.22,
+          "w": 2.65,
+          "h": 0.44,
+          "fontSize": 16,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "改参数 / 换策略\n或补充验证",
+          "x": 6.75,
+          "y": 2.8200000000000003,
+          "w": 2.65,
+          "h": 0.6799999999999999,
+          "fontSize": 12.7,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "line",
+          "x1": 3.39,
+          "y1": 2.85,
+          "x2": 3.53,
+          "y2": 2.85,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "line",
+          "x1": 6.47,
+          "y1": 2.85,
+          "x2": 6.61,
+          "y2": 2.85,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "rect",
+          "x": 3.58,
+          "y": 4.05,
+          "w": 5.92,
+          "h": 0.98,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "把诊断写成可检验预测",
+          "x": 3.78,
+          "y": 4.11,
+          "w": 5.52,
+          "h": 0.42,
+          "fontSize": 16,
+          "bold": true,
+          "color": "167B78",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "下一轮仿真是否支持预测？",
+          "x": 3.78,
+          "y": 4.65,
+          "w": 5.52,
+          "h": 0.36,
+          "fontSize": 13,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "line",
+          "x1": 8.075,
+          "y1": 3.65,
+          "x2": 8.075,
+          "y2": 3.99,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "line",
+          "x1": 3.53,
+          "y1": 4.54,
+          "x2": 1.925,
+          "y2": 4.54,
+          "color": "167B78",
+          "arrow": false
+        },
+        {
+          "kind": "line",
+          "x1": 1.925,
+          "y1": 4.54,
+          "x2": 1.925,
+          "y2": 3.65,
+          "color": "167B78",
+          "arrow": true
+        },
+        {
+          "kind": "text",
+          "text": "新证据可修正原假设",
+          "x": 0.5,
+          "y": 4.84,
+          "w": 2.85,
+          "h": 0.32,
+          "fontSize": 12,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        }
+      ]
     },
     {
       "id": "s3",
@@ -54,14 +488,122 @@
       "slide_intent": "evidence",
       "title": "PhIDO：自然语言到结构化设计与版图",
       "subtitle": "原文 Fig. 1｜Interpreter → Designer → Layout → Circuit Verification",
-      "assets": {
-        "diagram": "assets/project-phido-architecture.png"
-      },
+      "assets": {},
       "footer": "Sharma et al., 2025, Fig. 1 (PDF p.3), DOI: 10.1063/5.0300741｜3/8",
       "sources": [
         "Sharma et al., 2025, Fig. 1 (PDF p.3), DOI: 10.1063/5.0300741"
       ],
-      "notes": "计划用时：60 秒。\n\n先看 PhIDO。原图把流程分为四段：Interpreter 解析自然语言并检索模板，Designer 选择组件、配置参数并产生结构化设计，Layout 用版图工具布局、路由和检查，Circuit Verification 使用 SAX 电路模型。前两段由 LLM Agent 承担，后两段主要是算法和专业工具。输出中间表示后可以人工检查。原图出现 FDTD，但既有核读记录显示该分支没有进入主发布；不能把原图中的所有模块都理解为正式基准已验证的能力。\n\n原图来源：Sharma et al., 2025, AI agents for photonic integrated circuit design automation, Fig. 1, DOI:10.1063/5.0300741。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。"
+      "notes": "计划用时：60 秒。\n\n先看 PhIDO。原图把流程分为四段：Interpreter 解析自然语言并检索模板，Designer 选择组件、配置参数并产生结构化设计，Layout 用版图工具布局、路由和检查，Circuit Verification 使用 SAX 电路模型。前两段由 LLM Agent 承担，后两段主要是算法和专业工具。输出中间表示后可以人工检查。原图出现 FDTD，但既有核读记录显示该分支没有进入主发布；不能把原图中的所有模块都理解为正式基准已验证的能力。\n\n原图来源：Sharma et al., 2025, AI agents for photonic integrated circuit design automation, Fig. 1, DOI:10.1063/5.0300741。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。",
+      "native_elements": [
+        {
+          "kind": "image",
+          "path": "../task-010-group-meeting-rebuild/assets/phido-fig1.png",
+          "x": 0.5,
+          "y": 1.7687285363859362,
+          "w": 6.15,
+          "h": 3.0825429272281277,
+          "name": "PaperOriginal_PhIDO_Fig1"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 1.36,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "自然语言进入设计流程",
+          "x": 7.07,
+          "y": 1.4200000000000002,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "解释需求 → 选器件\n结构化 DSL → 版图",
+          "x": 7.07,
+          "y": 1.84,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 2.6,
+          "w": 2.55,
+          "h": 1.34,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "四段职责",
+          "x": 7.07,
+          "y": 2.66,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "前两段：LLM Agent\n后两段：CAD / 电路工具",
+          "x": 7.07,
+          "y": 3.08,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 4.04,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "验证边界",
+          "x": 7.07,
+          "y": 4.1,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "主基准检验结构有效\nFDTD 非主发布分支",
+          "x": 7.07,
+          "y": 4.52,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        }
+      ]
     },
     {
       "id": "s4",
@@ -70,14 +612,143 @@
       "slide_intent": "evidence",
       "title": "PhIDO：102 个任务怎样评价“设计成功”？",
       "subtitle": "原文 Fig. 5 局部｜用复杂度与失败阶段理解 benchmark",
-      "assets": {
-        "diagram": "assets/project-phido-benchmark.png"
-      },
+      "assets": {},
       "footer": "Sharma et al., 2025, Fig. 5 / Table II (PDF p.8–9), DOI: 10.1063/5.0300741｜4/8",
       "sources": [
         "Sharma et al., 2025, Fig. 5 / Table II (PDF p.8–9), DOI: 10.1063/5.0300741"
       ],
-      "notes": "计划用时：50 秒。\n\n这页引用 PhIDO Fig.5 中 Gemini-2.5-pro/GPT-4o 的局部和原图图例。benchmark 一共有102个描述，四级分别23、10、60、9个；同级左柱是pass@1，右柱是pass@5。蓝色S表示无致命错误且得到有效 schematic 与 GDS；其余颜色定位不同阶段失败。可以看出更复杂任务仍有困难，但不从柱形目测推导精确百分比。这里的成功是结构层成功，不是目标光学性能已经满足。\n\n原图来源：Sharma et al., 2025, AI agents for photonic integrated circuit design automation, Fig. 5/Table II, DOI:10.1063/5.0300741。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。"
+      "notes": "计划用时：50 秒。\n\n这页引用 PhIDO Fig.5 中 Gemini-2.5-pro/GPT-4o 的局部和原图图例。benchmark 一共有102个描述，四级分别23、10、60、9个；同级左柱是pass@1，右柱是pass@5。蓝色S表示无致命错误且得到有效 schematic 与 GDS；其余颜色定位不同阶段失败。可以看出更复杂任务仍有困难，但不从柱形目测推导精确百分比。这里的成功是结构层成功，不是目标光学性能已经满足。\n\n原图来源：Sharma et al., 2025, AI agents for photonic integrated circuit design automation, Fig. 5/Table II, DOI:10.1063/5.0300741。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。",
+      "native_elements": [
+        {
+          "kind": "image",
+          "path": "assets/papers/phido-fig5-panel.png",
+          "x": 1.735377358490566,
+          "y": 1.4,
+          "w": 3.679245283018868,
+          "h": 3.0,
+          "name": "PaperOriginal_PhIDO_Fig5Panel"
+        },
+        {
+          "kind": "image",
+          "path": "assets/papers/phido-fig5-legend.png",
+          "x": 1.2699999999999998,
+          "y": 4.45,
+          "w": 4.66,
+          "h": 0.48,
+          "name": "PaperOriginal_PhIDO_Fig5Legend"
+        },
+        {
+          "kind": "text",
+          "text": "Fig. 5 局部：Gemini-2.5-pro/GPT-4o；保留原始颜色图例",
+          "x": 0.5,
+          "y": 5.03,
+          "w": 6.15,
+          "h": 0.19,
+          "fontSize": 8.8,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 1.36,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "102 个设计描述",
+          "x": 7.07,
+          "y": 1.4200000000000002,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "Level 1/2/3/4\n任务数：23/10/60/9",
+          "x": 7.07,
+          "y": 1.84,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 2.6,
+          "w": 2.55,
+          "h": 1.34,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "左柱 @1，右柱 @5",
+          "x": 7.07,
+          "y": 2.66,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "图中蓝色 S 为成功\n复杂任务的成功仍有限",
+          "x": 7.07,
+          "y": 3.08,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 4.04,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "“成功”是什么？",
+          "x": 7.07,
+          "y": 4.1,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "有效 schematic 与 GDS\n不等同光学性能达标",
+          "x": 7.07,
+          "y": 4.52,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        }
+      ]
     },
     {
       "id": "s5",
@@ -86,14 +757,122 @@
       "slide_intent": "evidence",
       "title": "PICopilot：领域 RAG 与多 Agent 生成设计脚本",
       "subtitle": "原文 Fig. 2｜脚本生成反馈与 benchmark 执行评分分开理解",
-      "assets": {
-        "diagram": "assets/project-picopilot.png"
-      },
+      "assets": {},
       "footer": "Jiang et al., 2026, Fig. 2 / §3.6 / Table 3, DOI: 10.48550/arXiv.2608.01791｜5/8",
       "sources": [
         "Jiang et al., 2026, Fig. 2 / §3.6 / Table 3, DOI: 10.48550/arXiv.2608.01791"
       ],
-      "notes": "计划用时：65 秒。\n\nPICopilot 的目标是生成可用的 PIC 设计脚本。原图中 Planner 分解任务，功能专用生成器从工具手册中检索，Synthesizer 合成脚本，Evaluator 提供检查反馈。需要特别区分：内部反馈主要是静态代码、自定义检查和 LLM 评价；原文因工具运行成本较高，没有把逐次真实执行作为内部循环。48个benchmark任务分Basic12、Medium12、Advanced24，每任务15次生成，外部另运行脚本并比较参考输出，至少3次成功计为Solved。作者报告48项均Solved，这不表示单次都成功，也不表示器件性能达标。\n\n原图来源：Jiang et al., 2026, PICopilot: An LLM-based Agentic Framework for Assisting Photonic Integrated Circuit Design via Script Generation, Fig. 2/Table 2–3/§3.6, DOI:10.48550/arXiv.2608.01791。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。"
+      "notes": "计划用时：65 秒。\n\nPICopilot 的目标是生成可用的 PIC 设计脚本。原图中 Planner 分解任务，功能专用生成器从工具手册中检索，Synthesizer 合成脚本，Evaluator 提供检查反馈。需要特别区分：内部反馈主要是静态代码、自定义检查和 LLM 评价；原文因工具运行成本较高，没有把逐次真实执行作为内部循环。48个benchmark任务分Basic12、Medium12、Advanced24，每任务15次生成，外部另运行脚本并比较参考输出，至少3次成功计为Solved。作者报告48项均Solved，这不表示单次都成功，也不表示器件性能达标。\n\n原图来源：Jiang et al., 2026, PICopilot: An LLM-based Agentic Framework for Assisting Photonic Integrated Circuit Design via Script Generation, Fig. 2/Table 2–3/§3.6, DOI:10.48550/arXiv.2608.01791。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。",
+      "native_elements": [
+        {
+          "kind": "image",
+          "path": "../task-010-group-meeting-rebuild/assets/picopilot-fig2.png",
+          "x": 0.5,
+          "y": 1.846917808219178,
+          "w": 6.15,
+          "h": 2.926164383561644,
+          "name": "PaperOriginal_PICopilot_Fig2"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 1.36,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "任务 → 脚本",
+          "x": 7.07,
+          "y": 1.4200000000000002,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "规划 → 检索增强生成\n合成脚本 → 静态评价",
+          "x": 7.07,
+          "y": 1.84,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 2.6,
+          "w": 2.55,
+          "h": 1.34,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "48 项脚本任务（作者）",
+          "x": 7.07,
+          "y": 2.66,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "Basic 12 / Medium 12\nAdvanced 24；15 次/任务\nSolved：48/48（≥3/15）",
+          "x": 7.07,
+          "y": 3.08,
+          "w": 2.3099999999999996,
+          "h": 0.78,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 4.04,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "内部与外部评价不同",
+          "x": 7.07,
+          "y": 4.1,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "内部：静态检查 + LLM\n外部：运行脚本并评分",
+          "x": 7.07,
+          "y": 4.52,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        }
+      ]
     },
     {
       "id": "s6",
@@ -102,14 +881,122 @@
       "slide_intent": "evidence",
       "title": "Kharel：规则与数值仿真驱动的设计闭环",
       "subtitle": "原文 Fig. 1(b)｜目标、显式规则、求解器与验收条件共同作用",
-      "assets": {
-        "diagram": "assets/project-kharel-loop.png"
-      },
+      "assets": {},
       "footer": "Kharel et al., 2026, Fig. 1(b) / Table S2, DOI: 10.48550/arXiv.2606.00915｜6/8",
       "sources": [
         "Kharel et al., 2026, Fig. 1(b) / Table S2, DOI: 10.48550/arXiv.2606.00915"
       ],
-      "notes": "计划用时：65 秒。\n\nKharel 的工作更接近真实数值仿真在环。原图左边由人提供目标、约束和初始设计文件；Agent 修改设计，先做预览和DRC，再调用Tidy3D等求解器。评价器判断候选是否更好，选择保留或丢弃，同时记录设计日志。论文展示显式几何、工艺与物理一致性规则，结果按给定定量标准验收。所以不能说现有方法都没有物理反馈。但在多物理案例中，模态识别和电容处理初设曾由专家纠正，说明正确仿真设置和评价条件仍是重要边界。\n\n原图来源：Kharel et al., 2026, Autonomous agentic design for photonics, Fig. 1(b)/Table S2, DOI:10.48550/arXiv.2606.00915。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。"
+      "notes": "计划用时：65 秒。\n\nKharel 的工作更接近真实数值仿真在环。原图左边由人提供目标、约束和初始设计文件；Agent 修改设计，先做预览和DRC，再调用Tidy3D等求解器。评价器判断候选是否更好，选择保留或丢弃，同时记录设计日志。论文展示显式几何、工艺与物理一致性规则，结果按给定定量标准验收。所以不能说现有方法都没有物理反馈。但在多物理案例中，模态识别和电容处理初设曾由专家纠正，说明正确仿真设置和评价条件仍是重要边界。\n\n原图来源：Kharel et al., 2026, Autonomous agentic design for photonics, Fig. 1(b)/Table S2, DOI:10.48550/arXiv.2606.00915。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。",
+      "native_elements": [
+        {
+          "kind": "image",
+          "path": "assets/papers/kharel-fig1b.png",
+          "x": 0.5,
+          "y": 1.7071899224806202,
+          "w": 5.95,
+          "h": 3.2056201550387597,
+          "name": "PaperOriginal_Kharel_Fig1b"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 1.36,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "人类提供起点",
+          "x": 7.07,
+          "y": 1.4200000000000002,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "目标、约束、仿真初设\n评价器与可编辑参数",
+          "x": 7.07,
+          "y": 1.84,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 2.6,
+          "w": 2.55,
+          "h": 1.34,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "真实求解器在环",
+          "x": 7.07,
+          "y": 2.66,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "设计 → 规则检查 → 仿真\n数值结果决定保留 / 回退",
+          "x": 7.07,
+          "y": 3.08,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 4.04,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "关键能力与边界",
+          "x": 7.07,
+          "y": 4.1,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "显式规则 + 定量验收\n多物理初设曾由专家纠错",
+          "x": 7.07,
+          "y": 4.52,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        }
+      ]
     },
     {
       "id": "s7",
@@ -118,14 +1005,122 @@
       "slide_intent": "evidence",
       "title": "Kharel 案例：在求解器反馈中优化波导弯曲",
       "subtitle": "原文 Fig. 2(a)｜数值仿真案例，不是流片测量结果",
-      "assets": {
-        "diagram": "assets/project-kharel-result.png"
-      },
+      "assets": {},
       "footer": "Kharel et al., 2026, Fig. 2(a) / §S2.1 (PDF p.5/12–14), DOI: 10.48550/arXiv.2606.00915｜7/8",
       "sources": [
         "Kharel et al., 2026, Fig. 2(a) / §S2.1 (PDF p.5/12–14), DOI: 10.48550/arXiv.2606.00915"
       ],
-      "notes": "计划用时：70 秒。\n\n这一页用作者原始Fig.2(a)说明反馈怎样影响迭代。在400nm SiN、1550nm、12微米半径和150nm最小特征约束下，作者以50次仿真为预算，圆弧基线损耗约0.460dB，最优约0.109dB。原图纵轴使用负的dB传输值，绿色最优线更接近0表示损耗更小；文字报告的是正值损耗幅度。绿色点是被保留的候选，红叉是被丢弃的候选，不应把红叉当作全部实验失败。结果说明显式约束和数值反馈可以支持有效探索；它仍是论文仿真案例，并没有由我们复现或通过流片测量验证。\n\n原图来源：Kharel et al., 2026, Autonomous agentic design for photonics, Fig. 2(a)/§S2.1, DOI:10.48550/arXiv.2606.00915。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。"
+      "notes": "计划用时：70 秒。\n\n这一页用作者原始Fig.2(a)说明反馈怎样影响迭代。在400nm SiN、1550nm、12微米半径和150nm最小特征约束下，作者以50次仿真为预算，圆弧基线损耗约0.460dB，最优约0.109dB。原图纵轴使用负的dB传输值，绿色最优线更接近0表示损耗更小；文字报告的是正值损耗幅度。绿色点是被保留的候选，红叉是被丢弃的候选，不应把红叉当作全部实验失败。结果说明显式约束和数值反馈可以支持有效探索；它仍是论文仿真案例，并没有由我们复现或通过流片测量验证。\n\n原图来源：Kharel et al., 2026, Autonomous agentic design for photonics, Fig. 2(a)/§S2.1, DOI:10.48550/arXiv.2606.00915。裁剪/缩放和中文说明仅用于课堂解释，原始数据、坐标与图例未修改。",
+      "native_elements": [
+        {
+          "kind": "image",
+          "path": "assets/papers/kharel-fig2a.png",
+          "x": 0.5,
+          "y": 1.788752642706131,
+          "w": 6.15,
+          "h": 3.042494714587738,
+          "name": "PaperOriginal_Kharel_Fig2a"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 1.36,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "弯曲损耗：作者仿真",
+          "x": 7.07,
+          "y": 1.4200000000000002,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "0.460 → 0.109 dB\n50 次仿真预算",
+          "x": 7.07,
+          "y": 1.84,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 2.6,
+          "w": 2.55,
+          "h": 1.34,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "案例条件",
+          "x": 7.07,
+          "y": 2.66,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "400 nm SiN；1550 nm\n12 µm 半径\n150 nm 最小特征",
+          "x": 7.07,
+          "y": 3.08,
+          "w": 2.3099999999999996,
+          "h": 0.78,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        },
+        {
+          "kind": "rect",
+          "x": 6.95,
+          "y": 4.04,
+          "w": 2.55,
+          "h": 1.14,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "如何读这张图？",
+          "x": 7.07,
+          "y": 4.1,
+          "w": 2.3099999999999996,
+          "h": 0.32,
+          "fontSize": 14,
+          "bold": true,
+          "color": "18364A",
+          "align": "left"
+        },
+        {
+          "kind": "text",
+          "text": "绿色：保留 / 最优值\n红色：丢弃；不是实测",
+          "x": 7.07,
+          "y": 4.52,
+          "w": 2.3099999999999996,
+          "h": 0.6,
+          "fontSize": 12.1,
+          "bold": false,
+          "color": "536570",
+          "align": "left"
+        }
+      ]
     },
     {
       "id": "s8",
@@ -134,14 +1129,150 @@
       "slide_intent": "message",
       "title": "总结：已有方法基础与我的研究切入点",
       "subtitle": "从结构生成、脚本生成走向可检验的设计诊断与决策",
-      "assets": {
-        "diagram": "assets/project-summary.svg"
-      },
+      "assets": {},
       "footer": "依据：TASK-016 三项目比较；候选方向材料 §2–8｜8/8",
       "sources": [
         "依据：TASK-016 三项目比较；候选方向材料 §2–8"
       ],
-      "notes": "计划用时：40 秒。\n\n三个项目分别提供结构生成、脚本生成和数值仿真闭环的基础，其成功标准需要分开理解。我的切入点是仿真后的物理诊断与动作选择：使诊断形成能由后续结果检验的预测，进一步考察方法是否提高可靠性。这仍是候选问题，不能提前宣称创新或性能优势。DAS 可以作为后续复杂应用场景，与小组系统方向衔接。"
+      "notes": "计划用时：40 秒。\n\n三个项目分别提供结构生成、脚本生成和数值仿真闭环的基础，其成功标准需要分开理解。我的切入点是仿真后的物理诊断与动作选择：使诊断形成能由后续结果检验的预测，进一步考察方法是否提高可靠性。这仍是候选问题，不能提前宣称创新或性能优势。DAS 可以作为后续复杂应用场景，与小组系统方向衔接。",
+      "native_elements": [
+        {
+          "kind": "rect",
+          "x": 0.5,
+          "y": 1.43,
+          "w": 9,
+          "h": 0.58,
+          "fill": "EAF0F7",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "PhIDO",
+          "x": 0.65,
+          "y": 1.51,
+          "w": 2.0,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "自然语言 → 结构化设计与版图",
+          "x": 2.9,
+          "y": 1.51,
+          "w": 6.2,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": false,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 0.5,
+          "y": 2.15,
+          "w": 9,
+          "h": 0.58,
+          "fill": "E6F3EF",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "PICopilot",
+          "x": 0.65,
+          "y": 2.23,
+          "w": 2.0,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "自然语言 → PIC 脚本与功能评价",
+          "x": 2.9,
+          "y": 2.23,
+          "w": 6.2,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": false,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "rect",
+          "x": 0.5,
+          "y": 2.87,
+          "w": 9,
+          "h": 0.58,
+          "fill": "FBEFE3",
+          "stroke": "CBD9DF"
+        },
+        {
+          "kind": "text",
+          "text": "Kharel",
+          "x": 0.65,
+          "y": 2.95,
+          "w": 2.0,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "显式规则 → 仿真反馈 → 定量迭代",
+          "x": 2.9,
+          "y": 2.95,
+          "w": 6.2,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": false,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "已有项目构成方法基础，成功定义与验证层级需要区分",
+          "x": 0.5,
+          "y": 3.83,
+          "w": 9,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": true,
+          "color": "167B78",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "我的切入点：让仿真后的诊断与动作选择得到证据检验",
+          "x": 0.5,
+          "y": 4.38,
+          "w": 9,
+          "h": 0.44,
+          "fontSize": 17,
+          "bold": true,
+          "color": "18364A",
+          "align": "center"
+        },
+        {
+          "kind": "text",
+          "text": "方法增益待验证；DAS 可作为后续复杂应用场景",
+          "x": 0.5,
+          "y": 4.88,
+          "w": 9,
+          "h": 0.4,
+          "fontSize": 13,
+          "bold": false,
+          "color": "536570",
+          "align": "center"
+        }
+      ]
     }
-  ]
+  ],
+  "native_renderer_version": 1
 }

@@ -6,4 +6,4 @@ P1/P2依据已有候选主线，标为拟研究问题。P3–P7为论文内容�
 
 原图裁剪只去掉正文和外缘或选择指定子图；原始坐标、刻度、图例、数据、箭头保持。中文注释位于图旁，非原图文字。PhIDO Fig.5选择Gemini-2.5-pro/GPT-4o一组，并展示同图原始图例；不从柱形读取未报告精确数值。Kharel图2(a)原轴负dB与文字正损耗幅度的含义在讲稿中解释。
 
-当前构建源为build_source_projects.py；初版源build_source.py保留，不用于当前重建。
+当前构建源为build_source_editable.py及outline.json的native_elements；build_native.cjs仅扩展标准技能的flow渲染，将原生文本、矩形、线和独立图片逐项写入。当前重建用rebuild.ps1。历史build_source.py和build_source_projects.py保留，不用于当前重建。论文原图内部仍是位图，中文说明与框图已原生化；临时编辑副本只在忽略的build/中保存。

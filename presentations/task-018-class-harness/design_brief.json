@@ -1,11 +1,11 @@
 {
   "topic": "课堂 Harness 项目重点版",
-  "format_promise": "原图为主，中文短注解释；白底、16:9、便于拼接",
+  "format_promise": "原生框图、文字与箭头；独立论文原图；白底16:9便于拼接",
   "title_page_concept": {
     "chosen_archetype": "content opener for concatenation"
   },
   "structure_strategy": {
-    "container_policy": "原图不加框遮挡数据；右侧短注与原图明显分开"
+    "container_policy": "论文原图与中文说明分别作为独立对象；框、线、文字均可编辑"
   },
   "design_dna": "classroom research explanation"
 }
