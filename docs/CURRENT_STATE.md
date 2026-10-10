@@ -1,6 +1,11 @@
 # 当前真实状态
 
-更新日期：2026-10-09
+更新日期：2026-10-10
+
+## TASK-019 PPT 默认格式模板（REVIEW_READY）
+
+- 用户指定工程光学课程汇报参考PPT为以后制作PPT的默认格式。已通过官方template-creator脚本创建个人模板`artifact-template-engineering-optics`，保留完整reference.pptx和封面preview.png；模板位于个人skills目录。
+- 原参考14页、2母版、16:9、微软雅黑、白底深青色、顶部章节导航，已PowerPoint渲染检查；持久副本SHA与原文件一致。默认入口和格式规则见docs/PPT_TEMPLATE.md，后续只沿用格式，内容与身份信息按当次任务替换，保持原生可编辑对象。原参考PPT和现有Harness文件不改动，未远程发布。
 
 ## TASK-018 课堂 Harness PPT 可编辑版（REVIEW_READY）
 

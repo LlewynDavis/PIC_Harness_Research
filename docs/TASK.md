@@ -1,5 +1,16 @@
 # 当前任务与任务记录
 
+## TASK-019：保存工程光学 PPT 默认格式模板
+
+- 状态：`REVIEW_READY`（2026-10-10）。用户指定微信临时目录中的工程光学课程汇报PPT作为以后制作PPT的格式模板，个人模板已创建并核验。
+- 起点：`aa1609cca5fd29cfcafa6650354fbf39badfe7c3`，`main`。已有两个用户DOCX修改和三个未跟踪PDF，保留且不纳入提交。
+- 范围：只读参考PPT，检查封面/正文/结尾、主题、字体与母版；使用template-creator官方脚本在个人skills目录创建参考模板；新增格式使用记录与项目默认入口，保存用户明确要求的长期偏好。不修改原参考文件或现有Harness交付。
+- 模板只沿用格式，姓名、学号、内容与文献替换为当次资料；保留原生可编辑对象，不把新页面截图作为交付。用户后续明确指定的格式优先。
+- 验证：原PPT与保留副本SHA一致；实际渲染及预览视觉检查；模板SKILL/manifest/agent/preview/reference文件齐全；格式记录可定位；git diff --check。不开展科研、实验或远程发布。
+- 完成记录：官方create-template-skill.mjs生成`artifact-template-engineering-optics`，kind为presentation。完整参考14页、2母版、16:9、微软雅黑、白底深青色；PowerPoint渲染14页并检查。保留参考SHA为`6cdcf2d54733b902d606a0c9719a3ac212237cf00fb29859a54541328c9a4332`，与原文件一致；五类必需模板文件齐全。默认入口见docs/PPT_TEMPLATE.md，并保存用户明确要求的长期偏好记录。现有Harness文件和用户DOCX/PDF不修改、不纳入提交；完成SHA由答复记录。
+
+---
+
 ## TASK-018：课堂课题方向汇报 Harness 初版
 
 - 状态：`REVIEW_READY`（2026-10-09，可编辑版）。当前八页保持两页课题、五页现成项目、最后一页总结，计划7分40秒。已按用户要求将整页合成图拆为可编辑对象。

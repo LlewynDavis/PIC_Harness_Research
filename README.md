@@ -21,6 +21,10 @@
 
 这些是研究候选方向，不代表当前已经实现，也不构成提前建设复杂系统的依据。
 
+## PPT 默认格式
+
+用户于 2026-10-10 指定工程光学课程汇报参考为后续 PPT 默认格式，使用个人模板 `$artifact-template-engineering-optics`。格式特征、持久参考入口与可编辑要求见 [PPT 模板说明](docs/PPT_TEMPLATE.md)；用户当次明确指定的格式优先。
+
 ## 当前阶段
 
 当前只建立长期维护所需的最小仓库骨架。仓库尚未实现 Agent、模型接入、工具调用、DesignSpec、MCP Server、仿真流程或 benchmark。
