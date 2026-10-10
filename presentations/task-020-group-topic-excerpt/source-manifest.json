@@ -1,0 +1,20 @@
+{
+  "source_filename": "Harness_课堂汇报_可编辑版.pptx",
+  "source_sha256": "21dace4d7a91e5cbf2595f9bdf969cc51d4be3cba3ac8b10499f0aa34075250b",
+  "source_pages": [
+    1,
+    7
+  ],
+  "template_sha256": "6cdcf2d54733b902d606a0c9719a3ac212237cf00fb29859a54541328c9a4332",
+  "template_pages": [
+    4,
+    6
+  ],
+  "image_sha256": "41e6f8276f3ddef732ae70a4fb9f2d3862b584edd75ff360e6aea0a120d4aa86",
+  "canvas_inches": [
+    13.333333333333334,
+    7.5
+  ],
+  "nav_note": "四个导航标题为模块的可编辑通用标签，实际插入课题组PPT后可按其章节改名。",
+  "output": "Harness_课题介绍_原理与案例_模板版.pptx"
+}

@@ -1,0 +1,2 @@
+PASS: native text edit and independent figure move persisted after save/reopen.
+PASS: final deck unchanged.

@@ -1,0 +1,31 @@
+{
+  "pages": 2,
+  "canvas_inches": [
+    13.333333333333334,
+    7.5
+  ],
+  "inventory": [
+    {
+      "page": 1,
+      "native_text_objects": 18,
+      "picture_objects": 1,
+      "objects": 29
+    },
+    {
+      "page": 2,
+      "native_text_objects": 14,
+      "picture_objects": 2,
+      "objects": 18
+    }
+  ],
+  "original_curve_byte_identical": true,
+  "source_files_unchanged": true,
+  "template_master_theme_parts_identical": [
+    "ppt/theme/theme3.xml",
+    "ppt/slideMasters/slideMaster1.xml",
+    "ppt/theme/theme1.xml",
+    "ppt/slideMasters/slideMaster2.xml",
+    "ppt/theme/theme2.xml",
+    "ppt/theme/theme4.xml"
+  ]
+}

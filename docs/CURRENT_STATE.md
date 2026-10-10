@@ -2,6 +2,11 @@
 
 更新日期：2026-10-10
 
+## TASK-020 Harness 两页课题介绍模块（REVIEW_READY）
+
+- 已在presentations/task-020-group-topic-excerpt交付两页模块：Harness原理闭环与Kharel波导弯曲仿真案例。真实导入工程光学模板正文母版/布局，保留青色导航、微软雅黑、图文框和校徽，32个原生文字对象，原图独立且与桌面源字节一致。
+- PowerPoint编辑保存重开测试及两页实际渲染/独立视觉检查完成；通用QA无文字溢出/重叠，模板特有满宽导航几何提示已记录。尚未拿到目标课题组完整PPT，交付为可直接插入的两页PPTX/PDF，未实际合并或发布；原文件与既有用户修改保持。
+
 ## TASK-019 PPT 默认格式模板（REVIEW_READY）
 
 - 用户指定工程光学课程汇报参考PPT为以后制作PPT的默认格式。已通过官方template-creator脚本创建个人模板`artifact-template-engineering-optics`，保留完整reference.pptx和封面preview.png；模板位于个人skills目录。
