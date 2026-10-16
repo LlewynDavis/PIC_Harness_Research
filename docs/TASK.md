@@ -50,6 +50,7 @@
 - 2026-10-16 用户要求 Word 版且内容不变：授权新增当前完整版的 DOCX 导出脚本、本地 `output/task-021/` Word 交付及 `tmp/pdfs/task-021-docx/` 渲染检查；正文、引用及旧交付不改，不应用此前内容审查意见，不远程同步。采用可编辑段落与表格、原始图片，并核对文字完整性与实际分页。
 - 2026-10-16 用户要求将最近成果提交到仓库；本轮允许范围增加为将当前工作树中的已完成文档、交付物和事实源更新形成 Git 本地提交。保留所有文件内容；`tmp/` 下分页渲染与 QA 临时产物继续留在本机、不纳入提交。现行禁止远程发布仍有效，因此本轮不推送 GitHub。
 - 后续范围变更（2026-10-16）：用户要求“合并提交”；结合本地 `main` 超前公开远端 `main` 的上下文，授权将现有本地提交快进推送至 `origin/main`，供组员在公开仓库查看。该授权仅覆盖当前本地提交，不创建 PR，不涉及其他外部发布；覆盖上方原“禁止远程发布”边界。推送前已 fetch，确认远端 `main` 是本地 `HEAD` 的祖先。
+- 推送完成：`git push origin main` 成功；`git ls-remote --heads origin` 与本地 `HEAD` 均为 `2bd6fdec3b9fd3c1c0d679e7a0b0bdbf42fd63d2`。`gh repo view` 确认仓库仍为 `PUBLIC` 且默认分支为 `main`。`git diff --check -- docs` 通过。工作树仅保留未跟踪的 `tmp/` QA 预览文件。
 - Word 版已生成：15 页、11 张原生表格、4 图、8 条参考来源，362 个文字单元无缺失，原 Markdown 与 PDF 哈希不变。标准渲染器缺少 LibreOffice 后采用 Word COM 只读导出与 Poppler 实际逐页检查，详见 `references/task-021/docx-export-qa.md`；未提交/推送，任务仍 ACTIVE。
 
 ---
