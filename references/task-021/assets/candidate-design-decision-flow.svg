@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+  <title id="title">反馈驱动的器件与电路设计概念流程</title>
+  <desc id="desc">需求、物理规律和制造约束进入初始模型。受控工具执行后取得仿真与验证反馈，Agent 判断反馈条件与当前问题，选择检查、修复、优化或方案调整并明确预期。工具执行行动，取得新反馈并对照预期，更新判断、保留或回退。继续迭代回到反馈判断；需要确认的候选经过相应核查，需修订时回到迭代。任务记录贯穿流程，关键建模假设、持续证据冲突或工具不足时由专家协助。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#35636D"/></marker>
+  </defs>
+  <style>
+    text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .heading{font-size:28px;font-weight:700;fill:#fff}
+    .title{font-size:24px;font-weight:600;fill:#194954}
+    .body{font-size:19px;fill:#415F67}
+    .small{font-size:17px;fill:#526B73}
+    .label{font-size:18px;font-weight:600;fill:#35636D}
+    .light-title{font-size:24px;font-weight:600;fill:#fff}
+    .light-body{font-size:19px;fill:#E4F0F1}
+    .node{fill:#fff;stroke:#6F9CA4;stroke-width:2}
+    .soft{fill:#EEF6F6;stroke:#6F9CA4;stroke-width:2}
+    .edge{fill:none;stroke:#35636D;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+    .optional{fill:none;stroke:#668892;stroke-width:2.3;stroke-dasharray:8 6;stroke-linecap:round;stroke-linejoin:round}
+  </style>
+  <rect width="1600" height="1080" fill="#fff"/>
+
+  <rect x="80" y="25" width="1440" height="90" rx="12" fill="#194954"/>
+  <text class="heading" x="800" y="64" text-anchor="middle">真实需求 · 物理规律 · 制造约束</text>
+  <text class="light-body" x="800" y="95" text-anchor="middle">器件结构、组合与连接，以及功能和性能目标</text>
+
+  <path class="edge" d="M260 115 V170"/>
+  <path class="edge" d="M440 225 H620"/>
+  <path class="edge" d="M980 225 H1160"/>
+  <path class="edge" d="M1340 280 V390"/>
+  <path class="edge" d="M1160 450 H980"/>
+  <path class="edge" d="M620 450 H440"/>
+  <path class="edge" d="M260 510 V640"/>
+  <path class="edge" d="M440 700 H620"/>
+  <path class="edge" d="M980 700 H1160"/>
+
+  <rect class="node" x="80" y="170" width="360" height="110" rx="12"/>
+  <text class="title" x="260" y="212" text-anchor="middle">建立或复用初始模型</text>
+  <text class="body" x="260" y="249" text-anchor="middle">示例 / 模板 / 允许范围内自主建立</text>
+
+  <rect class="soft" x="620" y="170" width="360" height="110" rx="12"/>
+  <text class="title" x="800" y="212" text-anchor="middle">受控工具执行</text>
+  <text class="body" x="800" y="249" text-anchor="middle">建模、求解、评价与规则检查</text>
+
+  <rect class="node" x="1160" y="170" width="360" height="110" rx="12"/>
+  <text class="title" x="1340" y="212" text-anchor="middle">仿真与验证反馈</text>
+  <text class="body" x="1340" y="249" text-anchor="middle">模型、设置、输出与检查结果</text>
+
+  <rect class="soft" x="1160" y="390" width="360" height="120" rx="12"/>
+  <text class="title" x="1340" y="431" text-anchor="middle">判断反馈条件与当前问题</text>
+  <text class="body" x="1340" y="466" text-anchor="middle">需求一致性、可信依据与可比性</text>
+  <text class="small" x="1340" y="494" text-anchor="middle">结合物理线索、历史及已知约束</text>
+
+  <rect x="620" y="390" width="360" height="120" rx="12" fill="#194954"/>
+  <text class="light-title" x="800" y="431" text-anchor="middle">Agent 选择动作并明确预期</text>
+  <text class="light-body" x="800" y="466" text-anchor="middle">检查 / 修复 / 优化 / 调整方案</text>
+  <text class="light-body" x="800" y="494" text-anchor="middle">行动依据与希望观察到的变化</text>
+
+  <rect class="soft" x="80" y="390" width="360" height="120" rx="12"/>
+  <text class="title" x="260" y="431" text-anchor="middle">受控执行所选动作</text>
+  <text class="body" x="260" y="466" text-anchor="middle">工具与优化器执行检查或设计变更</text>
+  <text class="small" x="260" y="494" text-anchor="middle">保留允许范围与回退依据</text>
+
+  <rect class="node" x="80" y="640" width="360" height="120" rx="12"/>
+  <text class="title" x="260" y="681" text-anchor="middle">取得新反馈并对照预期</text>
+  <text class="body" x="260" y="716" text-anchor="middle">实际变化是否支持原来的判断</text>
+  <text class="small" x="260" y="744" text-anchor="middle">性能改善与原因解释分别判断</text>
+
+  <rect class="node" x="620" y="640" width="360" height="120" rx="12"/>
+  <text class="title" x="800" y="681" text-anchor="middle">更新判断、保留或回退</text>
+  <text class="body" x="800" y="716" text-anchor="middle">支持原判断，或修正解释与动作</text>
+  <text class="small" x="800" y="744" text-anchor="middle">据新证据决定下一步</text>
+
+  <text class="label" x="1070" y="682" text-anchor="middle">需要确认</text>
+  <rect class="soft" x="1160" y="640" width="360" height="120" rx="12"/>
+  <text class="title" x="1340" y="681" text-anchor="middle">候选保留与结果确认</text>
+  <text class="body" x="1340" y="716" text-anchor="middle">保存待确认候选</text>
+  <text class="small" x="1340" y="744" text-anchor="middle">按相应核查条件确认当前最佳</text>
+
+  <path class="edge" d="M800 760 V825 H1560 V450 H1520"/>
+  <text class="label" x="1080" y="810" text-anchor="middle">继续迭代：用新证据重新选择行动</text>
+  <path class="optional" d="M1340 760 V825"/>
+  <circle cx="1340" cy="825" r="4" fill="#35636D"/>
+  <text class="small" x="1360" y="794">需修订</text>
+
+  <rect x="80" y="920" width="900" height="120" rx="12" fill="#F1F5F6"/>
+  <text class="title" x="110" y="958">贯穿迭代的任务记录</text>
+  <text class="body" x="110" y="992">方案与条件、动作依据、预期与实际结果</text>
+  <text class="body" x="110" y="1023">保留失败尝试，支持回退与下一步判断</text>
+
+  <rect x="1040" y="920" width="480" height="120" rx="12" fill="#F1F5F6"/>
+  <text class="title" x="1070" y="958">按需由专家协助</text>
+  <text class="body" x="1070" y="992">关键建模假设、持续证据冲突</text>
+  <text class="body" x="1070" y="1023">或工具能力不足时介入</text>
+</svg>

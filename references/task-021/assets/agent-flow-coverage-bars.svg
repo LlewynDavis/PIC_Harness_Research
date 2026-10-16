@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="330" viewBox="0 0 1640 330" role="img" aria-labelledby="title desc">
+<title id="title">Agent 项目的流程覆盖进度条</title>
+<desc id="desc">上方为九个环节的主干流程，下方为四项目覆盖条。深青为直接展示，浅青为部分覆盖，灰为未核实。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif}.stage{font-size:21px;font-weight:600;fill:#fff}.project{font-size:23px;font-weight:600;fill:#183E48}</style>
+<rect width="1640" height="330" fill="#fff"/>
+<rect x="310" y="18" width="1260" height="48" rx="8" fill="#194954"/>
+<text class="stage" x="380" y="49" text-anchor="middle">需求输入</text>
+<text class="stage" x="520" y="49" text-anchor="middle">结构化表达</text>
+<line x1="450" y1="28" x2="450" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="660" y="49" text-anchor="middle">电磁仿真</text>
+<line x1="590" y1="28" x2="590" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="800" y="49" text-anchor="middle">结果读取</text>
+<line x1="730" y1="28" x2="730" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="940" y="49" text-anchor="middle">诊断 / 修复</text>
+<line x1="870" y1="28" x2="870" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="1080" y="49" text-anchor="middle">参数优化</text>
+<line x1="1010" y1="28" x2="1010" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="1220" y="49" text-anchor="middle">策略切换</text>
+<line x1="1150" y1="28" x2="1150" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="1360" y="49" text-anchor="middle">版图 / DRC</text>
+<line x1="1290" y1="28" x2="1290" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<text class="stage" x="1500" y="49" text-anchor="middle">制造签核</text>
+<line x1="1430" y1="28" x2="1430" y2="56" stroke="#fff" stroke-opacity="0.28"/>
+<defs>
+<clipPath id="clip-0"><rect x="310" y="96" width="1260" height="30" rx="7"/></clipPath>
+<clipPath id="clip-1"><rect x="310" y="156" width="1260" height="30" rx="7"/></clipPath>
+<clipPath id="clip-2"><rect x="310" y="216" width="1260" height="30" rx="7"/></clipPath>
+<clipPath id="clip-3"><rect x="310" y="276" width="1260" height="30" rx="7"/></clipPath>
+</defs>
+<text class="project" x="28" y="119">PhIDO</text>
+<g id="project-0" data-project="PhIDO" clip-path="url(#clip-0)">
+<rect class="coverage-segment" x="310" y="96" width="140" height="30" fill="#176C73" data-stage="0" data-status="implemented"/>
+<rect class="coverage-segment" x="450" y="96" width="140" height="30" fill="#176C73" data-stage="1" data-status="implemented"/>
+<rect class="coverage-segment" x="590" y="96" width="140" height="30" fill="#A4CFD1" data-stage="2" data-status="partial"/>
+<rect class="coverage-segment" x="730" y="96" width="140" height="30" fill="#A4CFD1" data-stage="3" data-status="partial"/>
+<rect class="coverage-segment" x="870" y="96" width="140" height="30" fill="#A4CFD1" data-stage="4" data-status="partial"/>
+<rect class="coverage-segment" x="1010" y="96" width="140" height="30" fill="#A4CFD1" data-stage="5" data-status="partial"/>
+<rect class="coverage-segment" x="1150" y="96" width="140" height="30" fill="#EBEFF1" data-stage="6" data-status="unclear"/>
+<rect class="coverage-segment" x="1290" y="96" width="140" height="30" fill="#176C73" data-stage="7" data-status="implemented"/>
+<rect class="coverage-segment" x="1430" y="96" width="140" height="30" fill="#EBEFF1" data-stage="8" data-status="unclear"/>
+</g>
+<text class="project" x="28" y="179">Lumi</text>
+<g id="project-1" data-project="Lumi" clip-path="url(#clip-1)">
+<rect class="coverage-segment" x="310" y="156" width="140" height="30" fill="#176C73" data-stage="0" data-status="implemented"/>
+<rect class="coverage-segment" x="450" y="156" width="140" height="30" fill="#A4CFD1" data-stage="1" data-status="partial"/>
+<rect class="coverage-segment" x="590" y="156" width="140" height="30" fill="#176C73" data-stage="2" data-status="implemented"/>
+<rect class="coverage-segment" x="730" y="156" width="140" height="30" fill="#176C73" data-stage="3" data-status="implemented"/>
+<rect class="coverage-segment" x="870" y="156" width="140" height="30" fill="#176C73" data-stage="4" data-status="implemented"/>
+<rect class="coverage-segment" x="1010" y="156" width="140" height="30" fill="#A4CFD1" data-stage="5" data-status="partial"/>
+<rect class="coverage-segment" x="1150" y="156" width="140" height="30" fill="#EBEFF1" data-stage="6" data-status="unclear"/>
+<rect class="coverage-segment" x="1290" y="156" width="140" height="30" fill="#EBEFF1" data-stage="7" data-status="unclear"/>
+<rect class="coverage-segment" x="1430" y="156" width="140" height="30" fill="#EBEFF1" data-stage="8" data-status="unclear"/>
+</g>
+<text class="project" x="28" y="239">HALO</text>
+<g id="project-2" data-project="HALO" clip-path="url(#clip-2)">
+<rect class="coverage-segment" x="310" y="216" width="140" height="30" fill="#176C73" data-stage="0" data-status="implemented"/>
+<rect class="coverage-segment" x="450" y="216" width="140" height="30" fill="#176C73" data-stage="1" data-status="implemented"/>
+<rect class="coverage-segment" x="590" y="216" width="140" height="30" fill="#176C73" data-stage="2" data-status="implemented"/>
+<rect class="coverage-segment" x="730" y="216" width="140" height="30" fill="#176C73" data-stage="3" data-status="implemented"/>
+<rect class="coverage-segment" x="870" y="216" width="140" height="30" fill="#176C73" data-stage="4" data-status="implemented"/>
+<rect class="coverage-segment" x="1010" y="216" width="140" height="30" fill="#176C73" data-stage="5" data-status="implemented"/>
+<rect class="coverage-segment" x="1150" y="216" width="140" height="30" fill="#A4CFD1" data-stage="6" data-status="partial"/>
+<rect class="coverage-segment" x="1290" y="216" width="140" height="30" fill="#EBEFF1" data-stage="7" data-status="unclear"/>
+<rect class="coverage-segment" x="1430" y="216" width="140" height="30" fill="#EBEFF1" data-stage="8" data-status="unclear"/>
+</g>
+<text class="project" x="28" y="299">AutoPhotonicDesign</text>
+<g id="project-3" data-project="AutoPhotonicDesign" clip-path="url(#clip-3)">
+<rect class="coverage-segment" x="310" y="276" width="140" height="30" fill="#A4CFD1" data-stage="0" data-status="partial"/>
+<rect class="coverage-segment" x="450" y="276" width="140" height="30" fill="#A4CFD1" data-stage="1" data-status="partial"/>
+<rect class="coverage-segment" x="590" y="276" width="140" height="30" fill="#176C73" data-stage="2" data-status="implemented"/>
+<rect class="coverage-segment" x="730" y="276" width="140" height="30" fill="#176C73" data-stage="3" data-status="implemented"/>
+<rect class="coverage-segment" x="870" y="276" width="140" height="30" fill="#176C73" data-stage="4" data-status="implemented"/>
+<rect class="coverage-segment" x="1010" y="276" width="140" height="30" fill="#176C73" data-stage="5" data-status="implemented"/>
+<rect class="coverage-segment" x="1150" y="276" width="140" height="30" fill="#176C73" data-stage="6" data-status="implemented"/>
+<rect class="coverage-segment" x="1290" y="276" width="140" height="30" fill="#176C73" data-stage="7" data-status="implemented"/>
+<rect class="coverage-segment" x="1430" y="276" width="140" height="30" fill="#EBEFF1" data-stage="8" data-status="unclear"/>
+</g>
+</svg>

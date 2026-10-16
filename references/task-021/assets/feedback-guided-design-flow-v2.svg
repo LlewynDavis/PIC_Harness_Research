@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-labelledby="title desc">
+  <title id="title">需求与约束下的反馈驱动设计决策流程</title>
+  <desc id="desc">需求、物理规律和制造约束进入器件与电路方案。受控工具执行后记录反馈并检查，由 Agent 选择诊断修复、调整搜索、调整方案或保留候选。前三类动作和继续探索返回工具执行；候选在异常改善、设置变化或最佳方案确认前核查，通过后成为已核查的当前最佳方案，未通过则修订或继续探索。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#35636D"/></marker>
+  </defs>
+  <style>
+    text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+    .heading{font-size:27px;font-weight:700;fill:#fff}
+    .title{font-size:23px;font-weight:600;fill:#194954}
+    .body{font-size:18px;fill:#415F67}
+    .small{font-size:16px;fill:#526B73}
+    .label{font-size:18px;font-weight:600;fill:#35636D}
+    .node{fill:#fff;stroke:#6F9CA4;stroke-width:2}
+    .soft{fill:#EEF6F6;stroke:#6F9CA4;stroke-width:2}
+    .edge{fill:none;stroke:#35636D;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+    .bus{fill:none;stroke:#35636D;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+    .optional{fill:none;stroke:#668892;stroke-width:2.2;stroke-dasharray:8 6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+  </style>
+  <rect width="1600" height="1060" fill="#fff"/>
+
+  <rect x="60" y="20" width="1480" height="80" rx="12" fill="#194954"/>
+  <text class="heading" x="800" y="69" text-anchor="middle">真实需求 · 物理规律 · 制造约束</text>
+
+  <path class="edge" d="M215 100 V150"/>
+  <path class="edge" d="M370 195 H450"/>
+  <path class="edge" d="M760 195 H840"/>
+  <path class="edge" d="M1150 195 H1230"/>
+
+  <rect class="node" x="60" y="150" width="310" height="90" rx="12"/>
+  <text class="title" x="215" y="185" text-anchor="middle">形成器件 / 电路方案</text>
+  <text class="body" x="215" y="217" text-anchor="middle">结构、器件组合与连接</text>
+  <rect class="soft" x="450" y="150" width="310" height="90" rx="12"/>
+  <text class="title" x="605" y="185" text-anchor="middle">受控工具执行</text>
+  <text class="body" x="605" y="217" text-anchor="middle">建模、仿真与规则检查</text>
+  <rect class="node" x="840" y="150" width="310" height="90" rx="12"/>
+  <text class="title" x="995" y="185" text-anchor="middle">记录反馈与条件</text>
+  <text class="body" x="995" y="217" text-anchor="middle">方案、设置、指标与日志</text>
+  <rect class="node" x="1230" y="150" width="310" height="90" rx="12"/>
+  <text class="title" x="1385" y="185" text-anchor="middle">基本检查与方案评价</text>
+  <text class="body" x="1385" y="217" text-anchor="middle">需求一致性与已知约束</text>
+
+  <path class="edge" d="M1385 240 V265 H800 V285"/>
+  <polygon points="800,285 995,350 800,415 605,350" fill="#E2F0EF" stroke="#35636D" stroke-width="2.4"/>
+  <text class="title" x="800" y="342" text-anchor="middle">Agent 依据反馈</text>
+  <text class="title" x="800" y="373" text-anchor="middle">选择下一步动作</text>
+
+  <path class="bus" d="M800 415 V450 M215 450 H1385"/>
+  <path class="edge" d="M215 450 V490"/>
+  <path class="edge" d="M605 450 V490"/>
+  <path class="edge" d="M995 450 V490"/>
+  <path class="edge" d="M1385 450 V490"/>
+
+  <rect class="node" x="60" y="490" width="310" height="130" rx="12"/>
+  <text class="small" x="215" y="519" text-anchor="middle">异常、偏差或证据不足</text>
+  <text class="title" x="215" y="558" text-anchor="middle">诊断、检查与修复</text>
+  <text class="body" x="215" y="592" text-anchor="middle">按需补查，修复模型或设置</text>
+
+  <rect class="node" x="450" y="490" width="310" height="130" rx="12"/>
+  <text class="small" x="605" y="519" text-anchor="middle">基本约束满足，但性能停滞</text>
+  <text class="title" x="605" y="558" text-anchor="middle">检查范围与搜索方式</text>
+  <text class="body" x="605" y="592" text-anchor="middle">调整参数或调用优化器</text>
+
+  <rect class="node" x="840" y="490" width="310" height="130" rx="12"/>
+  <text class="small" x="995" y="519" text-anchor="middle">功能 / 工艺不符，或方案受限</text>
+  <text class="title" x="995" y="558" text-anchor="middle">调整器件与电路方案</text>
+  <text class="body" x="995" y="592" text-anchor="middle">结构、器件组合或连接</text>
+
+  <rect class="soft" x="1230" y="490" width="310" height="130" rx="12"/>
+  <text class="small" x="1385" y="519" text-anchor="middle">候选值得继续评估</text>
+  <text class="title" x="1385" y="558" text-anchor="middle">保留待确认优良候选</text>
+  <text class="body" x="1385" y="592" text-anchor="middle">保存方案、设置与结果</text>
+
+  <path class="bus" d="M215 620 V665 M605 620 V665 M995 620 V665 M215 665 H995"/>
+  <path class="edge" d="M215 665 H25 V265 H605 V240"/>
+  <text class="label" x="585" y="651" text-anchor="middle">受控执行，取得新反馈</text>
+
+  <path class="optional" d="M1385 660 H1165 V695 H800 V665"/>
+  <text class="small" x="1275" y="646" text-anchor="middle">可继续探索</text>
+  <path class="edge" d="M1385 620 V770"/>
+
+  <rect class="soft" x="1210" y="770" width="350" height="120" rx="12"/>
+  <text class="title" x="1385" y="807" text-anchor="middle">核查并确认候选</text>
+  <text class="small" x="1385" y="841" text-anchor="middle">异常改善或设置变化：优先核查</text>
+  <text class="body" x="1385" y="872" text-anchor="middle">确认最佳前：集中核查</text>
+
+  <path class="edge" d="M1210 830 H1155 V735 H410 V665"/>
+  <text class="label" x="750" y="764" text-anchor="middle">未通过：修订 / 继续探索</text>
+  <path class="edge" d="M1385 890 V970"/>
+  <text class="label" x="1450" y="937">核查通过</text>
+  <rect x="1210" y="970" width="350" height="64" rx="12" fill="#194954"/>
+  <text x="1385" y="1011" text-anchor="middle" font-size="23" font-weight="600" fill="#fff">已核查的当前最佳方案</text>
+
+  <rect x="60" y="790" width="980" height="132" rx="12" fill="#F1F5F6"/>
+  <text class="title" x="90" y="830">迭代记录与判断更新</text>
+  <text class="body" x="90" y="867">保留方案、参数、设置、指标、失败尝试与动作依据</text>
+  <text class="body" x="90" y="899">根据新反馈修正问题解释，并重新选择后续动作</text>
+</svg>
